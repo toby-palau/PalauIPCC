@@ -1,11 +1,11 @@
 "use client"
 
 import { MultipleChoiceQuestion } from '@root/components/MultipleChoiceQuestion'
-import { PalauImage } from '@root/components/PalauImage';
 import { PageType, SessionType } from '@root/types/shared.types';
 import { digitalStrip } from '@root/styles/fonts';
 import { useState, useEffect, useMemo } from 'react';
 import Confetti from '@root/components/Confetti';
+import data from "@root/public/question-flow.json";
 
 
 export default function Home() {
@@ -23,9 +23,9 @@ export default function Home() {
 	// });
 	
 	const fetchQuestions = async () => {
-		const response = await fetch(`http://localhost:3000/api/questions`);
-		const {data} = await response.json();
-		setSession({pages: data});
+		// const response = await fetch(`http://localhost:3000/api/questions`);
+		// const {data} = await response.json();
+		setSession({pages: data.pages as Array<PageType>});
 	}
 	
 	const navigate = (fromId: number, direction: "forward" | "backward", newSession?: SessionType) => {
@@ -77,11 +77,10 @@ export default function Home() {
 		return (
 			<div className="h-screen w-screen">
 				<div className="fixed h-screen w-screen flex-col items-center justify-center">
-					<PalauImage 
-						src={`backgrounds/${currentPage.backgroundImage}`}
+					<img 
+						src={`/images/backgrounds/${currentPage.backgroundImage}`}
 						alt="background image"
-						layout="fill"
-						objectFit="cover"
+						className="absolute h-full w-full"
 						onClick={() => navigate(currentId, "forward")}
 					/>
 					{ currentPage.question && (
@@ -93,13 +92,11 @@ export default function Home() {
 						<div className="h-2 w-full bg-white opacity-80">
 							<div className="h-full bg-blue" style={{width: `${session.pages.findIndex(p => p.qid === currentId) / session.pages.length * 100}%`}}/>
 						</div>
-						<PalauImage
-							src={`misc/arrow-left-bold.svg`}
+						<img
+							src={`/images/misc/arrow-left-bold.svg`}
 							alt="back"
-							width={50}
-							height={50}
+							className="h-12 w-12 cursor-pointer"
 							onClick={() => navigate(currentId, "backward")}
-							className="cursor-pointer"
 						/>
 					</div>
 					<div className="absolute bottom-10 left-10">
@@ -112,8 +109,8 @@ export default function Home() {
 								</div>
 							)
 						}
-						<PalauImage 
-							src={`avatars/${currentPage.avatarImage}`}
+						<img 
+							src={`/images/avatars/${currentPage.avatarImage}`}
 							alt="avatar" 
 							className={`${currentPage.question ? "h-24 w-24" : "h-56 w-56"} rounded-full border-2 border-white transition- duration-500`}
 						/>
