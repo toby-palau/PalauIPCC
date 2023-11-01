@@ -31,6 +31,21 @@ const config: Config = {
 				"dark": "#D32F2F",
 			},
 		},
+		extend: {
+			keyframes: {
+				wave: {
+					'0%': { transform: 'rotate(0.0deg)' },
+					'20%': { transform: 'rotate(1.5deg)' },
+					'40%': { transform: 'rotate(-1.5deg)' },
+					'60%': { transform: 'rotate(1.5deg)' },
+					'80%': { transform: 'rotate(0.0deg)' },
+					'100%': { transform: 'rotate(0.0deg)' },
+				},
+			},
+			animation: {
+				wiggle: 'wave 0.5s linear 1',
+			},
+		}
 	},
 	plugins: [],
 }
