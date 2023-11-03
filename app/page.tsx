@@ -11,7 +11,7 @@ import { MultipleChoiceQuestion } from "@root/components/QuestionTypes/MultipleC
 import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
 import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
 
-export default () => {
+const Page = () => {
 	const [shiftDown, setShiftDown] = useState<boolean>(false);
 	const [session, setSession] = useState<SessionType>();
 	const [confetti, setConfetti] = useState<boolean>(false);
@@ -184,7 +184,7 @@ type QuestionProps = {
 	resetResponse: () => void;
 }
 
-export const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
+const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
     if (question.questionType === QuestionTypes.MCSA) return (
         <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
             <MultipleChoiceQuestion
@@ -211,3 +211,5 @@ export const Question = ({ question, submitResponse, resetResponse }: QuestionPr
         </div>
     )
 }
+
+export default Page;
