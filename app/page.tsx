@@ -1,67 +1,114 @@
 "use client"
 
-import { MultipleChoiceQuestion } from '@root/components/MultipleChoiceQuestion'
-import { PageType, SessionType } from '@root/types/shared.types';
-import { digitalStrip, dmsans } from '@root/styles/fonts';
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { PageTypes, QuestionTypes, QuestionPageType, SessionType } from '@root/types/shared.types';
+import { dmsans } from '@root/styles/fonts';
+import { useState, useEffect, useMemo } from 'react';
 import Confetti from '@root/components/Confetti';
 import data from "@root/public/question-flow.json";
+import { Narrator } from '@root/components/Narrator';
+import { Title } from '@root/components/Title';
+import { MultipleChoiceQuestion } from "@root/components/QuestionTypes/MultipleChoiceQuestion"
+import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
+import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
 
-
-export default function Home() {
+export default () => {
+	const [shiftDown, setShiftDown] = useState<boolean>(false);
 	const [session, setSession] = useState<SessionType>();
-	const [currentId, setCurrentId] = useState<number>(1);
 	const [confetti, setConfetti] = useState<boolean>(false);
-	const [currentPage, setCurrentPage] = useState<PageType>();
+	const [currentIndex, setCurrentIndex] = useState<number>(0);
+	const currentPage = useMemo<SessionType["pages"][number] | undefined>(() => {
+		if (!session) return;
+		return session.pages[currentIndex];
+	}, [currentIndex, session]);
 
-	useEffect(() => { setSession({pages: data.pages as Array<PageType>}) }, []);
-	useEffect(() => { setCurrentPage(session?.pages.find(q => q.qid === currentId)) }, [session?.pages, currentId]);
+	useEffect(() => { setSession(data as SessionType) }, []);
 	useEffect(() => {
 		const handleKeyPressEvent = (e: KeyboardEvent) => {
-			if (e.key === "ArrowRight") navigate(currentId, "forward");
-			if (e.key === "ArrowLeft") navigate(currentId, "backward");
+			if (e.key === "ArrowRight") navigate(currentIndex, currentIndex, "forward");
+			if (e.key === "ArrowLeft") navigate(currentIndex, currentIndex, "backward");
+			if (e.key === "Shift") setShiftDown(true);
 		};
+		const handleKeyUpEvent = (e: KeyboardEvent) => {
+			if (e.key === "Shift") setShiftDown(false);
+		}
 		addEventListener("keydown", handleKeyPressEvent);
-		return () => removeEventListener("keydown", handleKeyPressEvent);
-	}, [currentId, session]);
+		addEventListener("keyup", handleKeyUpEvent);
+		return () => {
+			removeEventListener("keydown", handleKeyPressEvent);
+			removeEventListener("keyup", handleKeyUpEvent);
+		}
+	}, [currentIndex, session, shiftDown]);
 	
-	const navigate = (fromId: number, direction: "forward" | "backward", newSession?: SessionType) => {
+	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", newSession?: SessionType) => {
 		const thisSession = newSession || session;
-		
-		if (!thisSession) return;
-		
-		let toId = fromId;
-		if (direction === "forward" && currentId < thisSession.pages.length) toId ++;
-		if (direction === "backward" && currentId > 0) toId --;
-		
-		const currentQuestion = thisSession.pages.find(q => q.qid === fromId);
-		if (!currentQuestion) return;
-		if (direction === "forward" && currentQuestion.question && !currentQuestion.question.completed) return;
+		if (!thisSession) return setCurrentIndex(fallbackIndex);
 
-		const newQuestion = thisSession.pages.find(q => q.qid === toId);
-		if (!newQuestion) return;
-		if (!newQuestion.displayLogic) return setCurrentId(toId);
+		const currentQuestion = thisSession.pages[fromIndex];
+		if (!currentQuestion) return setCurrentIndex(fallbackIndex);
 		
-		const logicQuestionId = newQuestion.displayLogic.qid;
-		const logicQuestion = thisSession.pages.find(q => q.qid === logicQuestionId);
-		if (!logicQuestion?.question) return setCurrentId(toId);
+		
+		let toIndex = fromIndex;
+		if (direction === "forward") {
+			if (fromIndex >= thisSession.pages.length - 1) return setCurrentIndex(fallbackIndex);
+			if (shiftDown) return setCurrentIndex(fromIndex + 1);
+			if (currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
+			toIndex ++;
+		}
+		if (direction === "backward") {
+			if (fromIndex <= 0) return setCurrentIndex(fallbackIndex);
+			if (shiftDown) return setCurrentIndex(fromIndex - 1);
+			toIndex --;
+		}
+		
+		const newQuestion = thisSession.pages[toIndex];
+		if (!newQuestion) return setCurrentIndex(fallbackIndex);
+		if (!newQuestion.displayLogic) return setCurrentIndex(toIndex);
+		
+		const logicQuestionId = newQuestion.displayLogic.pid;
+		const logicQuestion = thisSession.pages.find(p => p.pid === logicQuestionId);
+		if (logicQuestion?.pageType !== PageTypes.question) return setCurrentIndex(toIndex);
 
-		const correct = logicQuestion.question.selection.sort().join() === logicQuestion.question.correct.sort().join();
-		if (correct === newQuestion.displayLogic.correct) setCurrentId(toId)
-		else navigate(toId, direction, newSession);
+		if (logicQuestion.completed && logicQuestion.answeredCorrectly === newQuestion.displayLogic.correct) setCurrentIndex(toIndex)
+		else navigate(toIndex, fallbackIndex, direction, newSession);
 	}
 
-	const submitResponse = (questionId: number, selection: Array<number>) => {
+	const submitResponse = (pageId: number, userAnswer: Array<number> | string) => {
 		if (!session) return;
-		const newPage = session.pages.find(p => p.qid === questionId);
-		if (!newPage?.question) return;
+		const newPage = session.pages.find(p => p.pid === pageId);
+		if (!newPage || newPage.pageType !== PageTypes.question) return;
 
-		const correct = selection.sort().join() === newPage.question.correct.sort().join();
-		newPage.question = { ...newPage.question, selection, completed: true };
-		const newSession = { ...session, pages: session.pages.map(p => p.qid === questionId ? newPage : p) }
+		if (newPage.question.correctAnswer) {
+			let correct = false;
+			if (newPage.question.questionType === QuestionTypes.MCSA && Array.isArray(userAnswer)) {
+				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
+			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
+				correct = userAnswer.join() === newPage.question.correctAnswer.join();
+			} else if (newPage.question.questionType === QuestionTypes.VERB && typeof userAnswer === "string") {
+				const regex = new RegExp(newPage.question.correctAnswer, "i");
+				correct = userAnswer.match(regex) !== null;
+			}
+			if (correct) triggerConfetti();
+			newPage.answeredCorrectly = correct;
+		}
+		newPage.question.userAnswer = userAnswer;
+		newPage.completed = true;
+		
+		const newSession = { ...session, pages: session.pages.map(p => p.pid === pageId ? newPage : p) }
 		setSession(newSession);
-		if (correct) triggerConfetti();
-		setTimeout(() => navigate(currentId, "forward", newSession), 1000);
+		setTimeout(() => navigate(currentIndex, currentIndex, "forward", newSession), 1000);
+	}
+
+	const resetResponse = (pageId: number) => {
+		if (!session) return;
+		const newPage = session.pages.find(p => p.pid === pageId);
+		if (!newPage || newPage.pageType !== PageTypes.question) return;
+
+		newPage.question.userAnswer = undefined;
+		newPage.completed = false;
+		newPage.answeredCorrectly = undefined;
+		
+		const newSession = { ...session, pages: session.pages.map(p => p.pid === pageId ? newPage : p) }
+		setSession(newSession);
 	}
 
 	const triggerConfetti = () => {
@@ -72,30 +119,37 @@ export default function Home() {
 	if (session && currentPage) {
 		return (
 			<div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-				<div
+				<div 
+					id="background" 
 					className="fixed h-screen w-screen"
+					onClick={() => navigate(currentIndex, currentIndex, "forward")}
 				>
 					<img 
 						src={`/images/backgrounds/${currentPage.backgroundImage}`}
 						alt="background image"
 						className="h-full w-full object-cover brightness-50"
-						onClick={() => navigate(currentId, "forward")}
 					/>
-				</div>
-				
-				{ currentPage.question && (
-					<div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-						{ currentPage.question && <MultipleChoiceQuestion question={currentPage.question} submitResponse={(selection) => submitResponse(currentPage.qid, selection)} /> }
+					{ currentPage.pageType !== PageTypes.question && (
+					<div className="absolute flex flex-row items-end bottom-6 right-6 md:bottom-10 md:right-10 pointer-events-none">
+						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
+						<img
+							src={"/images/misc/finger.gif"}
+							alt="click to continue"
+							className="h-8 w-8 md:h-16 md:w-16"
+						/>
 					</div>
 				) }
-				<div className="fixed w-full flex flex-col items-start">
-					<div className="h-2 w-full bg-white opacity-80">
-						<div className="h-full bg-blue" style={{width: `${session.pages.findIndex(p => p.qid === currentId) / session.pages.length * 100}%`}}/>
+				</div>
+
+				<div id="header" className="fixed w-full flex flex-col items-start z-10">
+					<div id="progress-bar" className="h-2 w-full bg-white opacity-80">
+						<div className="h-full bg-blue" style={{width: `${currentIndex / session.pages.length * 100}%`}}/>
 					</div>
-					{ currentId > 1 ? (
+					{ currentIndex > 0 ? (
 						<div 
+							id="back-button"
 							className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-							onClick={() => navigate(currentId, "backward")}	
+							onClick={() => navigate(currentIndex, currentIndex, "backward")}	
 						>
 							<img
 								src={`/images/misc/arrow-left-bold.svg`}
@@ -106,34 +160,54 @@ export default function Home() {
 						</div>
 					) : null }
 				</div>
-				<div className="fixed md:bottom-10 md:left-10 bottom-3 left-3 pointer-events-none">
-					{
-						currentPage.avatarText && (
-							<div className="md:w-96 md:max-w-96 w-64 mb-4 p-4 relative border-2 border-black rounded bg-white">
-								<p className={`${digitalStrip.className} md:text-base text-sm text-black`}>
-									{currentPage.avatarText}
-								</p>
-							</div>
-						)
-					}
-					<img 
-						src={`/images/avatars/${currentPage.avatarImage}`}
-						alt="avatar" 
-						className={`${currentPage.question && "scale-50"} md:h-56 md:w-56 h-24 w-24 rounded-full border-2 border-white transition-all duration-500 delay-75`}
-					/>
-				</div>
-				{ !currentPage.question && (
-					<div className="absolute flex flex-row items-end bottom-6 right-6 md:bottom-10 md:right-10 pointer-events-none">
-						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
-						<img
-							src={"/images/misc/finger.gif"}
-							alt="click to continue"
-							className="h-8 w-8 md:h-16 md:w-16"
-						/>
-					</div>
+
+				{ currentPage.pageType === PageTypes.title && <Title title={currentPage.title} subtitle={currentPage.subtitle} />}
+
+				{ currentPage.pageType === PageTypes.question && <Question question={currentPage.question} submitResponse={r => submitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> }
+
+				{ (currentPage.pageType === PageTypes.narrator || currentPage.pageType === PageTypes.question) && (
+					<Narrator 
+					avatarImage={currentPage.avatarImage} 
+					avatarText={currentPage.pageType === PageTypes.narrator ? currentPage.avatarText : undefined} 
+					small={currentPage.pageType === PageTypes.question}
+					/> 
 				) }
-				{confetti && <Confetti />}
+				{ confetti && <Confetti /> }
 			</div>
 		)
 	} else return null;
+}
+
+type QuestionProps = {
+    question: QuestionPageType["question"];
+    submitResponse: (r: Array<number> | string) => void;
+	resetResponse: () => void;
+}
+
+export const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
+    if (question.questionType === QuestionTypes.MCSA) return (
+        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
+            <MultipleChoiceQuestion
+                question={question} 
+                submitResponse={submitResponse} 
+            />
+        </div>
+    )
+    if (question.questionType === QuestionTypes.RO) return (
+        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
+            <RankOrderQuestion
+                question={question}
+                submitResponse={submitResponse}
+				resetResponse={resetResponse}
+            />
+        </div>
+    )
+    if (question.questionType === QuestionTypes.VERB) return (
+        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
+            <VerbatimQuestion 
+                question={question}
+                submitResponse={submitResponse}
+            />
+        </div>
+    )
 }

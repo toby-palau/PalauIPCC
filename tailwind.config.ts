@@ -9,7 +9,11 @@ const config: Config = {
 	theme: {
 		colors: {
 			"transparent": "transparent",
-			"blue": "#63A4D1",
+			"blue": {
+				"DEFAULT": "#63A4D1",
+				"light": "#9ACCEC",
+				"dark": "#3E7AAE",
+			},
 			"black": {
 				"DEFAULT": "#222223",
 				"light": "#2C2C2D",

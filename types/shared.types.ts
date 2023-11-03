@@ -1,34 +1,82 @@
-export type SessionType = {
-	pages: PageType[];
+export enum  PageTypes {
+    title = "title",
+    narrator = "narrator",
+    question = "question",
+    success = "success",
+
 }
 
-export type PageType = {
-    qid: number;
-    avatarImage: string;
-    avatarText?: string;
+export enum QuestionTypes {
+    MCSA = "MCSA",
+    MCMA = "MCMA",
+    RO = "RO",
+    TF = "TF",
+    VERB = "VERB"
+}
+
+export type SessionType = {
+	pages: Array<TitlePageType | NarratorPageType | QuestionPageType>;
+}
+
+export type TitlePageType = {
+    pid: number;
+    pageType: PageTypes.title;
+    title: string;
+    subtitle: string;
     backgroundImage: string;
-    question?: QuestionType;
-    displayLogic?: {
-        qid: number;
-        correct: boolean;
-    }
+    displayLogic?: DisplayLogicType;
 };
 
-export type QuestionType = {
-    questionText: string;
+export type NarratorPageType = {
+    pid: number;
+    pageType: PageTypes.narrator;
+    avatarImage: string;
+    avatarText: string;
+    backgroundImage: string;
+    displayLogic?: DisplayLogicType;
+}
+
+export type QuestionPageType = {
+    pid: number;
+    pageType: PageTypes.question;
+    avatarImage: string;
+    backgroundImage: string;
     completed: boolean;
-    correct: Array<number>;
-    selection: Array<number>;
-    questionType: QuestionTypes;
+    answeredCorrectly?: boolean;
+    question: MCSAQuestionType | ROQuestionType | VERBQuestionType;
+    displayLogic?: DisplayLogicType;
+};
+
+export type MCSAQuestionType = {
+    questionType: QuestionTypes.MCSA;
+    questionText: string;
     options: Array<{
         oid: number;
         optionText: string;
     }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
 }
 
-enum QuestionTypes {
-    MCSA = "MCSA",
-    MCMA = "MCMA",
-    RO = "RO",
-    TF = "TF"
+export type ROQuestionType = {
+    questionType: QuestionTypes.RO;
+    questionText: string;
+    options: Array<{
+        oid: number;
+        optionText: string;
+    }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
+};
+
+export type VERBQuestionType = {
+    questionType: QuestionTypes.VERB;
+    questionText: string;
+    correctAnswer?: RegExp;
+    userAnswer?: string;
+}
+
+type DisplayLogicType = {
+    pid: number;
+    correct: boolean;
 }

@@ -33,3 +33,12 @@ export const dmsans = localFont({
         }
     ]
 })
+
+export const staatliches = localFont({
+    src: [
+        {
+            path: "../public/fonts/staatliches/Staatliches-Regular.ttf",
+            style: "normal",
+        },
+    ]
+})

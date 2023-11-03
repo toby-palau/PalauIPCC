@@ -1,32 +1,43 @@
 {
     "pages": [
         {
-            "qid": 1,
+            "pid": 0,
+            "pageType": "title",
+            "backgroundImage": "Taiga1.png",
+            "title": "Chapter I",
+            "subtitle": "Introduction to Climate Change"
+        },
+        {
+            "pid": 1,
+            "pageType": "narrator",
             "avatarImage": "Happy1.png",
             "avatarText": "Hey there! Did you know that, as long as Earth's been around, its temperature has gone up and down naturally?",
-            "backgroundImage": "IntroductionBackground1.png"
+            "backgroundImage": "Taiga1.png"
         },
         {
-            "qid": 2,
+            "pid": 2,
+            "pageType": "narrator",
             "avatarImage": "Paranoid2.png",
             "avatarText": "But since the Industrial Revolution in 1850, we've added a bit too much heat. This has shaken up our planet's balance, causing some concerning changes…",
-            "backgroundImage": "IntroductionBackground2.png"
+            "backgroundImage": "Taiga1.png"
         },
         {
-            "qid": 3,
+            "pid": 3,
+            "pageType": "narrator",
             "avatarImage": "Stoked1.png",
             "avatarText": "Enough talking, are you up for your first question?",
-            "backgroundImage": "IntroductionBackground2.png"
+            "backgroundImage": "Taiga1.png"
         },
         {
-            "qid": 4,
+            "pid": 4,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Taiga1.png",
+            "completed": false,
             "question": {
                 "questionText": "How much have global temperatures risen between 1850 and 2020?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -51,34 +62,37 @@
             }
         },
         {
-            "qid": 5,
+            "pid": 5,
+            "pageType": "narrator",
             "avatarImage": "Paranoid3.png",
             "avatarText": "Bingo! Temperatures have risen by 1.07 °C. A part of the reason our Earth’s temperature is rising is because of the Greenhouse Gas Emissions humans cause each day…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Taiga1.png",
             "displayLogic": {
-                "qid": 4,
+                "pid": 4,
                 "correct": true
             }
         },
         {
-            "qid": 6,
+            "pid": 6,
+            "pageType": "narrator",
             "avatarImage": "Paranoid3.png",
             "avatarText": "Swing and a miss. Temperatures have risen by 1.07 °C. A part of the reason our Earth’s temperature is rising is because of the Greenhouse Gas Emissions humans cause each day…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Taiga1.png",
             "displayLogic": {
-                "qid": 4,
+                "pid": 4,
                 "correct": false
             }
         },
         {
-            "qid": 7,
+            "pid": 7,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Taiga2.png",
+            "completed": false,
             "question": {
-                "questionText": "The rate of growth of average annual GHG emissions was higher in 2010-2019 than in 2000-2009",
+                "questionText": "The rate of growth of average annual Greenhouse Gas emissions was higher in 2010-2019 than in 2000-2009",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -95,34 +109,37 @@
             }
         },
         {
-            "qid": 8,
+            "pid": 8,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
-            "avatarText": "Nailed it! Our total amount of greenhouse gas emissions was still higher but it’s growing at a decreasing rate which means that our efforts are slowly starting to have some effect, yay!",
-            "backgroundImage": "Question2Background.png",
+            "avatarText": "Nailed it! Our total amount of greenhouse gas emissions was still higher in 2010-2019 but it’s growing at a decreasing rate which means that our efforts are slowly starting to have some effect, yay!",
+            "backgroundImage": "Taiga2.png",
             "displayLogic": {
-                "qid": 7,
+                "pid": 7,
                 "correct": true
             }
         },
         {
-            "qid": 9,
+            "pid": 9,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
-            "avatarText": "A for effort! Our total amount of greenhouse gas emissions was still higher but it’s growing at a decreasing rate which means that our efforts are slowly starting to have some effect, yay!",
-            "backgroundImage": "Question2Background.png",
+            "avatarText": "A for effort! Our total amount of greenhouse gas emissions was still higher in 2010-2019 but it’s growing at a decreasing rate which means that our efforts are slowly starting to have some effect, yay!",
+            "backgroundImage": "Taiga2.png",
             "displayLogic": {
-                "qid": 7,
+                "pid": 7,
                 "correct": false
             }
         },
         {
-            "qid": 10,
+            "pid": 10,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Taiga4.png",
+            "completed": false,
             "question": {
                 "questionText": "Click the region with the most Net GHG emissions per capita",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     6
                 ],
                 "completed": false,
@@ -155,92 +172,106 @@
             }
         },
         {
-            "qid": 11,
+            "pid": 11,
+            "pageType": "narrator",
             "avatarImage": "Paranoid2.png",
-            "avatarText": "You got it, champ! In total, the continent that has the most Greenhouse Emissions is Asia, mainly due to its large population. Per capita, they are still at the bottom of the list, even though Asia is a region that’s most affected by the effects of climate change.",
-            "backgroundImage": "Question4Background.png",
+            "avatarText": "You got it, champ! However, the continent that has the most total Greenhouse Emissions is Asia, mainly due to its large population. Per capita, they are still at the bottom of the list, even though Asia is a region that’s most affected by the effects of climate change.",
+            "backgroundImage": "Taiga4.png",
             "displayLogic": {
-                "qid": 10,
+                "pid": 10,
                 "correct": true
             }
         },
         {
-            "qid": 12,
+            "pid": 12,
+            "pageType": "narrator",
             "avatarImage": "Paranoid2.png",
-            "avatarText": "Oops! Not quite. In total, the continent that has the most Greenhouse Emissions is Asia, mainly due to its large population. Per capita, they are still at the bottom of the list, even though Asia is a region that’s most affected by the effects of climate change.",
-            "backgroundImage": "Question4Background.png",
+            "avatarText": "Oops! Not quite. On top of that, the continent that has the most total Greenhouse Emissions is Asia, mainly due to its large population. Per capita, they are still at the bottom of the list, even though Asia is a region that’s most affected by the effects of climate change.",
+            "backgroundImage": "Taiga4.png",
             "displayLogic": {
-                "qid": 10,
+                "pid": 10,
                 "correct": false
             }
         },
         {
-            "qid": 13,
-            "avatarImage": "Proud2.png",
-            "avatarText": "Hey there, climate explorer! 🌍 Ready to embark on a journey through the wild results of climate change? Get ready for some hot, cool, and downright surprising facts as we quiz our way through the world of climate consequences! 😎🌡️",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 89,
+            "pageType": "title",
+            "backgroundImage": "Rainforest1.png",
+            "title": "Chapter II",
+            "subtitle": "Results of Climate Change"
         },
         {
-            "qid": 14,
+            "pid": 13,
+            "pageType": "narrator",
+            "avatarImage": "Proud2.png",
+            "avatarText": "Hey there, climate explorer! 🌍 Ready to embark on a journey through the wild results of climate change? Get ready for some hot, cool, and downright surprising facts as we quiz our way through the world of climate consequences! 😎🌡️",
+            "backgroundImage": "Rainforest1.png"
+        },
+        {
+            "pid": 14,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Rainforest1.png",
+            "completed": false,
             "question": {
                 "questionText": "What contributed most to global warming?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     4
                 ],
                 "completed": false,
                 "options": [
                     {
                         "oid": 1,
-                        "optionText": "Land warming (5%)"
+                        "optionText": "Land warming"
                     },
                     {
                         "oid": 2,
-                        "optionText": "Ice loss (3%)"
+                        "optionText": "Ice loss"
                     },
                     {
                         "oid": 3,
-                        "optionText": "Atmospheric warming (1%)"
+                        "optionText": "Atmospheric warming"
                     },
                     {
                         "oid": 4,
-                        "optionText": "Ocean warming (91%)"
+                        "optionText": "Ocean warming"
                     }
                 ]
             }
         },
         {
-            "qid": 15,
+            "pid": 15,
+            "pageType": "narrator",
             "avatarImage": "Mad1.png",
             "avatarText": "That's the ticket! Ocean warming accounts for 91% of the climate’s heating, while land warming, ice loss, and atmospheric warming only account for 5%, 3%, and 1% respectively. Poor fishes… And poor me!",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Rainforest1.png",
             "displayLogic": {
-                "qid": 14,
+                "pid": 14,
                 "correct": true
             }
         },
         {
-            "qid": 16,
+            "pid": 16,
+            "pageType": "narrator",
             "avatarImage": "Mad1.png",
             "avatarText": "Oh, so close! Ocean warming accounts for 91% of the climate’s heating, while land warming, ice loss, and atmospheric warming only account for 5%, 3%, and 1% respectively. Poor fishes… And poor me!",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Rainforest1.png",
             "displayLogic": {
-                "qid": 14,
+                "pid": 14,
                 "correct": false
             }
         },
         {
-            "qid": 17,
+            "pid": 17,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Rainforest3.png",
+            "completed": false,
             "question": {
-                "questionText": "How much higher were human mortality rates caused by floods, storms, and droughts in highly vulnerable regions compared to low-vulnerability regions?",
+                "questionText": "How much higher are human mortality rates caused by floods, storms, and droughts in highly vulnerable regions compared to low-vulnerability regions?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -265,40 +296,51 @@
             }
         },
         {
-            "qid": 18,
+            "pid": 18,
+            "pageType": "narrator",
             "avatarImage": "Proud1.png",
             "avatarText": "You're on a roll! Even though most of the world faces the effects of climate change, less-developed countries have fewer resources to arm themselves against climate change, resulting in more deaths… It’s important that countries with more resources aid those in need!",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Rainforest3.png",
             "displayLogic": {
-                "qid": 17,
+                "pid": 17,
                 "correct": true
             }
         },
         {
-            "qid": 19,
+            "pid": 19,
+            "pageType": "narrator",
             "avatarImage": "Proud1.png",
             "avatarText": "Oops! Not quite. Even though most of the world faces the effects of climate change, less-developed countries have fewer resources to arm themselves against climate change, resulting in more deaths… It’s important that countries with more resources aid those in need!",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Rainforest3.png",
             "displayLogic": {
-                "qid": 17,
+                "pid": 17,
                 "correct": false
             }
         },
         {
-            "qid": 20,
-            "avatarImage": "Euphoric2.png",
-            "avatarText": "Alright, sea explorer! Before we dive into the deep blue, let's get a grip on what's been happening on land. The world's been busy responding to climate change, and there's a lot to unpack! Many countries got together under the UNFCCC and set some goals. The Paris Agreement was a big leap forward!",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 89,
+            "pageType": "title",
+            "backgroundImage": "Ocean1.png",
+            "title": "Chapter III",
+            "subtitle": "Adaptation & Mitigation to Climate Change"
         },
         {
-            "qid": 21,
+            "pid": 20,
+            "pageType": "narrator",
+            "avatarImage": "Euphoric2.png",
+            "avatarText": "Alright, sea explorer! Before we dive into the deep blue, let's get a grip on what's been happening on land. The world's been busy responding to climate change, and there's a lot to unpack! Many countries got together under the UNFCCC (United Nations Framework Convention on Climate Change) and set some goals. The Paris Agreement was a big leap forward!",
+            "backgroundImage": "Ocean1.png"
+        },
+        {
+            "pid": 21,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Ocean1.png",
+            "completed": false,
             "question": {
                 "questionText": "Which of the following best describes the aim of the Paris Agreement?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -323,34 +365,37 @@
             }
         },
         {
-            "qid": 22,
+            "pid": 22,
+            "pageType": "narrator",
             "avatarImage": "Euphoric1.png",
             "avatarText": "Spot on! The Paris Agreement is about strengthening our response to climate change. Keep going!",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Ocean1.png",
             "displayLogic": {
-                "qid": 21,
+                "pid": 21,
                 "correct": true
             }
         },
         {
-            "qid": 23,
+            "pid": 23,
+            "pageType": "narrator",
             "avatarImage": "Euphoric1.png",
             "avatarText": "Oh, so close! The Paris Agreement is about strengthening our response to climate change. Keep going!",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Ocean1.png",
             "displayLogic": {
-                "qid": 21,
+                "pid": 21,
                 "correct": false
             }
         },
         {
-            "qid": 24,
+            "pid": 24,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Ocean2.png",
+            "completed": false,
             "question": {
                 "questionText": "What was the goal for the public and publicly mobilized private climate finance flow from developed to developing countries per year, set in 2018 by the UNFCCC and the Paris Agreement?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -375,40 +420,51 @@
             }
         },
         {
-            "qid": 25,
+            "pid": 25,
+            "pageType": "narrator",
             "avatarImage": "Sad2.png",
             "avatarText": "You're on fire! While efforts are being made to help those in need, the goals set in 2018 have sadly not been reached…",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Ocean2.png",
             "displayLogic": {
-                "qid": 24,
+                "pid": 24,
                 "correct": true
             }
         },
         {
-            "qid": 26,
+            "pid": 26,
+            "pageType": "narrator",
             "avatarImage": "Sad2.png",
             "avatarText": "Oops! Not quite. While efforts are being made to help those in need, the goals set in 2018 have sadly not been reached…",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Ocean2.png",
             "displayLogic": {
-                "qid": 24,
+                "pid": 24,
                 "correct": false
             }
         },
         {
-            "qid": 27,
-            "avatarImage": "Confused2.png",
-            "avatarText": "It's time to uncover the gaps in our adaptation efforts. Join us in this quiz chapter as we explore where we've fallen short in preparing for the ever-changing climate. Get ready to bridge the knowledge gap and take a leap toward a more resilient future! 🚀🌦️",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 90,
+            "pageType": "title",
+            "backgroundImage": "Savanna1.png",
+            "title": "Chapter IV",
+            "subtitle": "Gaps in Adaptations to Climate Change"
         },
         {
-            "qid": 28,
+            "pid": 27,
+            "pageType": "narrator",
+            "avatarImage": "Confused2.png",
+            "avatarText": "It's time to uncover the gaps in our adaptation efforts. Join us in this quiz chapter as we explore where we've fallen short in preparing for the ever-changing climate. Get ready to bridge the knowledge gap and take a leap toward a more resilient future! 🚀🌦️",
+            "backgroundImage": "Savanna1.png"
+        },
+        {
+            "pid": 28,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Savanna1.png",
+            "completed": false,
             "question": {
-                "questionText": "Based on current NDCs announced before COP26, global warming will likely exceed/stay under 1.5C during the 21st century.",
+                "questionText": "Based on current NDCs (Nationally Determined Contribution) announced before COP26, global warming will likely exceed/stay under 1.5C during the 21st century.",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     1
                 ],
                 "completed": false,
@@ -425,34 +481,37 @@
             }
         },
         {
-            "qid": 29,
+            "pid": 29,
+            "pageType": "narrator",
             "avatarImage": "Confused1.png",
             "avatarText": "Yep, that's the one! Even though action plans have been set up, the projected warming will likely exceed 1.5 C during the 21st century. This means my home will get even hotter 🙁",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Savanna1.png",
             "displayLogic": {
-                "qid": 28,
+                "pid": 28,
                 "correct": true
             }
         },
         {
-            "qid": 30,
+            "pid": 30,
+            "pageType": "narrator",
             "avatarImage": "Confused1.png",
             "avatarText": "Off the mark this time. Even though action plans have been set up, the projected warming will likely exceed 1.5 C during the 21st century. This means my home will get even hotter 🙁",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Savanna1.png",
             "displayLogic": {
-                "qid": 28,
+                "pid": 28,
                 "correct": false
             }
         },
         {
-            "qid": 31,
+            "pid": 31,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Savanna3.png",
+            "completed": false,
             "question": {
                 "questionText": "Many adaptation initiatives prioritize immediate climate risk reduction for which time period?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     1
                 ],
                 "completed": false,
@@ -469,34 +528,37 @@
             }
         },
         {
-            "qid": 32,
+            "pid": 32,
+            "pageType": "narrator",
             "avatarImage": "Confused2.png",
             "avatarText": "Nailed it! We should keep in mind that long-term climate risk reduction will benefit not only us but also our offspring. I hope my wife doesn’t get baby fever again…",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Savanna3.png",
             "displayLogic": {
-                "qid": 31,
+                "pid": 31,
                 "correct": true
             }
         },
         {
-            "qid": 33,
+            "pid": 33,
+            "pageType": "narrator",
             "avatarImage": "Confused2.png",
             "avatarText": "Oh, so close! We should keep in mind that long-term climate risk reduction will benefit not only us but also our offspring. I hope my wife doesn’t get baby fever again…",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Savanna3.png",
             "displayLogic": {
-                "qid": 31,
+                "pid": 31,
                 "correct": false
             }
         },
         {
-            "qid": 34,
+            "pid": 34,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Savanna4.png",
+            "completed": false,
             "question": {
                 "questionText": "How many countries have the intention of achieving net zero emissions by 2050?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     4
                 ],
                 "completed": false,
@@ -521,40 +583,51 @@
             }
         },
         {
-            "qid": 35,
+            "pid": 35,
+            "pageType": "narrator",
             "avatarImage": "Euphoric5.png",
-            "avatarText": "Nailed it! (Shell-tastic job!/ Even more!) Over 100 countries are aiming for that net zero target. As amazing as it is to see these intentions, we have to make sure to keep governments to their promises! Gives me hope for our planet!",
-            "backgroundImage": "Question4Background.png",
+            "avatarText": "Nailed it! Over 100 countries are aiming for that net zero target. As amazing as it is to see these intentions, we have to make sure to keep governments to their promises! Gives me hope for our planet!",
+            "backgroundImage": "Savanna4.png",
             "displayLogic": {
-                "qid": 34,
+                "pid": 34,
                 "correct": true
             }
         },
         {
-            "qid": 36,
+            "pid": 36,
+            "pageType": "narrator",
             "avatarImage": "Euphoric5.png",
-            "avatarText": "Keep trying! (Shell-tastic job!/ Even more!) Over 100 countries are aiming for that net zero target. As amazing as it is to see these intentions, we have to make sure to keep governments to their promises! Gives me hope for our planet!",
-            "backgroundImage": "Question4Background.png",
+            "avatarText": "Even more! Over 100 countries are aiming for that net zero target. As amazing as it is to see these intentions, we have to make sure to keep governments to their promises! Gives me hope for our planet!",
+            "backgroundImage": "Savanna4.png",
             "displayLogic": {
-                "qid": 34,
+                "pid": 34,
                 "correct": false
             }
         },
         {
-            "qid": 37,
-            "avatarImage": "Stoked2.png",
-            "avatarText": "This chapter is a journey through the impacts of future warming, the role of emissions, and the changing tides of our planet's climate system. Buckle up, as this section unravels the intricate dance between human actions and Earth's responses.",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 96,
+            "pageType": "title",
+            "backgroundImage": "Desert1.png",
+            "title": "Chapter V",
+            "subtitle": "Long-Term Climate Change, Impacts and Related Risks"
         },
         {
-            "qid": 38,
+            "pid": 37,
+            "pageType": "narrator",
+            "avatarImage": "Stoked2.png",
+            "avatarText": "This chapter is a journey through the impacts of future warming, the role of emissions, and the changing tides of our planet's climate system. Buckle up, as this section unravels the intricate dance between human actions and Earth's responses.",
+            "backgroundImage": "Desert1.png"
+        },
+        {
+            "pid": 38,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Desert1.png",
+            "completed": false,
             "question": {
                 "questionText": "Which of the following statements about sea level rise is true, according to the report?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -579,34 +652,37 @@
             }
         },
         {
-            "qid": 39,
+            "pid": 39,
+            "pageType": "narrator",
             "avatarImage": "Paranoid3.png",
             "avatarText": "Spot on! The oceans are doing their thing! 🌊 With the way things are going, sea levels are expected to rise for quite a while, depending on our emissions. So, it's not just about now, but the future too! Alright, moving on…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Desert1.png",
             "displayLogic": {
-                "qid": 38,
+                "pid": 38,
                 "correct": true
             }
         },
         {
-            "qid": 40,
+            "pid": 40,
+            "pageType": "narrator",
             "avatarImage": "Paranoid3.png",
             "avatarText": "Keep trying! The oceans are doing their thing! 🌊 With the way things are going, sea levels are expected to rise for quite a while, depending on our emissions. So, it's not just about now, but the future too! Alright, moving on…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Desert1.png",
             "displayLogic": {
-                "qid": 38,
+                "pid": 38,
                 "correct": false
             }
         },
         {
-            "qid": 41,
+            "pid": 41,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Desert2.png",
+            "completed": false,
             "question": {
                 "questionText": "Which component of the climate system will experience changes due to future warming?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     4
                 ],
                 "completed": false,
@@ -631,34 +707,37 @@
             }
         },
         {
-            "qid": 42,
+            "pid": 42,
+            "pageType": "narrator",
             "avatarImage": "Confused1.png",
             "avatarText": "You're rocking this! So, here's the deal: The planet's feeling the heat, and it's not just one spot. This report is telling us that every corner, from the chilly poles to the balmy tropics, is gonna see some changes. We're all in this together! 🌍 Onwards to the next one!",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Desert2.png",
             "displayLogic": {
-                "qid": 41,
+                "pid": 41,
                 "correct": true
             }
         },
         {
-            "qid": 43,
+            "pid": 43,
+            "pageType": "narrator",
             "avatarImage": "Confused1.png",
             "avatarText": "Oh, so close! So, here's the deal: The planet's feeling the heat, and it's not just one spot. This report is telling us that every corner, from the chilly poles to the balmy tropics, is gonna see some changes. We're all in this together! 🌍 Onwards to the next one!",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Desert2.png",
             "displayLogic": {
-                "qid": 41,
+                "pid": 41,
                 "correct": false
             }
         },
         {
-            "qid": 44,
+            "pid": 44,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Desert4.png",
+            "completed": false,
             "question": {
-                "questionText": "How is the nature of changes due to future warming in every region described?",
+                "questionText": "How does the report describe the nature of changes due to future warming in every region?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -683,40 +762,51 @@
             }
         },
         {
-            "qid": 45,
+            "pid": 45,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "You're on fire! Spot on! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Desert4.png",
             "displayLogic": {
-                "qid": 44,
+                "pid": 44,
                 "correct": true
             }
         },
         {
-            "qid": 46,
+            "pid": 46,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "Oh, so close! Spot on! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Desert4.png",
             "displayLogic": {
-                "qid": 44,
+                "pid": 44,
                 "correct": false
             }
         },
         {
-            "qid": 47,
-            "avatarImage": "Happy1.png",
-            "avatarText": "Ready to dive deep into the world of long-term adaptation? 🌍 Let's test your wits on the twisty-turny roads of mitigation pathways! 🛤️✨",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 91,
+            "pageType": "title",
+            "backgroundImage": "Mangrove1.png",
+            "title": "Chapter VI",
+            "subtitle": "Long-term Adaptation Options and Limits & Mitigation Pathways"
         },
         {
-            "qid": 48,
+            "pid": 47,
+            "pageType": "narrator",
+            "avatarImage": "Happy1.png",
+            "avatarText": "Ready to dive deep into the world of long-term adaptation? 🌍 Let's test your wits on the twisty-turny roads of mitigation pathways! 🛤️✨",
+            "backgroundImage": "Mangrove1.png"
+        },
+        {
+            "pid": 48,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mangrove1.png",
+            "completed": false,
             "question": {
-                "questionText": "With increasing warming, how will adaptation options be affected?",
+                "questionText": "With increasing warming, how will adaptation options to climate change be affected?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -741,34 +831,37 @@
             }
         },
         {
-            "qid": 49,
+            "pid": 49,
+            "pageType": "narrator",
             "avatarImage": "Confused2.png",
             "avatarText": "You're on a roll! Global warming is turning up the heat, and not just on the thermostat! As temperatures rise, our options to adapt shrink. It's like trying to find shade in an ever-sunny desert. ☀️",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mangrove1.png",
             "displayLogic": {
-                "qid": 48,
+                "pid": 48,
                 "correct": true
             }
         },
         {
-            "qid": 50,
+            "pid": 50,
+            "pageType": "narrator",
             "avatarImage": "Confused2.png",
             "avatarText": "Just a hiccup! Global warming is turning up the heat, and not just on the thermostat! As temperatures rise, our options to adapt shrink. It's like trying to find shade in an ever-sunny desert. ☀️",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mangrove1.png",
             "displayLogic": {
-                "qid": 48,
+                "pid": 48,
                 "correct": false
             }
         },
         {
-            "qid": 51,
+            "pid": 51,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Mangrove2.png",
+            "completed": false,
             "question": {
                 "questionText": "What is essential to avoid maladaptation and its potential negative consequences?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -793,34 +886,37 @@
             }
         },
         {
-            "qid": 52,
+            "pid": 52,
+            "pageType": "narrator",
             "avatarImage": "Proud2.png",
             "avatarText": "That's the ticket! It's like packing for a vacation – you've got to think ahead and be ready for all kinds of weather! A well-packed suitcase (or well-planned adaptation strategy) can turn potential travel mishaps into a smooth journey. 🧳✈️",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Mangrove2.png",
             "displayLogic": {
-                "qid": 51,
+                "pid": 51,
                 "correct": true
             }
         },
         {
-            "qid": 53,
+            "pid": 53,
+            "pageType": "narrator",
             "avatarImage": "Proud2.png",
             "avatarText": "Just a hiccup! It's like packing for a vacation – you've got to think ahead and be ready for all kinds of weather! A well-packed suitcase (or well-planned adaptation strategy) can turn potential travel mishaps into a smooth journey. 🧳✈️",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Mangrove2.png",
             "displayLogic": {
-                "qid": 51,
+                "pid": 51,
                 "correct": false
             }
         },
         {
-            "qid": 54,
+            "pid": 54,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Mangrove3.png",
+            "completed": false,
             "question": {
                 "questionText": "Adopting better plant varieties and farming methods is a common adaptation response in agriculture to cope with climate change.",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     1
                 ],
                 "completed": false,
@@ -837,40 +933,51 @@
             }
         },
         {
-            "qid": 55,
+            "pid": 55,
+            "pageType": "narrator",
             "avatarImage": "Stoked2.png",
             "avatarText": "Bingo! Just as we change our wardrobe with the seasons, farmers switch things up to adapt to Mother Nature's ever-changing dance. From new crop varieties to tweaked farming methods, they've got their game plan ready! 🌱👩‍🌾",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Mangrove3.png",
             "displayLogic": {
-                "qid": 54,
+                "pid": 54,
                 "correct": true
             }
         },
         {
-            "qid": 56,
+            "pid": 56,
+            "pageType": "narrator",
             "avatarImage": "Stoked2.png",
             "avatarText": "Swing and a miss. Just as we change our wardrobe with the seasons, farmers switch things up to adapt to Mother Nature's ever-changing dance. From new crop varieties to tweaked farming methods, they've got their game plan ready! 🌱👩‍🌾",
-            "backgroundImage": "Question3Background.png",
+            "backgroundImage": "Mangrove3.png",
             "displayLogic": {
-                "qid": 54,
+                "pid": 54,
                 "correct": false
             }
         },
         {
-            "qid": 57,
-            "avatarImage": "Euphoric2.png",
-            "avatarText": "Ready to tango with the trio: adaptation, mitigation, and sustainable development? 🕺💡 Let's see how they jive together in the long run! 🎶🌱",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 92,
+            "pageType": "title",
+            "backgroundImage": "Mountain1.png",
+            "title": "Chapter VII",
+            "subtitle": "Long-Term Interactions Between Adaptation, Mitigation and Sustainable Development"
         },
         {
-            "qid": 58,
+            "pid": 57,
+            "pageType": "narrator",
+            "avatarImage": "Euphoric2.png",
+            "avatarText": "Ready to tango with the trio: adaptation, mitigation, and sustainable development? 🕺💡 Let's see how they jive together in the long run! 🎶🌱",
+            "backgroundImage": "Mountain1.png"
+        },
+        {
+            "pid": 58,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mountain1.png",
+            "completed": false,
             "question": {
                 "questionText": "Which method, when implemented at large scales, can have adverse impacts on biodiversity, food security, and the rights of Indigenous Peoples?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -895,40 +1002,51 @@
             }
         },
         {
-            "qid": 59,
+            "pid": 59,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "You're on a roll! That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mountain1.png",
             "displayLogic": {
-                "qid": 58,
+                "pid": 58,
                 "correct": true
             }
         },
         {
-            "qid": 60,
+            "pid": 60,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "Hmm, think again. That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Mountain1.png",
             "displayLogic": {
-                "qid": 58,
+                "pid": 58,
                 "correct": false
             }
         },
         {
-            "qid": 61,
-            "avatarImage": "Stoked2.png",
-            "avatarText": "Time's a-tickin' and climate's calling! ⏰ Are you up for the challenge of balancing urgency, equity, and inclusion? 🌏💫 Let's dive into the now and near of climate action! 🚀🔥",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 93,
+            "pageType": "title",
+            "backgroundImage": "Grasslands1.png",
+            "title": "Chapter VIII",
+            "subtitle": "Timing, Urgency, Equity, and Inclusion of Climate Action and Near-Term Risks & Action"
         },
         {
-            "qid": 62,
+            "pid": 61,
+            "pageType": "narrator",
+            "avatarImage": "Stoked2.png",
+            "avatarText": "Time's a-tickin' and climate's calling! ⏰ Are you up for the challenge of balancing urgency, equity, and inclusion? 🌏💫 Let's dive into the now and near of climate action! 🚀🔥",
+            "backgroundImage": "Grasslands1.png"
+        },
+        {
+            "pid": 62,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Grasslands1.png",
+            "completed": false,
             "question": {
                 "questionText": "What is a primary factor determining the magnitude and rate of climate change and associated risks in the near term?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -953,34 +1071,37 @@
             }
         },
         {
-            "qid": 63,
+            "pid": 63,
+            "pageType": "narrator",
             "avatarImage": "Happy2.png",
             "avatarText": "That's the ticket! The document emphasizes the importance of near-term actions in determining the extent of climate change and its risks. It's like baking a cake - the ingredients you choose and how you mix them play a huge role in the final outcome. Speaking of ingredients…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Grasslands1.png",
             "displayLogic": {
-                "qid": 62,
+                "pid": 62,
                 "correct": true
             }
         },
         {
-            "qid": 64,
+            "pid": 64,
+            "pageType": "narrator",
             "avatarImage": "Happy2.png",
             "avatarText": "Oh, so close! The document emphasizes the importance of near-term actions in determining the extent of climate change and its risks. It's like baking a cake - the ingredients you choose and how you mix them play a huge role in the final outcome. Speaking of ingredients…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Grasslands1.png",
             "displayLogic": {
-                "qid": 62,
+                "pid": 62,
                 "correct": false
             }
         },
         {
-            "qid": 65,
+            "pid": 65,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Grasslands5.png",
+            "completed": false,
             "question": {
                 "questionText": "According to the document, what becomes increasingly limited if current greenhouse gas emissions do not rapidly decline?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -1005,40 +1126,51 @@
             }
         },
         {
-            "qid": 66,
+            "pid": 66,
+            "pageType": "narrator",
             "avatarImage": "Paranoid1.png",
             "avatarText": "You're on a roll! The document mentions that climate-resilient development prospects become increasingly limited if current greenhouse gas emissions do not decline rapidly. Ensuring a resilient future requires proactive measures today. This emphasizes the importance of timely actions for a sustainable future.",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Grasslands5.png",
             "displayLogic": {
-                "qid": 65,
+                "pid": 65,
                 "correct": true
             }
         },
         {
-            "qid": 67,
+            "pid": 67,
+            "pageType": "narrator",
             "avatarImage": "Paranoid1.png",
             "avatarText": "Just a hiccup! The document mentions that climate-resilient development prospects become increasingly limited if current greenhouse gas emissions do not decline rapidly. Ensuring a resilient future requires proactive measures today. This emphasizes the importance of timely actions for a sustainable future.",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Grasslands5.png",
             "displayLogic": {
-                "qid": 65,
+                "pid": 65,
                 "correct": false
             }
         },
         {
-            "qid": 68,
-            "avatarImage": "Stoked2.png",
-            "avatarText": "Short-term goals, big-time impact! 🎯 Ready to hop onto the express train of near-term mitigation and adaptation? 🚂💨 Let's roll!",
-            "backgroundImage": "IntroductionBackground1.png"
+            "pid": 94,
+            "pageType": "title",
+            "backgroundImage": "Freshwater1.png",
+            "title": "Chapter IX",
+            "subtitle": "Near-Term Mitigation and Adaptation Actions"
         },
         {
-            "qid": 69,
+            "pid": 68,
+            "pageType": "narrator",
+            "avatarImage": "Stoked2.png",
+            "avatarText": "Short-term goals, big-time impact! 🎯 Ready to hop onto the express train of near-term mitigation and adaptation? 🚂💨 Let's roll!",
+            "backgroundImage": "Freshwater1.png"
+        },
+        {
+            "pid": 69,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Freshwater1.png",
+            "completed": false,
             "question": {
                 "questionText": "Which of the following is NOT a mitigation option listed in the document?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -1063,34 +1195,37 @@
             }
         },
         {
-            "qid": 70,
+            "pid": 70,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "Nailed it! The IPCC lists eco-friendly all-stars like wind energy, curbing methane, and upping our recycling game. But, while \"solar lanterns\" bask in the sun, they don't quite make the cut as a mitigation strategy.",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Freshwater1.png",
             "displayLogic": {
-                "qid": 69,
+                "pid": 69,
                 "correct": true
             }
         },
         {
-            "qid": 71,
+            "pid": 71,
+            "pageType": "narrator",
             "avatarImage": "Surprised1.png",
             "avatarText": "Off the mark this time. The IPCC lists eco-friendly all-stars like wind energy, curbing methane, and upping our recycling game. But, while \"solar lanterns\" bask in the sun, they don't quite make the cut as a mitigation strategy.",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Freshwater1.png",
             "displayLogic": {
-                "qid": 69,
+                "pid": 69,
                 "correct": false
             }
         },
         {
-            "qid": 72,
+            "pid": 72,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Freshwater4.png",
+            "completed": false,
             "question": {
                 "questionText": "The document mentions an approach that focuses on extracting and storing emissions. This approach is abbreviated as CCU, what does it stand for?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     2
                 ],
                 "completed": false,
@@ -1111,46 +1246,106 @@
             }
         },
         {
-            "qid": 73,
+            "pid": 73,
+            "pageType": "narrator",
             "avatarImage": "Euphoric5.png",
             "avatarText": "You're on a roll! You know, when we talk about tackling carbon emissions, Carbon capture with Utilisation (CCU) really shines. They're not just about capturing carbon – they're also about putting it to good use or storing it safely. Pretty neat, right? 😊🌱",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Freshwater4.png",
             "displayLogic": {
-                "qid": 72,
+                "pid": 72,
                 "correct": true
             }
         },
         {
-            "qid": 74,
+            "pid": 74,
+            "pageType": "narrator",
             "avatarImage": "Euphoric5.png",
             "avatarText": "Oh, so close! You know, when we talk about tackling carbon emissions, Carbon capture with Utilisation (CCU) really shines. They're not just about capturing carbon – they're also about putting it to good use or storing it safely. Pretty neat, right? 😊🌱",
-            "backgroundImage": "Question4Background.png",
+            "backgroundImage": "Freshwater4.png",
             "displayLogic": {
-                "qid": 72,
+                "pid": 72,
                 "correct": false
             }
         },
         {
-            "qid": 75,
+            "pid": 86,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Freshwater5.png",
+            "completed": false,
+            "question": {
+                "questionText": "Which of the following sectors is projected to have a 66% reduction in total emissions by 2050 due to demand-side mitigation potential?",
+                "questionType": "MCSA",
+                "correctAnswer": [
+                    2
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Electricity"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Land transport"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Buildings"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Industry"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 87,
+            "pageType": "narrator",
             "avatarImage": "Euphoric1.png",
             "avatarText": "Wow, did I hear that well? By 2050, we could cut emissions in different areas, like a whopping 66% in land transport. How awesome is that? 😊🚌",
-            "backgroundImage": "Question5Background.png"
+            "backgroundImage": "Freshwater5.png",
+            "displayLogic": {
+                "pid": 86,
+                "correct": true
+            }
         },
         {
-            "qid": 76,
+            "pid": 88,
+            "pageType": "narrator",
+            "avatarImage": "Euphoric1.png",
+            "avatarText": "Almost, but not quite!? By 2050, we could cut emissions in different areas, like a whopping 66% in land transport. How awesome is that? 😊🚌",
+            "backgroundImage": "Freshwater5.png",
+            "displayLogic": {
+                "pid": 86,
+                "correct": false
+            }
+        },
+        {
+            "pid": 95,
+            "pageType": "title",
+            "backgroundImage": "Jungle1.png",
+            "title": "Chapter X",
+            "subtitle": "Benefits, Policies, Finance, and Integration of Near-Term Adaptations"
+        },
+        {
+            "pid": 76,
+            "pageType": "narrator",
             "avatarImage": "Proud2.png",
             "avatarText": "Cha-ching! 💰 Ready to unpack the treasures of near-term adaptations? 🎁 Dive into the world of benefits, policies, and integrated finance! 🌟📜",
-            "backgroundImage": "IntroductionBackground1.png"
+            "backgroundImage": "Jungle1.png"
         },
         {
-            "qid": 77,
+            "pid": 77,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Jungle1.png",
+            "completed": false,
             "question": {
                 "questionText": "What does SDG stand for?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     3
                 ],
                 "completed": false,
@@ -1175,34 +1370,37 @@
             }
         },
         {
-            "qid": 78,
+            "pid": 78,
+            "pageType": "narrator",
             "avatarImage": "Paranoid2.png",
             "avatarText": "Spot on! SDGs, or Sustainable Development Goals, are a set of 17 global goals set by the United Nations General Assembly. These goals are all about balance, and when not executed correctly, there can be consequences…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Jungle1.png",
             "displayLogic": {
-                "qid": 77,
+                "pid": 77,
                 "correct": true
             }
         },
         {
-            "qid": 79,
+            "pid": 79,
+            "pageType": "narrator",
             "avatarImage": "Paranoid2.png",
             "avatarText": "Oh, so close! SDGs, or Sustainable Development Goals, are a set of 17 global goals set by the United Nations General Assembly. These goals are all about balance, and when not executed correctly, there can be consequences…",
-            "backgroundImage": "Question1Background.png",
+            "backgroundImage": "Jungle1.png",
             "displayLogic": {
-                "qid": 77,
+                "pid": 77,
                 "correct": false
             }
         },
         {
-            "qid": 80,
+            "pid": 80,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Jungle2.png",
+            "completed": false,
             "question": {
                 "questionText": "Which of these is a potential consequence of not carefully considering the means and scale of implementation for Sustainable Development Goals?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     1
                 ],
                 "completed": false,
@@ -1227,34 +1425,37 @@
             }
         },
         {
-            "qid": 81,
+            "pid": 81,
+            "pageType": "narrator",
             "avatarImage": "Sad2.png",
             "avatarText": "Yep, that's the one! The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Jungle2.png",
             "displayLogic": {
-                "qid": 80,
+                "pid": 80,
                 "correct": true
             }
         },
         {
-            "qid": 82,
+            "pid": 82,
+            "pageType": "narrator",
             "avatarImage": "Sad2.png",
             "avatarText": "Oops! Not quite. The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
-            "backgroundImage": "Question2Background.png",
+            "backgroundImage": "Jungle2.png",
             "displayLogic": {
-                "qid": 80,
+                "pid": 80,
                 "correct": false
             }
         },
         {
-            "qid": 83,
+            "pid": 83,
+            "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Jungle5.png",
+            "completed": false,
             "question": {
                 "questionText": "Which type of poverty, according to the document, can be eradicated without causing a major increase in global emissions?",
                 "questionType": "MCSA",
-                "selection": [],
-                "correct": [
+                "correctAnswer": [
                     4
                 ],
                 "completed": false,
@@ -1279,23 +1480,38 @@
             }
         },
         {
-            "qid": 84,
+            "pid": 84,
+            "pageType": "narrator",
             "avatarImage": "Stoked1.png",
             "avatarText": "Nailed it! The document highlights the potential of eradicating extreme poverty without a significant rise in global emissions. It's an optimistic outlook on the balance between development and sustainability.",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Jungle5.png",
             "displayLogic": {
-                "qid": 83,
+                "pid": 83,
                 "correct": true
             }
         },
         {
-            "qid": 85,
+            "pid": 85,
+            "pageType": "narrator",
             "avatarImage": "Stoked1.png",
             "avatarText": "Oops! Not quite. The document highlights the potential of eradicating extreme poverty without a significant rise in global emissions. It's an optimistic outlook on the balance between development and sustainability.",
-            "backgroundImage": "Question5Background.png",
+            "backgroundImage": "Jungle5.png",
             "displayLogic": {
-                "qid": 83,
+                "pid": 83,
                 "correct": false
+            }
+        },
+        {
+            "pid": 86,
+            "pageType": "question",
+            "avatarImage": "Happy1.png",
+            "backgroundImage": "Jungle5.png",
+            "completed": false,
+            "question": {
+                "questionText": "Leave your email address",
+                "questionType": "VERB",
+                "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                "completed": false
             }
         }
     ]
