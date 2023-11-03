@@ -131,6 +131,65 @@
             }
         },
         {
+            "pid": 97,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Taiga3.png",
+            "completed": false,
+            "question": {
+                "questionText": "Rank the sectors contributing to GHG emissions from highest to lowest",
+                "questionType": "RO",
+                "correctAnswer": [
+                    5, 1, 2, 4, 3
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Industry"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Agriculture, forestation and other land uses"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Buildings"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Transport"
+                    },
+                    {
+                        "oid": 5,
+                        "optionText": "Energy"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 98,
+            "pageType": "narrator",
+            "avatarImage": "Proud1.png",
+            "avatarText": "Spot on! These are the major players in global warming. First comes Energy, then Industry, Agriculture and Transport. Buildings take the last spot! You can make small moves, but it's mostly in the hands of big companies and governments. If we keep the pressure on, they'll have to make a change, no doubt!",
+            "backgroundImage": "Taiga3.png",
+            "displayLogic": {
+                "pid": 97,
+                "correct": true
+            }
+        },
+        {
+            "pid": 99,
+            "pageType": "narrator",
+            "avatarImage": "Proud1.png",
+            "avatarText": "Almost! These are the major players in global warming. First comes Energy, then Industry, Agriculture and Transport. Buildings take the last spot! You can make small moves, but it's mostly in the hands of big companies and governments. If we keep the pressure on, they'll have to make a change, no doubt!",
+            "backgroundImage": "Taiga3.png",
+            "displayLogic": {
+                "pid": 97,
+                "correct": false
+            }
+        },
+        {
             "pid": 10,
             "pageType": "question",
             "avatarImage": "Neutral.png",
@@ -503,6 +562,57 @@
             }
         },
         {
+            "pid": 100,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Savanna2.png",
+            "completed": false,
+            "question": {
+                "questionText": "Rank the the three biggest challenges for mitigation strategy implementations from most challenging to least challenging.",
+                "questionType": "RO",
+                "correctAnswer": [
+                    3, 2, 1
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Costs"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Scaling"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Technology risks"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 101,
+            "pageType": "narrator",
+            "avatarImage": "Mad1.png",
+            "avatarText": "You got it! Luck is never on our side, right?? Even if we try our best, there will always be challenges slowing down our efforts…",
+            "backgroundImage": "Savanna2.png",
+            "displayLogic": {
+                "pid": 100,
+                "correct": true
+            }
+        },
+        {
+            "pid": 102,
+            "pageType": "narrator",
+            "avatarImage": "Mad1.png",
+            "avatarText": "Close! Luck is never on our side, right?? Even if we try our best, there will always be challenges slowing down our efforts…",
+            "backgroundImage": "Savanna2.png",
+            "displayLogic": {
+                "pid": 100,
+                "correct": false
+            }
+        },
+        {
             "pid": 31,
             "pageType": "question",
             "avatarImage": "Neutral.png",
@@ -725,6 +835,61 @@
             "backgroundImage": "Desert2.png",
             "displayLogic": {
                 "pid": 41,
+                "correct": false
+            }
+        },
+        {
+            "pid": 103,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Desert3.png",
+            "completed": false,
+            "question": {
+                "questionText": "Rank the following in terms of their potential impact on future warming.",
+                "questionType": "RO",
+                "correctAnswer": [
+                    1, 4, 2, 3
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Future emissions"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Current sea levels"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "The number of polar bears"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Deforestation"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 104,
+            "pageType": "narrator",
+            "avatarImage": "Proud2.png",
+            "avatarText": "Bingo! Emissions are the big player when it comes to future warming. Trees, or the lack of them, play a role too. But current sea levels and our furry polar pals? Not so much in this context. Let's slide into the next one!",
+            "backgroundImage": "Desert3.png",
+            "displayLogic": {
+                "pid": 103,
+                "correct": true
+            }
+        },
+        {
+            "pid": 105,
+            "pageType": "narrator",
+            "avatarImage": "Proud2.png",
+            "avatarText": "Almost had it! Emissions are the big player when it comes to future warming. Trees, or the lack of them, play a role too. But current sea levels and our furry polar pals? Not so much in this context. Let's slide into the next one!",
+            "backgroundImage": "Desert3.png",
+            "displayLogic": {
+                "pid": 103,
                 "correct": false
             }
         },
@@ -969,6 +1134,61 @@
             "backgroundImage": "Mountain1.png"
         },
         {
+            "pid": 106,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Mountain2.png",
+            "completed": false,
+            "question": {
+                "questionText": "Rank the following mitigation and adaptation strategies from most positive impact on biodiversity and local livelihoods to least positive impact.",
+                "questionType": "RO",
+                "correctAnswer": [
+                    3, 2, 1, 4
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Transitions to low-emission systems in the energy sector"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Dietary choices in agriculture, land, and food systems"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Reforestation"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Irrigation as an intensification of production"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 107,
+            "pageType": "narrator",
+            "avatarImage": "Euphoric2.png",
+            "avatarText": "You're on fire, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
+            "backgroundImage": "Mountain2.png",
+            "displayLogic": {
+                "pid": 106,
+                "correct": true
+            }
+        },
+        {
+            "pid": 108,
+            "pageType": "narrator",
+            "avatarImage": "Euphoric2.png",
+            "avatarText": "A for effort, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
+            "backgroundImage": "Mountain2.png",
+            "displayLogic": {
+                "pid": 106,
+                "correct": false
+            }
+        },
+        {
             "pid": 58,
             "pageType": "question",
             "avatarImage": "Neutral.png",
@@ -1026,7 +1246,7 @@
         {
             "pid": 93,
             "pageType": "title",
-            "backgroundImage": "Grasslands1.png",
+            "backgroundImage": "Grassland1.png",
             "title": "Chapter VIII",
             "subtitle": "Timing, Urgency, Equity, and Inclusion of Climate Action and Near-Term Risks & Action"
         },
@@ -1035,13 +1255,13 @@
             "pageType": "narrator",
             "avatarImage": "Stoked2.png",
             "avatarText": "Time's a-tickin' and climate's calling! ⏰ Are you up for the challenge of balancing urgency, equity, and inclusion? 🌏💫 Let's dive into the now and near of climate action! 🚀🔥",
-            "backgroundImage": "Grasslands1.png"
+            "backgroundImage": "Grassland1.png"
         },
         {
             "pid": 62,
             "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Grasslands1.png",
+            "backgroundImage": "Grassland1.png",
             "completed": false,
             "question": {
                 "questionText": "What is a primary factor determining the magnitude and rate of climate change and associated risks in the near term?",
@@ -1075,7 +1295,7 @@
             "pageType": "narrator",
             "avatarImage": "Happy2.png",
             "avatarText": "That's the ticket! The document emphasizes the importance of near-term actions in determining the extent of climate change and its risks. It's like baking a cake - the ingredients you choose and how you mix them play a huge role in the final outcome. Speaking of ingredients…",
-            "backgroundImage": "Grasslands1.png",
+            "backgroundImage": "Grassland1.png",
             "displayLogic": {
                 "pid": 62,
                 "correct": true
@@ -1086,9 +1306,64 @@
             "pageType": "narrator",
             "avatarImage": "Happy2.png",
             "avatarText": "Oh, so close! The document emphasizes the importance of near-term actions in determining the extent of climate change and its risks. It's like baking a cake - the ingredients you choose and how you mix them play a huge role in the final outcome. Speaking of ingredients…",
-            "backgroundImage": "Grasslands1.png",
+            "backgroundImage": "Grassland1.png",
             "displayLogic": {
                 "pid": 62,
+                "correct": false
+            }
+        },
+        {
+            "pid": 109,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Grassland3.png",
+            "completed": false,
+            "question": {
+                "questionText": "What is threatened most by climate change if we don't take urgent, effective, and equitable adaptation and mitigation actions? Rank from most to least threatened.",
+                "questionType": "RO",
+                "correctAnswer": [
+                    3, 1, 2, 4
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Health of ecosystems"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Biodiversity"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Health and livelihoods of people"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Dessert choices at local bakeries"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 110,
+            "pageType": "narrator",
+            "avatarImage": "Confused2.png",
+            "avatarText": "Look at you go! Climate change can have widespread effects on the health and livelihoods of people, the health of ecosystems, and biodiversity. While dessert choices remain unaffected, they sure do taste better in a healthier environment, don't you think? Speaking of choices…",
+            "backgroundImage": "Grassland3.png",
+            "displayLogic": {
+                "pid": 109,
+                "correct": true
+            }
+        },
+        {
+            "pid": 111,
+            "pageType": "narrator",
+            "avatarImage": "Confused2.png",
+            "avatarText": "That was a curveball! Climate change can have widespread effects on the health and livelihoods of people, the health of ecosystems, and biodiversity. While dessert choices remain unaffected, they sure do taste better in a healthier environment, don't you think? Speaking of choices…",
+            "backgroundImage": "Grassland3.png",
+            "displayLogic": {
+                "pid": 109,
                 "correct": false
             }
         },
@@ -1096,7 +1371,7 @@
             "pid": 65,
             "pageType": "question",
             "avatarImage": "Neutral.png",
-            "backgroundImage": "Grasslands5.png",
+            "backgroundImage": "Grassland5.png",
             "completed": false,
             "question": {
                 "questionText": "According to the document, what becomes increasingly limited if current greenhouse gas emissions do not rapidly decline?",
@@ -1130,7 +1405,7 @@
             "pageType": "narrator",
             "avatarImage": "Paranoid1.png",
             "avatarText": "You're on a roll! The document mentions that climate-resilient development prospects become increasingly limited if current greenhouse gas emissions do not decline rapidly. Ensuring a resilient future requires proactive measures today. This emphasizes the importance of timely actions for a sustainable future.",
-            "backgroundImage": "Grasslands5.png",
+            "backgroundImage": "Grassland5.png",
             "displayLogic": {
                 "pid": 65,
                 "correct": true
@@ -1141,7 +1416,7 @@
             "pageType": "narrator",
             "avatarImage": "Paranoid1.png",
             "avatarText": "Just a hiccup! The document mentions that climate-resilient development prospects become increasingly limited if current greenhouse gas emissions do not decline rapidly. Ensuring a resilient future requires proactive measures today. This emphasizes the importance of timely actions for a sustainable future.",
-            "backgroundImage": "Grasslands5.png",
+            "backgroundImage": "Grassland5.png",
             "displayLogic": {
                 "pid": 65,
                 "correct": false
@@ -1425,6 +1700,61 @@
             }
         },
         {
+            "pid": 112,
+            "pageType": "question",
+            "avatarImage": "Neutral.png",
+            "backgroundImage": "Jungle3.png",
+            "completed": false,
+            "question": {
+                "questionText": "Rank the following based on their influence on synergies and trade-offs with SDGs, as per the IPCC report (from most influential to least)",
+                "questionType": "RO",
+                "correctAnswer": [
+                    2, 1, 3, 4
+                ],
+                "completed": false,
+                "options": [
+                    {
+                        "oid": 1,
+                        "optionText": "Policy design"
+                    },
+                    {
+                        "oid": 2,
+                        "optionText": "Inter-sectoral interactions"
+                    },
+                    {
+                        "oid": 3,
+                        "optionText": "Cooperation between countries"
+                    },
+                    {
+                        "oid": 4,
+                        "optionText": "Timing of actions"
+                    }
+                ]
+            }
+        },
+        {
+            "pid": 113,
+            "pageType": "narrator",
+            "avatarImage": "Stoked2.png",
+            "avatarText": "Ding ding ding! Interactions between sectors are paramount, followed by policy design and international cooperation. Timing matters, but it's not the only key. Speaking of timing and impact, let's discuss the implications of our actions on global emissions.",
+            "backgroundImage": "Jungle3.png",
+            "displayLogic": {
+                "pid": 112,
+                "correct": true
+            }
+        },
+        {
+            "pid": 114,
+            "pageType": "narrator",
+            "avatarImage": "Stoked2.png",
+            "avatarText": "Almost had it! Interactions between sectors are paramount, followed by policy design and international cooperation. Timing matters, but it's not the only key. Speaking of timing and impact, let's discuss the implications of our actions on global emissions.",
+            "backgroundImage": "Jungle3.png",
+            "displayLogic": {
+                "pid": 112,
+                "correct": false
+            }
+        },
+        {
             "pid": 81,
             "pageType": "narrator",
             "avatarImage": "Sad2.png",
@@ -1502,7 +1832,7 @@
             }
         },
         {
-            "pid": 86,
+            "pid": 115,
             "pageType": "question",
             "avatarImage": "Happy1.png",
             "backgroundImage": "Jungle5.png",
