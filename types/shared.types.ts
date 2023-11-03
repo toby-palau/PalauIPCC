@@ -43,12 +43,23 @@ export type QuestionPageType = {
     backgroundImage: string;
     completed: boolean;
     answeredCorrectly?: boolean;
-    question: MCSAQuestionType | ROQuestionType | VERBQuestionType;
+    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType;
     displayLogic?: DisplayLogicType;
 };
 
 export type MCSAQuestionType = {
     questionType: QuestionTypes.MCSA;
+    questionText: string;
+    options: Array<{
+        oid: number;
+        optionText: string;
+    }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
+}
+
+export type MCMAQuestionType = {
+    questionType: QuestionTypes.MCMA;
     questionText: string;
     options: Array<{
         oid: number;

@@ -47,7 +47,7 @@ const config: Config = {
 				},
 			},
 			animation: {
-				wiggle: 'wave 0.5s linear 1',
+				wiggle: 'wiggle 0.5s linear 1',
 			},
 		}
 	},

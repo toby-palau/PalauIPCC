@@ -9,6 +9,8 @@ import {
   useSensor,
   useSensors,
   DragEndEvent,
+  MouseSensor,
+  TouchSensor,
 } from '@dnd-kit/core';
 import {
   arrayMove,
@@ -25,13 +27,12 @@ import { ROQuestionType } from '@root/types/shared.types';
 export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<number>) => void, resetResponse: () => void}) => {
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));
     const sensors = useSensors(
-        useSensor(PointerSensor),
-        useSensor(KeyboardSensor, {
-            coordinateGetter: sortableKeyboardCoordinates,
-        })
+        useSensor(MouseSensor, {activationConstraint: {distance: 8}}),
+        useSensor(TouchSensor, {activationConstraint: {delay: 300, tolerance: 8}}),
+        useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates})
     );
 
-    let sortableClassName = `${dmsans.className} w-full sm:text-xl text-md text-center text-black rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
+    let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
     if (props.question.userAnswer && props.question.correctAnswer) {
         if (props.question.userAnswer.join("") === props.question.correctAnswer.join("")) sortableClassName += " bg-green hover:bg-green-dark text-white";
         else sortableClassName += " bg-red hover:bg-red-dark text-white animate-wiggle";
@@ -54,6 +55,8 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
                         <Sortable
                             key={id}
                             id={id}
+                            index={items.indexOf(id) + 1}
+                            invertSvgColor={!props.question.userAnswer || !props.question.correctAnswer}
                             className={sortableClassName}
                         >
                             {props.question.options.find(o => o.oid === id)?.optionText}
@@ -80,14 +83,19 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
     }
 }
 
-const Sortable = (props: {children: ReactNode, id: number, className?: string}) => {
+const Sortable = (props: {children: ReactNode, id: number, index: number, invertSvgColor: boolean, className?: string}) => {
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({id: props.id});
     
     const style = { transform: CSS.Transform.toString(transform), transition };
     
     return (
         <button ref={setNodeRef} style={style} {...attributes} {...listeners} className={props.className}>
-            {props.children}
+            <div className="flex flex-row flex-1 items-center text-left mr-3" >
+                <img src="/images/misc/draggable.svg"  className={`h-4 mr-4 ${props.invertSvgColor ? "invert" : ""}`}/>
+                {props.index}
+            </div>
+            <p>{props.children}</p>
+            <div className="flex-1" />
         </button>
     );
   }

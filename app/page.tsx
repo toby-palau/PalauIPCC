@@ -7,9 +7,10 @@ import Confetti from '@root/components/Confetti';
 import data from "@root/public/question-flow.json";
 import { Narrator } from '@root/components/Narrator';
 import { Title } from '@root/components/Title';
-import { MultipleChoiceQuestion } from "@root/components/QuestionTypes/MultipleChoiceQuestion"
+import { MultipleChoiceSingleAnswerQuestion } from "@root/components/QuestionTypes/MultipleChoiceSingleAnswerQuestion"
 import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
 import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
+import { MultipleChoiceMultiAnswerQuestion } from '@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion';
 
 const Page = () => {
 	const [shiftDown, setShiftDown] = useState<boolean>(false);
@@ -80,6 +81,8 @@ const Page = () => {
 		if (newPage.question.correctAnswer) {
 			let correct = false;
 			if (newPage.question.questionType === QuestionTypes.MCSA && Array.isArray(userAnswer)) {
+				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
+			} else if (newPage.question.questionType === QuestionTypes.MCMA && Array.isArray(userAnswer)) {
 				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
 			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
 				correct = userAnswer.join() === newPage.question.correctAnswer.join();
@@ -187,9 +190,18 @@ type QuestionProps = {
 const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
     if (question.questionType === QuestionTypes.MCSA) return (
         <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <MultipleChoiceQuestion
+            <MultipleChoiceSingleAnswerQuestion
                 question={question} 
                 submitResponse={submitResponse} 
+            />
+        </div>
+    )
+    if (question.questionType === QuestionTypes.MCMA) return (
+        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
+            <MultipleChoiceMultiAnswerQuestion
+                question={question}
+                submitResponse={submitResponse} 
+				resetResponse={resetResponse}
             />
         </div>
     )
