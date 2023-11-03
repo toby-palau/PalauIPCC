@@ -86,7 +86,7 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
 const Sortable = (props: {children: ReactNode, id: number, index: number, invertSvgColor: boolean, className?: string}) => {
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({id: props.id});
     
-    const style = { transform: CSS.Transform.toString(transform), transition };
+    const style = { transform: CSS.Transform.toString(transform), touchAction: "none", transition };
     
     return (
         <button ref={setNodeRef} style={style} {...attributes} {...listeners} className={props.className}>
