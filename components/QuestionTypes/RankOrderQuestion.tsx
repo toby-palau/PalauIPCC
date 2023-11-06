@@ -33,7 +33,7 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
 
     let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
     if (props.question.userAnswer && props.question.correctAnswer) {
-        if (props.question.userAnswer.join("") === props.question.correctAnswer.join("")) sortableClassName += " bg-green hover:bg-green-dark text-white";
+        if (props.question.userAnswer.join() === props.question.correctAnswer.join()) sortableClassName += " bg-green hover:bg-green-dark text-white";
         else sortableClassName += " bg-red hover:bg-red-dark text-white animate-wiggle";
     } else sortableClassName += " bg-white hover:bg-white-dark text-black";
 
