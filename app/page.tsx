@@ -1,225 +1,89 @@
 "use client"
+import { dmsans, staatliches } from "@root/styles/fonts";
+import { ChapterType, FilterTypeLabels, FilterTypes } from "@root/types/shared.types";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
-import { PageTypes, QuestionTypes, QuestionPageType, SessionType } from '@root/types/shared.types';
-import { dmsans } from '@root/styles/fonts';
-import { useState, useEffect, useMemo } from 'react';
-import Confetti from '@root/components/Confetti';
-import data from "@root/public/question-flow.json";
-import { Narrator } from '@root/components/Narrator';
-import { Title } from '@root/components/Title';
-import { MultipleChoiceSingleAnswerQuestion } from "@root/components/QuestionTypes/MultipleChoiceSingleAnswerQuestion"
-import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
-import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
-import { MultipleChoiceMultiAnswerQuestion } from '@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion';
 
 const Page = () => {
-	const [shiftDown, setShiftDown] = useState<boolean>(false);
-	const [session, setSession] = useState<SessionType>();
-	const [confetti, setConfetti] = useState<boolean>(false);
-	const [currentIndex, setCurrentIndex] = useState<number>(0);
-	const currentPage = useMemo<SessionType["pages"][number] | undefined>(() => {
-		if (!session) return;
-		return session.pages[currentIndex];
-	}, [currentIndex, session]);
+    const [filters, setFilters] = useState<Array<{filterName: string; filterId: FilterTypes; selected: boolean}>>([]);
+    const [chapters, setChapters] = useState<Array<ChapterType>>([]);
 
-	useEffect(() => { setSession(data as SessionType) }, []);
-	useEffect(() => {
-		const handleKeyPressEvent = (e: KeyboardEvent) => {
-			if (e.key === "ArrowRight") navigate(currentIndex, currentIndex, "forward");
-			if (e.key === "ArrowLeft") navigate(currentIndex, currentIndex, "backward");
-			if (e.key === "Shift") setShiftDown(true);
-		};
-		const handleKeyUpEvent = (e: KeyboardEvent) => {
-			if (e.key === "Shift") setShiftDown(false);
-		}
-		addEventListener("keydown", handleKeyPressEvent);
-		addEventListener("keyup", handleKeyUpEvent);
-		return () => {
-			removeEventListener("keydown", handleKeyPressEvent);
-			removeEventListener("keyup", handleKeyUpEvent);
-		}
-	}, [currentIndex, session, shiftDown]);
-	
-	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", newSession?: SessionType) => {
-		const thisSession = newSession || session;
-		if (!thisSession) return setCurrentIndex(fallbackIndex);
+    useEffect(() => {
+        fetchChapters();
+        constructFilters();
+    }, []);
 
-		const currentQuestion = thisSession.pages[fromIndex];
-		if (!currentQuestion) return setCurrentIndex(fallbackIndex);
-		
-		
-		let toIndex = fromIndex;
-		if (direction === "forward") {
-			if (fromIndex >= thisSession.pages.length - 1) return setCurrentIndex(fallbackIndex);
-			if (shiftDown) return setCurrentIndex(fromIndex + 1);
-			if (currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
-			toIndex ++;
-		}
-		if (direction === "backward") {
-			if (fromIndex <= 0) return setCurrentIndex(fallbackIndex);
-			if (shiftDown) return setCurrentIndex(fromIndex - 1);
-			toIndex --;
-		}
-		
-		const newQuestion = thisSession.pages[toIndex];
-		if (!newQuestion) return setCurrentIndex(fallbackIndex);
-		if (!newQuestion.displayLogic) return setCurrentIndex(toIndex);
-		
-		const logicQuestionId = newQuestion.displayLogic.pid;
-		const logicQuestion = thisSession.pages.find(p => p.pid === logicQuestionId);
-		if (logicQuestion?.pageType !== PageTypes.question) return setCurrentIndex(toIndex);
+    const fetchChapters = async () => {
+        const response = await fetch("/api/chapters");
+        const {data: chapters} = await response.json();
+        setChapters(chapters);
+    }
 
-		if (logicQuestion.completed && logicQuestion.answeredCorrectly === newQuestion.displayLogic.correct) setCurrentIndex(toIndex)
-		else navigate(toIndex, fallbackIndex, direction, newSession);
-	}
+    const constructFilters = () => {
+        const filtersObject = Object.values(FilterTypes).map(f => {
+            return {
+                filterId: f,
+                filterName: FilterTypeLabels[f], 
+                selected: f === "all" ? true : false,
+            }
+        });
+        setFilters(filtersObject);
+    }
 
-	const submitResponse = (pageId: number, userAnswer: Array<number> | string) => {
-		if (!session) return;
-		const newPage = session.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return;
+    const selectFilter = (filterId: FilterTypes) => {
+        let newFilters = filters;
+        if (filterId === FilterTypes.all) {
+            newFilters = newFilters.map(f => f.filterId === FilterTypes.all ? {...f, selected: true} : {...f, selected: false});
+        } else {
+            newFilters = newFilters.map(f => f.filterId === FilterTypes.all ? {...f, selected: false} : f.filterId === filterId ? {...f, selected: !f.selected} : f);
+        }
+        setFilters(newFilters);
+    }
 
-		if (newPage.question.correctAnswer) {
-			let correct = false;
-			if (newPage.question.questionType === QuestionTypes.MCSA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.MCMA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
-				correct = userAnswer.join() === newPage.question.correctAnswer.join();
-			} else if (newPage.question.questionType === QuestionTypes.VERB && typeof userAnswer === "string") {
-				const regex = new RegExp(newPage.question.correctAnswer, "i");
-				correct = userAnswer.match(regex) !== null;
-			}
-			if (correct) triggerConfetti();
-			newPage.answeredCorrectly = correct;
-		}
-		newPage.question.userAnswer = userAnswer;
-		newPage.completed = true;
-		
-		const newSession = { ...session, pages: session.pages.map(p => p.pid === pageId ? newPage : p) }
-		setSession(newSession);
-		setTimeout(() => navigate(currentIndex, currentIndex, "forward", newSession), 1000);
-	}
-
-	const resetResponse = (pageId: number) => {
-		if (!session) return;
-		const newPage = session.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return;
-
-		newPage.question.userAnswer = undefined;
-		newPage.completed = false;
-		newPage.answeredCorrectly = undefined;
-		
-		const newSession = { ...session, pages: session.pages.map(p => p.pid === pageId ? newPage : p) }
-		setSession(newSession);
-	}
-
-	const triggerConfetti = () => {
-		setConfetti(true);
-		setTimeout(() => setConfetti(false), 3000);
-	}
-
-	if (session && currentPage) {
-		return (
-			<div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-				<div 
-					id="background" 
-					className="fixed h-screen w-screen"
-					onClick={() => navigate(currentIndex, currentIndex, "forward")}
-				>
-					<img 
-						src={`/images/backgrounds/${currentPage.backgroundImage}`}
-						alt="background image"
-						className="h-full w-full object-cover brightness-50"
-					/>
-					{ currentPage.pageType !== PageTypes.question && (
-					<div className="absolute flex flex-row items-end bottom-6 right-6 md:bottom-10 md:right-10 pointer-events-none">
-						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
-						<img
-							src={"/images/misc/finger.gif"}
-							alt="click to continue"
-							className="h-8 w-8 md:h-16 md:w-16"
-						/>
-					</div>
-				) }
-				</div>
-
-				<div id="header" className="fixed w-full flex flex-col items-start z-10">
-					<div id="progress-bar" className="h-2 w-full bg-white opacity-80">
-						<div className="h-full bg-blue" style={{width: `${currentIndex / session.pages.length * 100}%`}}/>
-					</div>
-					{ currentIndex > 0 ? (
-						<div 
-							id="back-button"
-							className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-							onClick={() => navigate(currentIndex, currentIndex, "backward")}	
-						>
-							<img
-								src={`/images/misc/arrow-left-bold.svg`}
-								alt="back"
-								className="md:h-12 md:w-12 h-8 w-8 pointer-events-none"
-							/>
-							<p className={`${dmsans.className} text-white md:text-base text-sm`}>{"BACK"}</p>
-						</div>
-					) : null }
-				</div>
-
-				{ currentPage.pageType === PageTypes.title && <Title title={currentPage.title} subtitle={currentPage.subtitle} />}
-
-				{ currentPage.pageType === PageTypes.question && <Question question={currentPage.question} submitResponse={r => submitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> }
-
-				{ (currentPage.pageType === PageTypes.narrator || currentPage.pageType === PageTypes.question) && (
-					<Narrator 
-					avatarImage={currentPage.avatarImage} 
-					avatarText={currentPage.pageType === PageTypes.narrator ? currentPage.avatarText : undefined} 
-					small={currentPage.pageType === PageTypes.question}
-					/> 
-				) }
-				{ confetti && <Confetti /> }
-			</div>
-		)
-	} else return null;
-}
-
-type QuestionProps = {
-    question: QuestionPageType["question"];
-    submitResponse: (r: Array<number> | string) => void;
-	resetResponse: () => void;
-}
-
-const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
-    if (question.questionType === QuestionTypes.MCSA) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <MultipleChoiceSingleAnswerQuestion
-                question={question} 
-                submitResponse={submitResponse} 
-            />
-        </div>
-    )
-    if (question.questionType === QuestionTypes.MCMA) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <MultipleChoiceMultiAnswerQuestion
-                question={question}
-                submitResponse={submitResponse} 
-				resetResponse={resetResponse}
-            />
-        </div>
-    )
-    if (question.questionType === QuestionTypes.RO) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <RankOrderQuestion
-                question={question}
-                submitResponse={submitResponse}
-				resetResponse={resetResponse}
-            />
-        </div>
-    )
-    if (question.questionType === QuestionTypes.VERB) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <VerbatimQuestion 
-                question={question}
-                submitResponse={submitResponse}
-            />
+    return (
+        <div className="bg-black min-h-screen md:p-16 p-0">
+            { chapters[0] && 
+                <div id="header" className="relative w-full overflow-hidden">
+                    <img src={`/images/backgrounds/${chapters[0].chapterCoverImage}`} className="absolute inset-0 h-full w-full object-cover" />
+                    <div className="relative w-full bg-black bg-opacity-20">
+                        <div className="h-full w-full text-white md:py-5 md:px-0 p-5 md:bg-gradient-to-r bg-gradient-to-t from-black to-transparent ">
+                            <h1 className={`${staatliches.className} md:text-6xl text-3xl`}>{chapters[0].chapterTitle}</h1>
+                            <p className={`${dmsans.className} md:max-w-sm md:text-base text-sm`}>{chapters[0].chapterDescription}</p>
+                            <div className="flex flex-row items-center">
+                                <img src="/images/misc/clock.svg" />
+                                <p className={`${dmsans.className} ml-1 font-bold`}>Duration: 5 min</p>
+                            </div>
+                            <Link href={`/chapters/${chapters[0].cid}`} className={`${dmsans.className} flex mt-2 p-4 md:w-96 rounded-md bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100`}>{"Start now!"}</Link>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div className="flex md:flex-row flex-col py-5 md:px-0 px-5">
+                <div id="filters" className="flex md:flex-col flex-row flex-wrap md:w-48 md:mr-6">
+                    { filters.map(f => (
+                        <div 
+                            key={`filter-${f.filterId}`} 
+                            className={`flex border ${f.selected ? "border-blue hover:border-blue-dark" : "border-white hover:border-white-dark"} text-white hover:text-white-dark min-w-max rounded-full m-1 py-2 px-4 items-center text-sm cursor-pointer active:scale-95 transition-all duration-100`}
+                            onClick={() => selectFilter(f.filterId)}
+                        >
+                            <p className={`${dmsans.className}`}>{f.filterName}</p>
+                        </div>
+                    )) }
+                </div>
+                <div id="chapters" className="flex-1 grid lg:grid-cols-3 md:grid-cols-2 grid-cols1 gap-2 md:mt-0 mt-5">
+                    { chapters
+                        .filter(c => filters.filter(f => f.selected && c.tags.includes(f.filterId)).length > 0)
+                        .map(c => (
+                            <Link key={`chapter-${c.cid}`} href={`/chapters/${c.cid}`} className="relative md:h-48 h-36 rounded-md cursor-pointer justify-center items-center overflow-hidden">
+                                <img src={`/images/backgrounds/${c.chapterCoverImage}`} className="absolute inset-0 h-full w-full object-cover my-auto" />
+                                <div className="relative flex h-full w-full p-3 justify-center items-center bg-black bg-opacity-50">
+                                    <p className={`${staatliches.className} text-2xl text-white text-center`}>{c.chapterTitle}</p>
+                                </div>
+                            </Link>
+                    )) }
+                </div>
+            </div>
         </div>
     )
 }
