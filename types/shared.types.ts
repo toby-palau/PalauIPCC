@@ -4,7 +4,7 @@ export enum  PageTypes {
     question = "question",
     success = "success",
 
-}
+};
 
 export enum QuestionTypes {
     MCSA = "MCSA",
@@ -12,11 +12,36 @@ export enum QuestionTypes {
     RO = "RO",
     TF = "TF",
     VERB = "VERB"
-}
+};
 
-export type SessionType = {
-	pages: Array<TitlePageType | NarratorPageType | QuestionPageType>;
-}
+export enum FilterTypes {
+    all = "all",
+    climateChange = "climateChange",
+    planetNews = "planetNews",
+    earthsFuture = "earthsFuture",
+    carbonFootprint = "carbonFootprint",
+};
+
+export const FilterTypeLabels: {[key in FilterTypes]: string} = {
+    all: "🌱 All",
+    climateChange: "🪸 Climate Change",
+    planetNews: "🌍 Planet News",
+    earthsFuture: "🔮 The Earth's Future",
+    carbonFootprint: "🦶 Carbon Footprint",
+};
+
+export type QuestionFlowType = {
+	chapters: Array<ChapterType>;
+};
+
+export type ChapterType = {
+    cid: number;
+    tags: Array<FilterTypes>;
+    chapterTitle: string;
+    chapterDescription: string;
+    chapterCoverImage: string;
+    pages: Array<TitlePageType | NarratorPageType | QuestionPageType>;
+};
 
 export type TitlePageType = {
     pid: number;
@@ -34,7 +59,7 @@ export type NarratorPageType = {
     avatarText: string;
     backgroundImage: string;
     displayLogic?: DisplayLogicType;
-}
+};
 
 export type QuestionPageType = {
     pid: number;
@@ -56,7 +81,7 @@ export type MCSAQuestionType = {
     }>;
     correctAnswer?: Array<number>;
     userAnswer?: Array<number>;
-}
+};
 
 export type MCMAQuestionType = {
     questionType: QuestionTypes.MCMA;
@@ -67,7 +92,7 @@ export type MCMAQuestionType = {
     }>;
     correctAnswer?: Array<number>;
     userAnswer?: Array<number>;
-}
+};
 
 export type ROQuestionType = {
     questionType: QuestionTypes.RO;
@@ -85,9 +110,9 @@ export type VERBQuestionType = {
     questionText: string;
     correctAnswer?: RegExp;
     userAnswer?: string;
-}
+};
 
 type DisplayLogicType = {
     pid: number;
     correct: boolean;
-}
+};
