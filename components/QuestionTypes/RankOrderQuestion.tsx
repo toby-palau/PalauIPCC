@@ -27,7 +27,7 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));
     const sensors = useSensors(
         useSensor(MouseSensor, {activationConstraint: {distance: 8}}),
-        useSensor(TouchSensor, {activationConstraint: {delay: 100, tolerance: 8}}),
+        useSensor(TouchSensor, {activationConstraint: {delay: 100, tolerance: 12}}),
         useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates})
     );
 
