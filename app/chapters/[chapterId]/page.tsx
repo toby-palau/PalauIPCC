@@ -1,148 +1,41 @@
 "use client"
 
-import { PageTypes, QuestionTypes, QuestionPageType, ChapterType, DisplayLogicType, DisplayLogicTypes } from '@root/@types/shared.types';
-import { dmsans } from '@root/styles/fonts';
-import { useState, useEffect, useMemo } from 'react';
-import Confetti from '@root/components/Confetti';
-import { Narrator } from '@root/components/Narrator';
-import { Title } from '@root/components/Title';
+import { PageTypes, QuestionTypes, QuestionPageType, ChapterType } from "@root/@types/shared.types";
+import { dmsans } from "@root/styles/fonts";
+import { useState, useMemo } from "react";
+import Confetti from "@root/components/Confetti";
+import { Narrator } from "@root/components/Narrator";
+import { Title } from "@root/components/Title";
 import { MultipleChoiceSingleAnswerQuestion } from "@root/components/QuestionTypes/MultipleChoiceSingleAnswerQuestion"
 import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
-import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
-import { MultipleChoiceMultiAnswerQuestion } from '@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion';
-import { useRouter } from 'next/navigation';
-import { EmailQuestion } from '@root/components/QuestionTypes/EmailQuestion';
+import { RankOrderQuestion } from "@root/components/QuestionTypes/RankOrderQuestion";
+import { MultipleChoiceMultiAnswerQuestion } from "@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion";
+import { useRouter } from "next/navigation";
+import { EmailQuestion } from "@root/components/QuestionTypes/EmailQuestion";
+import { NavigationProvider, useNavigation } from "@root/context/NavigationContext";
+import { QuestionFlowProvider, useQuestionFlow } from "@root/context/QuestionFlowContext";
 
-const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
+const Page = () => {
 	const router = useRouter();
-	const [shiftDown, setShiftDown] = useState<boolean>(false);
-	const [chapter, setChapter] = useState<ChapterType>();
 	const [confetti, setConfetti] = useState<boolean>(false);
-	const [currentIndex, setCurrentIndex] = useState<number>(0);
+	const {currentIndex, navigate} = useNavigation();
+	const {chapter, submitResponse, resetResponse} = useQuestionFlow();
 
 	const currentPage = useMemo<ChapterType["pages"][number] | undefined>(() => {
 		if (!chapter) return;
 		return chapter.pages[currentIndex];
 	}, [currentIndex, chapter]);
 
-	useEffect(() => { fetchChapter() }, []);
-	useEffect(() => {
-		const handleKeyPressEvent = (e: KeyboardEvent) => {
-			if (e.key === "ArrowRight") navigate(currentIndex, currentIndex, "forward");
-			if (e.key === "ArrowLeft") navigate(currentIndex, currentIndex, "backward");
-			if (e.key === "Shift") setShiftDown(true);
-		};
-		const handleKeyUpEvent = (e: KeyboardEvent) => {
-			if (e.key === "Shift") setShiftDown(false);
-		}
-		addEventListener("keydown", handleKeyPressEvent);
-		addEventListener("keyup", handleKeyUpEvent);
-		return () => {
-			removeEventListener("keydown", handleKeyPressEvent);
-			removeEventListener("keyup", handleKeyUpEvent);
-		}
-	}, [currentIndex, chapter, shiftDown]);
-
-	const fetchChapter = async () => {
-		const response = await fetch(`/api/chapters/${chapterId}`);
-		const { data: chapter } = await response.json();
-		setChapter(chapter);
-	}
-
-
-	
-	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion?: boolean, newChapter?: ChapterType) => {
-		const thisChapter = newChapter ?? chapter;
-
-		if (!thisChapter) return setCurrentIndex(fallbackIndex);
-
-		const currentQuestion = thisChapter.pages[fromIndex];
-		if (!currentQuestion) return setCurrentIndex(fallbackIndex);
-		
-
-		let toIndex = fromIndex;
-		if (direction === "forward") {
-			if (fromIndex >= thisChapter.pages.length - 1) return router.push("/");
-			if (shiftDown) return setCurrentIndex(fromIndex + 1);
-			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
-			toIndex ++;
-		}
-
-		if (direction === "backward") {
-			if (fromIndex <= 0) return setCurrentIndex(fallbackIndex);
-			if (shiftDown) return setCurrentIndex(fromIndex - 1);
-			toIndex --;
-		}
-
-		const newQuestion = thisChapter.pages[toIndex];
-		if (!newQuestion) return setCurrentIndex(fallbackIndex);
-		if (!newQuestion.displayLogic) return setCurrentIndex(toIndex);
-		
-		const displayNextQuestion =  checkDisplayLogic(newQuestion.displayLogic, thisChapter);
-		if (displayNextQuestion) setCurrentIndex(toIndex);
-		else navigate(toIndex, fallbackIndex, direction, true, thisChapter);
-	}
-
-	const checkDisplayLogic = (displayLogic: DisplayLogicType, _chapter: ChapterType) => {
-		if (displayLogic.type === DisplayLogicTypes.answeredCorrectly) {
-			const logicQuestionId = displayLogic.pid;
-			const logicQuestion = _chapter.pages.find(p => p.pid === logicQuestionId);
-			if (!logicQuestion || logicQuestion?.pageType !== PageTypes.question) return false;
-			if (logicQuestion.completed && logicQuestion.answeredCorrectly === displayLogic.correct) return true;
-			else return false;
-		}
-		if (displayLogic.type === DisplayLogicTypes.seenBefore) {
-			const ts = localStorage.getItem(displayLogic.localStorageIndentifier);
-			if (ts) return false;
-			localStorage.setItem(displayLogic.localStorageIndentifier, Date.now().toString());
-			return true;
-		}
-	}
-
-	const submitResponse = (pageId: string, userAnswer: Array<number> | string) => {
-		if (!chapter) return;
-		const newPage = chapter.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return;
-
-		if (newPage.question.correctAnswer) {
-			let correct = false;
-			if (newPage.question.questionType === QuestionTypes.MCSA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.MCMA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
-				correct = userAnswer.join() === newPage.question.correctAnswer.join();
-			} else if ((newPage.question.questionType === QuestionTypes.VERB || newPage.question.questionType === QuestionTypes.EMAIL) && typeof userAnswer === "string") {
-				const regex = new RegExp(newPage.question.correctAnswer, "i");
-				correct = userAnswer.match(regex) !== null;
-			}
-			if (correct) triggerConfetti();
-			newPage.answeredCorrectly = correct;
-		}
-		newPage.question.userAnswer = userAnswer;
-		newPage.completed = true;
-		
-		const newSession = { ...chapter, pages: chapter.pages.map(p => p.pid === pageId ? newPage : p) }
-		setChapter(newSession);
-		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false, newSession), 1000);
-	}
-
-	const resetResponse = (pageId: string) => {
-		if (!chapter) return;
-		const newPage = chapter.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return;
-
-		newPage.question.userAnswer = undefined;
-		newPage.completed = false;
-		newPage.answeredCorrectly = undefined;
-		
-		const newSession = { ...chapter, pages: chapter.pages.map(p => p.pid === pageId ? newPage : p) }
-		setChapter(newSession);
-	}
-
 	const triggerConfetti = () => {
 		setConfetti(true);
 		setTimeout(() => setConfetti(false), 3000);
+	}
+
+	const handleSubmitResponse = (pageId: string, response: Array<number> | string) => {
+		if (!currentPage || !chapter) return;
+		const answeredCorrectly = submitResponse(pageId, response);
+		if (answeredCorrectly) triggerConfetti();
+		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
 	}
 
 	if (chapter && currentPage) {
@@ -151,7 +44,7 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 				<div 
 					id="background" 
 					className="fixed h-screen w-screen"
-					onClick={() => navigate(currentIndex, currentIndex, "forward")}
+					onClick={() => navigate(currentIndex, currentIndex, "forward", false)}
 				>
 					<img 
 						src={`/images/backgrounds/${currentPage.backgroundImage}`}
@@ -179,7 +72,7 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 					<div 
 						id="back-button"
 						className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-						onClick={currentIndex > 0 ? () => navigate(currentIndex, currentIndex, "backward") : undefined}	
+						onClick={currentIndex > 0 ? () => navigate(currentIndex, currentIndex, "backward", false) : undefined}	
 					>
 						{ currentIndex > 0 && (
 							<>
@@ -211,7 +104,7 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 
 				{ currentPage.pageType === PageTypes.question && (
 					<div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-						<Question question={currentPage.question} submitResponse={r => submitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> 
+						<Question question={currentPage.question} submitResponse={r => handleSubmitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> 
 					</div>
 				) }
 
@@ -270,4 +163,10 @@ const Question = ({ question, submitResponse, resetResponse }: QuestionProps) =>
     )
 }
 
-export default Page;
+export default ({ params: { chapterId } }: { params: { chapterId: string } }) => (
+	<QuestionFlowProvider chapterId={chapterId}>
+		<NavigationProvider>
+			<Page/>
+		</NavigationProvider>
+	</QuestionFlowProvider>
+);
