@@ -163,10 +163,12 @@ const Question = ({ question, submitResponse, resetResponse }: QuestionProps) =>
     )
 }
 
-export default ({ params: { chapterId } }: { params: { chapterId: string } }) => (
+const PageWrapper = ({ params: { chapterId } }: { params: { chapterId: string } }) => (
 	<QuestionFlowProvider chapterId={chapterId}>
 		<NavigationProvider>
 			<Page/>
 		</NavigationProvider>
 	</QuestionFlowProvider>
 );
+
+export default PageWrapper;
