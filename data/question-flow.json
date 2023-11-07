@@ -2,7 +2,7 @@
     "chapters": [
         {
             "cid": "CID_01HEMKW0074SVTJESYCXGTW8QM",
-            "tags": ["all"],
+            "tags": ["all", "climateChange"],
             "chapterTitle": "Introduction to Climate Change",
             "chapterDescription": "Dive deep into Earth's \"medical records\" to understand its health status. Through interactive graphs and quizzes, discover how our planet's temperature has changed over the years and the major events that have contributed to this shift.",
             "chapterCoverImage": "Taiga5.png",
@@ -292,7 +292,7 @@
         },
         {
             "cid": "CID_01HEMKW95JCP3VXM88JFG8N9A8",
-            "tags": ["all"],
+            "tags": ["all", "climateChange", "planetNews"],
             "chapterTitle": "Results of Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Rainforest3.png",
@@ -446,7 +446,7 @@
         },
         {
             "cid": "CID_01HEMKWEVP24J1082XJ730979N",
-            "tags": ["all"],
+            "tags": ["all", "climateChange", "earthsFuture"],
             "chapterTitle": "Adaptation & Mitigation to Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Ocean4.png",
@@ -600,7 +600,7 @@
         },
         {
             "cid": "CID_01HEMKWK1WJG70SMY28XNGH94W",
-            "tags": ["all"],
+            "tags": ["all", "climateChange", "earthsFuture"],
             "chapterTitle": "Gaps in Adaptations to Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Savanna4.png",
@@ -851,7 +851,7 @@
         },
         {
             "cid": "CID_01HEMKWQFCF9DKF3GNN99KG65K",
-            "tags": ["all"],
+            "tags": ["all", "planetNews", "carbonFootprint"],
             "chapterTitle": "Long-Term Climate Change, Impacts and Related Risks",
             "chapterDescription": "",
             "chapterCoverImage": "Desert5.png",
@@ -1123,7 +1123,7 @@
         },
         {
             "cid": "CID_01HEMKWVEN2GW4HSBZ6QDSMXDW",
-            "tags": ["all"],
+            "tags": ["all", "planetNews", "earthsFuture"],
             "chapterTitle": "Long-Term Adaptation Options and Limits & Mitigation Pathways",
             "chapterDescription": "",
             "chapterCoverImage": "Mangrove5.png",
@@ -1327,7 +1327,7 @@
         },
         {
             "cid": "CID_01HEMKWZSYQY808MK7PT9PWHJC",
-            "tags": ["all"],
+            "tags": ["all", "earthsFuture", "planetNews"],
             "chapterTitle": "Long-Term Interactions Between Adaptation, Mitigation and Sustainable Development",
             "chapterDescription": "",
             "chapterCoverImage": "Mountain2.png",
@@ -1485,7 +1485,7 @@
         },
         {
             "cid": "CID_01HEMKX7N3GG581T96YKVHK5E7",
-            "tags": ["all"],
+            "tags": ["all", "earthsFuture", "carbonFootprint"],
             "chapterTitle": "Timing, Urgency, Equity, and Inclusion of Climate Action and Near-Term Risks & Action",
             "chapterDescription": "",
             "chapterCoverImage": "Grasslands5.png",
@@ -1700,7 +1700,7 @@
         },
         {
             "cid": "CID_01HEMKXJ5DHKC4JTTPHK00XFJW",
-            "tags": ["all"],
+            "tags": ["all", "climateChange", "carbonFootprint"],
             "chapterTitle": "Near-Term Mitigation and Adaptation Actions",
             "chapterDescription": "",
             "chapterCoverImage": "Freshwater5.png",
@@ -1908,7 +1908,7 @@
         },
         {
             "cid": "CID_01HEMKXWVMYT46CV3STS3A4K65",
-            "tags": ["all"],
+            "tags": ["all", "climateChange", "planetNews"],
             "chapterTitle": "Benefits, Policies, Finance, and Integration of Near-Term Adaptations",
             "chapterDescription": "",
             "chapterCoverImage": "Jungle5.png",

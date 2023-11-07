@@ -1,4 +1,5 @@
 "use client"
+
 import { dmsans, staatliches } from "@root/styles/fonts";
 import { ChapterType, FilterTypeLabels, FilterTypes } from "@root/@types/shared.types";
 import Link from "next/link";
@@ -33,10 +34,11 @@ const Page = () => {
 
     const selectFilter = (filterId: FilterTypes) => {
         let newFilters = filters;
-        if (filterId === FilterTypes.all) {
-            newFilters = newFilters.map(f => f.filterId === FilterTypes.all ? {...f, selected: true} : {...f, selected: false});
-        } else {
+        if (filterId !== FilterTypes.all) {
             newFilters = newFilters.map(f => f.filterId === FilterTypes.all ? {...f, selected: false} : f.filterId === filterId ? {...f, selected: !f.selected} : f);
+        }
+        if (filterId === FilterTypes.all || newFilters.filter(f => f.selected).length <= 0) {
+            newFilters = newFilters.map(f => f.filterId === FilterTypes.all ? {...f, selected: true} : {...f, selected: false});
         }
         setFilters(newFilters);
     }
