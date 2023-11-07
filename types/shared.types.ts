@@ -3,7 +3,6 @@ export enum  PageTypes {
     narrator = "narrator",
     question = "question",
     success = "success",
-
 }
 
 export enum QuestionTypes {
@@ -15,7 +14,7 @@ export enum QuestionTypes {
 }
 
 export type SessionType = {
-	pages: Array<TitlePageType | NarratorPageType | QuestionPageType>;
+	pages: Array<TitlePageType | NarratorPageType | QuestionPageType | SuccessScreenType>;
 }
 
 export type TitlePageType = {
@@ -85,6 +84,16 @@ export type VERBQuestionType = {
     questionText: string;
     correctAnswer?: RegExp;
     userAnswer?: string;
+}
+
+export type SuccessScreenType = {
+    pid: number;
+    pageType: PageTypes.success;
+    avatarImage: string;
+    backgroundImage: string;
+    title: string;
+    subtitle: string;
+    displayLogic?: DisplayLogicType;
 }
 
 type DisplayLogicType = {

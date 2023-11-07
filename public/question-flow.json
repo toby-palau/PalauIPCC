@@ -253,6 +253,14 @@
             }
         },
         {
+            "pid": 116,
+            "pageType": "success",
+            "backgroundImage": "Taiga5.png",
+            "title": "Chapter I",
+            "subtitle": "Completed!",
+            "avatarImage": "Euphoric4.png"
+        },
+        {
             "pid": 89,
             "pageType": "title",
             "backgroundImage": "Rainforest1.png",

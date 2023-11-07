@@ -42,3 +42,12 @@ export const staatliches = localFont({
         },
     ]
 })
+
+export const rocksalt = localFont({
+    src: [
+        {
+            path: "../public/fonts/rocksalt/RockSalt-Regular.ttf",
+            style: "normal",
+        },
+    ]
+})

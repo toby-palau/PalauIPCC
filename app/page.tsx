@@ -11,6 +11,7 @@ import { MultipleChoiceSingleAnswerQuestion } from "@root/components/QuestionTyp
 import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestion"
 import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
 import { MultipleChoiceMultiAnswerQuestion } from '@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion';
+import { SuccessScreen } from '@root/components/ScreenTypes/SuccessScreen';
 
 const Page = () => {
 	const [shiftDown, setShiftDown] = useState<boolean>(false);
@@ -175,6 +176,14 @@ const Page = () => {
 					small={currentPage.pageType === PageTypes.question}
 					/> 
 				) }
+
+				{ currentPage.pageType === PageTypes.success && 
+					<SuccessScreen 
+						title={currentPage.title}
+						subtitle={currentPage.subtitle}
+						avatarImage={currentPage.avatarImage}
+					/>}
+					
 				{ confetti && <Confetti /> }
 			</div>
 		)
