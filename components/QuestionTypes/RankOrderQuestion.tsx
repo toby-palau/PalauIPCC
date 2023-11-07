@@ -21,7 +21,7 @@ import {
 import {useSortable} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
 import { dmsans } from '@root/styles/fonts';
-import { ROQuestionType } from '@root/types/shared.types';
+import { ROQuestionType } from '@root/@types/shared.types';
 
 export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<number>) => void, resetResponse: () => void}) => {
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));

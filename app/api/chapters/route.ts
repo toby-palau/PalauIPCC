@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-import { QuestionFlowType } from '@root/types/shared.types';
+import { QuestionFlowType } from '@root/@types/shared.types';
 
 const filePath = path.resolve("data", "question-flow.json");
 
