@@ -1,6 +1,6 @@
 "use client"
 import { dmsans, staatliches } from "@root/styles/fonts";
-import { ChapterType, FilterTypeLabels, FilterTypes } from "@root/types/shared.types";
+import { ChapterType, FilterTypeLabels, FilterTypes } from "@root/@types/shared.types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 

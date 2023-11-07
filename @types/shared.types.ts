@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export enum  PageTypes {
     title = "title",
     narrator = "narrator",
@@ -10,9 +12,14 @@ export enum QuestionTypes {
     MCSA = "MCSA",
     MCMA = "MCMA",
     RO = "RO",
-    TF = "TF",
-    VERB = "VERB"
+    VERB = "VERB",
+    EMAIL = "EMAIL",
 };
+
+export enum DisplayLogicTypes {
+    answeredCorrectly = "answeredCorrectly",
+    seenBefore = "seenBefore",
+}
 
 export enum FilterTypes {
     all = "all",
@@ -35,7 +42,7 @@ export type QuestionFlowType = {
 };
 
 export type ChapterType = {
-    cid: number;
+    cid: string;
     tags: Array<FilterTypes>;
     chapterTitle: string;
     chapterDescription: string;
@@ -44,7 +51,7 @@ export type ChapterType = {
 };
 
 export type TitlePageType = {
-    pid: number;
+    pid: string;
     pageType: PageTypes.title;
     title: string;
     subtitle: string;
@@ -53,7 +60,7 @@ export type TitlePageType = {
 };
 
 export type NarratorPageType = {
-    pid: number;
+    pid: string;
     pageType: PageTypes.narrator;
     avatarImage: string;
     avatarText: string;
@@ -62,13 +69,13 @@ export type NarratorPageType = {
 };
 
 export type QuestionPageType = {
-    pid: number;
+    pid: string;
     pageType: PageTypes.question;
     avatarImage: string;
     backgroundImage: string;
     completed: boolean;
     answeredCorrectly?: boolean;
-    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType;
+    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType | EMAILQuestionType;
     displayLogic?: DisplayLogicType;
 };
 
@@ -112,7 +119,18 @@ export type VERBQuestionType = {
     userAnswer?: string;
 };
 
-type DisplayLogicType = {
-    pid: number;
+export type EMAILQuestionType = {
+    questionType: QuestionTypes.EMAIL;
+    questionText: string;
+    correctAnswer?: RegExp;
+    userAnswer?: string;
+};
+
+export type DisplayLogicType = {
+    type: DisplayLogicTypes.answeredCorrectly;
+    pid: string;
     correct: boolean;
+} | {
+    type: DisplayLogicTypes.seenBefore;
+    localStorageIndentifier: string;
 };

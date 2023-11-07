@@ -1,6 +1,6 @@
 "use client"
 
-import { PageTypes, QuestionTypes, QuestionPageType, ChapterType } from '@root/types/shared.types';
+import { PageTypes, QuestionTypes, QuestionPageType, ChapterType, DisplayLogicType, DisplayLogicTypes } from '@root/@types/shared.types';
 import { dmsans } from '@root/styles/fonts';
 import { useState, useEffect, useMemo } from 'react';
 import Confetti from '@root/components/Confetti';
@@ -11,6 +11,7 @@ import { VerbatimQuestion } from "@root/components/QuestionTypes/VerbatimQuestio
 import { RankOrderQuestion } from '@root/components/QuestionTypes/RankOrderQuestion';
 import { MultipleChoiceMultiAnswerQuestion } from '@root/components/QuestionTypes/MultipleChoiceMultiAnswerQuestion';
 import { useRouter } from 'next/navigation';
+import { EmailQuestion } from '@root/components/QuestionTypes/EmailQuestion';
 
 const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 	const router = useRouter();
@@ -50,40 +51,55 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 
 
 	
-	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", newSession?: ChapterType) => {
-		const thisSession = newSession || chapter;
-		if (!thisSession) return setCurrentIndex(fallbackIndex);
+	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion?: boolean, newChapter?: ChapterType) => {
+		const thisChapter = newChapter ?? chapter;
 
-		const currentQuestion = thisSession.pages[fromIndex];
+		if (!thisChapter) return setCurrentIndex(fallbackIndex);
+
+		const currentQuestion = thisChapter.pages[fromIndex];
 		if (!currentQuestion) return setCurrentIndex(fallbackIndex);
 		
-		
+
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= thisSession.pages.length - 1) return router.push("/");
+			if (fromIndex >= thisChapter.pages.length - 1) return router.push("/");
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
-			if (currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
+			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;
 		}
+
 		if (direction === "backward") {
 			if (fromIndex <= 0) return setCurrentIndex(fallbackIndex);
 			if (shiftDown) return setCurrentIndex(fromIndex - 1);
 			toIndex --;
 		}
-		
-		const newQuestion = thisSession.pages[toIndex];
+
+		const newQuestion = thisChapter.pages[toIndex];
 		if (!newQuestion) return setCurrentIndex(fallbackIndex);
 		if (!newQuestion.displayLogic) return setCurrentIndex(toIndex);
 		
-		const logicQuestionId = newQuestion.displayLogic.pid;
-		const logicQuestion = thisSession.pages.find(p => p.pid === logicQuestionId);
-		if (logicQuestion?.pageType !== PageTypes.question) return setCurrentIndex(toIndex);
-
-		if (logicQuestion.completed && logicQuestion.answeredCorrectly === newQuestion.displayLogic.correct) setCurrentIndex(toIndex)
-		else navigate(toIndex, fallbackIndex, direction, newSession);
+		const displayNextQuestion =  checkDisplayLogic(newQuestion.displayLogic, thisChapter);
+		if (displayNextQuestion) setCurrentIndex(toIndex);
+		else navigate(toIndex, fallbackIndex, direction, true, thisChapter);
 	}
 
-	const submitResponse = (pageId: number, userAnswer: Array<number> | string) => {
+	const checkDisplayLogic = (displayLogic: DisplayLogicType, _chapter: ChapterType) => {
+		if (displayLogic.type === DisplayLogicTypes.answeredCorrectly) {
+			const logicQuestionId = displayLogic.pid;
+			const logicQuestion = _chapter.pages.find(p => p.pid === logicQuestionId);
+			if (!logicQuestion || logicQuestion?.pageType !== PageTypes.question) return false;
+			if (logicQuestion.completed && logicQuestion.answeredCorrectly === displayLogic.correct) return true;
+			else return false;
+		}
+		if (displayLogic.type === DisplayLogicTypes.seenBefore) {
+			const ts = localStorage.getItem(displayLogic.localStorageIndentifier);
+			if (ts) return false;
+			localStorage.setItem(displayLogic.localStorageIndentifier, Date.now().toString());
+			return true;
+		}
+	}
+
+	const submitResponse = (pageId: string, userAnswer: Array<number> | string) => {
 		if (!chapter) return;
 		const newPage = chapter.pages.find(p => p.pid === pageId);
 		if (!newPage || newPage.pageType !== PageTypes.question) return;
@@ -96,7 +112,7 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
 			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
 				correct = userAnswer.join() === newPage.question.correctAnswer.join();
-			} else if (newPage.question.questionType === QuestionTypes.VERB && typeof userAnswer === "string") {
+			} else if ((newPage.question.questionType === QuestionTypes.VERB || newPage.question.questionType === QuestionTypes.EMAIL) && typeof userAnswer === "string") {
 				const regex = new RegExp(newPage.question.correctAnswer, "i");
 				correct = userAnswer.match(regex) !== null;
 			}
@@ -108,10 +124,10 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 		
 		const newSession = { ...chapter, pages: chapter.pages.map(p => p.pid === pageId ? newPage : p) }
 		setChapter(newSession);
-		setTimeout(() => navigate(currentIndex, currentIndex, "forward", newSession), 1000);
+		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false, newSession), 1000);
 	}
 
-	const resetResponse = (pageId: number) => {
+	const resetResponse = (pageId: string) => {
 		if (!chapter) return;
 		const newPage = chapter.pages.find(p => p.pid === pageId);
 		if (!newPage || newPage.pageType !== PageTypes.question) return;
@@ -193,7 +209,11 @@ const Page = ({ params: { chapterId } }: { params: { chapterId: string } }) => {
 
 				{ currentPage.pageType === PageTypes.title && <Title title={currentPage.title} subtitle={currentPage.subtitle} />}
 
-				{ currentPage.pageType === PageTypes.question && <Question question={currentPage.question} submitResponse={r => submitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> }
+				{ currentPage.pageType === PageTypes.question && (
+					<div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
+						<Question question={currentPage.question} submitResponse={r => submitResponse(currentPage.pid, r)} resetResponse={() => resetResponse(currentPage.pid)} /> 
+					</div>
+				) }
 
 				{ (currentPage.pageType === PageTypes.narrator || currentPage.pageType === PageTypes.question) && (
 					<Narrator 
@@ -217,38 +237,36 @@ type QuestionProps = {
 
 const Question = ({ question, submitResponse, resetResponse }: QuestionProps) => {
     if (question.questionType === QuestionTypes.MCSA) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <MultipleChoiceSingleAnswerQuestion
-                question={question} 
-                submitResponse={submitResponse} 
-            />
-        </div>
+		<MultipleChoiceSingleAnswerQuestion
+			question={question} 
+			submitResponse={submitResponse} 
+		/>
     )
     if (question.questionType === QuestionTypes.MCMA) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <MultipleChoiceMultiAnswerQuestion
-                question={question}
-                submitResponse={submitResponse} 
-				resetResponse={resetResponse}
-            />
-        </div>
+		<MultipleChoiceMultiAnswerQuestion
+			question={question}
+			submitResponse={submitResponse} 
+			resetResponse={resetResponse}
+		/>
     )
     if (question.questionType === QuestionTypes.RO) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <RankOrderQuestion
-                question={question}
-                submitResponse={submitResponse}
-				resetResponse={resetResponse}
-            />
-        </div>
+		<RankOrderQuestion
+			question={question}
+			submitResponse={submitResponse}
+			resetResponse={resetResponse}
+		/>
     )
     if (question.questionType === QuestionTypes.VERB) return (
-        <div className="absolute w-full min-h-full py-24 md:px-20 px-5 flex justify-center align-center">
-            <VerbatimQuestion 
-                question={question}
-                submitResponse={submitResponse}
-            />
-        </div>
+		<VerbatimQuestion 
+			question={question}
+			submitResponse={submitResponse}
+		/>
+    )
+    if (question.questionType === QuestionTypes.EMAIL) return (
+		<EmailQuestion 
+			question={question}
+			submitResponse={submitResponse}
+		/>
     )
 }
 

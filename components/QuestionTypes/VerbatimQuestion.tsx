@@ -1,6 +1,6 @@
 "use client"
 
-import { VERBQuestionType } from "@root/types/shared.types";
+import { VERBQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 import { useState } from "react";
 
