@@ -122,7 +122,6 @@ const Page = () => {
 						title={currentPage.title}
 						subtitle={currentPage.subtitle}
 						avatarImage={currentPage.avatarImage}
-						// score={score}
 					/>
 				}
 				
