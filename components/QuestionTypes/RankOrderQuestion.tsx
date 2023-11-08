@@ -1,6 +1,4 @@
-"use client"
-
-import {ReactNode, useEffect, useState} from 'react';
+import {ReactNode, useState} from 'react';
 import {
   DndContext, 
   closestCenter,

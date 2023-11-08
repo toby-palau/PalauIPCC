@@ -1,5 +1,3 @@
-"use client"
-
 import { EMAILQuestionType } from "@root/@types/shared.types";
 import { subscribeToMailList } from "@root/services/BackendService";
 import { dmsans } from "@root/styles/fonts";
