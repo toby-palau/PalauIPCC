@@ -70,7 +70,7 @@ const Page = () => {
                     </div>
                 </div>
             }
-            <div className="flex md:flex-row flex-col py-5 md:px-0 px-5">
+            <div className="flex md:flex-row flex-col py-5 md:px-0 px-5 mt-4">
                 <div id="filters" className="flex md:flex-col flex-row flex-wrap md:w-48 md:mr-6">
                     { filters.map(f => (
                         <div 
@@ -82,15 +82,13 @@ const Page = () => {
                         </div>
                     )) }
                 </div>
-                <div id="chapters" className="flex-1 grid lg:grid-cols-3 md:grid-cols-2 grid-cols1 gap-2 md:mt-0 mt-5">
+                <div id="chapters" className="flex-1 grid lg:grid-cols-3 md:grid-cols-2 grid-cols1 gap-4 md:mt-0 mt-5">
                     { chapters
                         .filter(c => filters.filter(f => f.selected && c.tags.includes(f.filterId)).length > 0)
-                        .map(c => (
-                            <Link key={`chapter-${c.cid}`} href={`/chapters/${c.cid}`} className="relative md:h-48 h-36 rounded-md cursor-pointer justify-center items-center overflow-hidden">
-                                <img src={`/images/backgrounds/${c.chapterCoverImage}`} className="absolute inset-0 h-full w-full object-cover my-auto" />
-                                <div className="relative flex h-full w-full p-3 justify-center items-center bg-black bg-opacity-50">
-                                    <p className={`${staatliches.className} text-2xl text-white text-center`}>{c.chapterTitle}</p>
-                                </div>
+                        .map((c, i) => (
+                            <Link key={`chapter-${c.cid}`} href={`/chapters/${c.cid}`} className="rounded-md cursor-pointer justify-center">
+                                <img src={`/images/backgrounds/${c.chapterCoverImage}`} className="md:h-48 h-36 w-full mb-2 rounded-md object-cover hover:border-2 hover:border-blue"/>
+                                <p className={`${dmsans.className} text-1xl text-white text-left`}>{c.chapterTitle}</p>
                             </Link>
                     )) }
                 </div>

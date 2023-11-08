@@ -5,8 +5,7 @@ export enum  PageTypes {
     narrator = "narrator",
     question = "question",
     success = "success",
-
-};
+}
 
 export enum QuestionTypes {
     MCSA = "MCSA",
@@ -21,20 +20,22 @@ export enum DisplayLogicTypes {
     seenBefore = "seenBefore",
 }
 
+export type SessionType = {
+	pages: Array<TitlePageType | NarratorPageType | QuestionPageType | SuccessPageType>;
+}
+
 export enum FilterTypes {
     all = "all",
-    climateChange = "climateChange",
-    planetNews = "planetNews",
-    earthsFuture = "earthsFuture",
-    carbonFootprint = "carbonFootprint",
+    current = "current",
+    longTerm = "longTerm",
+    nearTerm = "nearTerm"
 };
 
 export const FilterTypeLabels: {[key in FilterTypes]: string} = {
     all: "🌱 All",
-    climateChange: "🪸 Climate Change",
-    planetNews: "🌍 Planet News",
-    earthsFuture: "🔮 The Earth's Future",
-    carbonFootprint: "🦶 Carbon Footprint",
+    current: "🌍 Current Status",
+    longTerm: "🔮 Long Term",
+    nearTerm: "🕞 Near Term",
 };
 
 export type QuestionFlowType = {
@@ -47,7 +48,7 @@ export type ChapterType = {
     chapterTitle: string;
     chapterDescription: string;
     chapterCoverImage: string;
-    pages: Array<TitlePageType | NarratorPageType | QuestionPageType>;
+    pages: Array<TitlePageType | NarratorPageType | QuestionPageType | SuccessPageType>;
 };
 
 export type TitlePageType = {
@@ -118,6 +119,16 @@ export type VERBQuestionType = {
     correctAnswer?: RegExp;
     userAnswer?: string;
 };
+
+export type SuccessPageType = {
+    pid: number;
+    pageType: PageTypes.success;
+    avatarImage: string;
+    backgroundImage: string;
+    title: string;
+    subtitle: string;
+    displayLogic?: DisplayLogicType;
+}
 
 export type EMAILQuestionType = {
     questionType: QuestionTypes.EMAIL;

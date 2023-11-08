@@ -2,9 +2,9 @@
     "chapters": [
         {
             "cid": "CID_01HEMKW0074SVTJESYCXGTW8QM",
-            "tags": ["all", "climateChange"],
+            "tags": ["all", "current"],
             "chapterTitle": "Introduction to Climate Change",
-            "chapterDescription": "Dive deep into Earth's \"medical records\" to understand its health status. Through interactive graphs and quizzes, discover how our planet's temperature has changed over the years and the major events that have contributed to this shift.",
+            "chapterDescription": "Ever wonder why our cozy little Earth is getting a tad too warm? Well, it's time to dive in and find out! Since the 1850s, we've cranked up the heat, and it's throwing our planet's cool composure out of whack. Ready to test your knowledge and see how we can turn down the thermostat? Let's get started with some hot questions!",
             "chapterCoverImage": "Taiga5.png",
             "pages": [
                 {
@@ -272,6 +272,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMMH48XGWAAT3PREVF78JH",
+                    "pageType": "success",
+                    "backgroundImage": "Taiga5.png",
+                    "title": "Chapter I",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZDTKJ987KQWRMYTBWCJ45",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -292,9 +300,9 @@
         },
         {
             "cid": "CID_01HEMKW95JCP3VXM88JFG8N9A8",
-            "tags": ["all", "climateChange", "planetNews"],
+            "tags": ["all", "current", "planetNews"],
             "chapterTitle": "Results of Climate Change",
-            "chapterDescription": "",
+            "chapterDescription": "Strapped in for a ride through the twists and turns of climate change effects? Let's uncover some startling truths and make sense of the shifts reshaping our planet. From steamy seas to scarce showers, you're about to put your climate savvy to the test. Are you ready to unravel the impact we're having on our world? Let the quizzical quest begin!",
             "chapterCoverImage": "Rainforest3.png",
             "pages": [
                 {
@@ -369,6 +377,63 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Rainforest2.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "What percentage of the population experiences severe water scarcity for at least some part of the year?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEPZBY9VWX9FN694RBX1W53B"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEPZBNT96C39WZCAWRRGAN6C",
+                                "optionText": "10%"
+                            },
+                            {
+                                "oid": "OID_01HEPZBT7PJM2VNR33D98M4ECE",
+                                "optionText": "30%"
+                            },
+                            {
+                                "oid": "OID_01HEPZBY9VWX9FN694RBX1W53B",
+                                "optionText": "50%"
+                            },
+                            {
+                                "oid": "OID_01HEPZC387AEZTYDXKWZDRYT41",
+                                "optionText": "90%"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZJ6B9R6N8MJX942D4WCHS",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Spot on! Sadly, half of the population is affected at some point in the year. When thinking about water scarcity you would be quick to associate it with desserts and other drought-prone areas… Because of climate change and heat strokes, even well-developed countries struggle with their water supply at some point during the year.",
+                    "backgroundImage": "Rainforest2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZJ0R74Y1TKCTVNRNGBZFB",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Close. Sadly, half of the population is affected at some point in the year. When thinking about water scarcity you would be quick to associate it with desserts and other drought-prone areas… Because of climate change and heat strokes, even well-developed countries struggle with their water supply at some point during the year.",
+                    "backgroundImage": "Rainforest2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
                     "pid": "PID_01HEMMB9KBW03NDVAK4R4AFV7W",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
@@ -426,6 +491,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMQBX231PY79XDFFB4V3DD",
+                    "pageType": "success",
+                    "backgroundImage": "Rainforest3.png",
+                    "title": "Chapter II",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZERQP4G0K3YTDB26SS5V2",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -446,9 +519,9 @@
         },
         {
             "cid": "CID_01HEMKWEVP24J1082XJ730979N",
-            "tags": ["all", "climateChange", "earthsFuture"],
+            "tags": ["all", "current"],
             "chapterTitle": "Adaptation & Mitigation to Climate Change",
-            "chapterDescription": "",
+            "chapterDescription": "Ready to get the scoop on how the world's been tackling the big, bad climate crisis? From the halls of the UN to the sunny sides of solar, we've been up to some pretty cool stuff. The Paris Agreement? Oh, that's just us humans making a pinky promise to our planet. Dive in to learn how we're turning the tide on climate change!",
             "chapterCoverImage": "Ocean4.png",
             "pages": [
                 {
@@ -580,10 +653,75 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Ocean3.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "How many countries have already adopted laws focused primarily on reducing GHG emissions in 2020?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z",
+                                "optionText": "56"
+                            },
+                            {
+                                "oid": "OID_01HEPZRR6AXY22GCS0PMP6HMFM",
+                                "optionText": "23"
+                            },
+                            {
+                                "oid": "OID_01HEPZRWB0D5FRTSK6RH9FM0WE",
+                                "optionText": "45"
+                            },
+                            {
+                                "oid": "OID_01HEPZS04MB75YFBNTRJJQZ996",
+                                "optionText": "98"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZSJJD09XH8XDB802QCE58",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "You're rocking this! This is a very important step, though. Laws hold governments accountable to effectively lower their greenhouse gas emissions. Even though only ¼ of countries have adopted these laws, more will follow. A great start!",
+                    "backgroundImage": "Ocean3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZSQ7Y5AGQH0AZ67DJ6WV9",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Swing and a miss. This is a very important step, though. Laws hold governments accountable to effectively lower their greenhouse gas emissions. Even though only ¼ of countries have adopted these laws, more will follow. A great start!",
+                    "backgroundImage": "Ocean3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HENMRNBC75B71P6S0J8N0NWC",
+                    "pageType": "success",
+                    "backgroundImage": "Ocean3.png",
+                    "title": "Chapter III",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZKSW4VKRHS21VCX6477QZ",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
-                    "backgroundImage": "Ocean2.png",
+                    "backgroundImage": "Ocean3.png",
                     "completed": false,
                     "question": {
                         "questionText": "Leave your email address",
@@ -600,9 +738,9 @@
         },
         {
             "cid": "CID_01HEMKWK1WJG70SMY28XNGH94W",
-            "tags": ["all", "climateChange", "earthsFuture"],
+            "tags": ["all", "current"],
             "chapterTitle": "Gaps in Adaptations to Climate Change",
-            "chapterDescription": "",
+            "chapterDescription": "Time to shine a light on the hidden cracks in our climate response. As we quiz through this chapter, we'll map out the missing pieces in our climate readiness puzzle. Ready to jump in and fill those gaps with knowledge and action? Let's build a future that's sturdy enough to weather any storm!",
             "chapterCoverImage": "Savanna4.png",
             "pages": [
 
@@ -831,6 +969,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMTNTF1T16M7NXDG41V0QJ",
+                    "pageType": "success",
+                    "backgroundImage": "Savanna4.png",
+                    "title": "Chapter IV",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZNG1FAGV3VQGX16QHQ3Y4",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -851,9 +997,9 @@
         },
         {
             "cid": "CID_01HEMKWQFCF9DKF3GNN99KG65K",
-            "tags": ["all", "planetNews", "carbonFootprint"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Climate Change, Impacts and Related Risks",
-            "chapterDescription": "",
+            "chapterDescription": "You're about to embark on a deep dive into the long-term effects of our warming world. This chapter will guide you through the complex relationship between what we do, how the Earth reacts, and the risks that come with rising temperatures. Get ready for an enlightening exploration of our planet's climatic future. Let's decode how today's emissions will become tomorrow's legacy. Onward to discovery!",
             "chapterCoverImage": "Desert5.png",
             "pages": [
 
@@ -1082,7 +1228,7 @@
                     "pid": "PID_01HEMMT6SRNN0YR1WVC685V6SW",
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
-                    "avatarText": "You're on fire! Spot on! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
+                    "avatarText": "You're on fire! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
                     "backgroundImage": "Desert4.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMSX2Q8SEA9NY9WWRNA66X",
@@ -1094,7 +1240,7 @@
                     "pid": "PID_01HEMMTDS9E2KCWZJJ4PEYGE63",
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
-                    "avatarText": "Oh, so close! Spot on! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
+                    "avatarText": "Oh, so close! Regions face multiple, overlapping challenges. Curious about the ripple effects? Dive into the next question!",
                     "backgroundImage": "Desert4.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMSX2Q8SEA9NY9WWRNA66X",
@@ -1103,10 +1249,75 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEQESQB72EA77K93E6TW3833",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Desert5.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "What is the key driver of future warming and long-term climate impacts mentioned in the report?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQETBAH40013Q67D3E4HF8F"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQET2N088YW59ZERWMTJAKN",
+                                "optionText": "Sea levels"
+                            },
+                            {
+                                "oid": "OID_01HEQET6YY6Z3BRCS7W9MPKQJC",
+                                "optionText": "Sea temperatures"
+                            },
+                            {
+                                "oid": "OID_01HEQETBAH40013Q67D3E4HF8F",
+                                "optionText": "Emissions"
+                            },
+                            {
+                                "oid": "OID_01HEQETFFMK5GEZD7C3PTRFS2V",
+                                "optionText": "Global temperatures"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQETRP05WX0KWG4VFWXAS12",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Right on! The report is pretty clear that our future with the climate is tied to emissions. The lower the emissions, the cooler the planet stays. So let's keep it chill and do our part!",
+                    "backgroundImage": "Desert5.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQESQB72EA77K93E6TW3833",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQEV00AW4BDXDQXY6QS3509",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Off the mark this time... The report is pretty clear that our future with the climate is tied to emissions. The lower the emissions, the cooler the planet stays. So let's keep it chill and do our part!",
+                    "backgroundImage": "Desert5.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQESQB72EA77K93E6TW3833",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HENMVN2NNRHJGWS1CZGVTERW",
+                    "pageType": "success",
+                    "backgroundImage": "Desert5.png",
+                    "title": "Chapter V",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZNWCHGT9H27V661NYTKRK",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
-                    "backgroundImage": "Desert4.png",
+                    "backgroundImage": "Desert5.png",
                     "completed": false,
                     "question": {
                         "questionText": "Leave your email address",
@@ -1123,9 +1334,9 @@
         },
         {
             "cid": "CID_01HEMKWVEN2GW4HSBZ6QDSMXDW",
-            "tags": ["all", "planetNews", "earthsFuture"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Adaptation Options and Limits & Mitigation Pathways",
-            "chapterDescription": "",
+            "chapterDescription": "It's time to navigate the intricate maze of long-term climate adaptation and mitigation. Are you ready to test your knowledge on the delicate balance between human ingenuity and Mother Nature's playbook? Let's jump into the deep end and explore how our choices today will shape our world of tomorrow. Let's roll up our sleeves and play our part in steering our planet towards a safer, greener future!",
             "chapterCoverImage": "Mangrove5.png",
             "pages": [
 
@@ -1307,10 +1518,71 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEQF0CGG1VAAW5AMT1J3XWS4",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Mangrove5.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "On a scale of 0-100, how constrained do you think adaptation options will become with increasing warming?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQF08JBQ4VQ8DFMKM6C2TRH"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQF01DH5ZE54DNVP3521V40",
+                                "optionText": "0-20"
+                            },
+                            {
+                                "oid": "OID_01HEQF04YJMZFETAHDGTZARJQ0",
+                                "optionText": "40-60"
+                            },
+                            {
+                                "oid": "OID_01HEQF08JBQ4VQ8DFMKM6C2TRH",
+                                "optionText": "80-100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQF0KDMM4CMNJ9ZJNQ82P0F",
+                    "pageType": "narrator",
+                    "avatarImage": "Happy1.png",
+                    "avatarText": "Ding ding ding! Adapting is like trying to fit a square peg in a round hole; the hotter things get, the trickier it becomes. But hey, who doesn't love a challenge?",
+                    "backgroundImage": "Mangrove5.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQF0CGG1VAAW5AMT1J3XWS4",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQF0SB1MZ3AR62PEVJV5VN4",
+                    "pageType": "narrator",
+                    "avatarImage": "Happy1.png",
+                    "avatarText": "Bzzzzt. Adapting is like trying to fit a square peg in a round hole; the hotter things get, the trickier it becomes. But hey, who doesn't love a challenge?",
+                    "backgroundImage": "Mangrove5.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQF0CGG1VAAW5AMT1J3XWS4",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HENMX7GPVXQJRE5JD8VT441Z",
+                    "pageType": "success",
+                    "backgroundImage": "Mangrove5.png",
+                    "title": "Chapter VI",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZPS5GMBSPW9EV1G325NNE",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
-                    "backgroundImage": "Mangrove3.png",
+                    "backgroundImage": "Mangrove5.png",
                     "completed": false,
                     "question": {
                         "questionText": "Leave your email address",
@@ -1327,9 +1599,9 @@
         },
         {
             "cid": "CID_01HEMKWZSYQY808MK7PT9PWHJC",
-            "tags": ["all", "earthsFuture", "planetNews"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Interactions Between Adaptation, Mitigation and Sustainable Development",
-            "chapterDescription": "",
+            "chapterDescription": "You're about to decode how adaptation, mitigation, and sustainable development weave together to form a resilient tapestry for our future. As we shimmy through this chapter, we'll discover the steps that dance towards a harmony between human progress and the health of our planet. Get ready to sway to the rhythm of long-term environmental strategy!",
             "chapterCoverImage": "Mountain2.png",
             "pages": [
                 {
@@ -1350,7 +1622,7 @@
                     "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "completed": false,
                     "question": {
                         "questionText": "Rank the following mitigation and adaptation strategies from most positive impact on biodiversity and local livelihoods to least positive impact.",
@@ -1388,7 +1660,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Euphoric2.png",
                     "avatarText": "You're on fire, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                         "type": "answeredCorrectly",
@@ -1400,7 +1672,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Euphoric2.png",
                     "avatarText": "A for effort, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                         "type": "answeredCorrectly",
@@ -1411,7 +1683,7 @@
                     "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "completed": false,
                     "question": {
                         "questionText": "Which method, when implemented at large scales, can have adverse impacts on biodiversity, food security, and the rights of Indigenous Peoples?",
@@ -1445,7 +1717,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
                     "avatarText": "You're on a roll! That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                         "type": "answeredCorrectly",
@@ -1457,7 +1729,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
                     "avatarText": "Hmm, think again. That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                         "type": "answeredCorrectly",
@@ -1465,10 +1737,18 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN0NJ60T0S0W0QF2C8TSWKC",
+                    "pageType": "success",
+                    "backgroundImage": "Mountain2.png",
+                    "title": "Chapter VII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZQEEQQ0PHVMMC6JM8JG4D",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "completed": false,
                     "question": {
                         "questionText": "Leave your email address",
@@ -1485,9 +1765,9 @@
         },
         {
             "cid": "CID_01HEMKX7N3GG581T96YKVHK5E7",
-            "tags": ["all", "earthsFuture", "carbonFootprint"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Timing, Urgency, Equity, and Inclusion of Climate Action and Near-Term Risks & Action",
-            "chapterDescription": "",
+            "chapterDescription": "The climate clock isn't hitting snooze, and neither should we. It's crunch time to align our actions with the principles of urgency, fairness, and inclusivity. So let's zoom into the immediate and necessary steps of climate action and sprint through the now-or-never of environmental decision-making. Are you ready to race against time and rise to the eco challenge? Let's go full throttle on this green mission!",
             "chapterCoverImage": "Grasslands5.png",
             "pages": [
 
@@ -1563,6 +1843,63 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEQFN61EJMQTCVPKBJC0JDPV",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Grasslands2.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "By what year latest is global warming expected to reach 1.5°C under very low GHG emission scenarios?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQFNNCP85AQDW27EX15G7EZ"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQFNBDM1M9SZDR1RDNJX0TM",
+                                "optionText": "2025"
+                            },
+                            {
+                                "oid": "OID_01HEQFNFA3REM7T9P1D05EBZA4",
+                                "optionText": "2030"
+                            },
+                            {
+                                "oid": "OID_01HEQFNNCP85AQDW27EX15G7EZ",
+                                "optionText": "2040"
+                            },
+                            {
+                                "oid": "OID_01HEQFNS7DE063Z0XX4HDN1G7K",
+                                "optionText": "2060"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQFNWGMGQ7YCRPD3BQ4S544",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Exactly! Even with very low GHG emission scenarios, global warming is on track to reach 1.5°C between 2021 and 2040. It's like expecting a little rain but getting a storm instead! Now, since we're talking about warming…",
+                    "backgroundImage": "Grasslands2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQFN61EJMQTCVPKBJC0JDPV",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQFP0NJFQVB0C8V91197D01",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Close, but not quite... Even with very low GHG emission scenarios, global warming is on track to reach 1.5°C between 2021 and 2040. It's like expecting a little rain but getting a storm instead! Now, since we're talking about warming…",
+                    "backgroundImage": "Grasslands2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQFN61EJMQTCVPKBJC0JDPV",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
                     "pid": "PID_01HEMN0RESNHXSM6TY4C0B7Y2N",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
@@ -1618,6 +1955,63 @@
                     "backgroundImage": "Grasslands3.png",
                     "displayLogic": {
                         "pid": "PID_01HEMN0RESNHXSM6TY4C0B7Y2N",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HEQFZ0SZYTH9CZMWYCNSX98G",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Grasslands4.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "Considering the urgency and impacts of climate change, how confident are experts about the need for urgent and effective adaptation and mitigation actions?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQFZGRB8BJFBRZV9C417D6N"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQFZ54PAW0RG3TEE9XK38K6",
+                                "optionText": "60%-70%"
+                            },
+                            {
+                                "oid": "OID_01HEQFZ8XQ97AZJWXS8VW06YGR",
+                                "optionText": "70%-80%"
+                            },
+                            {
+                                "oid": "OID_01HEQFZC1EB2TX77QETCX8BTJR",
+                                "optionText": "80%-90%"
+                            },
+                            {
+                                "oid": "OID_01HEQFZGRB8BJFBRZV9C417D6N",
+                                "optionText": "90%-100%"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQG01TED6Y3TFZZZZYWSX60",
+                    "pageType": "narrator",
+                    "avatarImage": "Surprised1.png",
+                    "avatarText": "Spot on! The IPCC document frequently mentions 'high confidence' when discussing the importance and impact of near-term actions to address climate change. It's as if scientists are almost as sure about this as you are about your favorite dessert! And on the topic of certainty and uncertainty…",
+                    "backgroundImage": "Grasslands4.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQFZ0SZYTH9CZMWYCNSX98G",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQFZYAW6ST85XBAGY98EWVT",
+                    "pageType": "narrator",
+                    "avatarImage": "Surprised1.png",
+                    "avatarText": "Nope! The IPCC document frequently mentions 'high confidence' when discussing the importance and impact of near-term actions to address climate change. It's as if scientists are almost as sure about this as you are about your favorite dessert! And on the topic of certainty and uncertainty…",
+                    "backgroundImage": "Grasslands4.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQFZ0SZYTH9CZMWYCNSX98G",
                         "type": "answeredCorrectly",
                         "correct": false
                     }
@@ -1680,6 +2074,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN24NH356J92FFMVY8H8XN",
+                    "pageType": "success",
+                    "backgroundImage": "Grasslands5.png",
+                    "title": "Chapter VIII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZRV5ENADTF7SKE643NXN6",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1700,9 +2102,9 @@
         },
         {
             "cid": "CID_01HEMKXJ5DHKC4JTTPHK00XFJW",
-            "tags": ["all", "climateChange", "carbonFootprint"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Near-Term Mitigation and Adaptation Actions",
-            "chapterDescription": "",
+            "chapterDescription": "With quick stops at Innovation Central and Adaptation Avenue, we're heading straight to Impactville. This chapter is all about making a splash with near-term climate actions that pack a long-term punch. Let's rev up our eco-engines and see how small changes today can lead to a greener tomorrow. On your marks, get set, adapt and mitigate!",
             "chapterCoverImage": "Freshwater5.png",
             "pages": [
 
@@ -1773,6 +2175,120 @@
                     "backgroundImage": "Freshwater1.png",
                     "displayLogic": {
                         "pid": "PID_01HEMN4JKC28JWB7V388B4DXEQ",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HEQG8F31W4Y9AG0NG87A69ER",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Freshwater2.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "What is one of the benefits of enhanced health services mentioned in the document?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQG8QEAAB70SJ93NECAN7E3"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQG8KP8DAKM1AFVGNR1CH4K",
+                                "optionText": "Increase in net emission reduction"
+                            },
+                            {
+                                "oid": "OID_01HEQG8QEAAB70SJ93NECAN7E3",
+                                "optionText": "Synergies with mitigation"
+                            },
+                            {
+                                "oid": "OID_01HEQG8W9WCQH73B9K1HDT1P04",
+                                "optionText": "Reduction in carbon capture"
+                            },
+                            {
+                                "oid": "OID_01HEQG91EXWWEE1W5AP24DZC0P",
+                                "optionText": "Increase in electricity consumption"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQG9JTP98YQH700AW1RTHYP",
+                    "pageType": "narrator",
+                    "avatarImage": "Euphoric2.png",
+                    "avatarText": "Look at you go! Enhanced health services aren't just about feeling better, they also bring along synergies with mitigation. Kind of a two-for-one deal, right? As for our next topic, we'll be taking a bite into the food sector and its role in emissions by 2050. Grab a snack and stay tuned!",
+                    "backgroundImage": "Freshwater2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQG8F31W4Y9AG0NG87A69ER",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQG9EMPNQMQ8F7JJ0ZNVKEE",
+                    "pageType": "narrator",
+                    "avatarImage": "Euphoric2.png",
+                    "avatarText": "Almost had it! Enhanced health services aren't just about feeling better, they also bring along synergies with mitigation. Kind of a two-for-one deal, right? As for our next topic, we'll be taking a bite into the food sector and its role in emissions by 2050. Grab a snack and stay tuned!",
+                    "backgroundImage": "Freshwater2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQG8F31W4Y9AG0NG87A69ER",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HEQGCNZANTKE83HS81BPQTAS",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Freshwater3.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "Approximately what percentage of possible reduction in total emissions by 2050 is attributed to demand-side mitigation potential in the food sector?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQGCX4J79DCY011GN0R9TAE"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQGCT21JGPDGWCGVTFPK53N",
+                                "optionText": "42%"
+                            },
+                            {
+                                "oid": "OID_01HEQGCX4J79DCY011GN0R9TAE",
+                                "optionText": "73%"
+                            },
+                            {
+                                "oid": "OID_01HEQGD0ZBH8ZJKF3NBQEEB6WN",
+                                "optionText": "13%"
+                            },
+                            {
+                                "oid": "OID_01HEQGD5182VE8GP2BCETPPZPN",
+                                "optionText": "89%"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQGDB2BJX010QVMS485YD81",
+                    "pageType": "narrator",
+                    "avatarImage": "Proud1.png",
+                    "avatarText": "Yay! So, we're diving deep into how the food sector can help reduce emissions by 2050. How much of that reduction actually comes from tweaking what and how we consume? Pretty juicy stuff, right? Now, speaking of cool concepts, there's this method that not only uses carbon emissions but also stores them. Curious about its name? Buckle up for the next question! ",
+                    "backgroundImage": "Freshwater3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQGCNZANTKE83HS81BPQTAS",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEQGDEMJX65SCR5SJ2N2594S",
+                    "pageType": "narrator",
+                    "avatarImage": "Proud1.png",
+                    "avatarText": "So close! So, we're diving deep into how the food sector can help reduce emissions by 2050. How much of that reduction actually comes from tweaking what and how we consume? Pretty juicy stuff, right? Now, speaking of cool concepts, there's this method that not only uses carbon emissions but also stores them. Curious about its name? Buckle up for the next question! ",
+                    "backgroundImage": "Freshwater3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEQGCNZANTKE83HS81BPQTAS",
                         "type": "answeredCorrectly",
                         "correct": false
                     }
@@ -1888,6 +2404,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN3CAPP3Q5P9SCD0MAY09B",
+                    "pageType": "success",
+                    "backgroundImage": "Freshwater5.png",
+                    "title": "Chapter IX",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZSF7Y6FZR3ZBK5DRR39XR",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1908,9 +2432,9 @@
         },
         {
             "cid": "CID_01HEMKXWVMYT46CV3STS3A4K65",
-            "tags": ["all", "climateChange", "planetNews"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Benefits, Policies, Finance, and Integration of Near-Term Adaptations",
-            "chapterDescription": "",
+            "chapterDescription": "Get ready to dive into the financial flow of near-term adaptations and the wealth of benefits they bring. We'll be decoding the alphabet soup of policies and SDGs to see how every penny and policy can help our planet prosper. Let's unlock the full potential of smart, sustainable investments for a thriving Earth.",
             "chapterCoverImage": "Jungle5.png",
             "pages": [
 
@@ -2019,6 +2543,30 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEMN7NRTN9NX1VC9EZ7WR15F",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Nailed it! The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
+                    "backgroundImage": "Jungle2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEMN8741Z9A3D8TQN0FE3RHW",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEMN7ZEADR46TN6E9MPYE8P7",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Bummer, that's not it... The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
+                    "backgroundImage": "Jungle2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEMN8741Z9A3D8TQN0FE3RHW",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
                     "pid": "PID_01HEMN949TEHRDK25M1GJA2FXA",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
@@ -2079,25 +2627,54 @@
                     }
                 },
                 {
-                    "pid": "PID_01HEMN9WM2Z1FYKB3FAK6Z4AEZ",
+                    "pid": "PID_01HEQGQEAQA6FA1P3XKVC9HQ31",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Jungle4.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "According to the document, how confident are the authors in the statement that sustainable development objectives can be met without a significant rise in global emissions?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEQGQT1QTPJADE2GS5YK72Z1"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEQGQHV6JG7B347MW09TMTEY",
+                                "optionText": "40%-60%"
+                            },
+                            {
+                                "oid": "OID_01HEQGQNVN9K1H2ZF1MWMWWHVM",
+                                "optionText": "60%-80%"
+                            },
+                            {
+                                "oid": "OID_01HEQGQT1QTPJADE2GS5YK72Z1",
+                                "optionText": "80%-100%"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEQGQXEHYCH8GJ0857EPXVG3",
                     "pageType": "narrator",
-                    "avatarImage": "Sad2.png",
-                    "avatarText": "Yep, that's the one! The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
-                    "backgroundImage": "Jungle2.png",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Right on! The document mentions a 'high confidence' in this positive assertion. It's uplifting to think of a future where development and environmental care go hand-in-hand. Now, speaking of positive outcomes…",
+                    "backgroundImage": "Jungle4.png",
                     "displayLogic": {
-                        "pid": "PID_01HEMN8741Z9A3D8TQN0FE3RHW",
+                        "pid": "PID_01HEQGQEAQA6FA1P3XKVC9HQ31",
                         "type": "answeredCorrectly",
                         "correct": true
                     }
                 },
                 {
-                    "pid": "PID_01HEMNA29N4YC8VBHNBH14C09V",
+                    "pid": "PID_01HEQGR14M08Q0G7MQ7AMTJMWG",
                     "pageType": "narrator",
-                    "avatarImage": "Sad2.png",
-                    "avatarText": "Oops! Not quite. The document emphasizes the importance of considering various factors when implementing SDGs. Not doing so can lead to increased trade-offs. Speaking of considerations, let's dive deeper into factors influencing these trade-offs.",
-                    "backgroundImage": "Jungle2.png",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Even better! The document mentions a 'high confidence' in this positive assertion. It's uplifting to think of a future where development and environmental care go hand-in-hand. Now, speaking of positive outcomes…",
+                    "backgroundImage": "Jungle4.png",
                     "displayLogic": {
-                        "pid": "PID_01HEMN8741Z9A3D8TQN0FE3RHW",
+                        "pid": "PID_01HEQGQEAQA6FA1P3XKVC9HQ31",
                         "type": "answeredCorrectly",
                         "correct": false
                     }
@@ -2158,6 +2735,14 @@
                         "type": "answeredCorrectly",
                         "correct": false
                     }
+                },
+                {
+                    "pid": "PID_01HENN42W7PKBWXGA3DRAH3PS6",
+                    "pageType": "success",
+                    "backgroundImage": "Jungle5.png",
+                    "title": "Chapter X",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
                 },
                 {
                     "pid": "PID_01HEMZTGMD75696VVSVQ9FDXZ9",

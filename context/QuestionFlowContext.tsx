@@ -5,10 +5,12 @@ const QuestionFlowContext = createContext<{
 	chapter?: ChapterType;
 	submitResponse: (pageId: string, userAnswer: Array<number> | string) => boolean | undefined;
 	resetResponse: (pageId: string) => void;
+	calculateScore: () => { correct: number; total: number };
 }>({
 	chapter: undefined,
 	submitResponse: () => false,
 	resetResponse: () => {},
+	calculateScore: () => ({correct: 0, total: 0}),
 });
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
@@ -64,9 +66,18 @@ export const QuestionFlowProvider = ({ children, chapterId }: { children: ReactN
 		setChapter(newSession);
 	}
 
+	const calculateScore = () => {
+		if (!chapter) return { correct: 0, total: 0 };
+		const correct = chapter.pages.filter(p => p.pageType === PageTypes.question && p.answeredCorrectly).length;
+		const total = chapter.pages.filter(p => p.pageType === PageTypes.question && p.completed && p.question.correctAnswer !== undefined).length;
+		return { correct, total };
+	}
+
+
 	return (
 		<QuestionFlowContext.Provider value={{
 			chapter,
+			calculateScore,
 			submitResponse,
 			resetResponse,
 		}}>
