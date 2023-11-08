@@ -52,9 +52,6 @@ const Page = () => {
 						alt="background image"
 						className="absolute h-full w-full object-cover brightness-50"
 					/>
-					{ currentPage.pageType === PageTypes.success &&
-						<div className="absolute w-screen h-screen bg-green bg-opacity-50 flex justify-center align-center"/>
-					}
 					{ currentPage.pageType !== PageTypes.question && (
 					<div className="absolute flex flex-row items-end md:bottom-10 md:right-10 bottom-12 right-5 pointer-events-none">
 						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
