@@ -45,7 +45,7 @@ export const NavigationProvider = ({children}: {children: ReactNode}) => {
 		
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= chapter.pages.length - 1) return router.push("/");
+			if (fromIndex >= chapter.pages.length - 1) return router.push(`/?previousChapter=${chapter.cid}`);
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;
