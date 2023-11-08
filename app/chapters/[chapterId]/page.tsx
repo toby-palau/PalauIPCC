@@ -2,7 +2,7 @@
 
 import { PageTypes, QuestionTypes, QuestionPageType, ChapterType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import Confetti from "@root/components/Confetti";
 import { Narrator } from "@root/components/Narrator";
 import { Title } from "@root/components/Title";
@@ -53,7 +53,7 @@ const Page = () => {
 						className="absolute h-full w-full object-cover brightness-50"
 					/>
 					{ currentPage.pageType !== PageTypes.question && (
-					<div className="absolute flex flex-row items-end bottom-10 right-10 pointer-events-none">
+					<div className="absolute flex flex-row items-center md:bottom-10 md:right-10 bottom-12 right-5 pointer-events-none">
 						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
 						<img
 							src={"/images/misc/finger.gif"}
@@ -89,7 +89,7 @@ const Page = () => {
 						<div 
 							id="home-button"
 							className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-							onClick={() => router.push("/")}
+							onClick={() => router.push(`/?previousChapter=${chapter.cid}`)}
 						>
 							<img 
 								src="/images/misc/home.svg"

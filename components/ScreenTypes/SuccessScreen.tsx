@@ -13,13 +13,16 @@ type SuccessProps = {
 export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
     const [startAnimations, setStartAnimations] = useState<boolean>(false);
     const { calculateScore } = useQuestionFlow();
+    // const [stars, setStars] = useState<any[]>([]);
     const [score, setScore] = useState<number>(0);
 
-    const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"}
+    const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"};
 
     useEffect(() => {
         setStartAnimations(true);
         const {correct, total} = calculateScore();
+        // if (total === 0) setStars([]);
+        // else setStars(Array.from({length: total}, (_, i) => i < correct ? greenFilter : {}));
         if (total === 0) setScore(1);
         else setScore(correct / total);
     }, []);
@@ -44,6 +47,15 @@ export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
                             style={score >= i / 5 ? greenFilter : {}}
                         />
                     ))
+                    // stars.map((star, i) => (
+                    //     <img 
+                    //         src="/images/misc/star.svg" 
+                    //         alt="star" 
+                    //         key={`star-${i}`} 
+                    //         className={"h-8 w-8 md:h-16 md:w-16"} 
+                    //         style={star}
+                    //     />
+                    // ))
                 }
             </div>
         </div>
