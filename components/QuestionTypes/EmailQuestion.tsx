@@ -17,9 +17,9 @@ export const EmailQuestion = (props: {question: EMAILQuestionType, submitRespons
         setDisabled(true);
     }, [value])
 
-    const onSubmit = () => {
+    const onSubmit = async () => {
         if (!disabled) {
-            subscribeToMailList(value);
+            await subscribeToMailList(value);
             submitResponse(value);
         }
     }
