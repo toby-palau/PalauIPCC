@@ -145,8 +145,3 @@ export type DisplayLogicType = {
     type: DisplayLogicTypes.seenBefore;
     localStorageIndentifier: string;
 };
-
-export type Score = {
-    correct: number;
-    total: number;
-}

@@ -20,7 +20,7 @@ const Page = () => {
 	const router = useRouter();
 	const [confetti, setConfetti] = useState<boolean>(false);
 	const {currentIndex, navigate} = useNavigation();
-	const {chapter, submitResponse, resetResponse, calculateScore} = useQuestionFlow();
+	const {chapter, submitResponse, resetResponse} = useQuestionFlow();
 
 	const currentPage = useMemo<ChapterType["pages"][number] | undefined>(() => {
 		if (!chapter) return;
@@ -38,14 +38,6 @@ const Page = () => {
 		if (answeredCorrectly) triggerConfetti();
 		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
 	}
-
-	const getScore = async () => {
-		chapter && await calculateScore(chapter);
-	}
-
-	useEffect(() => {
-		getScore();
-	}, [currentPage])
 
 	if (chapter && currentPage) {
 		return (

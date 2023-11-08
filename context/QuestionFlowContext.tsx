@@ -1,33 +1,24 @@
-import { ChapterType, PageTypes, QuestionTypes, Score } from "@root/@types/shared.types";
+import { ChapterType, PageTypes, QuestionTypes } from "@root/@types/shared.types";
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
 const QuestionFlowContext = createContext<{
 	chapter?: ChapterType;
-	score: Score;
 	submitResponse: (pageId: string, userAnswer: Array<number> | string) => boolean | undefined;
 	resetResponse: (pageId: string) => void;
-	calculateScore: (chapter: ChapterType) => void;
+	calculateScore: () => { correct: number; total: number };
 }>({
 	chapter: undefined,
-	score: { correct: 0, total: 0},
 	submitResponse: () => false,
 	resetResponse: () => {},
-	calculateScore: async () => {},
+	calculateScore: () => ({correct: 0, total: 0}),
 });
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
 export const QuestionFlowProvider = ({ children, chapterId }: { children: ReactNode; chapterId: string }) => {
     const [chapter, setChapter] = useState<ChapterType>();
-	const [score, setScore] = useState<Score>({ correct: 0, total: 0});
 
     useEffect(() => { fetchChapter() }, []);
-
-	const calculateScore = async (chapter: ChapterType) => {
-		const correct = chapter.pages.filter(p => p.pageType === PageTypes.question && p.answeredCorrectly).length;
-		const total = chapter.pages.filter(p => p.pageType === PageTypes.question && p.completed).length;
-		setScore({ correct, total });
-	}
 
     const fetchChapter = async () => {
 		const response = await fetch(`/api/chapters/${chapterId}`);
@@ -75,10 +66,17 @@ export const QuestionFlowProvider = ({ children, chapterId }: { children: ReactN
 		setChapter(newSession);
 	}
 
+	const calculateScore = () => {
+		if (!chapter) return { correct: 0, total: 0 };
+		const correct = chapter.pages.filter(p => p.pageType === PageTypes.question && p.answeredCorrectly).length;
+		const total = chapter.pages.filter(p => p.pageType === PageTypes.question && p.completed && p.question.correctAnswer !== undefined).length;
+		return { correct, total };
+	}
+
+
 	return (
 		<QuestionFlowContext.Provider value={{
 			chapter,
-			score,
 			calculateScore,
 			submitResponse,
 			resetResponse,

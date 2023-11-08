@@ -2,7 +2,7 @@
 
 import { rocksalt, staatliches } from "@root/styles/fonts";
 import { useQuestionFlow } from "@root/context/QuestionFlowContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type SuccessProps = {
     title: string;
@@ -11,67 +11,40 @@ type SuccessProps = {
 }
 
 export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
+    const [startAnimations, setStartAnimations] = useState<boolean>(false);
+    const { calculateScore } = useQuestionFlow();
+    const [score, setScore] = useState<number>(0);
 
-    const { score } = useQuestionFlow();
-    const greenStars: React.JSX.Element[] = [];
-    const greyStars: React.JSX.Element[] = [];
-    
+    const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"}
+
     useEffect(() => {
-        console.log({score});
-        for (let i = 0; i < score.correct; i++) {
-            console.log("pushing green star", i)
-            greenStars.push(
-                <img
-                    src={"/images/misc/star-green.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16"
-                />
-            )
-        }
-        for (let i = 0; i < score.total - score.correct; i++) {
-            console.log("pushing grey star", i)
-            greyStars.push(
-                <img
-                    src={"/images/misc/star-grey.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16"
-                />
-            )
-        }
-    }, [score])
+        setStartAnimations(true);
+        const {correct, total} = calculateScore();
+        if (total === 0) setScore(1);
+        else setScore(correct / total);
+    }, []);
 
-    return(
-        <div className="relative flex-col w-screen min-h-full flex justify-center items-center">
-            <h1 className={`${staatliches.className} md:text-6xl text-4xl text-white`}>{title}</h1>
-            <h2 className={`${rocksalt.className} md:text-6xl text-2xl text-green -rotate-6 md:-mt-6 -mt-4 mb-4`}>{subtitle}</h2>
+    return (
+        <div className="absolute min-h-full w-full flex flex-col justify-center items-center p-10 pointer-events-none">
+            <h1 className={`${staatliches.className} md:text-6xl text-4xl text-white text-center`}>{title}</h1>
+            <h2 className={`${rocksalt.className} md:text-6xl text-2xl text-green ${startAnimations && "-rotate-6"} md:-mt-6 -mt-4 mb-4 transition duration-1000`}>{subtitle}</h2>
             <img 
                 src={`/images/avatars/${avatarImage}`}
                 alt="avatar" 
-                className={`w-4/12`}
+                className={`md:w-96 w-64 ${startAnimations ? "scale-100" : "scale-0"} transform transition duration-500`}
             />
-            <div className="relative flex flex-row md:-mt-12 -mt-4">
-                {greenStars}
-                {greyStars}
-                {/* <img
-                    src={"/images/misc/star-green.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16 md:mx-1 mx-0.5"
-                />
-                <img
-                    src={"/images/misc/star-green.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16 md:mx-1 mx-0.5"
-                />
-                <img
-                    src={"/images/misc/star-grey.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16 md:mx-1 mx-0.5"
-                />
-                <img
-                    src={"/images/misc/star-grey.svg"}
-                    alt="star"
-                    className="h-8 w-8 md:h-16 md:w-16 md:mx-1 mx-0.5"
-                /> */}
+            <div className="flex flex-row md:-mt-12 -mt-4 z-10">
+                {
+                    [1,2,3,4,5].map(i => (
+                        <img 
+                            src="/images/misc/star.svg" 
+                            alt="star" 
+                            key={`star-${i}`} 
+                            className={"h-8 w-8 md:h-16 md:w-16"} 
+                            style={score >= i / 5 ? greenFilter : {}}
+                        />
+                    ))
+                }
             </div>
         </div>
     )
