@@ -1,5 +1,3 @@
-"use client"
-
 import { MCSAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 
