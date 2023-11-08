@@ -60,18 +60,21 @@ const Page = () => {
 						alt="background image"
 						className="absolute h-full w-full object-cover brightness-50"
 					/>
+					{ currentPage.pageType === PageTypes.success &&
+						<div className="absolute w-screen h-screen bg-green bg-opacity-50 flex justify-center align-center"/>
+					}
 					{ currentPage.pageType !== PageTypes.question && (
-					<div className="absolute flex flex-row items-end bottom-10 right-10 pointer-events-none">
-						<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
-						<img
-							src={"/images/misc/finger.gif"}
-							alt="click to continue"
-							className="h-8 w-8 md:h-16 md:w-16"
-						/>
-					</div>
-				) }
+						<div className="absolute flex flex-row items-end bottom-10 right-10 pointer-events-none">
+							<p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>
+							<img
+								src={"/images/misc/finger.gif"}
+								alt="click to continue"
+								className="h-8 w-8 md:h-16 md:w-16"
+							/>
+						</div>
+					)}
 				</div>
-
+				
 				<div id="header" className="fixed w-full flex flex-col items-start z-10">
 					<div id="progress-bar" className="h-2 w-full bg-white opacity-80">
 						<div className="h-full bg-blue" style={{width: `${currentIndex / chapter.pages.length * 100}%`}}/>
@@ -119,18 +122,17 @@ const Page = () => {
 
 				{ (currentPage.pageType === PageTypes.narrator || currentPage.pageType === PageTypes.question) && (
 					<Narrator 
-					avatarImage={currentPage.avatarImage} 
-					avatarText={currentPage.pageType === PageTypes.narrator ? currentPage.avatarText : undefined} 
-					small={currentPage.pageType === PageTypes.question}
+						avatarImage={currentPage.avatarImage} 
+						avatarText={currentPage.pageType === PageTypes.narrator ? currentPage.avatarText : undefined} 
+						small={currentPage.pageType === PageTypes.question}
 					/> 
 				) }
 
-				{ currentPage.pageType === PageTypes.success && 
+				{ currentPage.pageType === PageTypes.success &&
 					<SuccessScreen 
 						title={currentPage.title}
 						subtitle={currentPage.subtitle}
 						avatarImage={currentPage.avatarImage}
-						// score={score}
 					/>
 				}
 				
