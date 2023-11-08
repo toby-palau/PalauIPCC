@@ -2,7 +2,7 @@
     "chapters": [
         {
             "cid": "CID_01HEMKW0074SVTJESYCXGTW8QM",
-            "tags": ["all", "climateChange"],
+            "tags": ["all", "current"],
             "chapterTitle": "Introduction to Climate Change",
             "chapterDescription": "Dive deep into Earth's \"medical records\" to understand its health status. Through interactive graphs and quizzes, discover how our planet's temperature has changed over the years and the major events that have contributed to this shift.",
             "chapterCoverImage": "Taiga5.png",
@@ -272,6 +272,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMMH48XGWAAT3PREVF78JH",
+                    "pageType": "success",
+                    "backgroundImage": "Taiga5.png",
+                    "title": "Chapter I",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZDTKJ987KQWRMYTBWCJ45",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -292,7 +300,7 @@
         },
         {
             "cid": "CID_01HEMKW95JCP3VXM88JFG8N9A8",
-            "tags": ["all", "climateChange", "planetNews"],
+            "tags": ["all", "current", "planetNews"],
             "chapterTitle": "Results of Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Rainforest3.png",
@@ -369,6 +377,63 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Rainforest2.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "What percentage of the population experiences severe water scarcity for at least some part of the year?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEPZBY9VWX9FN694RBX1W53B"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEPZBNT96C39WZCAWRRGAN6C",
+                                "optionText": "10%"
+                            },
+                            {
+                                "oid": "OID_01HEPZBT7PJM2VNR33D98M4ECE",
+                                "optionText": "30%"
+                            },
+                            {
+                                "oid": "OID_01HEPZBY9VWX9FN694RBX1W53B",
+                                "optionText": "50%"
+                            },
+                            {
+                                "oid": "OID_01HEPZC387AEZTYDXKWZDRYT41",
+                                "optionText": "90%"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZJ6B9R6N8MJX942D4WCHS",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Spot on! Sadly, half of the population is affected at some point in the year. When thinking about water scarcity you would be quick to associate it with desserts and other drought-prone areas… Because of climate change and heat strokes, even well-developed countries struggle with their water supply at some point during the year.",
+                    "backgroundImage": "Rainforest2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZJ0R74Y1TKCTVNRNGBZFB",
+                    "pageType": "narrator",
+                    "avatarImage": "Sad2.png",
+                    "avatarText": "Close. Sadly, half of the population is affected at some point in the year. When thinking about water scarcity you would be quick to associate it with desserts and other drought-prone areas… Because of climate change and heat strokes, even well-developed countries struggle with their water supply at some point during the year.",
+                    "backgroundImage": "Rainforest2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZB8K8S59RK1FB157QKP46",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
                     "pid": "PID_01HEMMB9KBW03NDVAK4R4AFV7W",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
@@ -426,6 +491,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMQBX231PY79XDFFB4V3DD",
+                    "pageType": "success",
+                    "backgroundImage": "Rainforest3.png",
+                    "title": "Chapter II",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZERQP4G0K3YTDB26SS5V2",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -446,7 +519,7 @@
         },
         {
             "cid": "CID_01HEMKWEVP24J1082XJ730979N",
-            "tags": ["all", "climateChange", "earthsFuture"],
+            "tags": ["all", "current"],
             "chapterTitle": "Adaptation & Mitigation to Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Ocean4.png",
@@ -580,6 +653,71 @@
                     }
                 },
                 {
+                    "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                    "pageType": "question",
+                    "avatarImage": "Neutral.png",
+                    "backgroundImage": "Ocean3.png",
+                    "completed": false,
+                    "question": {
+                        "questionText": "How many countries have already adopted laws focused primarily on reducing GHG emissions in 2020?",
+                        "questionType": "MCSA",
+                        "correctAnswer": [
+                            "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z"
+                        ],
+                        "completed": false,
+                        "options": [
+                            {
+                                "oid": "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z",
+                                "optionText": "56"
+                            },
+                            {
+                                "oid": "OID_01HEPZRR6AXY22GCS0PMP6HMFM",
+                                "optionText": "23"
+                            },
+                            {
+                                "oid": "OID_01HEPZRWB0D5FRTSK6RH9FM0WE",
+                                "optionText": "45"
+                            },
+                            {
+                                "oid": "OID_01HEPZS04MB75YFBNTRJJQZ996",
+                                "optionText": "98"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZSJJD09XH8XDB802QCE58",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "You're rocking this! This is a very important step, though. Laws hold governments accountable to effectively lower their greenhouse gas emissions. Even though only ¼ of countries have adopted these laws, more will follow. A great start!",
+                    "backgroundImage": "Ocean3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HEPZSQ7Y5AGQH0AZ67DJ6WV9",
+                    "pageType": "narrator",
+                    "avatarImage": "Stoked2.png",
+                    "avatarText": "Swing and a miss. This is a very important step, though. Laws hold governments accountable to effectively lower their greenhouse gas emissions. Even though only ¼ of countries have adopted these laws, more will follow. A great start!",
+                    "backgroundImage": "Ocean3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HEPZS4ZE16JZ0SWGQW0DGXSB",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HENMRNBC75B71P6S0J8N0NWC",
+                    "pageType": "success",
+                    "backgroundImage": "Ocean2.png",
+                    "title": "Chapter III",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZKSW4VKRHS21VCX6477QZ",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -600,7 +738,7 @@
         },
         {
             "cid": "CID_01HEMKWK1WJG70SMY28XNGH94W",
-            "tags": ["all", "climateChange", "earthsFuture"],
+            "tags": ["all", "current"],
             "chapterTitle": "Gaps in Adaptations to Climate Change",
             "chapterDescription": "",
             "chapterCoverImage": "Savanna4.png",
@@ -831,6 +969,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMTNTF1T16M7NXDG41V0QJ",
+                    "pageType": "success",
+                    "backgroundImage": "Savanna$.png",
+                    "title": "Chapter IV",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZNG1FAGV3VQGX16QHQ3Y4",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -851,7 +997,7 @@
         },
         {
             "cid": "CID_01HEMKWQFCF9DKF3GNN99KG65K",
-            "tags": ["all", "planetNews", "carbonFootprint"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Climate Change, Impacts and Related Risks",
             "chapterDescription": "",
             "chapterCoverImage": "Desert5.png",
@@ -1103,6 +1249,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMVN2NNRHJGWS1CZGVTERW",
+                    "pageType": "success",
+                    "backgroundImage": "Desert4.png",
+                    "title": "Chapter V",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZNWCHGT9H27V661NYTKRK",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1123,7 +1277,7 @@
         },
         {
             "cid": "CID_01HEMKWVEN2GW4HSBZ6QDSMXDW",
-            "tags": ["all", "planetNews", "earthsFuture"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Adaptation Options and Limits & Mitigation Pathways",
             "chapterDescription": "",
             "chapterCoverImage": "Mangrove5.png",
@@ -1307,6 +1461,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENMX7GPVXQJRE5JD8VT441Z",
+                    "pageType": "success",
+                    "backgroundImage": "Mangrove3.png",
+                    "title": "Chapter VI",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZPS5GMBSPW9EV1G325NNE",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1327,7 +1489,7 @@
         },
         {
             "cid": "CID_01HEMKWZSYQY808MK7PT9PWHJC",
-            "tags": ["all", "earthsFuture", "planetNews"],
+            "tags": ["all", "longTerm"],
             "chapterTitle": "Long-Term Interactions Between Adaptation, Mitigation and Sustainable Development",
             "chapterDescription": "",
             "chapterCoverImage": "Mountain2.png",
@@ -1350,7 +1512,7 @@
                     "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "completed": false,
                     "question": {
                         "questionText": "Rank the following mitigation and adaptation strategies from most positive impact on biodiversity and local livelihoods to least positive impact.",
@@ -1388,7 +1550,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Euphoric2.png",
                     "avatarText": "You're on fire, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                         "type": "answeredCorrectly",
@@ -1400,7 +1562,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Euphoric2.png",
                     "avatarText": "A for effort, trees take the crown! 🌲 Reforestation clearly has some lush benefits for our planet. Dietary choices come in second, proving that what's on our plate matters. While transitioning to low-emission systems has its perks, it doesn't quite beat the top two. And irrigation? Well, it's pouring out some challenges for our biodiversity. 🌦️",
-                    "backgroundImage": "Mountain2.png",
+                    "backgroundImage": "Mountain1.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMY16G5KK2TGJGMGFJ9Z7D",
                         "type": "answeredCorrectly",
@@ -1411,7 +1573,7 @@
                     "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "completed": false,
                     "question": {
                         "questionText": "Which method, when implemented at large scales, can have adverse impacts on biodiversity, food security, and the rights of Indigenous Peoples?",
@@ -1445,7 +1607,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
                     "avatarText": "You're on a roll! That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                         "type": "answeredCorrectly",
@@ -1457,7 +1619,7 @@
                     "pageType": "narrator",
                     "avatarImage": "Surprised1.png",
                     "avatarText": "Hmm, think again. That's right! While planting trees sounds great, the way we do it matters. Afforestation on a massive scale can sometimes throw Mother Nature's balance off. 🌳🤔",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "displayLogic": {
                         "pid": "PID_01HEMMZ44AF4S0RXC4KJHT5XDV",
                         "type": "answeredCorrectly",
@@ -1465,10 +1627,18 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN0NJ60T0S0W0QF2C8TSWKC",
+                    "pageType": "success",
+                    "backgroundImage": "Mountain2.png",
+                    "title": "Chapter VII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZQEEQQ0PHVMMC6JM8JG4D",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
-                    "backgroundImage": "Mountain1.png",
+                    "backgroundImage": "Mountain2.png",
                     "completed": false,
                     "question": {
                         "questionText": "Leave your email address",
@@ -1485,7 +1655,7 @@
         },
         {
             "cid": "CID_01HEMKX7N3GG581T96YKVHK5E7",
-            "tags": ["all", "earthsFuture", "carbonFootprint"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Timing, Urgency, Equity, and Inclusion of Climate Action and Near-Term Risks & Action",
             "chapterDescription": "",
             "chapterCoverImage": "Grasslands5.png",
@@ -1680,6 +1850,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN24NH356J92FFMVY8H8XN",
+                    "pageType": "success",
+                    "backgroundImage": "Grasslands5.png",
+                    "title": "Chapter VIII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZRV5ENADTF7SKE643NXN6",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1700,7 +1878,7 @@
         },
         {
             "cid": "CID_01HEMKXJ5DHKC4JTTPHK00XFJW",
-            "tags": ["all", "climateChange", "carbonFootprint"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Near-Term Mitigation and Adaptation Actions",
             "chapterDescription": "",
             "chapterCoverImage": "Freshwater5.png",
@@ -1888,6 +2066,14 @@
                     }
                 },
                 {
+                    "pid": "PID_01HENN3CAPP3Q5P9SCD0MAY09B",
+                    "pageType": "success",
+                    "backgroundImage": "Freshwater5.png",
+                    "title": "Chapter IX",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
+                },
+                {
                     "pid": "PID_01HEMZSF7Y6FZR3ZBK5DRR39XR",
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
@@ -1908,7 +2094,7 @@
         },
         {
             "cid": "CID_01HEMKXWVMYT46CV3STS3A4K65",
-            "tags": ["all", "climateChange", "planetNews"],
+            "tags": ["all", "nearTerm"],
             "chapterTitle": "Benefits, Policies, Finance, and Integration of Near-Term Adaptations",
             "chapterDescription": "",
             "chapterCoverImage": "Jungle5.png",
@@ -2158,6 +2344,14 @@
                         "type": "answeredCorrectly",
                         "correct": false
                     }
+                },
+                {
+                    "pid": "PID_01HENN42W7PKBWXGA3DRAH3PS6",
+                    "pageType": "success",
+                    "backgroundImage": "Jungle5.png",
+                    "title": "Chapter X",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Euphoric4.png"
                 },
                 {
                     "pid": "PID_01HEMZTGMD75696VVSVQ9FDXZ9",

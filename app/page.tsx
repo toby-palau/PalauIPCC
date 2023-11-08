@@ -85,12 +85,12 @@ const Page = () => {
                 <div id="chapters" className="flex-1 grid lg:grid-cols-3 md:grid-cols-2 grid-cols1 gap-2 md:mt-0 mt-5">
                     { chapters
                         .filter(c => filters.filter(f => f.selected && c.tags.includes(f.filterId)).length > 0)
-                        .map(c => (
-                            <Link key={`chapter-${c.cid}`} href={`/chapters/${c.cid}`} className="relative md:h-48 h-36 rounded-md cursor-pointer justify-center items-center overflow-hidden">
-                                <img src={`/images/backgrounds/${c.chapterCoverImage}`} className="absolute inset-0 h-full w-full object-cover my-auto" />
-                                <div className="relative flex h-full w-full p-3 justify-center items-center bg-black bg-opacity-50">
-                                    <p className={`${staatliches.className} text-2xl text-white text-center`}>{c.chapterTitle}</p>
-                                </div>
+                        .map((c, i) => (
+                            <Link key={`chapter-${c.cid}`} href={`/chapters/${c.cid}`} className="relative rounded-md cursor-pointer justify-center items-center overflow-hidden mt-4 group-hover:text-blue">
+                                <img src={`/images/backgrounds/${c.chapterCoverImage}`} className="relative md:h-48 h-36 mb-2 rounded-md hover:border-2 hover:border-blue"/>
+                                {/* <div className="relative flex h-full w-full p-3 justify-center items-center bg-black bg-opacity-50"> */}
+                                    <p className={`${dmsans.className} text-1xl text-white text-left`}>{`${i + 1}. ${c.chapterTitle}`}</p>
+                                {/* </div> */}
                             </Link>
                     )) }
                 </div>

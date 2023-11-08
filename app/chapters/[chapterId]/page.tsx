@@ -2,7 +2,7 @@
 
 import { PageTypes, QuestionTypes, QuestionPageType, ChapterType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Confetti from "@root/components/Confetti";
 import { Narrator } from "@root/components/Narrator";
 import { Title } from "@root/components/Title";
@@ -14,12 +14,13 @@ import { useRouter } from "next/navigation";
 import { EmailQuestion } from "@root/components/QuestionTypes/EmailQuestion";
 import { NavigationProvider, useNavigation } from "@root/context/NavigationContext";
 import { QuestionFlowProvider, useQuestionFlow } from "@root/context/QuestionFlowContext";
+import { SuccessScreen } from "@root/components/ScreenTypes/SuccessScreen";
 
 const Page = () => {
 	const router = useRouter();
 	const [confetti, setConfetti] = useState<boolean>(false);
 	const {currentIndex, navigate} = useNavigation();
-	const {chapter, submitResponse, resetResponse} = useQuestionFlow();
+	const {chapter, submitResponse, resetResponse, calculateScore} = useQuestionFlow();
 
 	const currentPage = useMemo<ChapterType["pages"][number] | undefined>(() => {
 		if (!chapter) return;
@@ -37,6 +38,14 @@ const Page = () => {
 		if (answeredCorrectly) triggerConfetti();
 		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
 	}
+
+	const getScore = async () => {
+		chapter && await calculateScore(chapter);
+	}
+
+	useEffect(() => {
+		getScore();
+	}, [currentPage])
 
 	if (chapter && currentPage) {
 		return (
@@ -115,6 +124,15 @@ const Page = () => {
 					small={currentPage.pageType === PageTypes.question}
 					/> 
 				) }
+
+				{ currentPage.pageType === PageTypes.success && 
+					<SuccessScreen 
+						title={currentPage.title}
+						subtitle={currentPage.subtitle}
+						avatarImage={currentPage.avatarImage}
+						// score={score}
+					/>
+				}
 				
 				{ confetti && <Confetti /> }
 			</div>
