@@ -1,6 +1,6 @@
 "use client"
 
-import { MCSAQuestionType } from "@root/types/shared.types";
+import { MCSAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 
 export const MultipleChoiceSingleAnswerQuestion = (props: {question: MCSAQuestionType, submitResponse: (s: Array<number>) => void}) => {

@@ -5,7 +5,6 @@ import {
   DndContext, 
   closestCenter,
   KeyboardSensor,
-  PointerSensor,
   useSensor,
   useSensors,
   DragEndEvent,
@@ -22,19 +21,19 @@ import {
 import {useSortable} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
 import { dmsans } from '@root/styles/fonts';
-import { ROQuestionType } from '@root/types/shared.types';
+import { ROQuestionType } from '@root/@types/shared.types';
 
 export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<number>) => void, resetResponse: () => void}) => {
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));
     const sensors = useSensors(
         useSensor(MouseSensor, {activationConstraint: {distance: 8}}),
-        useSensor(TouchSensor, {activationConstraint: {delay: 300, tolerance: 8}}),
+        useSensor(TouchSensor, {activationConstraint: {delay: 0, tolerance: 12}}),
         useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates})
     );
 
     let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
     if (props.question.userAnswer && props.question.correctAnswer) {
-        if (props.question.userAnswer.join("") === props.question.correctAnswer.join("")) sortableClassName += " bg-green hover:bg-green-dark text-white";
+        if (props.question.userAnswer.join() === props.question.correctAnswer.join()) sortableClassName += " bg-green hover:bg-green-dark text-white";
         else sortableClassName += " bg-red hover:bg-red-dark text-white animate-wiggle";
     } else sortableClassName += " bg-white hover:bg-white-dark text-black";
 
