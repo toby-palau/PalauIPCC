@@ -12,6 +12,7 @@ const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
 
     const backgroundImages = chapter.pages.map(p => (
         <img 
+            key={p.pid}
             src={`http://${process.env.URL}/images/backgrounds/${p.backgroundImage}`}
             alt="background image"
             className="absolute h-full w-full object-cover brightness-50"
