@@ -12,7 +12,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<meta property="og:image" content={`http://${process.env.URL}/images/misc/og-image.png`} />
+			<head>
+				<meta property="og:image" content={`http://${process.env.URL}/images/misc/og-image.png`} />
+				<meta property="og:image:secure_url" content={`https://${process.env.URL}/images/misc/og-image.png`} /> 
+				<meta property="og:image:type" content="image/png" /> 
+				<meta property="og:image:width" content="4764" /> 
+				<meta property="og:image:height" content="2452" />
+			</head>
 			<body className={`${inter.className} overscroll-none`}>{children}</body>
 		</html>
 	)
