@@ -51,6 +51,14 @@ export type ChapterType = {
     pages: Array<TitlePageType | NarratorPageType | QuestionPageType | SuccessPageType>;
 };
 
+export type ChapterInfoType = {
+    cid: string;
+    tags: Array<FilterTypes>;
+    chapterTitle: string;
+    chapterDescription: string;
+    chapterCoverImage: string;
+};
+
 export type TitlePageType = {
     pid: string;
     pageType: PageTypes.title;

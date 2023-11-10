@@ -1,3 +1,5 @@
+"use client"
+
 import { MCMAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 import { useState } from "react";
