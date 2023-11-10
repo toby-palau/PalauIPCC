@@ -1,3 +1,5 @@
+"use server"
+
 import { digitalStrip } from "@root/styles/fonts"
 
 type NarratorProps = {

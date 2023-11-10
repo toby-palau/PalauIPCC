@@ -1,3 +1,5 @@
+"use server"
+
 import { dmsans, staatliches } from "@root/styles/fonts"
 
 export const Title = (props: {title: string, subtitle?: string}) => {
