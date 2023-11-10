@@ -31,12 +31,6 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
         useSensor(KeyboardSensor, {coordinateGetter: sortableKeyboardCoordinates})
     );
 
-    let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
-    if (props.question.userAnswer && props.question.correctAnswer) {
-        if (props.question.userAnswer.join() === props.question.correctAnswer.join()) sortableClassName += " bg-green hover:bg-green-dark text-white";
-        else sortableClassName += " bg-red hover:bg-red-dark text-white animate-wiggle";
-    } else sortableClassName += " bg-white hover:bg-white-dark text-black";
-
     return (
         <div className="max-w-xl m-auto flex-col items-center justify-between py-6 px-6 border-2 border-white rounded bg-black">
             <h1 className={`${dmsans.className} sm:text-xl text-md my-4 text-white`}>{props.question.questionText}</h1>
@@ -50,17 +44,25 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
                     items={items}
                     strategy={verticalListSortingStrategy}
                 >
-                    { items.map(id => (
-                        <Sortable
-                            key={id}
-                            id={id}
-                            index={items.indexOf(id) + 1}
-                            invertSvgColor={!props.question.userAnswer || !props.question.correctAnswer}
-                            className={sortableClassName}
-                        >
-                            {props.question.options.find(o => o.oid === id)?.optionText}
-                        </Sortable>
-                    )) }
+                    { items.map((id, i) => {
+                        let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
+                        if (props.question.userAnswer && props.question.correctAnswer) {
+                            if (props.question.userAnswer[i] === props.question.correctAnswer[i]) sortableClassName += " bg-green hover:bg-green-dark text-white";
+                            else sortableClassName += " bg-red hover:bg-red-dark text-white animate-wiggle";
+                        } else sortableClassName += " bg-white hover:bg-white-dark text-black";
+
+                        return (
+                            <Sortable
+                                key={id}
+                                id={id}
+                                index={items.indexOf(id) + 1}
+                                invertSvgColor={!props.question.userAnswer || !props.question.correctAnswer}
+                                className={sortableClassName}
+                            >
+                                {props.question.options.find(o => o.oid === id)?.optionText}
+                            </Sortable>
+                        )
+                    }) }
                 </SortableContext>
             </DndContext>
             <button 
