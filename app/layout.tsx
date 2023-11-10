@@ -10,10 +10,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Palau - IPCC 2023",
 		description: "Palau created this summary of the 2023 IPCC report.",
-		images: [
-			`http://${process.env.URL}/images/misc/og-image.png`,
-			`https://${process.env.URL}/images/misc/og-image.png`,
-		],
+		images: [`http://${process.env.URL}/images/misc/og-image.png`],
 	}
 }
 
