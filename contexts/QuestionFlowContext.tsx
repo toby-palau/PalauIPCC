@@ -28,29 +28,15 @@ const QuestionFlowContext = createContext<{
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
-export const QuestionFlowProvider = ({ children, chapterId }: { children: ReactNode; chapterId: string }) => {
+export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNode; chapter: ChapterType }) => {
     const router = useRouter();
-	const [userSession, setUserSession] = useState<ChapterType>();
+	const [userSession, setUserSession] = useState<ChapterType>(chapter);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 	const [progress, setProgress] = useState<number>(0);
 	const [shiftDown, setShiftDown] = useState<boolean>(false);
 	const [confetti, setConfetti] = useState<boolean>(false);
 	const [currentPage, setCurrentPage] = useState<ChapterType["pages"][number]>();
 
-	/**
-	 * Load the chapter data from the URL
-	 */
-	useEffect(() => {
-		fetchChapter();
-	}, []);
-
-	const fetchChapter = async () => {
-		if (!chapterId) return;
-		const response = await fetch(`/api/chapters/${chapterId}`);
-		const chapter = await response.json();
-		console.log({chapter})
-		setUserSession(chapter);
-	}
 	
 	useEffect(() => {
 		if (!userSession) return;

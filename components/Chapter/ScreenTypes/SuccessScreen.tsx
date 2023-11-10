@@ -1,5 +1,7 @@
+"use client"
+
 import { rocksalt, staatliches } from "@root/styles/fonts";
-import { useQuestionFlow } from "@root/context/QuestionFlowContext";
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import { useEffect, useState } from "react";
 
 type SuccessProps = {

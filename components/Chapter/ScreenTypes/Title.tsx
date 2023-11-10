@@ -1,4 +1,4 @@
-"use server"
+"use client"
 
 import { dmsans, staatliches } from "@root/styles/fonts"
 

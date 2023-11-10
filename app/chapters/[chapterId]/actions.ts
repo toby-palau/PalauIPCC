@@ -6,7 +6,7 @@ import { ChapterType, QuestionFlowType } from '@root/@types/shared.types';
 
 const filePath = path.resolve("data", "question-flow.json");
 
-export const getChapter: (chapterId: string) => Promise<ChapterType | undefined> = async (chapterId) => {
+export const getChapter: (chapterId: string) => ChapterType | undefined = (chapterId) => {
     try {
         const fileContents = fs.readFileSync(filePath, 'utf8');
         const { chapters } = JSON.parse(fileContents) as QuestionFlowType;

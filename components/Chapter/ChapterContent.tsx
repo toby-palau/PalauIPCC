@@ -5,7 +5,7 @@ import { Question } from "./QuestionTypes";
 import { Narrator } from "./Narrator";
 import { SuccessScreen } from "./ScreenTypes/SuccessScreen";
 import { Title } from "./ScreenTypes/Title";
-import { useQuestionFlow } from "@root/context/QuestionFlowContext";
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 
 export const ChapterContent = () => {
     const {currentPage} = useQuestionFlow();
@@ -20,18 +20,13 @@ export const ChapterContent = () => {
                 />
             ) }
             { currentPage.pageType === PageTypes.question && (
-                <>
-                    <Question questionPage={currentPage} />
-                    <Narrator 
-                        avatarImage={currentPage.avatarImage} 
-                        small
-                    />
-                </>
+                <Question questionPage={currentPage} />
             ) }
-            { (currentPage.pageType === PageTypes.narrator) && (
+            { (currentPage.pageType === PageTypes.question || currentPage.pageType === PageTypes.narrator) && (
                 <Narrator 
                     avatarImage={currentPage.avatarImage} 
-                    avatarText={currentPage.avatarText} 
+                    avatarText={currentPage.pageType === PageTypes.narrator ? currentPage.avatarText: undefined}
+                    small={currentPage.pageType === PageTypes.question}
                 />
             ) }
             { currentPage.pageType === PageTypes.success && (

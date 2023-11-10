@@ -1,15 +1,27 @@
-"use client"
+"use server"
 
-import { QuestionFlowProvider } from "@root/context/QuestionFlowContext";
+import { QuestionFlowProvider } from "@root/contexts/QuestionFlowContext";
 import { ChapterBackground } from "@root/components/Chapter/ChapterBackground";
 import { ChapterHeader } from "@root/components/Chapter/ChapterHeader";
 import { ChapterContent } from "@root/components/Chapter/ChapterContent";
+import { getChapter } from "./actions";
 
 const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
+    const chapter = getChapter(chapterId);
+    if (!chapter) return <div>Chapter not found</div>;
+
+    const backgroundImages = chapter.pages.map(p => (
+        <img 
+            src={`http://${process.env.URL}/images/backgrounds/${p.backgroundImage}`}
+            alt="background image"
+            className="absolute h-full w-full object-cover brightness-50"
+        />
+    ));
+
     return (
         <div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-            <QuestionFlowProvider chapterId={chapterId}>
-                <ChapterBackground />
+            <QuestionFlowProvider chapter={chapter}>
+                <ChapterBackground backgroundImages={backgroundImages} />
                 <ChapterHeader />
                 <ChapterContent />
             </QuestionFlowProvider>

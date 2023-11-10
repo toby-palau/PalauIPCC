@@ -1,3 +1,5 @@
+"use server"
+
 import { dmsans, staatliches } from "@root/styles/fonts";
 import Link from "next/link";
 import { ChapterList } from "@root/components/Overview/ChapterList";

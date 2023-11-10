@@ -1,19 +1,13 @@
 "use client"
 
-import { EMAILQuestionType, MCMAQuestionType, MCSAQuestionType, QuestionPageType, QuestionTypes, ROQuestionType, VERBQuestionType } from "@root/@types/shared.types"
+import { QuestionPageType, QuestionTypes } from "@root/@types/shared.types"
 import { MultipleChoiceSingleAnswerQuestion } from "./MultipleChoiceSingleAnswerQuestion"
 import { MultipleChoiceMultiAnswerQuestion } from "./MultipleChoiceMultiAnswerQuestion"
 import { RankOrderQuestion } from "./RankOrderQuestion"
 import { VerbatimQuestion } from "./VerbatimQuestion"
 import { EmailQuestion } from "./EmailQuestion"
 import Confetti from "../Confetti"
-import { useQuestionFlow } from "@root/context/QuestionFlowContext"
-
-type QuestionProps = {
-    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType | EMAILQuestionType;
-    submitResponse: (s: Array<number> | string) => void;
-    resetResponse?: () => void;
-}
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext"
 
 export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
     const { confetti, submitResponse, resetResponse } = useQuestionFlow();

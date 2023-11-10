@@ -1,11 +1,15 @@
 "use client"
 
 import { PageTypes } from "@root/@types/shared.types";
-import { useQuestionFlow } from "@root/context/QuestionFlowContext"
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext"
+import { ReactNode } from "react";
 
-export const ChapterBackground = () => {
+export const ChapterBackground = ({backgroundImages}: {backgroundImages: ReactNode[]}) => {
     const {currentIndex, currentPage, navigate} = useQuestionFlow();
-    if (!currentPage) return null;
+    if (!currentPage || typeof(currentIndex) !== "number") return null;
+
+    const backgroundImage = backgroundImages[currentIndex];
+    if (!backgroundImage) return null;
 
     return (
         <div 
@@ -13,11 +17,7 @@ export const ChapterBackground = () => {
             className="fixed h-screen w-screen"
             onClick={typeof(currentIndex) === "number" ? () => navigate(currentIndex, currentIndex, "forward", false) : undefined}
         >
-            <img 
-                src={`/images/backgrounds/${currentPage.backgroundImage}`}
-                alt="background image"
-                className="absolute h-full w-full object-cover brightness-50"
-            />
+            { backgroundImage }
             { currentPage.pageType !== PageTypes.question && (
                 <div className="absolute flex flex-row items-end md:bottom-10 md:right-10 bottom-12 right-5 pointer-events-none">
                     <p className="text-white text-right md:text-base text-sm md:w-48 w-32">{"click anywhere to go to the next page!"}</p>

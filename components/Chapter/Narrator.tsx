@@ -1,4 +1,4 @@
-"use server"
+"use client"
 
 import { digitalStrip } from "@root/styles/fonts"
 
