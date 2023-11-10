@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: 'Palau - IPCC 2023',
 	description: 'Palau created this summary of the 2023 IPCC report.',
+	openGraph: {
+		title: "Palau - IPCC 2023",
+		description: "Palau created this summary of the 2023 IPCC report.",
+		images: [`http://${process.env.URL}/images/misc/og-image.png`],
+	}
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
