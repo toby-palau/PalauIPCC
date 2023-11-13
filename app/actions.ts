@@ -1,4 +1,4 @@
-import { ChapterInfoType, ChapterType, QuestionFlowType } from '@root/@types/shared.types';
+import { ChapterInfoType, QuestionFlowType } from '@root/@types/shared.types';
 import fs from 'fs';
 import path from 'path';
 
