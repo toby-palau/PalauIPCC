@@ -103,6 +103,7 @@ export type SuccessPageType = PageType & {
 };
 
 type QuestionType = {
+    questionTitle?: string;
     questionText: string;
     skippable?: boolean;
 }

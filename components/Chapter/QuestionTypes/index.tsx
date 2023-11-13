@@ -10,7 +10,7 @@ import Confetti from "../Confetti"
 import { useQuestionFlow } from "@root/contexts/QuestionFlowContext"
 
 export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
-    const { confetti, submitResponse, resetResponse } = useQuestionFlow();
+    const { confetti, submitResponse, resetResponse, skipQuestion } = useQuestionFlow();
     const { question } = questionPage;
 
     return (
@@ -45,6 +45,7 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
                 <EmailQuestion 
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
+                    skipQuestion={() => skipQuestion(questionPage.pid)}
                 />
             ) }
             { confetti && <Confetti /> }
