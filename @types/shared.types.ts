@@ -59,90 +59,10 @@ export type ChapterInfoType = {
     chapterCoverImage: string;
 };
 
-export type TitlePageType = {
+type PageType = {
     pid: string;
-    pageType: PageTypes.title;
-    title: string;
-    subtitle: string;
     backgroundImage: string;
     displayLogic?: DisplayLogicType;
-};
-
-export type NarratorPageType = {
-    pid: string;
-    pageType: PageTypes.narrator;
-    avatarImage: string;
-    avatarText: string;
-    backgroundImage: string;
-    displayLogic?: DisplayLogicType;
-};
-
-export type QuestionPageType = {
-    pid: string;
-    pageType: PageTypes.question;
-    avatarImage: string;
-    backgroundImage: string;
-    completed: boolean;
-    answeredCorrectly?: boolean;
-    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType | EMAILQuestionType;
-    displayLogic?: DisplayLogicType;
-};
-
-export type MCSAQuestionType = {
-    questionType: QuestionTypes.MCSA;
-    questionText: string;
-    options: Array<{
-        oid: number;
-        optionText: string;
-    }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
-};
-
-export type MCMAQuestionType = {
-    questionType: QuestionTypes.MCMA;
-    questionText: string;
-    options: Array<{
-        oid: number;
-        optionText: string;
-    }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
-};
-
-export type ROQuestionType = {
-    questionType: QuestionTypes.RO;
-    questionText: string;
-    options: Array<{
-        oid: number;
-        optionText: string;
-    }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
-};
-
-export type VERBQuestionType = {
-    questionType: QuestionTypes.VERB;
-    questionText: string;
-    correctAnswer?: RegExp;
-    userAnswer?: string;
-};
-
-export type SuccessPageType = {
-    pid: number;
-    pageType: PageTypes.success;
-    avatarImage: string;
-    backgroundImage: string;
-    title: string;
-    subtitle: string;
-    displayLogic?: DisplayLogicType;
-}
-
-export type EMAILQuestionType = {
-    questionType: QuestionTypes.EMAIL;
-    questionText: string;
-    correctAnswer?: RegExp;
-    userAnswer?: string;
 };
 
 export type DisplayLogicType = {
@@ -152,4 +72,79 @@ export type DisplayLogicType = {
 } | {
     type: DisplayLogicTypes.seenBefore;
     localStorageIndentifier: string;
+};
+
+
+export type TitlePageType = PageType & {
+    pageType: PageTypes.title;
+    title: string;
+    subtitle: string;
+};
+
+export type NarratorPageType = PageType & {
+    pageType: PageTypes.narrator;
+    avatarImage: string;
+    avatarText: string;
+};
+
+export type QuestionPageType = PageType &  {
+    pageType: PageTypes.question;
+    avatarImage: string;
+    completed: boolean;
+    answeredCorrectly?: boolean;
+    question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType | EMAILQuestionType;
+};
+
+export type SuccessPageType = PageType & {
+    pageType: PageTypes.success;
+    avatarImage: string;
+    title: string;
+    subtitle: string;
+};
+
+type QuestionType = {
+    questionText: string;
+    skippable?: boolean;
+}
+
+export type MCSAQuestionType = QuestionType & {
+    questionType: QuestionTypes.MCSA;
+    options: Array<{
+        oid: number;
+        optionText: string;
+    }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
+};
+
+export type MCMAQuestionType = QuestionType & {
+    questionType: QuestionTypes.MCMA;
+    options: Array<{
+        oid: number;
+        optionText: string;
+    }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
+};
+
+export type ROQuestionType = QuestionType & {
+    questionType: QuestionTypes.RO;
+    options: Array<{
+        oid: number;
+        optionText: string;
+    }>;
+    correctAnswer?: Array<number>;
+    userAnswer?: Array<number>;
+};
+
+export type VERBQuestionType = QuestionType & {
+    questionType: QuestionTypes.VERB;
+    correctAnswer?: RegExp;
+    userAnswer?: string;
+};
+
+export type EMAILQuestionType = QuestionType & {
+    questionType: QuestionTypes.EMAIL;
+    correctAnswer?: RegExp;
+    userAnswer?: string;
 };
