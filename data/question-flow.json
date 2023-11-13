@@ -290,7 +290,8 @@
                     "backgroundImage": "Taiga4.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -513,7 +514,8 @@
                     "backgroundImage": "Rainforest3.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -736,7 +738,8 @@
                     "backgroundImage": "Ocean3.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -1000,7 +1003,8 @@
                     "backgroundImage": "Savanna4.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -1343,7 +1347,8 @@
                     "backgroundImage": "Desert5.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -1613,7 +1618,8 @@
                     "backgroundImage": "Mangrove5.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -1782,7 +1788,8 @@
                     "backgroundImage": "Mountain2.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -2125,7 +2132,8 @@
                     "backgroundImage": "Grasslands5.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -2461,7 +2469,8 @@
                     "backgroundImage": "Freshwater5.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
@@ -2800,7 +2809,8 @@
                     "backgroundImage": "Jungle5.png",
                     "completed": false,
                     "question": {
-                        "questionText": "Leave your email address",
+                        "questionTitle": "Don't miss out on our next projects!",
+                        "questionText": "Our goal is to remove the taboo around sustainability and make it available to everyone. Make sure to sign up to be notified when our next project is",
                         "questionType": "EMAIL",
                         "skippable": true,
                         "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
