@@ -14,6 +14,7 @@ const QuestionFlowContext = createContext<{
 	resetResponse: (pageId: string) => void;
 	calculateScore: () => { correct: number; total: number };
 	navigate: (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion: boolean) => void;
+	skipQuestion: (pageId: string) => void;
 }>({
 	chapterId: undefined,
 	currentIndex: undefined,
@@ -24,6 +25,7 @@ const QuestionFlowContext = createContext<{
 	resetResponse: () => {},
 	calculateScore: () => ({correct: 0, total: 0}),
 	navigate: () => {},
+	skipQuestion: () => {},
 });
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
@@ -95,6 +97,12 @@ export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNod
 		const newSession = { ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? newPage : p) }
 		setUserSession(newSession);
 		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
+	}
+
+	const skipQuestion = (pageId: string) => {
+		if (!userSession) return;
+		setUserSession({ ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? { ...p, completed: true } : p) });
+		navigate(currentIndex, currentIndex, "forward", false);
 	}
 
 	/**
@@ -204,6 +212,7 @@ export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNod
 			submitResponse,
 			resetResponse,
 			navigate,
+			skipQuestion,
 		}}>
 			{children}
 		</QuestionFlowContext.Provider>
