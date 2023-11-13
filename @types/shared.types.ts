@@ -140,6 +140,7 @@ export type SuccessPageType = {
 
 export type EMAILQuestionType = {
     questionType: QuestionTypes.EMAIL;
+    questionTitle: string;
     questionText: string;
     correctAnswer?: RegExp;
     userAnswer?: string;
