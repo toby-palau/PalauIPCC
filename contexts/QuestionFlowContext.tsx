@@ -30,7 +30,7 @@ const QuestionFlowContext = createContext<{
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
-export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNode; chapter: ChapterType }) => {
+export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { children: ReactNode; chapter: ChapterType; nextChapterId?: string }) => {
     const router = useRouter();
 	const [userSession, setUserSession] = useState<ChapterType>(chapter);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -150,7 +150,7 @@ export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNod
 		
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= userSession.pages.length - 1) return router.push(`/?previousChapter=${userSession.cid}`);
+			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/chapters/${nextChapterId}` : `/?previousChapter=${userSession.cid}`);
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;

@@ -7,7 +7,7 @@ import { ChapterContent } from "@root/components/Chapter/ChapterContent";
 import { getChapter } from "./actions";
 
 const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
-    const chapter = getChapter(chapterId);
+    const { chapter, nextChapterId } = getChapter(chapterId);
     if (!chapter) return <div>Chapter not found</div>;
 
     const backgroundImages = chapter.pages.map(p => (
@@ -21,7 +21,7 @@ const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
 
     return (
         <div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-            <QuestionFlowProvider chapter={chapter}>
+            <QuestionFlowProvider chapter={chapter} nextChapterId={nextChapterId}>
                 <ChapterBackground backgroundImages={backgroundImages} />
                 <ChapterHeader />
                 <ChapterContent />
