@@ -1,12 +1,14 @@
-import { ChapterInfoType, ChapterType, QuestionFlowType } from '@root/@types/shared.types';
-import fs from 'fs';
-import path from 'path';
+"use server"
+
+import fs from "fs";
+import { ChapterInfoType, QuestionFlowType } from "@root/@types/shared.types";
+import path from "path";
 
 const filePath = path.resolve("data", "question-flow.json");
 
-export const listAllSections: () => Promise<ChapterInfoType[]> = async () => {
-    try {
-        const fileContents = fs.readFileSync(filePath, 'utf8');
+export const listAllChapters: () => Promise<ChapterInfoType[]> = async () => {
+    try {        
+        const fileContents = fs.readFileSync(filePath, "utf8");
         const { chapters } = JSON.parse(fileContents) as QuestionFlowType;
         const chapterInfos = chapters.map(c => ({
             cid: c.cid, 
@@ -14,8 +16,8 @@ export const listAllSections: () => Promise<ChapterInfoType[]> = async () => {
             chapterTitle: c.chapterTitle, 
             chapterDescription: c.chapterDescription, 
             chapterCoverImage: c.chapterCoverImage
-        }));
-        return chapterInfos;
+        }));    
+        return chapterInfos; 
     } catch (error) {
         console.log(error)
         return [];

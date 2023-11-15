@@ -6,8 +6,8 @@ import { ChapterHeader } from "@root/components/Chapter/ChapterHeader";
 import { ChapterContent } from "@root/components/Chapter/ChapterContent";
 import { getChapter } from "./actions";
 
-const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
-    const chapter = getChapter(chapterId);
+const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
+    const chapter = await getChapter(chapterId);
     if (!chapter) return <div>Chapter not found</div>;
 
     const backgroundImages = chapter.pages.map(p => (

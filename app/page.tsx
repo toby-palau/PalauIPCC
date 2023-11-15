@@ -3,13 +3,13 @@
 import { dmsans, staatliches } from "@root/styles/fonts";
 import Link from "next/link";
 import { ChapterList } from "@root/components/Overview/ChapterList";
-import { listAllSections } from "./actions";
+import { listAllChapters } from "./actions";
 import { ChapterCard } from "@root/components/Overview/ChapterCard";
 import { Disclaimer } from "@root/components/Overview/Disclaimer";
 
 
 const Page = async ({searchParams: {previousChapter}}: {searchParams: {previousChapter?: string}}) => {
-    const chapters = await listAllSections();
+    const chapters = await listAllChapters();
     if (chapters.length <= 0) return null;
 
     let highlightedChapterIndex = 0;

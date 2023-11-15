@@ -3,7 +3,7 @@
 import { MCSAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 
-export const MultipleChoiceSingleAnswerQuestion = (props: {question: MCSAQuestionType, submitResponse: (s: Array<number>) => void}) => {
+export const MultipleChoiceSingleAnswerQuestion = (props: {question: MCSAQuestionType, submitResponse: (s: Array<string>) => void}) => {
     const correctIds = props.question.correctAnswer ?? [];
     const selectedIds = props.question.userAnswer ?? [];
     return (

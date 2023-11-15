@@ -10,7 +10,7 @@ const QuestionFlowContext = createContext<{
 	currentPage?: ChapterType["pages"][number];
 	progress?: number;
 	confetti: boolean;
-	submitResponse: (pageId: string, userAnswer: Array<number> | string) => boolean | undefined;
+	submitResponse: (pageId: string, userAnswer: Array<string> | string) => boolean | undefined;
 	resetResponse: (pageId: string) => void;
 	calculateScore: () => { correct: number; total: number };
 	navigate: (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion: boolean) => void;
@@ -71,7 +71,7 @@ export const QuestionFlowProvider = ({ children, chapter }: { children: ReactNod
 	 * @param pageId 
 	 * @param userAnswer 
 	 */
-    const submitResponse = (pageId: string, userAnswer: Array<number> | string) => {
+    const submitResponse = (pageId: string, userAnswer: Array<string> | string) => {
 		if (!userSession) return false;
 		const newPage = userSession.pages.find(p => p.pid === pageId);
 		if (!newPage || newPage.pageType !== PageTypes.question) return false;

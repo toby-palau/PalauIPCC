@@ -23,7 +23,7 @@ import {CSS} from '@dnd-kit/utilities';
 import { dmsans } from '@root/styles/fonts';
 import { ROQuestionType } from '@root/@types/shared.types';
 
-export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<number>) => void, resetResponse: () => void}) => {
+export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));
     const sensors = useSensors(
         useSensor(MouseSensor, {activationConstraint: {distance: 8}}),
@@ -76,15 +76,15 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
         const {active, over} = event;
         if (over && active.id !== over.id) {
             setItems((items) => {
-                const oldIndex = items.indexOf(active.id as number);
-                const newIndex = items.indexOf(over.id as number);
+                const oldIndex = items.indexOf(active.id as string);
+                const newIndex = items.indexOf(over.id as string);
                 return arrayMove(items, oldIndex, newIndex);
             });
         }
     }
 }
 
-const Sortable = (props: {children: ReactNode, id: number, index: number, invertSvgColor: boolean, className?: string}) => {
+const Sortable = (props: {children: ReactNode, id: string, index: number, invertSvgColor: boolean, className?: string}) => {
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({id: props.id});
     
     const style = { transform: CSS.Transform.toString(transform), touchAction: "none", transition };

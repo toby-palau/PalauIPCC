@@ -4,8 +4,8 @@ import { MCMAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 import { useState } from "react";
 
-export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestionType, submitResponse: (s: Array<number>) => void, resetResponse: () => void}) => {
-    const [selectedIds, setSelectedIds] = useState<Array<number>>(props.question.userAnswer ?? []);
+export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestionType, submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
+    const [selectedIds, setSelectedIds] = useState<Array<string>>(props.question.userAnswer ?? []);
 
     const questionAnswered = Boolean(props.question.userAnswer);
     const userAnswerIds = props.question.userAnswer;
@@ -13,7 +13,7 @@ export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestion
     const questionHasCorrectAnswer = Boolean(props.question.correctAnswer);
     const correctIds = props.question.correctAnswer;
 
-    const toggleOption = (oid: number) => {
+    const toggleOption = (oid: string) => {
         props.resetResponse();
         if (selectedIds.includes(oid)) setSelectedIds(selectedIds.filter(id => id !== oid));
         else setSelectedIds([...selectedIds, oid]);

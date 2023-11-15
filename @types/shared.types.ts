@@ -63,6 +63,7 @@ type PageType = {
     pid: string;
     backgroundImage: string;
     displayLogic?: DisplayLogicType;
+    completed?: boolean;
 };
 
 export type DisplayLogicType = {
@@ -90,7 +91,6 @@ export type NarratorPageType = PageType & {
 export type QuestionPageType = PageType &  {
     pageType: PageTypes.question;
     avatarImage: string;
-    completed: boolean;
     answeredCorrectly?: boolean;
     question: MCSAQuestionType | MCMAQuestionType | ROQuestionType | VERBQuestionType | EMAILQuestionType;
 };
@@ -111,31 +111,31 @@ type QuestionType = {
 export type MCSAQuestionType = QuestionType & {
     questionType: QuestionTypes.MCSA;
     options: Array<{
-        oid: number;
+        oid: string;
         optionText: string;
     }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
+    correctAnswer?: Array<string>;
+    userAnswer?: Array<string>;
 };
 
 export type MCMAQuestionType = QuestionType & {
     questionType: QuestionTypes.MCMA;
     options: Array<{
-        oid: number;
+        oid: string;
         optionText: string;
     }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
+    correctAnswer?: Array<string>;
+    userAnswer?: Array<string>;
 };
 
 export type ROQuestionType = QuestionType & {
     questionType: QuestionTypes.RO;
     options: Array<{
-        oid: number;
+        oid: string;
         optionText: string;
     }>;
-    correctAnswer?: Array<number>;
-    userAnswer?: Array<number>;
+    correctAnswer?: Array<string>;
+    userAnswer?: Array<string>;
 };
 
 export type VERBQuestionType = QuestionType & {
