@@ -1,8 +1,8 @@
 "use server"
 
-import fs from "fs";
-import { ChapterInfoType, QuestionFlowType } from "@root/@types/shared.types";
-import path from "path";
+import { ChapterInfoType, QuestionFlowType } from '@root/@types/shared.types';
+import fs from 'fs';
+import path from 'path';
 
 const filePath = path.resolve("data", "question-flow.json");
 

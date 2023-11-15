@@ -10,7 +10,7 @@ const prisma = new PrismaClient()
 
 const filePath = path.resolve("data", "question-flow.json");
 
-export const getChapter: (chapterId: string) => Promise<ChapterType | undefined> = async (chapterId) => {
+export const getChapter: (chapterId: string) => {chapter?: ChapterType; nextChapterId?: string} = (chapterId) => {
     try {
         const userId = cookies().get("userId")?.value;
         if (!userId) throw new Error('Unauthorized');
@@ -38,9 +38,10 @@ export const getChapter: (chapterId: string) => Promise<ChapterType | undefined>
             ) return { ...p, userAnswer: response.userAnswer as string };
             else return p;
         })
-        return chapter;
+        const nextChapterId = chapters[chapters.findIndex(c => c.cid === chapterId) + 1]?.cid;
+        return { chapter, nextChapterId};
     } catch (error) {
         console.log(error);
-        return;
+        return {chapter: undefined, nextChapterId: undefined};
     }
 }
