@@ -10,7 +10,7 @@ const prisma = new PrismaClient()
 
 const filePath = path.resolve("data", "question-flow.json");
 
-export const getChapter: (chapterId: string) => {chapter?: ChapterType; nextChapterId?: string} = (chapterId) => {
+export const getChapter: (chapterId: string) => Promise<{chapter?: ChapterType; nextChapterId?: string}> = async (chapterId) => {
     try {
         const userId = cookies().get("userId")?.value;
         if (!userId) throw new Error('Unauthorized');
