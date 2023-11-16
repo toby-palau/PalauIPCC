@@ -30,9 +30,9 @@ export const EmailQuestion = (props: {question: EMAILQuestionType; disabled: boo
             <img src={"/images/misc/PalauLogo.png"} alt="Palau Logo" className="w-24 py-4" />
             <h1 className={`${dmsans.className} sm:text-4xl text-3xl mt-6 mb-2 text-white text-center font-bold`}>{props.question.questionTitle}</h1>
             <p className={`${dmsans.className} text-white text-center mt-2 mb-6`}>{props.question.questionText}</p>
-            <input disabled={!passTest || props.disabled} type="email" onChange={e => setValue(e.target.value)} value={value} className={`${dmsans.className} w-full md:w-96 w-48 bg-transparent text-white border border-white rounded-md px-2 py-4`} autoFocus />
+            <input disabled={props.disabled} type="email" onChange={e => setValue(e.target.value)} value={value} className={`${dmsans.className} w-full md:w-96 w-48 bg-transparent text-white border border-white rounded-md px-2 py-4`} autoFocus />
             <button disabled={!passTest || props.disabled} className={`${dmsans.className} w-full mt-2 p-4 rounded-md ${!passTest || props.disabled ? "bg-blue-dark text-white-dark" : "bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100"}`} onClick={onSubmit}>{"Submit"}</button>
-            { question.skippable && <button disabled={!passTest || props.disabled} className={`${dmsans.className} w-full mt-2 p-4 underline text-white`} onClick={skipQuestion}>{"Skip"}</button> }
+            { question.skippable && <button disabled={props.disabled} className={`${dmsans.className} w-full mt-2 p-4 underline text-white active:scale-95 transition-all duration-100`} onClick={skipQuestion}>{"Skip"}</button> }
         </div>
     )
 }
