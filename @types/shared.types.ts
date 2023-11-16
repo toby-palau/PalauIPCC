@@ -57,6 +57,7 @@ export type ChapterInfoType = {
     chapterTitle: string;
     chapterDescription: string;
     chapterCoverImage: string;
+    questionIds: string[];
 };
 
 type PageType = {

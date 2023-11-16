@@ -4,7 +4,7 @@ import { MCMAQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
 import { useState } from "react";
 
-export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestionType, submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
+export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestionType; disabled: boolean; submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
     const [selectedIds, setSelectedIds] = useState<Array<string>>(props.question.userAnswer ?? []);
 
     const questionAnswered = Boolean(props.question.userAnswer);
@@ -25,7 +25,7 @@ export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestion
             <div className="flex flex-col items-center justify-between">
                 { props.question.options.map(o => {
                     const selected = selectedIds.includes(o.oid) || userAnswerIds?.includes(o.oid);
-                    let className = `${dmsans.className} w-full flex flex-row justify-between items-center cursor-pointer sm:text-xl text-md text-center text-black rounded-md my-0.5 p-3 active:scale-95 transition-all duration-100`;
+                    let className = `${dmsans.className} w-full flex flex-row justify-between items-center cursor-pointer sm:text-xl text-md text-center text-black rounded-md my-0.5 p-3 ${!props.disabled && "active:scale-95"} transition-all duration-100`;
                     if (questionAnswered && questionHasCorrectAnswer) {
                         if (userAnswerIds?.includes(o.oid)) {
                             if (correctIds?.includes(o.oid)) className += " bg-green hover:bg-green-dark text-white";
@@ -45,6 +45,7 @@ export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestion
                             key={`option-${o.oid}`} 
                             className={className} 
                             onClick={() => toggleOption(o.oid)}
+                            disabled={props.disabled}
                         >
                             <div className="flex-1">
                                 <div className={`border-2 border-black rounded-md h-6 w-6 p-0.5`}>
@@ -62,6 +63,7 @@ export const MultipleChoiceMultiAnswerQuestion = (props: {question: MCMAQuestion
             <button 
                 className={`${dmsans.className} mt-2 p-4 w-full rounded-md bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100`} 
                 onClick={() => props.submitResponse(selectedIds)}
+                disabled={props.disabled || !selectedIds.length}
             >{"Submit"}</button>
         </div>
     )

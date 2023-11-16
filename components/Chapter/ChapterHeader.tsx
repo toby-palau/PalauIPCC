@@ -1,6 +1,6 @@
 "use client"
 
-import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
+import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
 import { useRouter } from "next/navigation";
 import { dmsans } from "@root/styles/fonts";
 

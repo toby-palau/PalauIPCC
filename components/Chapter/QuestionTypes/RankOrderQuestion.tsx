@@ -23,7 +23,7 @@ import {CSS} from '@dnd-kit/utilities';
 import { dmsans } from '@root/styles/fonts';
 import { ROQuestionType } from '@root/@types/shared.types';
 
-export const RankOrderQuestion = (props: {question: ROQuestionType, submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
+export const RankOrderQuestion = (props: {question: ROQuestionType; disabled: boolean; submitResponse: (s: Array<string>) => void, resetResponse: () => void}) => {
     const [items, setItems] = useState(props.question.userAnswer ?? props.question.options.map(o => o.oid));
     const sensors = useSensors(
         useSensor(MouseSensor, {activationConstraint: {distance: 8}}),
@@ -43,6 +43,7 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
                 <SortableContext 
                     items={items}
                     strategy={verticalListSortingStrategy}
+                    disabled={props.disabled}
                 >
                     { items.map((id, i) => {
                         let sortableClassName = `${dmsans.className} w-full flex flex-row justify-between sm:text-xl text-md text-center rounded-md my-0.5 p-3 transition-all duration-100 active:scale-95`;
@@ -66,8 +67,9 @@ export const RankOrderQuestion = (props: {question: ROQuestionType, submitRespon
                 </SortableContext>
             </DndContext>
             <button 
-                className={`${dmsans.className} mt-2 p-4 w-full rounded-md bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100`} 
+                className={`${dmsans.className} mt-2 p-4 w-full rounded-md bg-blue hover:bg-blue-dark ${!props.disabled && "active:scale-95"} transition-all duration-100`} 
                 onClick={() => props.submitResponse(items)}
+                disabled={props.disabled}
             >{"Submit"}</button>
         </div>
     );

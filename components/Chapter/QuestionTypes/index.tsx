@@ -1,16 +1,15 @@
 "use client"
 
-import { QuestionPageType, QuestionTypes } from "@root/@types/shared.types"
-import { MultipleChoiceSingleAnswerQuestion } from "./MultipleChoiceSingleAnswerQuestion"
-import { MultipleChoiceMultiAnswerQuestion } from "./MultipleChoiceMultiAnswerQuestion"
-import { RankOrderQuestion } from "./RankOrderQuestion"
-import { VerbatimQuestion } from "./VerbatimQuestion"
-import { EmailQuestion } from "./EmailQuestion"
-import Confetti from "../Confetti"
-import { useQuestionFlow } from "@root/contexts/QuestionFlowContext"
+import { QuestionPageType, QuestionTypes } from "@root/@types/shared.types";
+import { MultipleChoiceSingleAnswerQuestion } from "./MultipleChoiceSingleAnswerQuestion";
+import { MultipleChoiceMultiAnswerQuestion } from "./MultipleChoiceMultiAnswerQuestion";
+import { RankOrderQuestion } from "./RankOrderQuestion";
+import { VerbatimQuestion } from "./VerbatimQuestion";
+import { EmailQuestion } from "./EmailQuestion";
+import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
 
 export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
-    const { confetti, submitResponse, resetResponse, skipQuestion } = useQuestionFlow();
+    const { disableQuestionAnswers, submitResponse, resetResponse, skipQuestion } = useQuestionFlow();
     const { question } = questionPage;
 
     return (
@@ -19,6 +18,7 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
                 <MultipleChoiceSingleAnswerQuestion
                     question={question} 
                     submitResponse={response => submitResponse(questionPage.pid, response)}
+                    disabled={disableQuestionAnswers}
                 />
             ) }
             { question.questionType === QuestionTypes.MCMA && (
@@ -26,6 +26,7 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
                     resetResponse={() => resetResponse(questionPage.pid)}
+                    disabled={disableQuestionAnswers}
                 />
             ) }
             { question.questionType === QuestionTypes.RO && (
@@ -33,12 +34,14 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
                     resetResponse={() => resetResponse(questionPage.pid)}
+                    disabled={disableQuestionAnswers}
                 />
             ) }
             { question.questionType === QuestionTypes.VERB && (
                 <VerbatimQuestion
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
+                    disabled={disableQuestionAnswers}
                 />
             ) }
             { question.questionType === QuestionTypes.EMAIL && (
@@ -46,9 +49,9 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
                     skipQuestion={() => skipQuestion(questionPage.pid)}
+                    disabled={disableQuestionAnswers}
                 />
             ) }
-            { confetti && <Confetti /> }
         </div>
     )
 }

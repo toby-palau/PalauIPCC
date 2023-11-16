@@ -1,8 +1,11 @@
 "use client"
 
-import { ReactNode, createContext, useContext, useEffect, useMemo, useState } from "react";
-import { ChapterType, DisplayLogicType, DisplayLogicTypes, PageTypes, QuestionTypes } from "@root/@types/shared.types";
+import { ReactNode, createContext, useContext, useEffect, useState } from "react";
+import { ChapterType, DisplayLogicType, DisplayLogicTypes, PageTypes } from "@root/@types/shared.types";
 import { useRouter } from "next/navigation";
+import { setUserIdCookie } from "@root/services/AuthService";
+import { createNewResponse, resetExistingResponse } from "@root/services/DatabaseService";
+import { updateQuestionPage } from "@root/services/QuestionFlowService";
 
 const QuestionFlowContext = createContext<{
 	chapterId?: string;
@@ -10,7 +13,8 @@ const QuestionFlowContext = createContext<{
 	currentPage?: ChapterType["pages"][number];
 	progress?: number;
 	confetti: boolean;
-	submitResponse: (pageId: string, userAnswer: Array<string> | string) => boolean | undefined;
+	disableQuestionAnswers: boolean;
+	submitResponse: (pageId: string, userAnswer: Array<string> | string) => void;
 	resetResponse: (pageId: string) => void;
 	calculateScore: () => { correct: number; total: number };
 	navigate: (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion: boolean) => void;
@@ -21,6 +25,7 @@ const QuestionFlowContext = createContext<{
 	currentPage: undefined,
 	progress: undefined,
 	confetti: false,
+	disableQuestionAnswers: false,
 	submitResponse: () => false,
 	resetResponse: () => {},
 	calculateScore: () => ({correct: 0, total: 0}),
@@ -30,21 +35,33 @@ const QuestionFlowContext = createContext<{
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
-export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { children: ReactNode; chapter: ChapterType; nextChapterId?: string }) => {
+export const QuestionFlowProvider = ({ children, initialSession, userId, nextChapterId }: { children: ReactNode; initialSession: ChapterType; userId: string; nextChapterId?: string }) => {
     const router = useRouter();
-	const [userSession, setUserSession] = useState<ChapterType>(chapter);
+	const [userSession, setUserSession] = useState<ChapterType>(initialSession);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 	const [progress, setProgress] = useState<number>(0);
 	const [shiftDown, setShiftDown] = useState<boolean>(false);
 	const [confetti, setConfetti] = useState<boolean>(false);
 	const [currentPage, setCurrentPage] = useState<ChapterType["pages"][number]>();
+	const [triggerTimeoutToNextQuestion, setTriggerTimeoutToNextQuestion] = useState<boolean>(false);
+	const [disableQuestionAnswers, setDisableQuestionAnswers] = useState<boolean>(false);
+	const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout>();
 
+	useEffect(() => {
+		setUserIdCookie(userId);
+	}, []);
+
+	useEffect(() => {
+		if (!triggerTimeoutToNextQuestion) return;
+		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
+		setTriggerTimeoutToNextQuestion(false);
+	}, [triggerTimeoutToNextQuestion])
 	
 	useEffect(() => {
 		if (!userSession) return;
 		setCurrentPage(userSession.pages[currentIndex]);
 		setProgress((currentIndex / userSession.pages.length) * 100);
-	}, [currentIndex]);
+	}, [currentIndex, userSession]);
 
 	/**
 	 * Handle keyboard navigation
@@ -71,34 +88,29 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 	 * @param pageId 
 	 * @param userAnswer 
 	 */
-    const submitResponse = (pageId: string, userAnswer: Array<string> | string) => {
-		if (!userSession) return false;
-		const newPage = userSession.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return false;
+    const submitResponse = async (pageId: string, userAnswer: Array<string> | string) => {
+		setDisableQuestionAnswers(true);
+		if (!userSession) return;
+		let page = userSession.pages.find(p => p.pid === pageId);
+		if (!page || page.pageType !== PageTypes.question) return;
 
-		if (newPage.question.correctAnswer) {
-			let correct = false;
-			if (newPage.question.questionType === QuestionTypes.MCSA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.MCMA && Array.isArray(userAnswer)) {
-				correct = userAnswer.sort().join() === newPage.question.correctAnswer.sort().join();
-			} else if (newPage.question.questionType === QuestionTypes.RO && Array.isArray(userAnswer)) {
-				correct = userAnswer.join() === newPage.question.correctAnswer.join();
-			} else if ((newPage.question.questionType === QuestionTypes.VERB || newPage.question.questionType === QuestionTypes.EMAIL) && typeof userAnswer === "string") {
-				const regex = new RegExp(newPage.question.correctAnswer, "i");
-				correct = userAnswer.match(regex) !== null;
-			}
-			if (correct) triggerConfetti();
-			newPage.answeredCorrectly = correct;
-		}
-		newPage.question.userAnswer = userAnswer;
-		newPage.completed = true;
+		const newPage = await updateQuestionPage(page, { userAnswer, questionType: page.question.questionType });
+		if (newPage.answeredCorrectly) triggerConfetti();
 		
-		const newSession = { ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? newPage : p) }
+		const newSession = {
+			...userSession, 
+			pages: userSession.pages.map(p => p.pid === pageId ? newPage : p),
+		};
 		setUserSession(newSession);
-		setTimeout(() => navigate(currentIndex, currentIndex, "forward", false), 1000);
+		
+		createNewResponse(userId, pageId, newPage.question.questionType, userAnswer);
+		setTriggerTimeoutToNextQuestion(true);
 	}
 
+	/**
+	 * Skip a question
+	 * @param pageId 
+	 */
 	const skipQuestion = (pageId: string) => {
 		if (!userSession) return;
 		setUserSession({ ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? { ...p, completed: true } : p) });
@@ -110,18 +122,17 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 	 * @param pageId 
 	 * @returns 
 	 */
-	const resetResponse = (pageId: string) => {
+	const resetResponse = async (pageId: string) => {
 		if (!userSession) return;
 
-		const newPage = userSession.pages.find(p => p.pid === pageId);
-		if (!newPage || newPage.pageType !== PageTypes.question) return;
-
-		newPage.question.userAnswer = undefined;
-		newPage.completed = false;
-		newPage.answeredCorrectly = undefined;
+		let page = userSession.pages.find(p => p.pid === pageId);
+		if (!page || page.pageType !== PageTypes.question) return;
 		
+		const newPage = await updateQuestionPage(page);
 		const newSession = { ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? newPage : p) }
 		setUserSession(newSession);
+
+		resetExistingResponse(userId, pageId);
 	}
 
 	/**
@@ -143,8 +154,9 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 	 * @param skippedQuestion 
 	 */
 	const navigate = (fromIndex: number, fallbackIndex: number, direction: "forward" | "backward", skippedQuestion: boolean) => {
+		setDisableQuestionAnswers(false);
 		if (!userSession) return;
-
+		
 		const currentQuestion = userSession.pages[fromIndex];
 		if (!currentQuestion) return setCurrentIndex(fallbackIndex);
 		
@@ -155,13 +167,13 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;
 		}
-
+		
 		if (direction === "backward") {
 			if (fromIndex <= 0) return setCurrentIndex(fallbackIndex);
 			if (shiftDown) return setCurrentIndex(fromIndex - 1);
 			toIndex --;
 		}
-
+		
 		const newQuestion = userSession.pages[toIndex];
 		if (!newQuestion) return setCurrentIndex(fallbackIndex);
 		if (!newQuestion.displayLogic) return setCurrentIndex(toIndex);
@@ -196,10 +208,12 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 	}
 
 	const triggerConfetti = () => {
-		setConfetti(true);
-		setTimeout(() => setConfetti(false), 3000);
+		if (timeoutId) clearTimeout(timeoutId);
+		setConfetti(false);
+		setTimeout(() => setConfetti(true), 10);
+		const newTimeoutId = setTimeout(() => setConfetti(false), 3500);
+		setTimeoutId(newTimeoutId);
 	}
-
 
 	return (
 		<QuestionFlowContext.Provider value={{
@@ -208,6 +222,7 @@ export const QuestionFlowProvider = ({ children, chapter, nextChapterId }: { chi
 			currentPage,
 			progress,
 			confetti,
+			disableQuestionAnswers,
 			calculateScore,
 			submitResponse,
 			resetResponse,

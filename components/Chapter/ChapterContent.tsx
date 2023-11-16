@@ -5,10 +5,11 @@ import { Question } from "./QuestionTypes";
 import { Narrator } from "./Narrator";
 import { SuccessScreen } from "./ScreenTypes/SuccessScreen";
 import { Title } from "./ScreenTypes/Title";
-import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
+import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
+import Confetti from "./Confetti";
 
 export const ChapterContent = () => {
-    const {currentPage} = useQuestionFlow();
+    const {currentPage, confetti} = useQuestionFlow();
     if (!currentPage) return null;
 
     return (
@@ -36,6 +37,8 @@ export const ChapterContent = () => {
                     avatarImage={currentPage.avatarImage}
                 />
             ) }
+            { confetti && <Confetti /> }
+
         </>
     )
 
