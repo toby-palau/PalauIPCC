@@ -104,8 +104,8 @@ export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }
 		const newPage = await updateQuestionPage(page, { userAnswer, questionType: page.question.questionType });
 		if (newPage.answeredCorrectly) triggerConfetti();
 
-		if (userSession.pages.filter(p => p.pageType === PageTypes.question && p.completed).length <= 0) track("Chapter Submit First Question", {chapterId: userSession.cid, chapterTitle: userSession.chapterTitle});
-		if (userSession.pages.findLastIndex(p => p.pageType === PageTypes.question && !p.question.skippable) === currentIndex) track("Chapter Submit Last Question", {chapterId: userSession.cid, chapterTitle: userSession.chapterTitle});
+		if (userSession.pages.filter(p => p.pageType === PageTypes.question && p.completed).length <= 0) track("Submit First Question In Chapter", {chapterId: userSession.cid, chapterTitle: userSession.chapterTitle});
+		if (userSession.pages.findLastIndex(p => p.pageType === PageTypes.question && !p.question.skippable) === currentIndex) track("Submit Last Question In Chapter", {chapterId: userSession.cid, chapterTitle: userSession.chapterTitle});
 
 		const newSession = {
 			...userSession, 

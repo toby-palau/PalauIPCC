@@ -9,6 +9,7 @@ import { getUserId } from "@root/services/AuthService";
 import { getResponses } from "@root/services/DatabaseService";
 import { AuthProvider } from "@root/contexts/AuthContext";
 import { track } from "@vercel/analytics";
+import { PageTypes } from "@root/@types/shared.types";
 
 const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
     const { chapter, nextChapterId } = await getChapter(chapterId);
@@ -20,7 +21,7 @@ const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
     
     const responses = await getResponses(userId);
     if (!responses) return <div>Responses not found</div>;
-    if (responses.length <= 0) track("Chapter Start", {chapterId, chapterTitle: chapter.chapterTitle});
+    if (chapter.pages.filter(c => c.pageType === PageTypes.question && c.completed).length <= 0) track("Start Chapter", {chapterId, chapterTitle: chapter.chapterTitle});
 
     const userSession = populateUserSession(chapter, responses);
     if (!userSession) return <div>Could not populate user session</div>;

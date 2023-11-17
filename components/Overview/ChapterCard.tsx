@@ -12,7 +12,7 @@ export const ChapterCard = ({chapter, progress, score}: {chapter: ChapterInfoTyp
             key={`chapter-${chapter.cid}`} 
             href={`/chapters/${chapter.cid}`} 
             className="rounded-md cursor-pointer justify-center"
-            onClick={() => track("Chapter Card Clicked", {chapterId: chapter.cid, chapterTitle: chapter.chapterTitle})}
+            onClick={() => track("Click Chapter Card", {chapterId: chapter.cid, chapterTitle: chapter.chapterTitle})}
         >
             <div className="relative md:h-48 h-36 w-full mb-2 rounded-md object-cover hover:border-2 hover:border-blue overflow-hidden">
                 <img src={`/images/backgrounds/thumbnail_${chapter.chapterCoverImage}`} className="absolute h-full w-full object-cover"/>
