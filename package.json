@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "prisma:migrate": "dotenv -e .env.development.local -- npx prisma migrate dev"
   },
   "dependencies": {
