@@ -47,7 +47,7 @@ export const populateUserSession: (chapter: ChapterType, responses: Response[]) 
             const response = responses.find(r => r.questionId === p.pid);
             if (p.pageType === PageTypes.question) return updateQuestionPage(p, response);
             else return p;
-        })
+        });
         return chapter;
     } catch (error) {
         console.log(error);

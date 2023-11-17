@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { EMAILQuestionType } from "@root/@types/shared.types";
 import { dmsans } from "@root/styles/fonts";
-import { subscribeToMailList } from "./actions";
+import { subscribeToMailList } from "../../../services/MailChimpService";
 
 
 export const EmailQuestion = (props: {question: EMAILQuestionType; disabled: boolean; submitResponse: (s: string) => void; skipQuestion: () => void}) => {
