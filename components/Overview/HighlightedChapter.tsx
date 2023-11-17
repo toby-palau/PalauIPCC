@@ -1,3 +1,5 @@
+"use client"
+
 import { ChapterInfoType } from "@root/@types/shared.types"
 import { dmsans, staatliches } from "@root/styles/fonts"
 import { track } from "@vercel/analytics"
