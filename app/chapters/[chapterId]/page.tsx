@@ -4,11 +4,27 @@ import { QuestionFlowProvider } from "@root/contexts/QuestionFlowContext";
 import { ChapterBackground } from "@root/components/Chapter/ChapterBackground";
 import { ChapterHeader } from "@root/components/Chapter/ChapterHeader";
 import { ChapterContent } from "@root/components/Chapter/ChapterContent";
-import { getChapter } from "./actions";
+import { getChapter, populateUserSession } from "@root/services/QuestionFlowService";
+import { getUserId } from "@root/services/AuthService";
+import { getResponses } from "@root/services/DatabaseService";
+import { AuthProvider } from "@root/contexts/AuthContext";
+import { track } from "@vercel/analytics/server";
+import { PageTypes } from "@root/@types/shared.types";
 
-const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
-    const { chapter, nextChapterId } = getChapter(chapterId);
+const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
+    const { chapter, nextChapterId } = await getChapter(chapterId);
+
     if (!chapter) return <div>Chapter not found</div>;
+
+    const userId = await getUserId();
+    if (!userId) return <div>Unauthorized</div>;
+    
+    const responses = await getResponses(userId);
+    if (!responses) return <div>Responses not found</div>;
+    if (chapter.pages.filter(c => c.pageType === PageTypes.question && c.completed).length <= 0) track("Start Chapter", {chapterId, chapterTitle: chapter.chapterTitle});
+
+    const userSession = populateUserSession(chapter, responses);
+    if (!userSession) return <div>Could not populate user session</div>;
 
     const backgroundImages = chapter.pages.map(p => (
         <img 
@@ -21,11 +37,13 @@ const Page = ({params: {chapterId}}: {params: {chapterId: string}}) => {
 
     return (
         <div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-            <QuestionFlowProvider chapter={chapter} nextChapterId={nextChapterId}>
-                <ChapterBackground backgroundImages={backgroundImages} />
-                <ChapterHeader />
-                <ChapterContent />
-            </QuestionFlowProvider>
+            <AuthProvider userId={userId}>
+                <QuestionFlowProvider initialSession={userSession} nextChapterId={nextChapterId}>
+                    <ChapterBackground backgroundImages={backgroundImages} />
+                    <ChapterHeader />
+                    <ChapterContent />
+                </QuestionFlowProvider>
+            </AuthProvider>
         </div>
     )
 }

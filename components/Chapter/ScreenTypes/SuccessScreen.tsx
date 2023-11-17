@@ -10,13 +10,13 @@ type SuccessProps = {
     avatarImage: string;
 }
 
+const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"};
+
 export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
     const [startAnimations, setStartAnimations] = useState<boolean>(false);
     const { calculateScore } = useQuestionFlow();
     // const [stars, setStars] = useState<any[]>([]);
     const [score, setScore] = useState<number>(0);
-
-    const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"};
 
     useEffect(() => {
         setStartAnimations(true);

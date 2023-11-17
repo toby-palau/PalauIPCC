@@ -30,7 +30,7 @@ export const ChapterHeader = () => {
                 <div 
                     id="home-button"
                     className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-                    onClick={() => router.push(`/?previousChapter=${chapterId}`)}
+                    onClick={() => router.push("/")}
                 >
                     <img 
                         src="/images/misc/home.svg"

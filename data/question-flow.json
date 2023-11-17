@@ -40,7 +40,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Taiga1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "How much have global temperatures risen between 1850 and 2020?",
                         "questionType": "MCSA",
@@ -48,7 +47,6 @@
                         "correctAnswer": [
                             "OID_01HEMNQBP6YF04AWAXYZRWQZT2"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNQR7A8YQCEGMX7ED1MA7E",
@@ -98,7 +96,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Taiga2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "The rate of growth of average annual Greenhouse Gas emissions was higher in 2010-2019 than in 2000-2009",
                         "questionType": "MCSA",
@@ -106,7 +103,6 @@
                         "correctAnswer": [
                             "OID_01HEMNRGXNQRQSHPG32NQ7C6RQ"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNRNN7VBZ2M38ED5XA9RVD",
@@ -148,7 +144,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Taiga3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Rank the sectors contributing to GHG emissions from highest to lowest",
                         "questionType": "RO",
@@ -160,7 +155,6 @@
                             "OID_01HEMNT5S8CSBTGA7P921AAYBW",
                             "OID_01HEMNTJ4NVQ76TQ7C6JQ67C87"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNSBSBKFF3A8B6AVR35734",
@@ -214,7 +208,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Taiga4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Click the region with the most Net GHG emissions per capita",
                         "questionType": "MCSA",
@@ -222,7 +215,6 @@
                         "correctAnswer": [
                             "OID_01HEMNV2N1J0VCKRHZTZQHZNF3"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNW0PBBEFQ6E57FY923SB7",
@@ -288,14 +280,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Taiga4.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -330,7 +320,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Rainforest1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What contributed most to global warming?",
                         "questionType": "MCSA",
@@ -338,7 +327,6 @@
                         "correctAnswer": [
                             "OID_01HEMNWJFWGRCWYFTF0W2B0Z3G"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNX52RY7773NM0W55MCQ6Q",
@@ -388,7 +376,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Rainforest2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What percentage of the population experiences severe water scarcity for at least some part of the year?",
                         "questionType": "MCSA",
@@ -396,7 +383,6 @@
                         "correctAnswer": [
                             "OID_01HEPZBY9VWX9FN694RBX1W53B"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEPZBNT96C39WZCAWRRGAN6C",
@@ -446,7 +432,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Rainforest3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "How much higher are human mortality rates caused by floods, storms, and droughts in highly vulnerable regions compared to low-vulnerability regions?",
                         "questionType": "MCSA",
@@ -454,7 +439,6 @@
                         "correctAnswer": [
                             "OID_01HEMNXA2J8FFDBESRQS5CVCPY"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNYK1W6V9X42J1ATDG5949",
@@ -512,14 +496,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Rainforest3.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -554,7 +536,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Ocean1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which of the following best describes the aim of the Paris Agreement?",
                         "questionType": "MCSA",
@@ -562,7 +543,6 @@
                         "correctAnswer": [
                             "OID_01HEMNYZMWVP8VC806WS392HGC"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNZ7Y3D1HT5V00RNYXZ3M3",
@@ -612,7 +592,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Ocean2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What was the goal for the public and publicly mobilized private climate finance flow from developed to developing countries per year, set in 2018 by the UNFCCC and the Paris Agreement?",
                         "questionType": "MCSA",
@@ -620,7 +599,6 @@
                         "correctAnswer": [
                             "OID_01HEMNZJ4E81KEQSRJPAEMYHKQ"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMNZYPYE4RRV7FMGW9VA3P7",
@@ -670,7 +648,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Ocean3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "How many countries have already adopted laws focused primarily on reducing GHG emissions in 2020?",
                         "questionType": "MCSA",
@@ -678,7 +655,6 @@
                         "correctAnswer": [
                             "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEPZRM5PSQ1N28RCJPKQ3W9Z",
@@ -736,14 +712,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Ocean3.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -779,7 +753,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Savanna1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Based on current NDCs (Nationally Determined Contribution) announced before COP26, global warming will likely exceed/stay under 1.5C during the 21st century.",
                         "questionType": "MCSA",
@@ -787,7 +760,6 @@
                         "correctAnswer": [
                             "OID_01HEMP0J11D59ZBAAVF8T1DZ96"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP0J11D59ZBAAVF8T1DZ96",
@@ -829,7 +801,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Savanna2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Rank the the three biggest challenges for mitigation strategy implementations from most challenging to least challenging.",
                         "questionType": "RO",
@@ -839,7 +810,6 @@
                             "OID_01HEMP1K04D23HKNCWGR2C7EQY", 
                             "OID_01HEMP1X226V85EV9GP74G8D2Z"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP1X226V85EV9GP74G8D2Z",
@@ -885,7 +855,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Savanna3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Many adaptation initiatives prioritize immediate climate risk reduction for which time period?",
                         "questionType": "MCSA",
@@ -893,7 +862,6 @@
                         "correctAnswer": [
                             "OID_01HEMP29DF114TR9YDFEYMBAJV"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP29DF114TR9YDFEYMBAJV",
@@ -935,7 +903,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Savanna4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "How many countries have the intention of achieving net zero emissions by 2050?",
                         "questionType": "MCSA",
@@ -943,7 +910,6 @@
                         "correctAnswer": [
                             "OID_01HEMP2PTNG4KADRB5JKY7E9KG"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP31K84JVWH6MXDY71CSXN",
@@ -1001,14 +967,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Savanna4.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -1044,7 +1008,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Desert1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which of the following statements about sea level rise is true, according to the report?",
                         "questionType": "MCSA",
@@ -1052,7 +1015,6 @@
                         "correctAnswer": [
                             "OID_01HEMP3GC21VFJRRPND86ZCBW1"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP3SCW7ZE7D5QCZVZ57TTX",
@@ -1102,7 +1064,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Desert2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which component of the climate system will experience changes due to future warming?",
                         "questionType": "MCSA",
@@ -1110,7 +1071,6 @@
                         "correctAnswer": [
                             "OID_01HEMP4EZAXFCCFHBF95XERCBR"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP4Q7Q8DSNS8DDKG3VXQ26",
@@ -1160,7 +1120,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Desert3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Rank the following in terms of their potential impact on future warming.",
                         "questionType": "RO",
@@ -1171,7 +1130,6 @@
                             "OID_01HEMP5KVC56PFPXHZB3C7ZW32", 
                             "OID_01HEMP5WPF79S488RHYMWWXF5K"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP53042A2D1JWPGFSM8HHW",
@@ -1221,7 +1179,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Desert4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "How does the report describe the nature of changes due to future warming in every region?",
                         "questionType": "MCSA",
@@ -1229,7 +1186,6 @@
                         "correctAnswer": [
                             "OID_01HEMP6BQDRTR4Q68JN3M3JXK2"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP6MFKCR7TAA8N8A8VZR45",
@@ -1279,7 +1235,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Desert5.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What is the key driver of future warming and long-term climate impacts mentioned in the report?",
                         "questionType": "MCSA",
@@ -1287,7 +1242,6 @@
                         "correctAnswer": [
                             "OID_01HEQETBAH40013Q67D3E4HF8F"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQET2N088YW59ZERWMTJAKN",
@@ -1345,14 +1299,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Desert5.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -1388,7 +1340,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mangrove1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "With increasing warming, how will adaptation options to climate change be affected?",
                         "questionType": "MCSA",
@@ -1396,7 +1347,6 @@
                         "correctAnswer": [
                             "OID_01HEMP743ATHQ2MZQXAWGAASCF"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP7NAE663P6DA36P4KJZ85",
@@ -1446,7 +1396,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mangrove2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What is essential to avoid maladaptation and its potential negative consequences?",
                         "questionType": "MCSA",
@@ -1454,7 +1403,6 @@
                         "correctAnswer": [
                             "OID_01HEMP89D29VHBFQAGVCE4A6FV"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP8MA3MPBKDQ82APGQ5FXD",
@@ -1504,7 +1452,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mangrove3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Adopting better plant varieties and farming methods is a common adaptation response in agriculture to cope with climate change.",
                         "questionType": "MCSA",
@@ -1512,7 +1459,6 @@
                         "correctAnswer": [
                             "OID_01HEMP95HT05E3RTQ38RXMBH8D"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMP95HT05E3RTQ38RXMBH8D",
@@ -1554,7 +1500,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mangrove5.png",
-                    "completed": false,
                     "question": {
                         "questionText": "On a scale of 0-100, how constrained do you think adaptation options will become with increasing warming?",
                         "questionType": "MCSA",
@@ -1562,7 +1507,6 @@
                         "correctAnswer": [
                             "OID_01HEQF08JBQ4VQ8DFMKM6C2TRH"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQF01DH5ZE54DNVP3521V40",
@@ -1616,14 +1560,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Mangrove5.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -1658,7 +1600,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mountain1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Rank the following mitigation and adaptation strategies from most positive impact on biodiversity and local livelihoods to least positive impact.",
                         "questionType": "RO",
@@ -1669,7 +1610,6 @@
                             "OID_01HEMPADB0CK0EZVVC68AVW1ZN", 
                             "OID_01HEMPBSA4H37QPQZ5Y0NHX378"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPADB0CK0EZVVC68AVW1ZN",
@@ -1720,7 +1660,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Mountain2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which method, when implemented at large scales, can have adverse impacts on biodiversity, food security, and the rights of Indigenous Peoples?",
                         "questionType": "MCSA",
@@ -1728,7 +1667,6 @@
                         "correctAnswer": [
                             "OID_01HEMPC2SFWJJD6JMRPM3PT6EY"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPC9DVA4400G5SPB3J5NZC",
@@ -1786,14 +1724,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Mountain2.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -1829,7 +1765,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Grasslands1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What is a primary factor determining the magnitude and rate of climate change and associated risks in the near term?",
                         "questionType": "MCSA",
@@ -1837,7 +1772,6 @@
                         "correctAnswer": [
                             "OID_01HEMPD4FWC9YAAN2PEX6AC3ZQ"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPDE77GDVBPXPE1NCAWXTW",
@@ -1887,7 +1821,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Grasslands2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "By what year latest is global warming expected to reach 1.5°C under very low GHG emission scenarios?",
                         "questionType": "MCSA",
@@ -1895,7 +1828,6 @@
                         "correctAnswer": [
                             "OID_01HEQFNNCP85AQDW27EX15G7EZ"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQFNBDM1M9SZDR1RDNJX0TM",
@@ -1945,7 +1877,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Grasslands3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What is threatened most by climate change if we don't take urgent, effective, and equitable adaptation and mitigation actions? Rank from most to least threatened.",
                         "questionType": "RO",
@@ -1956,7 +1887,6 @@
                             "OID_01HEMPECPQRB4ZG9FKNEME4G1B", 
                             "OID_01HEMPEM2J8JBP4K2CE5NMV3DX"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPE5JNFJVS7NY6DM1C1SGW",
@@ -2006,7 +1936,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Grasslands4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Considering the urgency and impacts of climate change, how confident are experts about the need for urgent and effective adaptation and mitigation actions?",
                         "questionType": "MCSA",
@@ -2014,7 +1943,6 @@
                         "correctAnswer": [
                             "OID_01HEQFZGRB8BJFBRZV9C417D6N"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQFZ54PAW0RG3TEE9XK38K6",
@@ -2064,7 +1992,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Grasslands5.png",
-                    "completed": false,
                     "question": {
                         "questionText": "According to the document, what becomes increasingly limited if current greenhouse gas emissions do not rapidly decline?",
                         "questionType": "MCSA",
@@ -2072,7 +1999,6 @@
                         "correctAnswer": [
                             "OID_01HEMPF0T33GAEFFB8QJRWMZJF"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPF9KGZWVN0AWBPHCYPPVN",
@@ -2130,14 +2056,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Grasslands5.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -2173,7 +2097,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Freshwater1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which of the following is NOT a mitigation option listed in the document?",
                         "questionType": "MCSA",
@@ -2181,7 +2104,6 @@
                         "correctAnswer": [
                             "OID_01HEMPFYNWAEKX20TK22JJ26AP"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPG6XHQK4JQ35VAPFJXMGB",
@@ -2231,7 +2153,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Freshwater2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What is one of the benefits of enhanced health services mentioned in the document?",
                         "questionType": "MCSA",
@@ -2239,7 +2160,6 @@
                         "correctAnswer": [
                             "OID_01HEQG8QEAAB70SJ93NECAN7E3"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQG8KP8DAKM1AFVGNR1CH4K",
@@ -2289,7 +2209,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Freshwater3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Approximately what percentage of possible reduction in total emissions by 2050 is attributed to demand-side mitigation potential in the food sector?",
                         "questionType": "MCSA",
@@ -2297,7 +2216,6 @@
                         "correctAnswer": [
                             "OID_01HEQGCX4J79DCY011GN0R9TAE"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQGCT21JGPDGWCGVTFPK53N",
@@ -2347,7 +2265,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Freshwater4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "The document mentions an approach that focuses on extracting and storing emissions. This approach is abbreviated as CCU, what does it stand for?",
                         "questionType": "MCSA",
@@ -2355,7 +2272,6 @@
                         "correctAnswer": [
                             "OID_01HEMPGHK097Y9K93Q2QR629JJ"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPGR6EDDREJ6KMPMVE76KV",
@@ -2401,7 +2317,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Freshwater5.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which of the following sectors is projected to have a 66% reduction in total emissions by 2050 due to demand-side mitigation potential?",
                         "questionType": "MCSA",
@@ -2409,7 +2324,6 @@
                         "correctAnswer": [
                             "OID_01HEMPH0FP0S30PZR0RDTG40F9"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPH7QPB51PSQWGHFHVMBQA",
@@ -2467,14 +2381,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Freshwater5.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
@@ -2510,7 +2422,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Jungle1.png",
-                    "completed": false,
                     "question": {
                         "questionText": "What does SDG stand for?",
                         "questionType": "MCSA",
@@ -2518,7 +2429,6 @@
                         "correctAnswer": [
                             "OID_01HEMPHNY3SAHK4M51B824GQCX"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPHY18HGFQQ0AKEQG941PA",
@@ -2568,7 +2478,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Jungle2.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which of these is a potential consequence of not carefully considering the means and scale of implementation for Sustainable Development Goals?",
                         "questionType": "MCSA",
@@ -2576,7 +2485,6 @@
                         "correctAnswer": [
                             "OID_01HEMPJD4YKM270141FQ4GPQPX"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPJD4YKM270141FQ4GPQPX",
@@ -2626,7 +2534,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Jungle3.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Rank the following based on their influence on synergies and trade-offs with SDGs, as per the IPCC report (from most influential to least)",
                         "questionType": "RO",
@@ -2637,7 +2544,6 @@
                             "OID_01HEMPKQPGXK5D1V8A4A0E83QF", 
                             "OID_01HEMPM1Y8KSPS8CAVEANXQ1RP"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPKD5EHV623QT7WRCH9H8N",
@@ -2687,7 +2593,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Jungle4.png",
-                    "completed": false,
                     "question": {
                         "questionText": "According to the document, how confident are the authors in the statement that sustainable development objectives can be met without a significant rise in global emissions?",
                         "questionType": "MCSA",
@@ -2695,7 +2600,6 @@
                         "correctAnswer": [
                             "OID_01HEQGQT1QTPJADE2GS5YK72Z1"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEQGQHV6JG7B347MW09TMTEY",
@@ -2741,7 +2645,6 @@
                     "pageType": "question",
                     "avatarImage": "Neutral.png",
                     "backgroundImage": "Jungle5.png",
-                    "completed": false,
                     "question": {
                         "questionText": "Which type of poverty, according to the document, can be eradicated without causing a major increase in global emissions?",
                         "questionType": "MCSA",
@@ -2749,7 +2652,6 @@
                         "correctAnswer": [
                             "OID_01HEMPMT11KANA8045GDR2HGZ1"
                         ],
-                        "completed": false,
                         "options": [
                             {
                                 "oid": "OID_01HEMPNBF86D1KR277F24SS8J0",
@@ -2807,14 +2709,12 @@
                     "pageType": "question",
                     "avatarImage": "Happy1.png",
                     "backgroundImage": "Jungle5.png",
-                    "completed": false,
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
                         "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
                         "questionType": "EMAIL",
                         "skippable": true,
-                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                        "completed": false
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
                     },
                     "displayLogic": {
                         "type": "seenBefore",
