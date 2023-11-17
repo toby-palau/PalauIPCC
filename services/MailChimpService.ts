@@ -1,7 +1,7 @@
 "use server"
 
 import client from "@mailchimp/mailchimp_marketing";
-import { track } from "@vercel/analytics";
+import { track } from "@vercel/analytics/server";
 
 client.setConfig({
     apiKey: process.env.MAILCHIMP_API_KEY,

@@ -8,7 +8,7 @@ import { getChapter, populateUserSession } from "@root/services/QuestionFlowServ
 import { getUserId } from "@root/services/AuthService";
 import { getResponses } from "@root/services/DatabaseService";
 import { AuthProvider } from "@root/contexts/AuthContext";
-import { track } from "@vercel/analytics";
+import { track } from "@vercel/analytics/server";
 import { PageTypes } from "@root/@types/shared.types";
 
 const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
