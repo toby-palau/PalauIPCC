@@ -1,7 +1,7 @@
 "use client"
 
 import { rocksalt, staatliches } from "@root/styles/fonts";
-import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import { useEffect, useState } from "react";
 
 type SuccessProps = {
@@ -10,13 +10,13 @@ type SuccessProps = {
     avatarImage: string;
 }
 
+const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"};
+
 export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
     const [startAnimations, setStartAnimations] = useState<boolean>(false);
     const { calculateScore } = useQuestionFlow();
     // const [stars, setStars] = useState<any[]>([]);
     const [score, setScore] = useState<number>(0);
-
-    const greenFilter = {filter: "sepia(89%) saturate(972%) hue-rotate(41deg) brightness(82%) contrast(95%)"};
 
     useEffect(() => {
         setStartAnimations(true);

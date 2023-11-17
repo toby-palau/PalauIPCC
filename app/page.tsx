@@ -5,12 +5,13 @@ import { ChapterList } from "@root/components/Overview/ChapterList";
 import { listAllChapters } from "@root/services/QuestionFlowService";
 import { ChapterCard } from "@root/components/Overview/ChapterCard";
 import { Disclaimer } from "@root/components/Overview/Disclaimer";
-import { deleteAllResponses, getResponses } from "@root/services/DatabaseService";
+import { getResponses } from "@root/services/DatabaseService";
 import { getUserId } from "@root/services/AuthService";
 import { ResetProgress } from "@root/components/Overview/ResetProgress";
+import { AuthProvider } from "@root/contexts/AuthContext";
 
 
-const Page = async ({searchParams: {previousChapter}}: {searchParams: {previousChapter?: string}}) => {
+const Page = async () => {
     const chapters = await listAllChapters();
     if (chapters.length <= 0) return null;
 
@@ -20,17 +21,21 @@ const Page = async ({searchParams: {previousChapter}}: {searchParams: {previousC
     const responses = await getResponses(userId);
     if (!responses) return <div>Responses not found</div>;
 
-    let highlightedChapterIndex = 0;
-    const previousChapterIndex = chapters.findIndex(c => c.cid === previousChapter);
-    if (previousChapterIndex >= 0 && previousChapterIndex < chapters.length - 1) highlightedChapterIndex = previousChapterIndex + 1;
-
     const chapterList = chapters.map(c => {
-        const progress = c.questionIds.filter(qid => responses.filter(r => r.questionId === qid).length > 0).length / c.questionIds.length;
+        const filteredResponses = responses.filter(r => c.questionIds.includes(r.questionId));
+        const progress = filteredResponses.length / c.questionIds.length;
+        const score = filteredResponses.filter(r => r.answeredCorrectly).length / c.questionIds.length;
         return ({
+            progress,
+            score,
             tags: c.tags,
-            component: <ChapterCard chapter={c} progress={progress} />
+            component: <ChapterCard chapter={c} progress={progress} score={score}/>
         })
     });
+
+    let highlightedChapterIndex = chapterList.findIndex(c => c.progress < 1);
+    if (highlightedChapterIndex < 0) highlightedChapterIndex = 0;
+
 
     return (
         <div className="bg-black min-h-screen md:p-16 p-0">
@@ -50,9 +55,11 @@ const Page = async ({searchParams: {previousChapter}}: {searchParams: {previousC
                     </div>
                 </div>
             }
-            <ChapterList chapters={chapterList} />
-            <Disclaimer />
-            <ResetProgress userId={userId}/>
+            <AuthProvider userId={userId}>
+                <ChapterList chapters={chapterList} />
+                <Disclaimer />
+                <ResetProgress userId={userId}/>
+            </AuthProvider>
         </div>
     )
 }

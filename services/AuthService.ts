@@ -19,6 +19,6 @@ export const getUserId = async () => {
 
 export const setUserIdCookie = async (userId: string) => {
     const existingUserId = cookies().get("userId")?.value;
-    if (!existingUserId || existingUserId !== userId) cookies().set("userId", userId);
+    if (existingUserId !== userId) cookies().set("userId", userId);
 }
 

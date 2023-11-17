@@ -1,7 +1,7 @@
 "use client"
 
 import { PageTypes } from "@root/@types/shared.types";
-import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext"
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext"
 import { ReactNode } from "react";
 
 export const ChapterBackground = ({backgroundImages}: {backgroundImages: ReactNode[]}) => {

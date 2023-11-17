@@ -42,7 +42,6 @@ export const getChapter: (chapterId: string) => Promise<{chapter?: ChapterType; 
 }
 
 export const populateUserSession: (chapter: ChapterType, responses: Response[]) => ChapterType | undefined = (chapter, responses) => {
-    "use client"
     try {
         chapter.pages = chapter.pages.map(p => {
             const response = responses.find(r => r.questionId === p.pid);
@@ -56,7 +55,6 @@ export const populateUserSession: (chapter: ChapterType, responses: Response[]) 
 }
 
 export const updateQuestionPage: (page: QuestionPageType, response?: Partial<Response>) => QuestionPageType = (page, response) => {
-    "use client"
     const newPage = page;
     if (!response || !response.userAnswer || page.question.questionType !== response.questionType) {
         newPage.question.userAnswer = undefined;

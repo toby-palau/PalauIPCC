@@ -25,7 +25,7 @@ export const getResponses: (userId: string) => Promise<Response[] | undefined> =
     }
 }
 
-export const createNewResponse: (userId: string, questionId: string, questionType: string, userAnswer: string | string[] | null) => Promise<Response | undefined> = async (userId, questionId, questionType, userAnswer) => {
+export const createNewResponse: (userId: string, questionId: string, questionType: string, userAnswer: string | string[] | null, answeredCorrectly?: boolean) => Promise<Response | undefined> = async (userId, questionId, questionType, userAnswer, answeredCorrectly) => {
     try {
         prisma.response.updateMany({
             where: {userId, questionId},
@@ -37,6 +37,7 @@ export const createNewResponse: (userId: string, questionId: string, questionTyp
                 questionId, 
                 questionType, 
                 userAnswer: userAnswer ?? Prisma.JsonNull,
+                answeredCorrectly,
                 archived: false
             }
         });

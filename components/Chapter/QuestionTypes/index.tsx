@@ -6,7 +6,7 @@ import { MultipleChoiceMultiAnswerQuestion } from "./MultipleChoiceMultiAnswerQu
 import { RankOrderQuestion } from "./RankOrderQuestion";
 import { VerbatimQuestion } from "./VerbatimQuestion";
 import { EmailQuestion } from "./EmailQuestion";
-import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 
 export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
     const { disableQuestionAnswers, submitResponse, resetResponse, skipQuestion } = useQuestionFlow();

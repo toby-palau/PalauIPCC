@@ -16,7 +16,7 @@ export const EmailQuestion = (props: {question: EMAILQuestionType; disabled: boo
         const regex = new RegExp(question.correctAnswer, "i");
         if (value.match(regex)) return setPassTest(true);
         setPassTest(false);
-    }, [value])
+    }, [value]);
 
     const onSubmit = async () => {
         if (passTest && !props.disabled) {

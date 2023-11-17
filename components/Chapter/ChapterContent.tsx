@@ -5,7 +5,7 @@ import { Question } from "./QuestionTypes";
 import { Narrator } from "./Narrator";
 import { SuccessScreen } from "./ScreenTypes/SuccessScreen";
 import { Title } from "./ScreenTypes/Title";
-import { useQuestionFlow } from "@root/app/chapters/[chapterId]/contexts/QuestionFlowContext";
+import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import Confetti from "./Confetti";
 
 export const ChapterContent = () => {

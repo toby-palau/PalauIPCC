@@ -3,9 +3,9 @@
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 import { ChapterType, DisplayLogicType, DisplayLogicTypes, PageTypes } from "@root/@types/shared.types";
 import { useRouter } from "next/navigation";
-import { setUserIdCookie } from "@root/services/AuthService";
 import { createNewResponse, resetExistingResponse } from "@root/services/DatabaseService";
 import { updateQuestionPage } from "@root/services/QuestionFlowService";
+import { useAuth } from "./AuthContext";
 
 const QuestionFlowContext = createContext<{
 	chapterId?: string;
@@ -35,8 +35,9 @@ const QuestionFlowContext = createContext<{
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
-export const QuestionFlowProvider = ({ children, initialSession, userId, nextChapterId }: { children: ReactNode; initialSession: ChapterType; userId: string; nextChapterId?: string }) => {
+export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }: { children: ReactNode; initialSession: ChapterType; nextChapterId?: string }) => {
     const router = useRouter();
+	const {userId} = useAuth();
 	const [userSession, setUserSession] = useState<ChapterType>(initialSession);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 	const [progress, setProgress] = useState<number>(0);
@@ -48,7 +49,12 @@ export const QuestionFlowProvider = ({ children, initialSession, userId, nextCha
 	const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout>();
 
 	useEffect(() => {
-		setUserIdCookie(userId);
+		const lastQuestionIndex = initialSession.pages.findLastIndex(p => p.pageType === PageTypes.question && !p.question.skippable);
+		const lastCompletedIndex = initialSession.pages.findLastIndex(p => p.pageType === PageTypes.question && p.completed);
+		const successIndex = initialSession.pages.findLastIndex(p => p.pageType === PageTypes.success);
+		if (lastCompletedIndex < 0) setCurrentIndex(0);
+		else if (lastCompletedIndex < lastQuestionIndex) setCurrentIndex(lastCompletedIndex + 1);
+		else if (lastCompletedIndex >= lastQuestionIndex) setCurrentIndex(successIndex);
 	}, []);
 
 	useEffect(() => {
@@ -103,7 +109,7 @@ export const QuestionFlowProvider = ({ children, initialSession, userId, nextCha
 		};
 		setUserSession(newSession);
 		
-		createNewResponse(userId, pageId, newPage.question.questionType, userAnswer);
+		createNewResponse(userId, pageId, newPage.question.questionType, userAnswer, newPage.answeredCorrectly);
 		setTriggerTimeoutToNextQuestion(true);
 	}
 
@@ -162,7 +168,7 @@ export const QuestionFlowProvider = ({ children, initialSession, userId, nextCha
 		
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/chapters/${nextChapterId}` : `/?previousChapter=${userSession.cid}`);
+			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/chapters/${nextChapterId}` : `/`);
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;
