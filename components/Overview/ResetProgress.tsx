@@ -1,6 +1,6 @@
 "use client"
 
-import { deleteAllResponses } from "@root/services/DatabaseService"
+import { deleteUserResponses } from "@root/services/DatabaseService"
 import { dmsans } from "@root/styles/fonts"
 import { useRouter } from "next/navigation"
 
@@ -8,7 +8,7 @@ export const ResetProgress = ({userId}: {userId: string}) => {
     const router = useRouter();
 
     const handleResetClick = () => {
-        deleteAllResponses(userId);
+        deleteUserResponses(userId);
         router.refresh();
     }
 
