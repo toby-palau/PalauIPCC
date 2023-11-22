@@ -31,10 +31,10 @@ const Page = async () => {
     })
 
     return (
-        <div className="h-screen w-screen p-10 bg-white-dark">
+        <div className="min-h-screen w-screen p-10 bg-white-dark">
             <div className="grid grid-cols-3 gap-4 auto-rows-max">
-                <div className="col-span-2 bg-white p-2">
-                    <table className="text-sm">
+                <div className="col-span-2 bg-white p-2 max-h-96 overflow-scroll">
+                    <table className="text-sm text-black">
                         <thead className="bg-blue-light">
                             <tr>
                                 <th className="p-2">Chapter Title</th>
@@ -45,15 +45,21 @@ const Page = async () => {
                         <tbody>
                             {chapterStats.map((c, i) => (
                                 <tr key={c.cid} className={i%2 ? "bg-blue-light" : "bg-white"}>
-                                    <th className="p-2 text-center">{c.chapterTitle}</th>
-                                    <td className="p-2 text-center"><BreakdownBar ratio={c.finished / c.started} /></td>
-                                    <td className="p-2 text-center"><BreakdownBar ratio={c.answeredCorrectly / c.totalResponses} /></td>
+                                    <th className="p-2 text-left">{c.chapterTitle}</th>
+                                    <td className="p-2 text-center">
+                                        <BreakdownBar ratio={c.finished / c.started} />
+                                        {c.started > 0 && <p>{`(${c.finished}/${c.started})`}</p>}
+                                    </td>
+                                    <td className="p-2 text-center">
+                                        <BreakdownBar ratio={c.answeredCorrectly / c.totalResponses} />
+                                        {c.totalResponses > 0 && <p>{`(${c.answeredCorrectly}/${c.totalResponses})`}</p>}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
-                <div className="col-span-1 bg-white p-2">
+                <div className="col-span-1 bg-white p-2 max-h-96">
                     <WorldMap />
                 </div>
             </div>

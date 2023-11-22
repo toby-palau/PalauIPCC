@@ -1,6 +1,5 @@
 "use server"
 
-import { dmsans, staatliches } from "@root/styles/fonts";
 import { ChapterList } from "@root/components/Overview/ChapterList";
 import { listAllChapters } from "@root/services/QuestionFlowService";
 import { ChapterCard } from "@root/components/Overview/ChapterCard";
