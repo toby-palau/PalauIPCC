@@ -1,6 +1,8 @@
 "use server"
 
 import { Prisma, PrismaClient, Response, User } from "@prisma/client";
+import { QuestionStatsType } from "@root/@types/shared.types";
+import { IsoCountryCode2 } from "@root/data/countryCodeLookup";
 
 let prisma: PrismaClient;
 
@@ -26,6 +28,45 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
         return user;
     } catch (error) {
         console.log(error);
+    }
+}
+
+export const getUserCount: () => Promise<number | undefined> = async () => {
+    try {
+        const userCount = await prisma.user.count();
+        return userCount;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[] | undefined> = async () => {
+    try {
+        const responseCountsByDate = await prisma.$queryRaw`
+            SELECT DATE("createdAt") AS date, CAST(COUNT(*) AS INT) AS count
+            FROM "Response"
+            WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS'
+            GROUP BY date;
+        `;
+        return responseCountsByDate as {date: Date; count: number}[];
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getUserCountByCountry: () => Promise<{country: IsoCountryCode2; count: number}[] | undefined> = async () => {
+    try {
+        const userCountByCountry = await prisma.$queryRaw`
+            SELECT country, CAST(COUNT(*) AS INT) AS count 
+            FROM "User" 
+            WHERE country IS NOT NULL
+            GROUP BY country 
+            ORDER BY count DESC;
+        `;
+        return userCountByCountry as {country: IsoCountryCode2; count: number}[];
+    } catch (error) {
+        console.log(error);
+    
     }
 }
 
@@ -85,15 +126,12 @@ export const resetExistingResponse: (userId: string, questionId: string) => void
 
 export const deleteUserResponses: (userId: string) => Promise<void> = async (userId) => {
     try {
-        const deleteResult = await prisma.response.deleteMany({where: {userId}});
-        console.log({deleteResult});
+        await prisma.response.deleteMany({where: {userId}});
     } catch (error) {
         console.log(error);
     }
 }
 
-
-type QuestionStatsType = {questionId: string; response_count: number; true_count: number; false_count: number; ratio: number};
 export const getAllQuestionStats: () => Promise<QuestionStatsType[] | undefined> = async () => {
     try {
         const responses = await prisma.$queryRaw`

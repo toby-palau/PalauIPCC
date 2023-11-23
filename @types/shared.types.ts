@@ -150,3 +150,11 @@ export type EMAILQuestionType = QuestionType & {
     correctAnswer?: RegExp;
     userAnswer?: string;
 };
+
+export type QuestionStatsType = {
+    questionId: string; 
+    response_count: number; 
+    true_count: number; 
+    false_count: number; 
+    ratio: number;
+};
