@@ -8,9 +8,8 @@ export async function POST(request: NextRequest) {
         console.log({userId})
         if (!userId) throw new Error("No user id provided");
         const { city, country, flag, countryRegion, region, latitude, longitude } = geolocation(request);
-        console.log({ route: { city, country, flag, countryRegion, region, latitude, longitude } })
         if (!country) throw new Error("Country not found");
-        const user = await updateUserCountry(userId, country);
+        const user = await updateUserCountry(userId, country, countryRegion, city);
         if (!user) throw new Error("Unable to update user country");
         return NextResponse.json({status: 200, body: { user }});
 

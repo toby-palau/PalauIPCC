@@ -29,9 +29,9 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
     }
 }
 
-export const updateUserCountry: (userId: string, country: string) => Promise<User | undefined> = async (userId, country) => {
+export const updateUserCountry: (userId: string, country: string, countryRegion?: string, city?: string) => Promise<User | undefined> = async (userId, country, countryRegion, city) => {
     try {
-        const updatedUser = await prisma.user.update({where: {userId}, data: {country}});
+        const updatedUser = await prisma.user.update({where: {userId}, data: {country, countryRegion, city}});
         return updatedUser;
     } catch (error) {
         console.log(error);

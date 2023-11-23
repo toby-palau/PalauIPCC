@@ -10,10 +10,10 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children, userId }: { children: ReactNode; userId: string }) => {
     useEffect(() => {
         (async () => {
+            // set user id cookie if not set already
             await setUserIdCookie(userId);
-            const response = await fetch("/api/auth", {method: "POST", body: JSON.stringify({userId})});
-            const data = await response.json();
-            console.log(data)
+            // populate user country
+            await fetch("/api/auth", {method: "POST", body: JSON.stringify({userId})});
         })();
     }, []);
 

@@ -9,13 +9,15 @@ datasource db {
 }
 
 model User {
-  userId    String     @id @default(uuid())
-  email     String?
-  country   String?
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  deletedAt DateTime?
-  responses Response[]
+  userId        String     @id @default(uuid())
+  email         String?
+  country       String?
+  countryRegion String?
+  city          String?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  deletedAt     DateTime?
+  responses     Response[]
 }
 
 model Response {
