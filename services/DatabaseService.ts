@@ -19,6 +19,25 @@ export const createNewUser: () => Promise<User | undefined> = async () => {
     }
 }
 
+export const getUser: (userId: string) => Promise<User | undefined> = async (userId) => {
+    try {
+        const user = await prisma.user.findUnique({where: {userId}});
+        if (!user) throw new Error("User not found");
+        return user;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const updateUserCountry: (userId: string, country: string) => Promise<User | undefined> = async (userId, country) => {
+    try {
+        const updatedUser = await prisma.user.update({where: {userId}, data: {country}});
+        return updatedUser;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const getResponses: (userId: string) => Promise<Response[] | undefined> = async (userId) => {
     try {
         const responses = await prisma.response.findMany({
