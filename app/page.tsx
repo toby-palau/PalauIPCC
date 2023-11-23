@@ -14,9 +14,9 @@ import { HighlightedChapter } from "@root/components/Overview/HighlightedChapter
 const Page = async () => {
     const userId = await getUserId();
     if (!userId) return <div>Unauthorized</div>;
-    
+
     const chapters = await listAllChapters();
-    if (chapters.length <= 0) return null;
+    if (chapters.length <= 0) return <div>Chapters not found</div>;
 
 
     const responses = await getResponses(userId);
