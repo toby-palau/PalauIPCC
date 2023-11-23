@@ -12,8 +12,8 @@ export const AuthProvider = ({ children, userId }: { children: ReactNode; userId
         (async () => {
             await setUserIdCookie(userId);
             const response = await fetch("/api/auth");
-            const {body} = await response.json();
-            console.log(body)
+            const data = await response.json();
+            console.log(data)
         })();
     }, []);
 
