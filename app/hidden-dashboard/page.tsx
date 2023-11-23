@@ -23,22 +23,6 @@ const Page = async () => {
     const chapters = await listAllChapters();
     const chapterStats = chapters.map(c => {
         const filteredQuestions = questions.filter(q => c.questionIds.includes(q.questionId));
-        [
-            {
-                questionId: "qid1",
-                response_count: 0,
-                true_count: 0,
-                false_count: 0,
-                ratio: 0,
-            },
-            {
-                questionId: "qid2",
-                response_count: 0,
-                true_count: 0,
-                false_count: 0,
-                ratio: 0,
-            },
-        ]
         const stats = filteredQuestions.reduce((acc, q) => ({
             started: Math.max(acc.started, q.response_count),
             finished: filteredQuestions.length < c.questionIds.length ? 0 : acc.finished > 0 ? Math.min(acc.finished, q.response_count) : q.response_count,
@@ -59,22 +43,25 @@ const Page = async () => {
 
     return (
         <div className="min-h-screen w-screen md:p-10 p-2 bg-white-dark">
+            <div className="flex flex-row justify-end items-center">
+                <a href="/hidden-dashboard" className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
+            </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4 auto-rows-max">
-                <div className="col-span-1 bg-white p-2 h-96 overflow-scroll">
+                <div className="col-span-1 bg-white p-2 h-96 overflow-scroll text-black">
                     <div className="h-full w-full flex flex-col justify-center items-center">
                         <h1>Total Visitors</h1>
                         <p className={`${dmsans.className} text-8xl`}>{userCount}</p>
                     </div>
                 </div>
-                <div className="md:col-span-2 col-span-1 bg-white p-2 h-96 overflow-scroll">
+                <div className="md:col-span-2 col-span-1 bg-white p-2 h-96 overflow-scroll text-black">
                     <div className="h-full w-full flex flex-col justify-center items-center">
                         <h1 className="text-center">Response count last 7 days</h1>
                         <BarChart data={responseCountsByDate.map(c => ({...c, date: c.date.toLocaleDateString("en-US", {dateStyle: "short"})}))} />
                     </div>
                 </div>
-                <div className="md:col-span-2 col-span-1 bg-white p-2 h-96 overflow-scroll">
+                <div className="md:col-span-2 col-span-1 bg-white p-2 h-96 overflow-scroll text-black">
                     <h1 className="text-center">Chapters overview</h1>
-                    <table className="text-sm text-black">
+                    <table className="text-sm">
                         <thead className="bg-blue-light">
                             <tr>
                                 <th className="p-2">Chapter Title</th>
