@@ -5,7 +5,6 @@ import { updateUserCountry } from "@root/services/DatabaseService";
 export async function POST(request: NextRequest) {
     try {
         const { userId } = await request.json();
-        console.log({userId})
         if (!userId) throw new Error("No user id provided");
         const { city, country, flag, countryRegion, region, latitude, longitude } = geolocation(request);
         if (!country) throw new Error("Country not found");

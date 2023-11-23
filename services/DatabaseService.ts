@@ -1,6 +1,7 @@
 "use server"
 
 import { Prisma, PrismaClient, Response, User } from "@prisma/client";
+import { IsoCountryCode2 } from "@root/data/countryCodeLookup";
 
 let prisma: PrismaClient;
 
@@ -26,6 +27,46 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
         return user;
     } catch (error) {
         console.log(error);
+    }
+}
+
+export const getUserCount: () => Promise<number | undefined> = async () => {
+    try {
+        const userCount = await prisma.user.count();
+        return userCount;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[] | undefined> = async () => {
+    try {
+        const responseCountsByDate = await prisma.$queryRaw`
+            SELECT DATE("createdAt") AS date, CAST(COUNT(*) AS INT) AS count
+            FROM "Response"
+            WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS'
+            GROUP BY date;
+        `;
+        return responseCountsByDate as {date: Date; count: number}[];
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getUserCountByCountry: () => Promise<{country: IsoCountryCode2; count: number}[] | undefined> = async () => {
+    try {
+        const userCountByCountry = await prisma.$queryRaw`
+            SELECT country, CAST(COUNT(*) AS INT) AS count 
+            FROM "User" 
+            WHERE country IS NOT NULL
+            GROUP BY country 
+            ORDER BY count DESC;
+        `;
+        console.log(userCountByCountry)
+        return userCountByCountry as {country: IsoCountryCode2; count: number}[];
+    } catch (error) {
+        console.log(error);
+    
     }
 }
 
