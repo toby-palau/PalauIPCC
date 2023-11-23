@@ -5,6 +5,7 @@ import { updateUserCountry } from "@root/services/DatabaseService";
 export async function GET(request: NextRequest) {
     try {
         const userId = request.cookies.get("userId")?.value;
+        console.log({userId})
         if (!userId) throw new Error("No user ID found");
         const { city, country, flag, countryRegion, region, latitude, longitude } = geolocation(request);
         console.log({ city, country, flag, countryRegion, region, latitude, longitude })
