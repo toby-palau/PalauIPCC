@@ -8,7 +8,8 @@ import { getAllQuestionStats, getResponseCountsByDate, getUserCount, getUserCoun
 import { listAllChapters } from "@root/services/QuestionFlowService";
 import { dmsans } from "@root/styles/fonts";
 
-const Page = async () => {
+const Page = async ({searchParams}: {searchParams: {randomSeed: string}}) => {
+    console.log(`rerender with random seed ${searchParams.randomSeed}`);
     const userCount = await getUserCount();
 
     const responseCountsByDate = await getResponseCountsByDate();
@@ -86,7 +87,7 @@ const Page = async () => {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-span-1 bg-white p-2 h-96 overflow-scroll">
+                <div className="col-span-1 bg-white p-2 h-96 overflow-scroll text-black">
                     <WorldMap data={countries.map(c => ({id: countryISOMapping[c.country], value: c.count}))} />
                 </div>
             </div>
