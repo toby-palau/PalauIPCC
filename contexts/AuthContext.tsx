@@ -11,7 +11,9 @@ export const AuthProvider = ({ children, userId }: { children: ReactNode; userId
     useEffect(() => {
         (async () => {
             await setUserIdCookie(userId);
-            fetch("/api/auth");
+            const response = await fetch("/api/auth");
+            const {body} = await response.json();
+            console.log(body)
         })();
     }, []);
 
