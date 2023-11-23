@@ -23,9 +23,25 @@ const Page = async () => {
     const chapters = await listAllChapters();
     const chapterStats = chapters.map(c => {
         const filteredQuestions = questions.filter(q => c.questionIds.includes(q.questionId));
+        [
+            {
+                questionId: "qid1",
+                response_count: 0,
+                true_count: 0,
+                false_count: 0,
+                ratio: 0,
+            },
+            {
+                questionId: "qid2",
+                response_count: 0,
+                true_count: 0,
+                false_count: 0,
+                ratio: 0,
+            },
+        ]
         const stats = filteredQuestions.reduce((acc, q) => ({
-            started: acc.started > 0 ? Math.min(acc.started, q.response_count) : q.response_count,
-            finished: Math.max(acc.finished, q.response_count),
+            started: Math.max(acc.started, q.response_count),
+            finished: filteredQuestions.length < c.questionIds.length ? 0 : acc.finished > 0 ? Math.min(acc.finished, q.response_count) : q.response_count,
             answeredCorrectly: acc.answeredCorrectly + q.true_count,
             totalResponses: acc.totalResponses + q.response_count,
         }), {

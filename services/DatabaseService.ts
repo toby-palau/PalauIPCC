@@ -1,6 +1,7 @@
 "use server"
 
 import { Prisma, PrismaClient, Response, User } from "@prisma/client";
+import { QuestionStatsType } from "@root/@types/shared.types";
 import { IsoCountryCode2 } from "@root/data/countryCodeLookup";
 
 let prisma: PrismaClient;
@@ -131,8 +132,6 @@ export const deleteUserResponses: (userId: string) => Promise<void> = async (use
     }
 }
 
-
-type QuestionStatsType = {questionId: string; response_count: number; true_count: number; false_count: number; ratio: number};
 export const getAllQuestionStats: () => Promise<QuestionStatsType[] | undefined> = async () => {
     try {
         const responses = await prisma.$queryRaw`
