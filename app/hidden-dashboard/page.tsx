@@ -44,7 +44,7 @@ const Page = async () => {
     return (
         <div className="min-h-screen w-screen md:p-10 p-2 bg-white-dark">
             <div className="flex flex-row justify-end items-center">
-                <a href="/hidden-dashboard" className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
+                <a href={`/hidden-dashboard?randomSeed=${Math.random()}`} className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4 auto-rows-max">
                 <div className="col-span-1 bg-white p-2 h-96 overflow-scroll text-black">
