@@ -12,12 +12,13 @@ import { track } from "@vercel/analytics/server";
 import { PageTypes } from "@root/@types/shared.types";
 
 const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
+    const userId = await getUserId();
+    if (!userId) return <div>Unauthorized</div>;
+    
     const { chapter, nextChapterId } = await getChapter(chapterId);
 
     if (!chapter) return <div>Chapter not found</div>;
 
-    const userId = await getUserId();
-    if (!userId) return <div>Unauthorized</div>;
     
     const responses = await getResponses(userId);
     if (!responses) return <div>Responses not found</div>;
