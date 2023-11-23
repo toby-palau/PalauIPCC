@@ -3,7 +3,6 @@
 import { ResponsiveBar } from '@nivo/bar'
 
 export const BarChart = ({data}: {data: Array<{date: string; count: number}>}) => {
-    console.log({data})
     return (
         <ResponsiveBar
             data={data}

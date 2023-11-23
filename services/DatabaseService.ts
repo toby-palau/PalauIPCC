@@ -62,7 +62,6 @@ export const getUserCountByCountry: () => Promise<{country: IsoCountryCode2; cou
             GROUP BY country 
             ORDER BY count DESC;
         `;
-        console.log(userCountByCountry)
         return userCountByCountry as {country: IsoCountryCode2; count: number}[];
     } catch (error) {
         console.log(error);
@@ -126,8 +125,7 @@ export const resetExistingResponse: (userId: string, questionId: string) => void
 
 export const deleteUserResponses: (userId: string) => Promise<void> = async (userId) => {
     try {
-        const deleteResult = await prisma.response.deleteMany({where: {userId}});
-        console.log({deleteResult});
+        await prisma.response.deleteMany({where: {userId}});
     } catch (error) {
         console.log(error);
     }
