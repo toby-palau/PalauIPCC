@@ -42,14 +42,26 @@ export const getUserCount: () => Promise<number | undefined> = async () => {
 
 export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[] | undefined> = async () => {
     try {
-        const responseCountsByDate = await prisma.$queryRaw`
+        const responseCountsByDate: {date: Date; count: number}[] = await prisma.$queryRaw`
             SELECT DATE("createdAt") AS date, CAST(COUNT(*) AS INT) AS count
             FROM "Response"
             WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS'
             GROUP BY date
             ORDER BY date ASC;
         `;
-        return responseCountsByDate as {date: Date; count: number}[];
+        const currentDate = new Date();
+        const startDate = new Date();
+        startDate.setDate(startDate.getDate() - 7);
+        startDate.setUTCHours(0,0,0,0);
+        while (startDate < currentDate) {
+            const endDate = new Date(startDate);
+            endDate.setDate(endDate.getDate() + 1);
+            endDate.setUTCHours(0,0,0,0);
+            const dateExists = responseCountsByDate.find(c => c.date >= startDate && c.date < endDate);
+            if (!dateExists) responseCountsByDate.push({date: new Date(startDate), count: 0});
+            startDate.setDate(endDate.getDate());
+        }
+        return responseCountsByDate.sort((a, b) => a.date.getTime() - b.date.getTime());
     } catch (error) {
         console.log(error);
     }
@@ -57,14 +69,14 @@ export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[
 
 export const getUserCountByCountry: () => Promise<{country: IsoCountryCode2; count: number}[] | undefined> = async () => {
     try {
-        const userCountByCountry = await prisma.$queryRaw`
+        const userCountByCountry: {country: IsoCountryCode2; count: number}[] = await prisma.$queryRaw`
             SELECT country, CAST(COUNT(*) AS INT) AS count 
             FROM "User" 
             WHERE country IS NOT NULL
             GROUP BY country 
             ORDER BY count DESC;
         `;
-        return userCountByCountry as {country: IsoCountryCode2; count: number}[];
+        return userCountByCountry;
     } catch (error) {
         console.log(error);
     
@@ -141,7 +153,7 @@ export const getAllQuestionStats: () => Promise<QuestionStatsType[] | undefined>
                 CAST(COUNT(*) AS INT) AS response_count, 
                 CAST(SUM(CASE WHEN "answeredCorrectly" = true THEN 1 ELSE 0 END) AS INT) AS true_count,
                 CAST(SUM(CASE WHEN "answeredCorrectly" = false THEN 1 ELSE 0 END) AS INT) AS false_count,
-                CAST(SUM(CASE WHEN "answeredCorrectly" = true THEN 1 ELSE 0 END) AS NUMERIC) / CAST(COUNT(*) AS NUMERIC) AS ratio
+                CAST(SUM(CASE WHEN "answeredCorrectly" = true THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*) AS ratio
             FROM "Response"
             WHERE archived = false
             GROUP BY "questionId"
