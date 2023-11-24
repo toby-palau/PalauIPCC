@@ -1,7 +1,6 @@
 "use client";
 
 import { FilterTypeLabels, FilterTypes } from "@root/@types/shared.types";
-import { dmsans } from "@root/styles/fonts";
 import { ReactNode, useEffect, useState } from "react";
 
 export const ChapterList = ({ chapters }: {chapters: {tags: FilterTypes[]; component: ReactNode}[]}) => {
@@ -34,7 +33,7 @@ export const ChapterList = ({ chapters }: {chapters: {tags: FilterTypes[]; compo
                         className={`flex border ${f.selected ? "border-blue hover:border-blue-dark" : "border-white hover:border-white-dark"} text-white hover:text-white-dark min-w-max rounded-full m-1 py-2 px-4 items-center text-sm cursor-pointer active:scale-95 transition-all duration-100`}
                         onClick={() => selectFilter(f.filterId)}
                     >
-                        <p className={`${dmsans.className}`}>{f.filterName}</p>
+                        <p>{f.filterName}</p>
                     </div>
                 )) }
             </div>

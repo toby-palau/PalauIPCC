@@ -1,7 +1,7 @@
 "use client";
 
 import { ChapterInfoType } from "@root/@types/shared.types"
-import { dmsans, staatliches } from "@root/styles/fonts"
+import { staatliches } from "@root/styles/fonts"
 import { track } from "@vercel/analytics";
 
 const yellowFilter = {filter: "invert(12%) sepia(78%) saturate(3774%) hue-rotate(309deg) brightness(98%) contrast(88%)"};
@@ -38,7 +38,7 @@ export const ChapterCard = ({chapter, progress, score}: {chapter: ChapterInfoTyp
                     </div> 
                 ) }
             </div>
-            <p className={`${dmsans.className} text-1xl text-white text-left`}>{chapter.chapterTitle}</p>
+            <p className={`text-1xl text-white text-left`}>{chapter.chapterTitle}</p>
         </a>
     )
 }

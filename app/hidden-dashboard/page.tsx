@@ -5,7 +5,6 @@ import { ChapterBreakdown } from "@root/components/Dashboard/ChapterBreakdown";
 import { WorldMap } from "@root/components/Dashboard/WorldMap";
 import { getAllQuestionStats, getResponseCountsByDate, getUserCount, getUserCountByCountry } from "@root/services/DatabaseService";
 import { listAllChapters } from "@root/services/QuestionFlowService";
-import { dmsans } from "@root/styles/fonts";
 
 const Page = async ({searchParams}: {searchParams: {randomSeed: string}}) => {
     console.log(`rerender with random seed ${searchParams.randomSeed}`);
@@ -53,7 +52,7 @@ const Page = async ({searchParams}: {searchParams: {randomSeed: string}}) => {
                 <div className="md:col-span-1 col-span-3 bg-white p-2 h-96 overflow-scroll text-black">
                     <div className="h-full w-full flex flex-col justify-center items-center">
                         <h1 className="text-lg">Total Visitors</h1>
-                        <p className={`${dmsans.className} text-8xl`}>{userCount}</p>
+                        <p className={`text-8xl`}>{userCount}</p>
                     </div>
                 </div>
                 
