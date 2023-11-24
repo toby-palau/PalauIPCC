@@ -39,7 +39,7 @@ export const WorldMap = ({data}: {data: Array<{id: IsoCountryCode2; value: numbe
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map((d, i) => (
+                        {data.slice(0,5).map((d, i) => (
                             <tr key={d.id} className="border-b border-white-dark">
                                 <td>{`${i+1} ${Iso2ToCountryName[d.id]}`}</td>
                                 <td className="text-center">{`${d.value}`}</td>
