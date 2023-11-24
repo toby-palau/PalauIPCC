@@ -21,19 +21,6 @@ export const digitalStrip = localFont({
     ]
 })
 
-export const dmsans = localFont({
-    src: [
-        {
-            path: "../public/fonts/dmsans/DMSans-VariableFont_opsz,wght.ttf",
-            style: "normal",
-        },
-        {
-            path: "../public/fonts/dmsans/DMSans-Italic-VariableFont_opsz,wght.ttf",
-            style: "italic",
-        }
-    ]
-})
-
 export const staatliches = localFont({
     src: [
         {

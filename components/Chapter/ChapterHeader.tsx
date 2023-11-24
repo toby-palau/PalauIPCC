@@ -2,7 +2,6 @@
 
 import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import { useRouter } from "next/navigation";
-import { dmsans } from "@root/styles/fonts";
 
 export const ChapterHeader = () => {
     const router = useRouter();
@@ -25,7 +24,7 @@ export const ChapterHeader = () => {
                         alt="back"
                         className={`md:h-12 md:w-12 h-8 w-8 pointer-events-none ${hide && "hidden"}`}
                     />
-                    <p className={`${dmsans.className} text-white md:text-base text-sm ${hide && "hidden"}`}>{"BACK"}</p>
+                    <p className={`text-white md:text-base text-sm ${hide && "hidden"}`}>{"BACK"}</p>
                 </div>
                 <div 
                     id="home-button"
@@ -37,7 +36,7 @@ export const ChapterHeader = () => {
                         alt="home"
                         className="md:h-12 md:w-12 h-8 w-8 w-8 pointer-events-none"
                     />
-                    <p className={`${dmsans.className} text-white md:text-base text-sm`}>{"HOME"}</p>
+                    <p className={`text-white md:text-base text-sm`}>{"HOME"}</p>
                 </div>
             </div>
         </div>

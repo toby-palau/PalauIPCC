@@ -1,10 +1,10 @@
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	metadataBase: new URL(process.env.URL ?? "https://ipcc.palauproject.com"),

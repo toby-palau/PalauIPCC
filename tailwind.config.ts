@@ -38,16 +38,16 @@ const config: Config = {
 		extend: {
 			keyframes: {
 				wiggle: {
-					'0%': { transform: 'rotate(0.0deg)' },
-					'20%': { transform: 'rotate(1.5deg)' },
-					'40%': { transform: 'rotate(-1.5deg)' },
-					'60%': { transform: 'rotate(1.5deg)' },
-					'80%': { transform: 'rotate(0.0deg)' },
-					'100%': { transform: 'rotate(0.0deg)' },
+					"0%": { transform: "rotate(0.0deg)" },
+					"20%": { transform: "rotate(1.5deg)" },
+					"40%": { transform: "rotate(-1.5deg)" },
+					"60%": { transform: "rotate(1.5deg)" },
+					"80%": { transform: "rotate(0.0deg)" },
+					"100%": { transform: "rotate(0.0deg)" },
 				},
 			},
 			animation: {
-				wiggle: 'wiggle 0.5s linear 1',
+				wiggle: "wiggle 0.5s linear 1",
 			},
 		}
 	},
