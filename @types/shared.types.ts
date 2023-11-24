@@ -158,3 +158,13 @@ export type QuestionStatsType = {
     false_count: number; 
     ratio: number;
 };
+
+export type ChapterStatsType = {
+    cid: string;
+    chapterTitle: string;
+    started: number;
+    finished: number;
+    answeredCorrectly: number;
+    totalResponses: number;
+    questions: Array<QuestionStatsType>;
+}

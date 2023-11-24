@@ -12,7 +12,7 @@ export const BarChart = ({data}: {data: Array<{date: string; count: number}>}) =
             padding={0.3}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
+            colors={{ scheme: 'category10' }}
             axisBottom={{
                 tickSize: 5,
                 tickPadding: 5,

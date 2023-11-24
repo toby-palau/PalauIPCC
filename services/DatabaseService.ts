@@ -46,7 +46,8 @@ export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[
             SELECT DATE("createdAt") AS date, CAST(COUNT(*) AS INT) AS count
             FROM "Response"
             WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS'
-            GROUP BY date;
+            GROUP BY date
+            ORDER BY date ASC;
         `;
         return responseCountsByDate as {date: Date; count: number}[];
     } catch (error) {
