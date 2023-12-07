@@ -50,7 +50,7 @@ export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[
             ORDER BY date ASC;
         `;
         const currentDate = new Date();
-        const startDate = new Date();
+        let startDate = new Date();
         startDate.setDate(startDate.getDate() - 7);
         startDate.setUTCHours(0,0,0,0);
         while (startDate < currentDate) {
@@ -59,7 +59,7 @@ export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[
             endDate.setUTCHours(0,0,0,0);
             const dateExists = responseCountsByDate.find(c => c.date >= startDate && c.date < endDate);
             if (!dateExists) responseCountsByDate.push({date: new Date(startDate), count: 0});
-            startDate.setDate(endDate.getDate());
+            startDate = new Date(endDate)
         }
         return responseCountsByDate.sort((a, b) => a.date.getTime() - b.date.getTime());
     } catch (error) {
