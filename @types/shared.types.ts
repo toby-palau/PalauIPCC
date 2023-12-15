@@ -1,5 +1,7 @@
 import { type } from "os";
 
+export type QuizIdType = "cop" | "ipcc";
+
 export enum  PageTypes {
     title = "title",
     narrator = "narrator",

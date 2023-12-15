@@ -1,15 +1,18 @@
 "use server"
 
 import { Response } from '@prisma/client';
-import { ChapterInfoType, ChapterType, PageTypes, QuestionFlowType, QuestionPageType, QuestionTypes } from '@root/@types/shared.types';
+import { ChapterInfoType, ChapterType, PageTypes, QuestionFlowType, QuestionPageType, QuestionTypes, QuizIdType } from '@root/@types/shared.types';
 import fs from 'fs';
 import path from 'path';
 
-const filePath = path.resolve("data", "question-flow.json");
+const filePath = {
+    ipcc: path.resolve("data", "ipcc-question-flow.json"),
+    cop: path.resolve("data", "cop-question-flow.json")
+}
 
-export const listAllChapters: () => Promise<ChapterInfoType[]> = async () => {
+export const listAllChapters: (quizId: QuizIdType) => Promise<ChapterInfoType[]> = async (quizId) => {
     try {
-        const fileContents = fs.readFileSync(filePath, "utf8");
+        const fileContents = fs.readFileSync(filePath[quizId], "utf8");
         const { chapters } = JSON.parse(fileContents) as QuestionFlowType;
         const chapterInfos = chapters.map(c => ({
             cid: c.cid, 
@@ -26,9 +29,9 @@ export const listAllChapters: () => Promise<ChapterInfoType[]> = async () => {
     }
 }
 
-export const getChapter: (chapterId: string) => Promise<{chapter?: ChapterType; nextChapterId?: string}> = async (chapterId) => {
+export const getChapter: (quizId: QuizIdType, chapterId: string) => Promise<{chapter?: ChapterType; nextChapterId?: string}> = async (quizId, chapterId) => {
     try {
-        const fileContents = fs.readFileSync(filePath, 'utf8');
+        const fileContents = fs.readFileSync(filePath[quizId], 'utf8');
         const { chapters } = JSON.parse(fileContents) as QuestionFlowType;
         const chapter = chapters.find(c => c.cid === chapterId);
         if (!chapter) throw new Error('Chapter not found');

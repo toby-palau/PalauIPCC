@@ -9,17 +9,18 @@ import { getUserId } from "@root/services/AuthService";
 import { ResetProgress } from "@root/components/Overview/ResetProgress";
 import { AuthProvider } from "@root/contexts/AuthContext";
 import { HighlightedChapter } from "@root/components/Overview/HighlightedChapter";
+import { QuizIdType } from "@root/@types/shared.types";
 
 
-const Page = async ({params: {quizName}}: {params: {quizName: string}}) => {
+const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
     const userId = await getUserId();
     if (!userId) return <div>Unauthorized</div>;
 
-    const chapters = await listAllChapters();
+    const chapters = await listAllChapters(quizId);
     if (chapters.length <= 0) return <div>Chapters not found</div>;
 
 
-    const responses = await getResponses(userId);
+    const responses = await getResponses(quizId, userId);
     if (!responses) return <div>Responses not found</div>;
 
     const chapterList = chapters.map(c => {
@@ -30,7 +31,7 @@ const Page = async ({params: {quizName}}: {params: {quizName: string}}) => {
             progress,
             score,
             tags: c.tags,
-            component: <ChapterCard chapter={c} progress={progress} score={score}/>
+            component: <ChapterCard quizId={quizId} chapter={c} progress={progress} score={score}/>
         })
     });
 
@@ -41,7 +42,7 @@ const Page = async ({params: {quizName}}: {params: {quizName: string}}) => {
     return (
         <AuthProvider userId={userId}>
             <div className="bg-black min-h-screen md:p-16 p-0">
-                <HighlightedChapter chapter={chapters[highlightedChapterIndex]} />
+                <HighlightedChapter quizId={quizId} chapter={chapters[highlightedChapterIndex]} />
                 <ChapterList chapters={chapterList} />
                 <Disclaimer />
                 <ResetProgress userId={userId}/>

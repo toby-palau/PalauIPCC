@@ -9,18 +9,18 @@ import { getUserId } from "@root/services/AuthService";
 import { getResponses } from "@root/services/DatabaseService";
 import { AuthProvider } from "@root/contexts/AuthContext";
 import { track } from "@vercel/analytics/server";
-import { PageTypes } from "@root/@types/shared.types";
+import { PageTypes, QuizIdType } from "@root/@types/shared.types";
 
-const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
+const Page = async ({params: {quizId, chapterId}}: {params: {quizId: QuizIdType; chapterId: string}}) => {
     const userId = await getUserId();
     if (!userId) return <div>Unauthorized</div>;
     
-    const { chapter, nextChapterId } = await getChapter(chapterId);
+    const { chapter, nextChapterId } = await getChapter(quizId, chapterId);
 
     if (!chapter) return <div>Chapter not found</div>;
 
     
-    const responses = await getResponses(userId);
+    const responses = await getResponses(quizId, userId);
     if (!responses) return <div>Responses not found</div>;
     if (chapter.pages.filter(c => c.pageType === PageTypes.question && c.completed).length <= 0) track("Start Chapter", {chapterId, chapterTitle: chapter.chapterTitle});
 
@@ -39,9 +39,9 @@ const Page = async ({params: {chapterId}}: {params: {chapterId: string}}) => {
     return (
         <div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
             <AuthProvider userId={userId}>
-                <QuestionFlowProvider initialSession={userSession} nextChapterId={nextChapterId}>
+                <QuestionFlowProvider quizId={quizId} initialSession={userSession} nextChapterId={nextChapterId}>
                     <ChapterBackground backgroundImages={backgroundImages} />
-                    <ChapterHeader />
+                    <ChapterHeader quizId={quizId} />
                     <ChapterContent />
                 </QuestionFlowProvider>
             </AuthProvider>

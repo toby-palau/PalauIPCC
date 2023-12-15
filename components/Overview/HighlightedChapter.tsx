@@ -1,10 +1,10 @@
 "use client"
 
-import { ChapterInfoType } from "@root/@types/shared.types"
+import { ChapterInfoType, QuizIdType } from "@root/@types/shared.types"
 import { staatliches } from "@root/styles/fonts"
 import { track } from "@vercel/analytics"
 
-export const HighlightedChapter = ({chapter}: {chapter: ChapterInfoType}) => {
+export const HighlightedChapter = ({chapter, quizId}: {chapter: ChapterInfoType; quizId: QuizIdType}) => {
     return (
         <div id="header" className="relative w-full overflow-hidden">
             <img src={`/images/backgrounds/${chapter.chapterCoverImage}`} className="absolute inset-0 h-full w-full object-cover" />
@@ -17,7 +17,7 @@ export const HighlightedChapter = ({chapter}: {chapter: ChapterInfoType}) => {
                         <p className={`ml-1 font-bold`}>Duration: 5 min</p>
                     </div>
                     <a 
-                        href={`/chapters/${chapter.cid}`} className={`flex mt-2 p-4 md:w-96 rounded-md bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100`}
+                        href={`/${quizId}/chapters/${chapter.cid}`} className={`flex mt-2 p-4 md:w-96 rounded-md bg-blue hover:bg-blue-dark active:scale-95 transition-all duration-100`}
                         onClick={() => track("Click Highlighted Chapter", {chapterId: chapter.cid, chapterTitle: chapter.chapterTitle})}
                     >{"Start now!"}</a>
                 </div>
