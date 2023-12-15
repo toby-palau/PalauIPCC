@@ -11,7 +11,7 @@ import { AuthProvider } from "@root/contexts/AuthContext";
 import { HighlightedChapter } from "@root/components/Overview/HighlightedChapter";
 
 
-const Page = async () => {
+const Page = async ({params: {quizName}}: {params: {quizName: string}}) => {
     const userId = await getUserId();
     if (!userId) return <div>Unauthorized</div>;
 
