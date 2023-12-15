@@ -2,7 +2,7 @@
 
 import { Prisma, PrismaClient, Response, User } from "@prisma/client";
 import { QuestionStatsType, QuizIdType } from "@root/@types/shared.types";
-import { IsoCountryCode2 } from "@root/data/countryCodeLookup";
+import { IsoCountryCode2 } from "@root/@types/countryCodeLookup";
 
 let prisma: PrismaClient;
 

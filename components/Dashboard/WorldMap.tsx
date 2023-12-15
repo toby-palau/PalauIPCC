@@ -1,6 +1,6 @@
 "use client"
 
-import { Iso2ToCountryName, Iso2ToIso3, IsoCountryCode2 } from "@root/data/countryCodeLookup";
+import { Iso2ToCountryName, Iso2ToIso3, IsoCountryCode2 } from "@root/@types/countryCodeLookup";
 import worldCountries from "@root/data/world_countries.json";
 import dynamic from "next/dynamic";
 
