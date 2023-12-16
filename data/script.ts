@@ -27,14 +27,17 @@ const regenerateIds = () => {
         for (const page of chapter.pages) {
             page.pid = `PID_${ulid()}`;
             if (page.pageType === "question" && page.question.options) {
-                page.question.correctAnswer = [];
+                const optionMapping: {[oldOid: string]: string} = {};
                 for (const option of page.question.options) {
-                    option.oid = `OID_${ulid()}`;
+                    const newOid = `OID_${ulid()}`;
+                    optionMapping[option.oid] = newOid;
+                    option.oid = newOid;
                 }
+                page.question.correctAnswer = page.question.correctAnswer.map((o: string) => optionMapping[o]);
             }
         }
     }
     fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
 }
 
-// regenerateIds();
+regenerateIds();
