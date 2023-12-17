@@ -113,6 +113,7 @@ export const createNewResponse: (quizId: QuizIdType, userId: string, questionId:
         const newResponse = await prisma.response.create({
             data: {
                 userId, 
+                quizId,
                 questionId, 
                 questionType, 
                 userAnswer: userAnswer ?? Prisma.JsonNull,
