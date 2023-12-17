@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
 			"/chapters/*"
 			],
 		},
-		sitemap: `${process.env.URL ?? "https://ipcc.palauproject.com"}/sitemap.xml`,
+		sitemap: `${process.env.URL ?? "https://quiz.palauproject.com"}/sitemap.xml`,
 	}
 }

@@ -42,7 +42,7 @@ const Page = async ({params: {quizId, chapterId}}: {params: {quizId: QuizIdType;
                 <QuestionFlowProvider quizId={quizId} initialSession={userSession} nextChapterId={nextChapterId}>
                     <ChapterBackground backgroundImages={backgroundImages} />
                     <ChapterHeader quizId={quizId} />
-                    <ChapterContent />
+                    <ChapterContent quizId={quizId} />
                 </QuestionFlowProvider>
             </AuthProvider>
         </div>

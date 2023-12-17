@@ -1,13 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 
 const inter = DM_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-	metadataBase: new URL(process.env.URL ?? "https://ipcc.palauproject.com"),
+	metadataBase: new URL(process.env.URL ?? "https://quiz.palauproject.com"),
 	title: "IPCC for dummies",
 	description: "Explore bite-sized chapters of the IPCC report in a gamified format. Learn about expert strategies for adaptation and mitigation without being overwhelmed by dense research papers.",
 	keywords: ["Climate change education", "IPCC 2023", "Gamified learning", "Interactive climate scenarios", "Sustainability", "Educational games", "Climate action", "Environmental challenges"],

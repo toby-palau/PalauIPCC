@@ -10,28 +10,28 @@
                 {
                     "pid": "PID_01HHSA9HHJ5N0WC6BFKG7MDS6A",
                     "pageType": "title",
-                    "backgroundImage": "1-1",
+                    "backgroundImage": "1-1.png",
                     "title": "Chapter I",
                     "subtitle": "COP28: One step forward, two steps back"
                 },
                 {
                     "pid": "PID_01HHSCQMGM4V5M1AKTH8H29V15",
                     "pageType": "narrator",
-                    "avatarImage": "Happy1.png",
+                    "avatarImage": "AlJaber/Happy1.png",
                     "avatarText": "Welcome to the COP28 quiz, hosted by me, definitely \"not\" the CEO of a huge oil company in the UAE. Funny, isn't it? COP28, or the 28th Conference of the Parties to the United Nations Framework Convention on Climate Change, is all about tackling climate change. ",
                     "backgroundImage": "1-1.png"
                 },
                 {
                     "pid": "PID_01HHSCQTWBZHEKB7XR2NMZPKVN",
                     "pageType": "narrator",
-                    "avatarImage": "Paranoid2.png",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "avatarText": "But here I am, definitely \"not\" a fossil fuel fan, hosting it! I say, why quit oil when the science isn’t clear, right? So, as we play this quiz, remember, it's all about learning and fun in the grand dance of greenwashing. Let’s start!",
                     "backgroundImage": "1-1.png"
                 },
                 {
                     "pid": "PID_01HHSA9HHJBHDAW1NRHKZDC8DE",
                     "pageType": "question",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "backgroundImage": "1-2.png",
                     "question": {
                         "questionText": "What's Sultan Al Jaber's hot take on phasing out fossil fuels, given the 1.07°C global temperature rise since 1850?",
@@ -62,7 +62,7 @@
                 {
                     "pid": "PID_01HHSA9HHJSTF5RH4H73HDQ830",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy1.png",
                     "avatarText": "Nailed it! Just like ice in the sun, fossil fuels need a cool down. Remember, it's not just about stopping the increase, it's about reversing the trend!",
                     "backgroundImage": "1-2.png",
                     "displayLogic": {
@@ -74,7 +74,7 @@
                 {
                     "pid": "PID_01HHSA9HHJJRXWMB0H16DSKDJJ",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Confused1.png",
                     "avatarText": "Oops, looks like your answer melted away like a glacier! The right choice was 'Stopping using fossil fuels won't stop global warming at 1.5°C degrees'. Hot topic, huh?",
                     "backgroundImage": "1-2.png",
                     "displayLogic": {
@@ -86,7 +86,7 @@
                 {
                     "pid": "PID_01HHSA9HHJXX3FGMK324AHCJ9A",
                     "pageType": "question",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "backgroundImage": "1-2.png",
                     "question": {
                         "questionText": "What's the ambitious goal for renewable energy capacity by 2030, as per COP28?",
@@ -117,7 +117,7 @@
                 {
                     "pid": "PID_01HHSA9HHJXJ9JG9ZFP4G5NSTD",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy1.png",
                     "avatarText": "Right on target! Tripling the capacity is like adding a turbocharger to the renewable energy race. It's ambitious but absolutely necessary!",
                     "backgroundImage": "1-2.png",
                     "displayLogic": {
@@ -129,7 +129,7 @@
                 {
                     "pid": "PID_01HHSA9HHJ3TBVMA7GB2MYNAX7",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Confused1.png",
                     "avatarText": "Missed that one, huh? The goal is to triple the capacity, not just add a few solar panels. Big dreams require big plans!",
                     "backgroundImage": "1-2.png",
                     "displayLogic": {
@@ -141,7 +141,7 @@
                 {
                     "pid": "PID_01HHSA9HHJG77YG0FABF1JER9F",
                     "pageType": "question",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "backgroundImage": "1-3.png",
                     "question": {
                         "questionText": "If renewables are to triple and energy efficiency is to double by 2030, what's the estimated investment needed?",
@@ -172,7 +172,7 @@
                 {
                     "pid": "PID_01HHSA9HHJ8TN4TW8XN4P3TB1X",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy1.png",
                     "avatarText": "Spot on! Investing around $2 trillion annually might sound like a lot, but it's a crucial step towards a sustainable future. Think big, act big!",
                     "backgroundImage": "1-3.png",
                     "displayLogic": {
@@ -184,7 +184,7 @@
                 {
                     "pid": "PID_01HHSA9HHJBWV15CXT8MB57YZR",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Confused1.png",
                     "avatarText": "Oops, not quite! It's around $2 trillion annually, not just a few oil barrels or good vibes... When it comes to saving our planet, it's worth every penny!",
                     "backgroundImage": "1-3.png",
                     "displayLogic": {
@@ -196,7 +196,7 @@
                 {
                     "pid": "PID_01HHSA9HHJY260Y544ARKV33AJ",
                     "pageType": "question",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "backgroundImage": "1-3.png",
                     "question": {
                         "questionText": "What strategies were emphasized at COP28 for achieving net-zero emissions?",
@@ -227,7 +227,7 @@
                 {
                     "pid": "PID_01HHSA9HHKSVE42E5M39BTD6KY",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Happy1.png",
                     "avatarText": "Excellent choice! A mix of renewable energy, energy efficiency, and carbon capture is like a balanced diet for the planet – all essential components for a healthy climate.",
                     "backgroundImage": "1-3.png",
                     "displayLogic": {
@@ -239,7 +239,7 @@
                 {
                     "pid": "PID_01HHSA9HHK8TV0S3BY3C663VDZ",
                     "pageType": "narrator",
-                    "avatarImage": "",
+                    "avatarImage": "AlJaber/Confused1.png",
                     "avatarText": "Not quite right. The strategy is a mix of renewable energy, energy efficiency, and carbon capture. It's all about balance and variety in our approach!",
                     "backgroundImage": "1-3.png",
                     "displayLogic": {
@@ -254,12 +254,12 @@
                     "backgroundImage": "1-3.png",
                     "title": "Chapter I",
                     "subtitle": "Completed!",
-                    "avatarImage": ".png"
+                    "avatarImage": "AlJaber/Happy2.png"
                 },
                 {
                     "pid": "PID_01HHSA9HHKSQQ2GD00DH9MYZNJ",
                     "pageType": "question",
-                    "avatarImage": ".png",
+                    "avatarImage": "AlJaber/Happy2.png",
                     "backgroundImage": "1-3.png",
                     "question": {
                         "questionTitle": "Get your dose of climate fun!",
@@ -271,7 +271,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -423,7 +423,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -575,7 +575,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -727,7 +727,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -1044,7 +1044,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -1251,7 +1251,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -1403,7 +1403,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
@@ -1555,7 +1555,7 @@
                     },
                     "displayLogic": {
                         "type": "seenBefore",
-                        "localStorageIndentifier": "leaveYourEmail"
+                        "localStorageIndentifier": "leaveYourEmailCOP"
                     }
                 }
             ]
