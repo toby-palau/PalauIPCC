@@ -10,8 +10,8 @@ export default function robots(): MetadataRoute.Robots {
 			"/hidden-dashboard/*", 
 			"/api", 
 			"/api/*", 
-			"/chapters", 
-			"/chapters/*"
+			"/*/chapters", 
+			"/*/chapters/*"
 			],
 		},
 		sitemap: `${process.env.URL ?? "https://quiz.palauproject.com"}/sitemap.xml`,
