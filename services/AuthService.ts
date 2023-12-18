@@ -1,7 +1,7 @@
 "use server"
 
 import { cookies } from "next/headers"
-import { createNewUser } from "./DatabaseService";
+import { createNewUser, getUser } from "./DatabaseService";
 import { QuizIdType } from "@root/@types/shared.types";
 
 export const getUserId = async (quizId: QuizIdType) => {
@@ -9,12 +9,20 @@ export const getUserId = async (quizId: QuizIdType) => {
         let userId = cookies().get(`${quizId}UserId`)?.value;
         let legacyUserId = cookies().get(`userId`)?.value;
 
-        if (!userId && !legacyUserId) {
+        if (userId || legacyUserId) {
+            userId = userId ?? legacyUserId ?? "-";
+            const existingUser = await getUser(userId);
+            if (!existingUser) {
+                const newUser = await createNewUser(quizId);
+                if (!newUser) throw new Error("Unable to create new user");
+                userId = newUser.userId;
+            }
+        } else {
             const newUser = await createNewUser(quizId);
             if (!newUser) throw new Error("Unable to create new user");
             userId = newUser.userId;
         }
-        return userId ?? legacyUserId;
+        return userId;
     } catch (error) {
         console.log(error);
     }
