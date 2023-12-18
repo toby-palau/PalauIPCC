@@ -174,7 +174,7 @@ export const QuestionFlowProvider = ({ children, quizId, initialSession, nextCha
 		
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/${quizId}/chapters/${nextChapterId}` : `/`);
+			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/${quizId}/chapters/${nextChapterId}` : `/${quizId}`);
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;
