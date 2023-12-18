@@ -31,6 +31,15 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
     }
 }
 
+export const updateUser: (userId: string, quizId: QuizIdType) => Promise<User | undefined> = async (userId, quizId) => {
+    try {
+        const updatedUser = await prisma.user.update({where: {userId}, data: {quizId}});
+        return updatedUser;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const getUserCount: (quizId: QuizIdType) => Promise<number | undefined> = async (quizId) => {
     try {
         const userCount = await prisma.user.count({where: {quizId}});
