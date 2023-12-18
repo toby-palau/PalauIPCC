@@ -12,9 +12,9 @@ const DisclaimerContent = {
     },
     cop: {
         logo: "/images/misc/cop-logo.png",
-        p1: "The content for this experience was generated based on",
+        p1: "The content for this experience was generated based on ",
         p2: "multiple sources",
-        p3: "about the 2023 COP28 Climate Change Conference",
+        p3: " about the 2023 COP28 Climate Change Conference",
         link: "https://docs.google.com/document/d/1xvsPmrxZI_JyYwFcLGUtgE5IkwrUACLsfsx3atTc5mo/edit?usp=sharing",
     }
 }
@@ -23,7 +23,9 @@ export const Disclaimer = ({quizId}: {quizId: QuizIdType}) => {
     return (
         <div className="flex flex-row items-center justify-end md:px-0 px-5 md:py-0 py-5">
             <p className={`w-72 text-xs text-white text-right mx-4`}>
-                {DisclaimerContent[quizId].p1} <Link href={DisclaimerContent[quizId].link} className={"text-blue hover:text-blue-dark underline"} target="_blank">{DisclaimerContent[quizId].p2}</Link>{DisclaimerContent[quizId].p3}.
+                {DisclaimerContent[quizId].p1}
+                <Link href={DisclaimerContent[quizId].link} className={"text-blue hover:text-blue-dark underline"} target="_blank">{DisclaimerContent[quizId].p2}</Link>
+                {DisclaimerContent[quizId].p3}.
             </p>
             <img src={DisclaimerContent[quizId].logo} className="w-16 " />
         </div>

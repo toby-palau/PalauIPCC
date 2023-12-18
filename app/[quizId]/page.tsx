@@ -13,7 +13,7 @@ import { QuizIdType } from "@root/@types/shared.types";
 
 
 const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
-    const userId = await getUserId();
+    const userId = await getUserId(quizId);
     if (!userId) return <div>Unauthorized</div>;
 
     const chapters = await listAllChapters(quizId);
@@ -40,7 +40,7 @@ const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
 
 
     return (
-        <AuthProvider userId={userId}>
+        <AuthProvider quizId={quizId} userId={userId}>
             <div className="bg-black min-h-screen md:p-16 p-0">
                 <HighlightedChapter quizId={quizId} chapter={chapters[highlightedChapterIndex]} />
                 <ChapterList chapters={chapterList} withFilters={quizId === "ipcc"}/>

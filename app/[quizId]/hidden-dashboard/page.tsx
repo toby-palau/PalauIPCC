@@ -9,7 +9,7 @@ import { listAllChapters } from "@root/services/QuestionFlowService";
 
 const Page = async ({params, searchParams}: {params: {quizId: QuizIdType}; searchParams: {randomSeed: string}}) => {
     console.log(`rerender with random seed ${searchParams.randomSeed}`);
-    const userCount = await getUserCount();
+    const userCount = await getUserCount(params.quizId);
 
     const responseCountsByDate = await getResponseCountsByDate(params.quizId);
     if (!responseCountsByDate) return null;

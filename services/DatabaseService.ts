@@ -12,9 +12,9 @@ else {
     prisma = (global as any).prisma;
 }
 
-export const createNewUser: () => Promise<User | undefined> = async () => {
+export const createNewUser: (quizId: QuizIdType) => Promise<User | undefined> = async (quizId) => {
     try {
-        const newUser = await prisma.user.create({data: {}});
+        const newUser = await prisma.user.create({data: {quizId}});
         return newUser;
     } catch (error) {
         console.log(error)
@@ -31,9 +31,9 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
     }
 }
 
-export const getUserCount: () => Promise<number | undefined> = async () => {
+export const getUserCount: (quizId: QuizIdType) => Promise<number | undefined> = async (quizId) => {
     try {
-        const userCount = await prisma.user.count();
+        const userCount = await prisma.user.count({where: {quizId}});
         return userCount;
     } catch (error) {
         console.log(error);
@@ -72,7 +72,7 @@ export const getUserCountByCountry: (quizId: QuizIdType) => Promise<{country: Is
         const userCountByCountry: {country: IsoCountryCode2; count: number}[] = await prisma.$queryRaw`
             SELECT country, CAST(COUNT(*) AS INT) AS count 
             FROM "User" 
-            WHERE country IS NOT NULL
+            WHERE country IS NOT NULL AND "quizId" = ${quizId}
             GROUP BY country 
             ORDER BY count DESC;
         `;
@@ -138,7 +138,7 @@ export const resetExistingResponse: (quizId: QuizIdType, userId: string, questio
     }
 }
 
-export const deleteUserResponses: (quizID: QuizIdType, userId: string) => Promise<void> = async (quizId, userId) => {
+export const deleteUserResponses: (quizId: QuizIdType, userId: string) => Promise<void> = async (quizId, userId) => {
     try {
         await prisma.response.deleteMany({where: {quizId, userId}});
     } catch (error) {

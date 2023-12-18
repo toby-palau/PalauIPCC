@@ -12,7 +12,7 @@ import { track } from "@vercel/analytics/server";
 import { PageTypes, QuizIdType } from "@root/@types/shared.types";
 
 const Page = async ({params: {quizId, chapterId}}: {params: {quizId: QuizIdType; chapterId: string}}) => {
-    const userId = await getUserId();
+    const userId = await getUserId(quizId);
     if (!userId) return <div>Unauthorized</div>;
     
     const { chapter, nextChapterId } = await getChapter(quizId, chapterId);
@@ -38,7 +38,7 @@ const Page = async ({params: {quizId, chapterId}}: {params: {quizId: QuizIdType;
 
     return (
         <div className="fixed h-screen w-screen flex-col items-center justify-center overflow-y-scroll">
-            <AuthProvider userId={userId}>
+            <AuthProvider quizId={quizId} userId={userId}>
                 <QuestionFlowProvider quizId={quizId} initialSession={userSession} nextChapterId={nextChapterId}>
                     <ChapterBackground backgroundImages={backgroundImages} />
                     <ChapterHeader quizId={quizId} />

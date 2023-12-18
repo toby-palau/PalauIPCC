@@ -10,6 +10,7 @@ datasource db {
 
 model User {
   userId        String     @id @default(uuid())
+  quizId        String     @default("ipcc")
   email         String?
   country       String?
   countryRegion String?
