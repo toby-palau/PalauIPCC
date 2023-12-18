@@ -823,7 +823,7 @@
                             },
                             {
                                 "oid": "OID_01HHSA9HHNQB44B6Y7KP4M8WZ2",
-                                "optionText": "A fund that will provide US$400 million in pledges"
+                                "optionText": "A fund that will provide US$700 million in pledges"
                             },
                             {
                                 "oid": "OID_01HHSA9HHNZF69R82DM36C99B3",
@@ -836,7 +836,7 @@
                     "pid": "PID_01HHSA9HHNRZECG7M8TCSZKV0K",
                     "pageType": "narrator",
                     "avatarImage": "AlJaber/Happy1.png",
-                    "avatarText": "Correct! COP28 addressed the needs of vulnerable countries by establishing a fund with US$400 million in pledges. It's a tangible step towards supporting those who are most impacted by climate change.",
+                    "avatarText": "Correct! COP28 addressed the needs of vulnerable countries by establishing a fund with US$700 million in pledges. It's a tangible step towards supporting those who are most impacted by climate change.",
                     "backgroundImage": "5-1.png",
                     "displayLogic": {
                         "pid": "PID_01HHSA9HHNRHFG62WYGDG1T3D3",
@@ -848,7 +848,7 @@
                     "pid": "PID_01HHSA9HHN52CAN5E903DWQB03",
                     "pageType": "narrator",
                     "avatarImage": "AlJaber/Mad1.png",
-                    "avatarText": "Not quite right. The significant action at COP28 was the establishment of a fund with US$400 million in pledges for the most vulnerable countries. This goes beyond verbal commitments to provide actual financial support.",
+                    "avatarText": "Not quite right. The significant action at COP28 was the establishment of a fund with US$700 million in pledges for the most vulnerable countries. This goes beyond verbal commitments to provide actual financial support.",
                     "backgroundImage": "5-1.png",
                     "displayLogic": {
                         "pid": "PID_01HHSA9HHNRHFG62WYGDG1T3D3",
@@ -1208,7 +1208,7 @@
                     "pid": "PID_01HHSA9HHP4ZHJ1TZ6B81KHMS0",
                     "pageType": "narrator",
                     "avatarImage": "IndigenousWoman/Hopeful1.png",
-                    "avatarText": "That's right! While there's a $400 million pledge for 'loss and damage' at COP28, it's just a drop in the ocean of what's actually needed. We're acknowledging the issue, but the action is still lagging.",
+                    "avatarText": "That's right! While there's a $700 million pledge for 'loss and damage' at COP28, it's just a drop in the ocean of what's actually needed. We're acknowledging the issue, but the action is still lagging.",
                     "backgroundImage": "6-3.png",
                     "displayLogic": {
                         "pid": "PID_01HHSA9HHPDNPZJH5FT6175F3F",
@@ -1220,7 +1220,7 @@
                     "pid": "PID_01HHSA9HHPMWXZ9YN3BWE1J67S",
                     "pageType": "narrator",
                     "avatarImage": "IndigenousWoman/Sad1.png",
-                    "avatarText": "Not quite. Sure, there's a $400 million pledge for 'loss and damage,' but let's be real, it's like bringing a bucket to put out a forest fire. We're acknowledging the problem, but the response? Far from enough.",
+                    "avatarText": "Not quite. Sure, there's a $700 million pledge for 'loss and damage,' but let's be real, it's like bringing a bucket to put out a forest fire. We're acknowledging the problem, but the response? Far from enough.",
                     "backgroundImage": "6-3.png",
                     "displayLogic": {
                         "pid": "PID_01HHSA9HHPDNPZJH5FT6175F3F",
