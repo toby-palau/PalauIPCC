@@ -1,13 +1,14 @@
 "use client"
 
+import { QuizIdType } from "@root/@types/shared.types";
 import { deleteUserResponses } from "@root/services/DatabaseService";
 import { useRouter } from "next/navigation";
 
-export const ResetProgress = ({userId}: {userId: string}) => {
+export const ResetProgress = ({userId, quizId}: {userId: string, quizId: QuizIdType}) => {
     const router = useRouter();
 
     const handleResetClick = () => {
-        deleteUserResponses(userId);
+        deleteUserResponses(quizId, userId);
         router.refresh();
     }
 

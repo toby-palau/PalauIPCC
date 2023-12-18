@@ -45,7 +45,7 @@ const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
                 <HighlightedChapter quizId={quizId} chapter={chapters[highlightedChapterIndex]} />
                 <ChapterList chapters={chapterList} />
                 { quizId === "ipcc" && <Disclaimer /> }
-                <ResetProgress userId={userId}/>
+                <ResetProgress userId={userId} quizId={quizId}/>
             </div>
         </AuthProvider>
     )
