@@ -72,7 +72,7 @@ export const getUserCountByCountry: (quizId: QuizIdType) => Promise<{country: Is
         const userCountByCountry: {country: IsoCountryCode2; count: number}[] = await prisma.$queryRaw`
             SELECT country, CAST(COUNT(*) AS INT) AS count 
             FROM "User" 
-            WHERE country IS NOT NULL AND "quizId" = ${quizId}
+            WHERE country IS NOT NULL
             GROUP BY country 
             ORDER BY count DESC;
         `;

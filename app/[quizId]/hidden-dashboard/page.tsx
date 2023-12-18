@@ -45,7 +45,7 @@ const Page = async ({params, searchParams}: {params: {quizId: QuizIdType}; searc
     return (
         <div className="min-h-screen w-screen md:p-10 p-2 bg-white-dark">
             <div className="flex flex-row justify-end items-center">
-                <a href={`/hidden-dashboard?randomSeed=${Math.random()}`} className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
+                <a href={`/${params.quizId}/hidden-dashboard?randomSeed=${Math.floor(Math.random() * 1000)}`} className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
             </div>
 
             <div className="grid grid-cols-3 gap-4 auto-rows-max">
