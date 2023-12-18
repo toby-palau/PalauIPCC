@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Response" ALTER COLUMN "quizId" DROP DEFAULT;
+
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "quizId" DROP DEFAULT;

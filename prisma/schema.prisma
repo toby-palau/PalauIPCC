@@ -10,7 +10,7 @@ datasource db {
 
 model User {
   userId        String     @id @default(uuid())
-  quizId        String     @default("ipcc")
+  quizId        String
   email         String?
   country       String?
   countryRegion String?
@@ -23,7 +23,7 @@ model User {
 
 model Response {
   responseId        String    @id @default(uuid())
-  quizId            String  @default("ipcc")
+  quizId            String
   questionId        String
   userId            String
   questionType      String
