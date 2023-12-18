@@ -7,7 +7,7 @@ import { QuizIdType } from "@root/@types/shared.types";
 
 const inter = DM_Sans({ subsets: ["latin"] })
 
-export const generateMetadata = ({ params }: { params: { quizId: QuizIdType } }): Metadata => {
+export const generateMetadata = ({ params }: { params: { quizId: QuizIdType } }): Metadata | undefined => {
 	if (params.quizId === "ipcc") return {
 		metadataBase: new URL(process.env.URL ?? "https://quiz.palauproject.com"),
 		title: "IPCC for dummies",
@@ -20,9 +20,10 @@ export const generateMetadata = ({ params }: { params: { quizId: QuizIdType } })
 			title: "IPCC for dummies",
 			description: "Explore bite-sized chapters of the IPCC report in a gamified format. Learn about expert strategies for adaptation and mitigation without being overwhelmed by dense research papers.",
 			images: ["/images/misc/og-image-ipcc.png"],
+			url: "https://quiz.palauproject.com/ipcc"
 		}
 	}
-	else return {
+	else if (params.quizId === "cop") return {
 		metadataBase: new URL(process.env.URL ?? "https://quiz.palauproject.com"),
 		title: "COP28 Recap",
 		description: "Dive into the key topics of COP28 with this engaging quiz. Test your knowledge on climate action goals, renewable energy, and global challenges in a concise and informative way.",
@@ -34,7 +35,12 @@ export const generateMetadata = ({ params }: { params: { quizId: QuizIdType } })
 			title: "COP28 Recap",
 			description: "Dive into the key topics of COP28 with this engaging quiz. Test your knowledge on climate action goals, renewable energy, and global challenges in a concise and informative way.",
 			images: ["/images/misc/og-image-cop.png"],
+			url: "https://quiz.palauproject.com/cop"
 		}
+	} 
+	else return {
+		title: "Palau Climate Quiz",
+		metadataBase: new URL(process.env.URL ?? "https://quiz.palauproject.com"),
 	}
 }
 
