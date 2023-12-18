@@ -1,0 +1,1564 @@
+{
+    "chapters": [
+        {
+            "cid": "CID_01HHSA9HHHB32022H09TXSWAMF",
+            "tags": ["all"],
+            "chapterTitle": "Fossil Fuel Exit: Fake News?",
+            "chapterDescription": "Explore the ironic twists in global climate action with 'Fossil Fuel Exit: Fake News?' This chapter uncovers the paradoxes of COP28, from fossil fuel debates to renewable energy realities, challenging what progress truly means in our fight against climate change.",
+            "chapterCoverImage": "1-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHJ5N0WC6BFKG7MDS6A",
+                    "pageType": "title",
+                    "backgroundImage": "1-1.png",
+                    "title": "Chapter I",
+                    "subtitle": "Fossil Fuel Exit: Fake News?"
+                },
+                {
+                    "pid": "PID_01HHSCQMGM4V5M1AKTH8H29V15",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Welcome to the COP28 quiz, hosted by me, definitely \"not\" the CEO of a huge oil company in the UAE. Funny, isn't it? COP28, or the 28th Conference of the Parties to the United Nations Framework Convention on Climate Change, is all about tackling climate change. ",
+                    "backgroundImage": "1-1.png"
+                },
+                {
+                    "pid": "PID_01HHSCQTWBZHEKB7XR2NMZPKVN",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "avatarText": "But here I am, definitely \"not\" a fossil fuel fan, hosting it! I say, why quit oil when the science isn’t clear, right? So, as we play this quiz, remember, it's all about learning and fun in the grand dance of greenwashing. Let’s start!",
+                    "backgroundImage": "1-1.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHJBHDAW1NRHKZDC8DE",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "1-2.png",
+                    "question": {
+                        "questionText": "What's Sultan Al Jaber's hot take on phasing out fossil fuels, given the 1.07°C global temperature rise since 1850?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHJMNPPBPARQA060GYB"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHJZWBT8SRJKQD3VN1Y",
+                                "optionText": "Essential for a cooler future"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJMNPPBPARQA060GYB",
+                                "optionText": "Stopping using fossil fuels won't stop global warming at 1.5°C degrees"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJV194X7W0WMS1CRYG",
+                                "optionText": "What's a few degrees among friends?"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJYZ3WXDM4AWYM04A8",
+                                "optionText": "It's just a phase"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJSTF5RH4H73HDQ830",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Nailed it! Contrary to some people's opinions, fossil fuels do need a cool down. Remember, it's not just about stopping the increase, it's about reversing the trend!",
+                    "backgroundImage": "1-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJBHDAW1NRHKZDC8DE",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJJRXWMB0H16DSKDJJ",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused1.png",
+                    "avatarText": "Oops, looks like your answer melted away like a glacier! The right choice was 'Stopping using fossil fuels won't stop global warming at 1.5°C degrees'. Contrary to some people's opinions, fossil fuels do need a cool down. Remember, it's not just about stopping the increase, it's about reversing the trend!",
+                    "backgroundImage": "1-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJBHDAW1NRHKZDC8DE",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJXX3FGMK324AHCJ9A",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "1-2.png",
+                    "question": {
+                        "questionText": "What's the ambitious goal for renewable energy capacity by 2030, as per COP28?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHJVQS7NSKY8SFABWJ6"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHJVQS7NSKY8SFABWJ6",
+                                "optionText": "Triple the current capacity"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJFSJQ7XJ9S2ZG0AFV",
+                                "optionText": "Add a few solar panels here and there"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJ4K9FZ3BY2J3VB9GK",
+                                "optionText": "Keep it as is, but talk about it more"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJ6MBQZK35M7F7HEWW",
+                                "optionText": "Hope for the best"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJXJ9JG9ZFP4G5NSTD",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Right on target! Tripling the capacity is like adding a turbocharger to the renewable energy race. It's ambitious but absolutely necessary!",
+                    "backgroundImage": "1-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJXX3FGMK324AHCJ9A",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJ3TBVMA7GB2MYNAX7",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused1.png",
+                    "avatarText": "Missed that one, huh? The goal is to triple the capacity, not just add a few solar panels. Big dreams require big plans!",
+                    "backgroundImage": "1-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJXX3FGMK324AHCJ9A",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJG77YG0FABF1JER9F",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "1-3.png",
+                    "question": {
+                        "questionText": "If renewables are to triple and energy efficiency is to double by 2030, what's the estimated investment needed?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHJZYVV1B8YWGF7PVDT"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHJ4G3GSKVNB7JV66H4",
+                                "optionText": "$1 trillion"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJZYVV1B8YWGF7PVDT",
+                                "optionText": "Around $2 trillion annually"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJE4HWGRCAQTEV674C",
+                                "optionText": "A few oil barrels"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHJFAMP208T4TR0SHV3",
+                                "optionText": "Good vibes and hopeful thoughts"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJ8TN4TW8XN4P3TB1X",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Spot on! Investing around $2 trillion annually might sound like a lot, but it's a crucial step towards a sustainable future. Think big, act big!",
+                    "backgroundImage": "1-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJG77YG0FABF1JER9F",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJBWV15CXT8MB57YZR",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused1.png",
+                    "avatarText": "Oops, not quite! It's around $2 trillion annually, not just a few oil barrels or good vibes... When it comes to saving our planet, it's worth every penny!",
+                    "backgroundImage": "1-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJG77YG0FABF1JER9F",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHJY260Y544ARKV33AJ",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "1-3.png",
+                    "question": {
+                        "questionText": "What strategies were emphasized at COP28 for achieving net-zero emissions?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHK1NKDFFF5C9RXPJW8"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHJ2ZECD16S04BJEQK0",
+                                "optionText": "Solely focusing on renewable energy"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHK1NKDFFF5C9RXPJW8",
+                                "optionText": "A mix of renewable energy, energy efficiency, and carbon capture"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKFKVMNSGHY5SX9F1H",
+                                "optionText": "Primarily relying on nuclear power"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKGRJZ84YGN71VYAPQ",
+                                "optionText": "No specific strategies, just general goals"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKSVE42E5M39BTD6KY",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Excellent choice! A mix of renewable energy, energy efficiency, and carbon capture is like a balanced diet for the planet – all essential components for a healthy climate.",
+                    "backgroundImage": "1-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJY260Y544ARKV33AJ",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHK8TV0S3BY3C663VDZ",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused1.png",
+                    "avatarText": "Not quite right. The strategy is a mix of renewable energy, energy efficiency, and carbon capture. It's all about balance and variety in our approach!",
+                    "backgroundImage": "1-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHJY260Y544ARKV33AJ",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKV5D00FBQM14C016W",
+                    "pageType": "success",
+                    "backgroundImage": "1-3.png",
+                    "title": "Chapter I",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHKSQQ2GD00DH9MYZNJ",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "1-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHKVM1NS9W76GERQ9WD",
+            "tags": ["all"],
+            "chapterTitle": "Green Promises, Grey Realities",
+            "chapterDescription": "Dive into 'Green Promises, Grey Realities' to unravel the complexities of environmental commitments at COP28. This chapter sheds light on the often ambiguous nature of 'non-binding' agreements in renewable energy and the contrasting stances on fossil fuels, revealing the intricate dance between aspiration and actuality in the world of climate diplomacy.",
+            "chapterCoverImage": "2-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHKCYQZE3Z0XJX7SK13",
+                    "pageType": "title",
+                    "backgroundImage": "2-1.png",
+                    "title": "Chapter II",
+                    "subtitle": "Green Promises, Grey Realities"
+                },
+                {
+                    "pid": "PID_01HHSA9HHK5PG7SR7MB96ZNXM8",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "2-2.png",
+                    "question": {
+                        "questionText": "When COP28 talks about a shift to renewable energy, what does the term \"non-binding\" imply?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHKWRTN2JVVDNCNMM2G"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHKHBXKEFHSZ5HFEBE0",
+                                "optionText": "Firm commitment"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKWRTN2JVVDNCNMM2G",
+                                "optionText": "More of a guideline than a rule"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKN3NRK8EKR7ARBKSA",
+                                "optionText": "Just for show"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHK4PPPNZJWFNJVF0BM",
+                                "optionText": "Absolutely binding"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKGMSJ6ZXXS4SJZBN8",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy3.png",
+                    "avatarText": "Bingo! 'Non-binding' is like saying, 'I'll totally start my diet tomorrow.' More of a guideline than a real rule, huh?",
+                    "backgroundImage": "2-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHK5PG7SR7MB96ZNXM8",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKDJ93GZ5E5CJJHANJ",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused2.png",
+                    "avatarText": "Oops, swing and a miss! 'Non-binding' is more like a polite suggestion than a command. It's like making New Year's resolutions – mostly wishful thinking!",
+                    "backgroundImage": "2-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHK5PG7SR7MB96ZNXM8",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKQX43TFFVHH9ZTW6R",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "2-3.png",
+                    "question": {
+                        "questionText": "How does Sultan Al Jaber's position on fossil fuels align with the conference's goals?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHK1P90A2395JTEJSHQ"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHK1P90A2395JTEJSHQ",
+                                "optionText": "Like oil and water"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKMHZKCFRCYEKS1XJ0",
+                                "optionText": "Perfect harmony"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKFN62C26NAHNZVWJJ",
+                                "optionText": "Close, but no cigar"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHKE1WQN7EMKSZV6WM5",
+                                "optionText": "As well as a solar panel at night"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKXSPC2Z8EKYJWCD55",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy3.png",
+                    "avatarText": "Spot on! Like oil and water, they just don't mix. Maybe a renewable energy conference isn't the best place to be pro-fossil fuels, right?",
+                    "backgroundImage": "2-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHKQX43TFFVHH9ZTW6R",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKC05SBAMQZ6GYE81S",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Confused2.png",
+                    "avatarText": "Missed that one! His position is more like oil to the conference's water. Maybe not the best combo for a renewable energy conference, don't you think?",
+                    "backgroundImage": "2-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHKQX43TFFVHH9ZTW6R",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHKJ1KJ2JMMBVTBBGVV",
+                    "pageType": "success",
+                    "backgroundImage": "2-3.png",
+                    "title": "Chapter II",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHKK66ERRYSDA7PD0PR",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "2-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHKD96815MV3JVQ1F1Q",
+            "tags": ["all"],
+            "chapterTitle": "Sustainable Ambitions in a Carbon World",
+            "chapterDescription": "Explore the audacious targets for renewable energy set at COP28 and the stark ironies they present against the backdrop of current global energy policies. This segment delves into the critical sectors identified for emissions reductions, highlighting the complex interplay between high aspirations and the realities of environmental leadership.",
+            "chapterCoverImage": "3-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHKBECB6EAWF37DJCB9",
+                    "pageType": "title",
+                    "backgroundImage": "3-1.png",
+                    "title": "Chapter III",
+                    "subtitle": "Sustainable Ambitions in a Carbon World"
+                },
+                {
+                    "pid": "PID_01HHSA9HHK6H6X7H6P0RW97TX5",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "3-2.png",
+                    "question": {
+                        "questionText": "Considering COP28's leadership, what’s the irony level in setting high renewable energy goals?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHMBCXWKN6K4N6H078P"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHM6YVFNREDK8QR6XAR",
+                                "optionText": "Refreshingly low"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMBCXWKN6K4N6H078P",
+                                "optionText": "Almost as high as global CO2 levels"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMDCBB5ESCVRF39KA5",
+                                "optionText": "Noticeably present"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMYBT29NCZPG5GD660",
+                                "optionText": "Nonexistent, totally normal"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMXPJEMSWZJWPSYX2T",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy4.png",
+                    "avatarText": "Bullseye! The irony is almost as high as the CO2 levels we're trying to lower. A bit like asking a fox to guard the henhouse, right?",
+                    "backgroundImage": "3-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHK6H6X7H6P0RW97TX5",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMVQVYWD2JSNQP284P",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad3.png",
+                    "avatarText": "Oops, missed that! The irony is sky-high, almost matching our CO2 levels. It's like appointing a pastry chef as a diet coach!",
+                    "backgroundImage": "3-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHK6H6X7H6P0RW97TX5",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHM3TF8NXPC36XKFRYW",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "3-3.png",
+                    "question": {
+                        "questionText": "Which sectors were identified as key for emissions reductions at COP28?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHMRGB81T4N4FB7NQ36"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHM6R0V42JWF5T8ZZ7Q",
+                                "optionText": "Only the energy sector"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMRGB81T4N4FB7NQ36",
+                                "optionText": "Energy, transportation, and agriculture"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMXWVCCE3KNCWPXZ7Z",
+                                "optionText": "Mainly the industrial sector"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHM0EFQDN4DFVQT763N",
+                                "optionText": "Transportation and housing only"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMVFMYW9HZ92SJH4V8",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy4.png",
+                    "avatarText": "Exactly right! Focusing on energy, transportation, and agriculture sectors is like hitting a sustainability trifecta. All key players in the emissions game!",
+                    "backgroundImage": "3-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHM3TF8NXPC36XKFRYW",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHM0WVA85MG0G3RZ10R",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad3.png",
+                    "avatarText": "Not quite there. The key sectors are energy, transportation, and agriculture. Think of them as the main dishes in the climate action menu!",
+                    "backgroundImage": "3-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHM3TF8NXPC36XKFRYW",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMPCJKK7VSHZGPFDJ1",
+                    "pageType": "success",
+                    "backgroundImage": "3-3.png",
+                    "title": "Chapter III",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHMJHBZ037J2QHM835B",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "3-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHMZ1FRGVBMWR6JBWFD",
+            "tags": ["all"],
+            "chapterTitle": "Voices in the Climate Conversation",
+            "chapterDescription": "This section examines the nuanced role of Indigenous Peoples and local communities in climate action as highlighted at COP28. It scrutinizes the balance between symbolic gestures and meaningful engagement, revealing the complex interplay between recognition and real influence in shaping global environmental policies.",
+            "chapterCoverImage": "4-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHMZAC066J51WNYQ1MJ",
+                    "pageType": "title",
+                    "backgroundImage": "4-1.png",
+                    "title": "Chapter IV",
+                    "subtitle": "Voices in the Climate Conversation"
+                },
+                {
+                    "pid": "PID_01HHSA9HHMSZHND63S09BEV0H4",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "4-2.png",
+                    "question": {
+                        "questionText": "What is the role of local communities and Indigenous Peoples in climate action, as emphasized at COP28?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHMWTNRS407X9WWMRYE"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHMWTNRS407X9WWMRYE",
+                                "optionText": "Key agents of change"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMMWN0DTMXJ4E6QAWC",
+                                "optionText": "Honorary mention"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHM79DSY46XF2Z07AX0",
+                                "optionText": "Background extras"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHM7EMF70YWFKFW9SR3",
+                                "optionText": "Consultants, at best"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHM13WVPHEV7EZX776J",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Hopeful1.png",
+                    "avatarText": "Absolutely right! Local communities and Indigenous Peoples are key agents of change. Their knowledge and experience are invaluable in driving effective climate action.",
+                    "backgroundImage": "4-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHMSZHND63S09BEV0H4",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHM1XK0G5EVSP8XRGEK",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Sad1.png",
+                    "avatarText": "Not quite. The role of local communities and Indigenous Peoples isn't just an honorary mention. They are crucial, active participants in climate action.",
+                    "backgroundImage": "4-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHMSZHND63S09BEV0H4",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMZVTNZ7AHHVQPKT0V",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "4-3.png",
+                    "question": {
+                        "questionText": "How did COP28 address the inclusion of Indigenous Peoples and local communities in climate action decision-making?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHMGTHCJ5W1SA4VQJ3R"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHM62WM26WQ20C7GJ1G",
+                                "optionText": "Gave them center stage"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHM2MR4TR7XNVXE499C",
+                                "optionText": "A polite nod in their general direction"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMVPHYN9FB57VA4N6T",
+                                "optionText": "Promised to do better next time"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHMGTHCJ5W1SA4VQJ3R",
+                                "optionText": "Arguably more symbolic than substantial"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHM48AB2EA3JKH5YTBW",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Hopeful1.png",
+                    "avatarText": "Spot on! It was arguably more symbolic than substantial. Like sending a 'thoughts and prayers' card instead of actual help. We need real seats at the table, not just symbolic ones!",
+                    "backgroundImage": "4-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHMZVTNZ7AHHVQPKT0V",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMBXG2HZRXPP3YBY22",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Sad1.png",
+                    "avatarText": "Missed the mark! The approach was more 'let's pretend to care' than actual inclusion. It's like clapping for a play you haven't watched – polite, but not really meaningful.",
+                    "backgroundImage": "4-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHMZVTNZ7AHHVQPKT0V",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHMP2ZG6ZKME32DX2YQ",
+                    "pageType": "success",
+                    "backgroundImage": "4-4.png",
+                    "title": "Chapter IV",
+                    "subtitle": "Completed!",
+                    "avatarImage": "IndigenousWoman/Hopeful2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHN0WJAB9Z3CGXB81XN",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "4-4.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHNA9PSVG90GETXNT52",
+            "tags": ["all"],
+            "chapterTitle": "Funding the Future",
+            "chapterDescription": "This section sheds light on the critical strategies for climate adaptation and resilience discussed at COP28. It focuses on the intersection of financial commitments and actual needs, particularly for vulnerable countries, and the daunting gap between the necessary investments and current funding levels to meet global climate goals.",
+            "chapterCoverImage": "5-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHNJH9ADZP3FT7E5NE8",
+                    "pageType": "title",
+                    "backgroundImage": "5-1.png",
+                    "title": "Chapter V",
+                    "subtitle": "Funding the Future"
+                },
+                {
+                    "pid": "PID_01HHSA9HHNXBPTQVMB74CDGSMS",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-1.png",
+                    "question": {
+                        "questionText": "What measures were proposed at COP28 to improve climate adaptation and resilience?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHNT18EFN4KX80ZQ1P4"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHNYVHW1Q33A6RAMKQZ",
+                                "optionText": "Only infrastructure investments"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNT18EFN4KX80ZQ1P4",
+                                "optionText": "Infrastructure resilience, supporting vulnerable communities, and improving forecasting"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHN305SR8QRWCBDZF7Q",
+                                "optionText": "Just focusing on economic resilience"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNV2WDSAY39VY6Q9PT",
+                                "optionText": "No specific measures, only discussions"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN2D7X8CD36S3CH5ZH",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Absolutely right! COP28 highlighted this set of proposals to enhance climate adaptation and resilience. It addressed the need to strengthen infrastructure to withstand climate-related impacts, provide support and resources to vulnerable communities, and improve climate forecasting capabilities to better prepare for and respond to disasters.",
+                    "backgroundImage": "5-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNXBPTQVMB74CDGSMS",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHNS41H4DJ802CZCT82",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad1.png",
+                    "avatarText": "Not quite. COP28 highlighted this set of proposals to enhance climate adaptation and resilience. It addressed the need to strengthen infrastructure to withstand climate-related impacts, provide support and resources to vulnerable communities, and improve climate forecasting capabilities to better prepare for and respond to disasters",
+                    "backgroundImage": "5-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNXBPTQVMB74CDGSMS",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHNRHFG62WYGDG1T3D3",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-1.png",
+                    "question": {
+                        "questionText": "How did COP28 address the needs of countries most vulnerable to climate change?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHNQB44B6Y7KP4M8WZ2"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHNCT92JEYHW0JBE877",
+                                "optionText": "By offering limited financial support"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNWWRAFCEEK02ZC6T6",
+                                "optionText": "Mainly through verbal commitments"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNQB44B6Y7KP4M8WZ2",
+                                "optionText": "A fund that will provide US$700 million in pledges"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNZF69R82DM36C99B3",
+                                "optionText": "Ignoring these needs"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHNRZECG7M8TCSZKV0K",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Correct! COP28 addressed the needs of vulnerable countries by establishing a fund with US$700 million in pledges. It's a tangible step towards supporting those who are most impacted by climate change.",
+                    "backgroundImage": "5-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNRHFG62WYGDG1T3D3",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN52CAN5E903DWQB03",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad1.png",
+                    "avatarText": "Not quite right. The significant action at COP28 was the establishment of a fund with US$700 million in pledges for the most vulnerable countries. This goes beyond verbal commitments to provide actual financial support.",
+                    "backgroundImage": "5-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNRHFG62WYGDG1T3D3",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN9GVSDA2QV2B4191R",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-2.png",
+                    "question": {
+                        "questionText": "What's the estimated annual investment needed to meet global climate goals, as discussed at COP28?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHNEAQX98HR54F81AG7"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHNME66ND4NT8C2J6VX",
+                                "optionText": "Just a fraction of global GDP"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNBEBWXEJWV6P5ZDY2",
+                                "optionText": "Enough to make a banker blush"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNEAQX98HR54F81AG7",
+                                "optionText": "A modest sum of $4 trillion"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHN92NP93QD39B12A49",
+                                "optionText": "The entire budget of a small country"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN0H8JY10NXRT0Y7Z6",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Right on the money! The estimated annual investment discussed at COP28 is a whopping $4 trillion. It's a clear indicator of the scale and urgency of the global climate goals.",
+                    "backgroundImage": "5-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHN9GVSDA2QV2B4191R",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN0TZZDKTHX3NC665M",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad1.png",
+                    "avatarText": "Not quite. The figure is actually a staggering $4 trillion annually. It's an enormous sum that underscores the significant investment required to meet global climate goals.",
+                    "backgroundImage": "5-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHN9GVSDA2QV2B4191R",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHNMPCXR8GCYQ102WYK",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-2.png",
+                    "question": {
+                        "questionText": "How does the actual flow of climate finance compare to what's needed, as per COP28 discussions?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHNA5XWY7W87MWFTQ2K"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHNA5XWY7W87MWFTQ2K",
+                                "optionText": "Like a trickle compared to a flood"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNYCE07R7T4R95QSB0",
+                                "optionText": "Close, but no cigar"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNKRWPQ58KHVRZ0C5S",
+                                "optionText": "Surprisingly on target"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNH92140TQ12F14MZD",
+                                "optionText": "Exceeds expectations"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHNTDQ6JPR1R8X89V0P",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "You're right! The actual flow of climate finance, despite pledges totaling $12.8 billion, is like a trickle compared to the massive flood that is needed. While these pledges are a significant start, they fall far short of the trillions needed annually to effectively combat climate change and its impacts on vulnerable countries. This gap underscores the urgency and scale of the challenge that lies ahead.",
+                    "backgroundImage": "5-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNMPCXR8GCYQ102WYK",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN9FQCVTTS312WF4TX",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad1.png",
+                    "avatarText": "Not quite. In reality, the flow is much less than what's required. While over $12.8 billion has been pledged, this is a drop in the ocean compared to the trillions needed annually. The current funding, though a positive step, is insufficient for the scale of investment required to address climate change effectively, especially for the most vulnerable nations.",
+                    "backgroundImage": "5-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHNMPCXR8GCYQ102WYK",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHN9TMBAQ4WCJZPVFDP",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-2.png",
+                    "question": {
+                        "questionText": "What was the stance of COP28 on global climate finance?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHNBVZM7BB43RGR28AB"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHNR8ZZD0JP806G4EP8",
+                                "optionText": "Prioritize private sector funding only"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHNBVZM7BB43RGR28AB",
+                                "optionText": "Increase public funding, encourage private investments"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHP32WDMP2SC0JXZRQ4",
+                                "optionText": "Rely exclusively on government grants"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHP0RBR3P7ZA044ZP3V",
+                                "optionText": "No specific stance on climate finance"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPJFEHKWXYXRYJR330",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy1.png",
+                    "avatarText": "Correct! The stance at COP28 regarding global climate finance was to increase public funding while also encouraging private sector investments. This approach highlights the need for a combined effort, leveraging both public and private resources to tackle the financial challenges of climate change.",
+                    "backgroundImage": "5-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHN9TMBAQ4WCJZPVFDP",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHP90P1WJZZS0YJ6CPC",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Mad1.png",
+                    "avatarText": "Not quite. COP28's stance was to boost public funding and simultaneously stimulate private sector investments in climate finance. This reflects an understanding that a mix of public and private funds is essential to effectively finance climate action.",
+                    "backgroundImage": "5-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHN9TMBAQ4WCJZPVFDP",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPVVP9B8W8QN2MXTSS",
+                    "pageType": "success",
+                    "backgroundImage": "5-3.png",
+                    "title": "Chapter V",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHPTVRH8WATP8Z91CQS",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "5-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHP5XZXC8C564247JCJ",
+            "tags": ["all"],
+            "chapterTitle": "Uniting for Climate Resilience",
+            "chapterDescription": "Explore the emphasis on resilience and international collaboration at COP28, where global partnerships and the concept of 'loss and damage' take center stage. This segment highlights the challenges and commitments in adapting to climate impacts, underlining the need for collective action in the face of environmental adversities.",
+            "chapterCoverImage": "6-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHP52HJY83JQ1F0CA70",
+                    "pageType": "title",
+                    "backgroundImage": "6-1.png",
+                    "title": "Chapter VI",
+                    "subtitle": "Uniting for Climate Resilience"
+                },
+                {
+                    "pid": "PID_01HHSA9HHP3XFC3ESFJ741HF6P",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "6-1.png",
+                    "question": {
+                        "questionText": "What's the focus of COP28 in terms of adapting to climate impacts?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHP4FDYQMST763E3DJM"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHP4FDYQMST763E3DJM",
+                                "optionText": "Strong emphasis on resilience"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHP9TDB9P1CZGQYBQFA",
+                                "optionText": "A bit of adaptation here and there"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHP61AAJV0921R3H5VG",
+                                "optionText": "Mostly wishful thinking"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPDQHQJQ08HBS15TB9",
+                                "optionText": "Complete denial of any impacts"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPBC7AE99FHNEG9D87",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Hopeful1.png",
+                    "avatarText": "Right on! COP28 indeed places a strong emphasis on resilience. It's crucial to adapt effectively as the climate changes.",
+                    "backgroundImage": "6-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP3XFC3ESFJ741HF6P",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPKPKKF0ACPP1B7P02",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Sad1.png",
+                    "avatarText": "Oops, not quite. The focus of COP28 is actually on resilience. Adapting to climate change is more than just wishful thinking, it's a necessity!",
+                    "backgroundImage": "6-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP3XFC3ESFJ741HF6P",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHP90MRB3Y8HYMAXMR7",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "6-2.png",
+                    "question": {
+                        "questionText": "How did COP28 emphasize international cooperation in climate action?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHP75MCBK9MA56NK3J1"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHPXKAXXFSV9SSQ3FVM",
+                                "optionText": "Through bilateral agreements only"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPCP1ET8THK4YQVTRR",
+                                "optionText": "Mainly through UN-led initiatives"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHP75MCBK9MA56NK3J1",
+                                "optionText": "Encouraging global partnerships and collaborative frameworks"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPNDYMVTY8DGWDS9V2",
+                                "optionText": "Minimal emphasis on international cooperation"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPYG60A20S1VZ80VQM",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Hopeful1.png",
+                    "avatarText": "Absolutely right! COP28 is all about fostering global partnerships and collaborative frameworks. It's teamwork on a global scale!",
+                    "backgroundImage": "6-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP90MRB3Y8HYMAXMR7",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHP864XACNXY7B25NMJ",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Sad1.png",
+                    "avatarText": "Not quite there. At COP28, the emphasis is really on global partnerships and collaborative frameworks. International cooperation is key in climate action!",
+                    "backgroundImage": "6-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP90MRB3Y8HYMAXMR7",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPDNPZJH5FT6175F3F",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "6-3.png",
+                    "question": {
+                        "questionText": "How does the 'loss and damage' concept feature in the COP28 dialogue?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHPTE16JABGT0A5P9BK"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHPYYE9W7DG705CBH63",
+                                "optionText": "Central theme"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPW1XKRB9JBE41M3HR",
+                                "optionText": "Mentioned in passing"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPAT9G128E8AR2N0Z1",
+                                "optionText": "Avoided like the plague"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHPTE16JABGT0A5P9BK",
+                                "optionText": "Acknowledged, but not acted upon as needed"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHP4ZHJ1TZ6B81KHMS0",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Hopeful1.png",
+                    "avatarText": "That's right! While there's a $700 million pledge for 'loss and damage' at COP28, it's just a drop in the ocean of what's actually needed. We're acknowledging the issue, but the action is still lagging.",
+                    "backgroundImage": "6-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHPDNPZJH5FT6175F3F",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPMWXZ9YN3BWE1J67S",
+                    "pageType": "narrator",
+                    "avatarImage": "IndigenousWoman/Sad1.png",
+                    "avatarText": "Not quite. Sure, there's a $700 million pledge for 'loss and damage,' but let's be real, it's like bringing a bucket to put out a forest fire. We're acknowledging the problem, but the response? Far from enough.",
+                    "backgroundImage": "6-3.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHPDNPZJH5FT6175F3F",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHPY5YP9D5EZV8W95T6",
+                    "pageType": "success",
+                    "backgroundImage": "6-3.png",
+                    "title": "Chapter VI",
+                    "subtitle": "Completed!",
+                    "avatarImage": "IndigenousWoman/Hopeful2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHPBXAME0DK3111Y6YW",
+                    "pageType": "question",
+                    "avatarImage": "IndigenousWoman/Happy1.png",
+                    "backgroundImage": "6-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHPHMBVPN24BC0R89QS",
+            "tags": ["all"],
+            "chapterTitle": "Emission Ambitions: Dream or Doable?",
+            "chapterDescription": "Venture into the realm of COP28's targets for slashing global emissions by 2030 and their alignment with Sustainable Development Goals. This section probes the balance between aspiration and realism, questioning whether these ambitious goals are a tangible roadmap or a lofty dream.",
+            "chapterCoverImage": "7-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHP9AGZY35Q2NEFP9FN",
+                    "pageType": "title",
+                    "backgroundImage": "7-1.png",
+                    "title": "Chapter VII",
+                    "subtitle": "Emission Ambitions: Dream or Doable?"
+                },
+                {
+                    "pid": "PID_01HHSA9HHP91NBH01M3JDTX9ME",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "7-1.png",
+                    "question": {
+                        "questionText": "What is the goal for global emissions reductions by 2030, as per COP28's ambitions?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHQXGYE5YVJFS6BAJHB"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHQXGYE5YVJFS6BAJHB",
+                                "optionText": "A significant cut of 43%"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQTAN3MXY6NAYZAZHP",
+                                "optionText": "Just a slight tweak, nothing major"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQJMDA4JB8T1G2WTM8",
+                                "optionText": "Ideally zero, but let's be real"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQEDKCA20SV2KSJBNY",
+                                "optionText": "Increase them for a challenge"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQ41G1S3QWY4TG1833",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy3.png",
+                    "avatarText": "You got it! COP28 sets a bold target of a 43% reduction in emissions by 2030. It's an ambitious goal that demands serious action and commitment.",
+                    "backgroundImage": "7-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP91NBH01M3JDTX9ME",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQH0WMZCMX5FGCYP3G",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Sad1.png",
+                    "avatarText": "Oops, not quite. COP28 isn't about making small tweaks; it's about making a significant cut in emissions by 43% by 2030. Ambitious, but necessary for our planet!",
+                    "backgroundImage": "7-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHP91NBH01M3JDTX9ME",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQKP43NV7V3Y0EDRX7",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "7-2.png",
+                    "question": {
+                        "questionText": "How does COP28 aim to align its climate actions with the Sustainable Development Goals?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHQ4V6SN49R25BMY8VZ"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHQ4V6SN49R25BMY8VZ",
+                                "optionText": "Perfectly in sync"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQDJ7BJDX2P30A5VAK",
+                                "optionText": "As a secondary thought"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQEK0RCD73C2SX2P7T",
+                                "optionText": "Only when convenient"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQQK2FR1N6NXM87NVE",
+                                "optionText": "In name only"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQ1NFAN4HFT1RYMD9A",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy3.png",
+                    "avatarText": "Correct! COP28's climate actions are designed to be perfectly in sync with the Sustainable Development Goals. It's about comprehensive progress, not just isolated initiatives.",
+                    "backgroundImage": "7-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQKP43NV7V3Y0EDRX7",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQFPJKWBVYGVP9RHGK",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Sad1.png",
+                    "avatarText": "Not exactly. COP28's climate actions are intended to align perfectly with the Sustainable Development Goals. It's not just a superficial commitment; it's a deep integration of goals.",
+                    "backgroundImage": "7-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQKP43NV7V3Y0EDRX7",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQB0R6B0X1WWRWG895",
+                    "pageType": "success",
+                    "backgroundImage": "7-3.png",
+                    "title": "Chapter VII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHQ0Q8YFCPRZCH98G54",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "7-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HHSA9HHQ9W3V31TZYTXCDM0R",
+            "tags": ["all"],
+            "chapterTitle": "Tech Frontiers in Climate Action",
+            "chapterDescription": "This section explores the pivotal role of technology and innovation in the COP28 climate discussions. It highlights how a diverse array of solutions, from artificial intelligence to green transportation, is being championed as essential tools in the global effort to combat climate change.",
+            "chapterCoverImage": "8-1.png",
+            "pages": [
+                {
+                    "pid": "PID_01HHSA9HHQJP0VC2XX35C3AFHY",
+                    "pageType": "title",
+                    "backgroundImage": "8-1.png",
+                    "title": "Chapter VIII",
+                    "subtitle": "Tech Frontiers in Climate Action"
+                },
+                {
+                    "pid": "PID_01HHSA9HHQSY16K4PWD5HDHAHM",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "8-1.png",
+                    "question": {
+                        "questionText": "What role did technology and innovation play in COP28 discussions?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHQYKP1ECBFMHHEJCVK"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHQ6REMW8WAD9ZMN6B7",
+                                "optionText": "Considered secondary to policy changes"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQYKP1ECBFMHHEJCVK",
+                                "optionText": "Central to achieving climate goals"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQZMGB61Z9D48M5EZ2",
+                                "optionText": "Focused only on renewable energy tech"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQD3SWYCHST3T86GBR",
+                                "optionText": "Not discussed at COP28"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQT7H79NV0XSMYGW9M",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy4.png",
+                    "avatarText": "Spot on! Technology and innovation were central to the discussions at COP28, recognized as key elements in achieving climate goals.",
+                    "backgroundImage": "8-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQSY16K4PWD5HDHAHM",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQRYV4ZC918186Y30X",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Sad2.png",
+                    "avatarText": "Not quite right. Technology and innovation were actually central themes at COP28, crucial for achieving our climate goals, not just secondary considerations.",
+                    "backgroundImage": "8-1.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQSY16K4PWD5HDHAHM",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQBZW9JQ3B2GRYBVD5",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "8-2.png",
+                    "question": {
+                        "questionText": "What types of innovations were highlighted at COP28 for combating climate change?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": ["OID_01HHSA9HHQ0NXG5KGVDCPP7A5H"],
+
+                        "options": [
+                            {
+                                "oid": "OID_01HHSA9HHQES9JJ6Z2BMD2XYW3",
+                                "optionText": "Only solar and wind technologies"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQ0NXG5KGVDCPP7A5H",
+                                "optionText": "A broad range, including AI, energy storage, and green transport"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQG75VCBW9EC9MFAFC",
+                                "optionText": "Limited to carbon capture technologies"
+                            },
+                            {
+                                "oid": "OID_01HHSA9HHQPBDNHTC0VN3JRRXX",
+                                "optionText": "No specific innovations were discussed"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQBTDWTP4DADRJW1DN",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Happy4.png",
+                    "avatarText": "Absolutely right! COP28 highlighted a diverse range of innovations, including AI, energy storage, and green transport, showcasing a multi-faceted approach to tackling climate change.",
+                    "backgroundImage": "8-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQBZW9JQ3B2GRYBVD5",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQ34MZKQA95QCAFWZW",
+                    "pageType": "narrator",
+                    "avatarImage": "AlJaber/Sad2.png",
+                    "avatarText": "Oops, that's not it. The innovations discussed at COP28 were quite varied, including AI, energy storage, and green transport, not just limited to one type of technology.",
+                    "backgroundImage": "8-2.png",
+                    "displayLogic": {
+                        "pid": "PID_01HHSA9HHQBZW9JQ3B2GRYBVD5",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HHSA9HHQ3KSV1Q5MG3S2EG14",
+                    "pageType": "success",
+                    "backgroundImage": "8-3.png",
+                    "title": "Chapter VIII",
+                    "subtitle": "Completed!",
+                    "avatarImage": "AlJaber/Happy2.png"
+                },
+                {
+                    "pid": "PID_01HHSA9HHQEX4FD48DYQ34NZAF",
+                    "pageType": "question",
+                    "avatarImage": "AlJaber/Happy2.png",
+                    "backgroundImage": "8-3.png",
+                    "question": {
+                        "questionTitle": "Get your dose of climate fun!",
+                        "questionText": "Stay updated on cool climate initiatives hassle-free. Just leave your email and you'll get all the latest from our team. It's good fun with zero fuss!",
+                        "questionType": "EMAIL",
+                        "skippable": true,
+                        "correctAnswer": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                        "completed": false
+                    },
+                    "displayLogic": {
+                        "type": "seenBefore",
+                        "localStorageIndentifier": "leaveYourEmailCOP"
+                    }
+                }
+            ]
+        }
+    ]
+}

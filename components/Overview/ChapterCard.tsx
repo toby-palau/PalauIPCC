@@ -1,16 +1,16 @@
 "use client";
 
-import { ChapterInfoType } from "@root/@types/shared.types"
+import { ChapterInfoType, QuizIdType } from "@root/@types/shared.types"
 import { staatliches } from "@root/styles/fonts"
 import { track } from "@vercel/analytics";
 
 const yellowFilter = {filter: "invert(12%) sepia(78%) saturate(3774%) hue-rotate(309deg) brightness(98%) contrast(88%)"};
 
-export const ChapterCard = ({chapter, progress, score}: {chapter: ChapterInfoType; progress: number; score: number}) => {
+export const ChapterCard = ({quizId, chapter, progress, score}: {quizId: QuizIdType; chapter: ChapterInfoType; progress: number; score: number}) => {
     return (
         <a 
             key={`chapter-${chapter.cid}`} 
-            href={`/chapters/${chapter.cid}`} 
+            href={`/${quizId}/chapters/${chapter.cid}`} 
             className="rounded-md cursor-pointer justify-center"
             onClick={() => track("Click Chapter Card", {chapterId: chapter.cid, chapterTitle: chapter.chapterTitle})}
         >

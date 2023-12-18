@@ -1,8 +1,8 @@
 "use server"
 
 import { Prisma, PrismaClient, Response, User } from "@prisma/client";
-import { QuestionStatsType } from "@root/@types/shared.types";
-import { IsoCountryCode2 } from "@root/data/countryCodeLookup";
+import { QuestionStatsType, QuizIdType } from "@root/@types/shared.types";
+import { IsoCountryCode2 } from "@root/@types/countryCodeLookup";
 
 let prisma: PrismaClient;
 
@@ -12,9 +12,9 @@ else {
     prisma = (global as any).prisma;
 }
 
-export const createNewUser: () => Promise<User | undefined> = async () => {
+export const createNewUser: (quizId: QuizIdType) => Promise<User | undefined> = async (quizId) => {
     try {
-        const newUser = await prisma.user.create({data: {}});
+        const newUser = await prisma.user.create({data: {quizId}});
         return newUser;
     } catch (error) {
         console.log(error)
@@ -31,21 +31,21 @@ export const getUser: (userId: string) => Promise<User | undefined> = async (use
     }
 }
 
-export const getUserCount: () => Promise<number | undefined> = async () => {
+export const getUserCount: (quizId: QuizIdType) => Promise<number | undefined> = async (quizId) => {
     try {
-        const userCount = await prisma.user.count();
+        const userCount = await prisma.user.count({where: {quizId}});
         return userCount;
     } catch (error) {
         console.log(error);
     }
 }
 
-export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[] | undefined> = async () => {
+export const getResponseCountsByDate: (quizId: QuizIdType) => Promise<{date: Date; count: number}[] | undefined> = async (quizId) => {
     try {
         const responseCountsByDate: {date: Date; count: number}[] = await prisma.$queryRaw`
             SELECT DATE("createdAt") AS date, CAST(COUNT(*) AS INT) AS count
             FROM "Response"
-            WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS'
+            WHERE "archived" = false AND "createdAt" > CURRENT_DATE - INTERVAL '7 DAYS' AND "quizId" = ${quizId}
             GROUP BY date
             ORDER BY date ASC;
         `;
@@ -67,12 +67,12 @@ export const getResponseCountsByDate: () => Promise<{date: Date; count: number}[
     }
 }
 
-export const getUserCountByCountry: () => Promise<{country: IsoCountryCode2; count: number}[] | undefined> = async () => {
+export const getUserCountByCountry: (quizId: QuizIdType) => Promise<{country: IsoCountryCode2; count: number}[] | undefined> = async (quizId) => {
     try {
         const userCountByCountry: {country: IsoCountryCode2; count: number}[] = await prisma.$queryRaw`
             SELECT country, CAST(COUNT(*) AS INT) AS count 
             FROM "User" 
-            WHERE country IS NOT NULL
+            WHERE country IS NOT NULL AND "quizId" = ${quizId}
             GROUP BY country 
             ORDER BY count DESC;
         `;
@@ -92,10 +92,10 @@ export const updateUserCountry: (userId: string, country: string, countryRegion?
     }
 }
 
-export const getResponses: (userId: string) => Promise<Response[] | undefined> = async (userId) => {
+export const getResponses: (quizId: QuizIdType, userId: string) => Promise<Response[] | undefined> = async (quizId, userId) => {
     try {
         const responses = await prisma.response.findMany({
-            where: {userId, archived: false}, 
+            where: {quizId, userId, archived: false}, 
             orderBy: {updatedAt: 'desc'}
         });
         return responses;
@@ -104,15 +104,16 @@ export const getResponses: (userId: string) => Promise<Response[] | undefined> =
     }
 }
 
-export const createNewResponse: (userId: string, questionId: string, questionType: string, userAnswer: string | string[] | null, answeredCorrectly?: boolean) => Promise<Response | undefined> = async (userId, questionId, questionType, userAnswer, answeredCorrectly) => {
+export const createNewResponse: (quizId: QuizIdType, userId: string, questionId: string, questionType: string, userAnswer: string | string[] | null, answeredCorrectly?: boolean) => Promise<Response | undefined> = async (quizId, userId, questionId, questionType, userAnswer, answeredCorrectly) => {
     try {
         prisma.response.updateMany({
-            where: {userId, questionId},
+            where: {quizId, userId, questionId},
             data: {archived: true},
         });
         const newResponse = await prisma.response.create({
             data: {
                 userId, 
+                quizId,
                 questionId, 
                 questionType, 
                 userAnswer: userAnswer ?? Prisma.JsonNull,
@@ -126,10 +127,10 @@ export const createNewResponse: (userId: string, questionId: string, questionTyp
     }
 }
 
-export const resetExistingResponse: (userId: string, questionId: string) => void = (userId, questionId) => {
+export const resetExistingResponse: (quizId: QuizIdType, userId: string, questionId: string) => void = (quizId, userId, questionId) => {
     try {
         prisma.response.updateMany({
-            where: {userId, questionId},
+            where: {quizId, userId, questionId},
             data: {archived: true},
         });
     } catch (error) {
@@ -137,15 +138,15 @@ export const resetExistingResponse: (userId: string, questionId: string) => void
     }
 }
 
-export const deleteUserResponses: (userId: string) => Promise<void> = async (userId) => {
+export const deleteUserResponses: (quizId: QuizIdType, userId: string) => Promise<void> = async (quizId, userId) => {
     try {
-        await prisma.response.deleteMany({where: {userId}});
+        await prisma.response.deleteMany({where: {quizId, userId}});
     } catch (error) {
         console.log(error);
     }
 }
 
-export const getAllQuestionStats: () => Promise<QuestionStatsType[] | undefined> = async () => {
+export const getAllQuestionStats: (quizId: QuizIdType) => Promise<QuestionStatsType[] | undefined> = async (quizId) => {
     try {
         const responses = await prisma.$queryRaw`
             SELECT 
@@ -155,9 +156,9 @@ export const getAllQuestionStats: () => Promise<QuestionStatsType[] | undefined>
                 CAST(SUM(CASE WHEN "answeredCorrectly" = false THEN 1 ELSE 0 END) AS INT) AS false_count,
                 CAST(SUM(CASE WHEN "answeredCorrectly" = true THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*) AS ratio
             FROM "Response"
-            WHERE archived = false
+            WHERE "archived" = false AND "quizId" = ${quizId}
             GROUP BY "questionId"
-            ORDER BY response_count DESC;
+            ORDER BY "response_count" DESC;
         `;
         return responses as QuestionStatsType[];
     } catch (error) {

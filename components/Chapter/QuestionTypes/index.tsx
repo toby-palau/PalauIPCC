@@ -1,6 +1,6 @@
 "use client"
 
-import { QuestionPageType, QuestionTypes } from "@root/@types/shared.types";
+import { QuestionPageType, QuestionTypes, QuizIdType } from "@root/@types/shared.types";
 import { MultipleChoiceSingleAnswerQuestion } from "./MultipleChoiceSingleAnswerQuestion";
 import { MultipleChoiceMultiAnswerQuestion } from "./MultipleChoiceMultiAnswerQuestion";
 import { RankOrderQuestion } from "./RankOrderQuestion";
@@ -8,7 +8,7 @@ import { VerbatimQuestion } from "./VerbatimQuestion";
 import { EmailQuestion } from "./EmailQuestion";
 import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 
-export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
+export const Question = ({quizId, questionPage}: {quizId: QuizIdType; questionPage: QuestionPageType}) => {
     const { disableQuestionAnswers, submitResponse, resetResponse, skipQuestion } = useQuestionFlow();
     const { question } = questionPage;
 
@@ -46,6 +46,7 @@ export const Question = ({questionPage}: {questionPage: QuestionPageType}) => {
             ) }
             { question.questionType === QuestionTypes.EMAIL && (
                 <EmailQuestion 
+                    quizId={quizId}
                     question={question}
                     submitResponse={response => submitResponse(questionPage.pid, response)}
                     skipQuestion={() => skipQuestion(questionPage.pid)}

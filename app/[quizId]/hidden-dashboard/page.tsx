@@ -1,25 +1,26 @@
 "use server"
 
+import { QuizIdType } from "@root/@types/shared.types";
 import { BarChart } from "@root/components/Dashboard/BarChart";
 import { ChapterBreakdown } from "@root/components/Dashboard/ChapterBreakdown";
 import { WorldMap } from "@root/components/Dashboard/WorldMap";
 import { getAllQuestionStats, getResponseCountsByDate, getUserCount, getUserCountByCountry } from "@root/services/DatabaseService";
 import { listAllChapters } from "@root/services/QuestionFlowService";
 
-const Page = async ({searchParams}: {searchParams: {randomSeed: string}}) => {
+const Page = async ({params, searchParams}: {params: {quizId: QuizIdType}; searchParams: {randomSeed: string}}) => {
     console.log(`rerender with random seed ${searchParams.randomSeed}`);
-    const userCount = await getUserCount();
+    const userCount = await getUserCount(params.quizId);
 
-    const responseCountsByDate = await getResponseCountsByDate();
+    const responseCountsByDate = await getResponseCountsByDate(params.quizId);
     if (!responseCountsByDate) return null;
 
-    const countries = await getUserCountByCountry();
+    const countries = await getUserCountByCountry(params.quizId);
     if (!countries) return null;
 
-    const questions = await getAllQuestionStats();
+    const questions = await getAllQuestionStats(params.quizId);
     if (!questions) return null;
 
-    const chapters = await listAllChapters();
+    const chapters = await listAllChapters(params.quizId);
     const chapterStats = chapters.map(c => {
         const filteredQuestions = questions.filter(q => c.questionIds.includes(q.questionId));
         const stats = filteredQuestions.reduce((acc, q) => ({
@@ -44,7 +45,7 @@ const Page = async ({searchParams}: {searchParams: {randomSeed: string}}) => {
     return (
         <div className="min-h-screen w-screen md:p-10 p-2 bg-white-dark">
             <div className="flex flex-row justify-end items-center">
-                <a href={`/hidden-dashboard?randomSeed=${Math.random()}`} className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
+                <a href={`/${params.quizId}/hidden-dashboard?randomSeed=${Math.floor(Math.random() * 1000)}`} className="m-2 p-2 text-blue-dark text-1xl border border-blue-dark rounded">Refresh</a>
             </div>
 
             <div className="grid grid-cols-3 gap-4 auto-rows-max">

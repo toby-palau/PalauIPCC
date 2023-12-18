@@ -1,9 +1,10 @@
 "use client"
 
+import { QuizIdType } from "@root/@types/shared.types";
 import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import { useRouter } from "next/navigation";
 
-export const ChapterHeader = () => {
+export const ChapterHeader = ({quizId}: {quizId: QuizIdType}) => {
     const router = useRouter();
     const {chapterId, currentIndex, progress, navigate} = useQuestionFlow();
     const hide = typeof(currentIndex) !== "number" || currentIndex <= 0;
@@ -29,7 +30,7 @@ export const ChapterHeader = () => {
                 <div 
                     id="home-button"
                     className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
-                    onClick={() => router.push("/")}
+                    onClick={() => router.push(`/${quizId}`)}
                 >
                     <img 
                         src="/images/misc/home.svg"

@@ -1,7 +1,7 @@
 "use client"
 
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
-import { ChapterType, DisplayLogicType, DisplayLogicTypes, PageTypes } from "@root/@types/shared.types";
+import { ChapterType, DisplayLogicType, DisplayLogicTypes, PageTypes, QuizIdType } from "@root/@types/shared.types";
 import { useRouter } from "next/navigation";
 import { createNewResponse, resetExistingResponse } from "@root/services/DatabaseService";
 import { updateQuestionPage } from "@root/services/QuestionFlowService";
@@ -36,7 +36,7 @@ const QuestionFlowContext = createContext<{
 
 export const useQuestionFlow = () => useContext(QuestionFlowContext);
 
-export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }: { children: ReactNode; initialSession: ChapterType; nextChapterId?: string }) => {
+export const QuestionFlowProvider = ({ children, quizId, initialSession, nextChapterId }: { children: ReactNode; quizId: QuizIdType; initialSession: ChapterType; nextChapterId?: string }) => {
     const router = useRouter();
 	const {userId} = useAuth();
 	const [userSession, setUserSession] = useState<ChapterType>(initialSession);
@@ -113,7 +113,7 @@ export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }
 		};
 		
 		setUserSession(newSession);
-		createNewResponse(userId, pageId, newPage.question.questionType, userAnswer, newPage.answeredCorrectly);
+		createNewResponse(quizId, userId, pageId, newPage.question.questionType, userAnswer, newPage.answeredCorrectly);
 
 
 		setTriggerTimeoutToNextQuestion(true);
@@ -144,7 +144,7 @@ export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }
 		const newSession = { ...userSession, pages: userSession.pages.map(p => p.pid === pageId ? newPage : p) }
 		setUserSession(newSession);
 
-		resetExistingResponse(userId, pageId);
+		resetExistingResponse(quizId, userId, pageId);
 	}
 
 	/**
@@ -174,7 +174,7 @@ export const QuestionFlowProvider = ({ children, initialSession, nextChapterId }
 		
 		let toIndex = fromIndex;
 		if (direction === "forward") {
-			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/chapters/${nextChapterId}` : `/`);
+			if (fromIndex >= userSession.pages.length - 1) return router.push(nextChapterId ? `/${quizId}/chapters/${nextChapterId}` : `/${quizId}`);
 			if (shiftDown) return setCurrentIndex(fromIndex + 1);
 			if (!skippedQuestion && currentQuestion.pageType === PageTypes.question && !currentQuestion.completed) return setCurrentIndex(fallbackIndex);
 			toIndex ++;

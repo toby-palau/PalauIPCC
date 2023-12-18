@@ -1,6 +1,6 @@
 "use client"
 
-import { PageTypes } from "@root/@types/shared.types";
+import { PageTypes, QuizIdType } from "@root/@types/shared.types";
 import { Question } from "./QuestionTypes";
 import { Narrator } from "./Narrator";
 import { SuccessScreen } from "./ScreenTypes/SuccessScreen";
@@ -8,7 +8,7 @@ import { Title } from "./ScreenTypes/Title";
 import { useQuestionFlow } from "@root/contexts/QuestionFlowContext";
 import Confetti from "./Confetti";
 
-export const ChapterContent = () => {
+export const ChapterContent = ({quizId}: {quizId: QuizIdType}) => {
     const {currentPage, confetti} = useQuestionFlow();
     if (!currentPage) return null;
 
@@ -21,7 +21,7 @@ export const ChapterContent = () => {
                 />
             ) }
             { currentPage.pageType === PageTypes.question && (
-                <Question questionPage={currentPage} />
+                <Question quizId={quizId} questionPage={currentPage} />
             ) }
             { (currentPage.pageType === PageTypes.question || currentPage.pageType === PageTypes.narrator) && (
                 <Narrator 

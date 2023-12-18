@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { EMAILQuestionType } from "@root/@types/shared.types";
+import { EMAILQuestionType, QuizIdType } from "@root/@types/shared.types";
 import { subscribeToMailList } from "../../../services/MailChimpService";
 
 
-export const EmailQuestion = (props: {question: EMAILQuestionType; disabled: boolean; submitResponse: (s: string) => void; skipQuestion: () => void}) => {
+export const EmailQuestion = (props: {quizId: QuizIdType; question: EMAILQuestionType; disabled: boolean; submitResponse: (s: string) => void; skipQuestion: () => void}) => {
     const { question, submitResponse, skipQuestion } = props;
     const [value, setValue] = useState<string>(question.userAnswer || "");
     const [passTest, setPassTest] = useState<boolean>(false);
@@ -19,7 +19,7 @@ export const EmailQuestion = (props: {question: EMAILQuestionType; disabled: boo
 
     const onSubmit = async () => {
         if (passTest && !props.disabled) {
-            await subscribeToMailList(value);
+            await subscribeToMailList(props.quizId, value);
             submitResponse(value);
         }
     }

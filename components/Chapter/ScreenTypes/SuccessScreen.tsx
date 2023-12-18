@@ -34,7 +34,7 @@ export const SuccessScreen = ({title, subtitle, avatarImage}: SuccessProps) => {
             <img 
                 src={`/images/avatars/${avatarImage}`}
                 alt="avatar" 
-                className={`md:w-96 w-64 ${startAnimations ? "scale-100" : "scale-0"} transform transition duration-1000`}
+                className={`md:w-96 w-64 ${startAnimations ? "scale-100" : "scale-0"} rounded-full border-4 border-white transform transition duration-1000`}
             />
             <div className="flex flex-row md:-mt-12 -mt-4 z-10 animate-pulse">
                 {
