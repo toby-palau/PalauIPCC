@@ -12,7 +12,6 @@ const filePath = {
 
 export const listAllChapters: (quizId: QuizIdType) => Promise<ChapterInfoType[]> = async (quizId) => {
     try {
-        console.log({path: filePath[quizId]})
         const fileContents = fs.readFileSync(filePath[quizId], "utf8");
         const { chapters } = JSON.parse(fileContents) as QuestionFlowType;
         const chapterInfos = chapters.map(c => ({
