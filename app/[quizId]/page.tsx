@@ -43,7 +43,7 @@ const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
         <AuthProvider userId={userId}>
             <div className="bg-black min-h-screen md:p-16 p-0">
                 <HighlightedChapter quizId={quizId} chapter={chapters[highlightedChapterIndex]} />
-                <ChapterList chapters={chapterList} />
+                <ChapterList chapters={chapterList} withFilters={quizId === "ipcc"}/>
                 <Disclaimer quizId={quizId}/>
                 <ResetProgress userId={userId} quizId={quizId}/>
             </div>
