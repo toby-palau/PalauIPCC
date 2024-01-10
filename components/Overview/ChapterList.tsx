@@ -31,7 +31,7 @@ export const ChapterList = ({ chapters, withFilters }: {chapters: {tags: FilterT
                     { filters.map(f => (
                         <div 
                             key={`filter-${f.filterId}`} 
-                            className={`flex border ${f.selected ? "border-blue hover:border-blue-dark" : "border-white hover:border-white-dark"} text-white hover:text-white-dark min-w-max rounded-full m-1 py-2 px-4 items-center text-sm cursor-pointer active:scale-95 transition-all duration-100`}
+                            className={`flex border ${f.selected ? "border-blue hover:border-blue-dark" : "border-white hover:border-white-dark"} text-white hover:text-white-dark" min-w-max rounded-full m-1 py-2 px-4 items-center text-sm cursor-pointer active:scale-95 transition-all duration-100`}
                             onClick={() => selectFilter(f.filterId)}
                         >
                             <p>{f.filterName}</p>

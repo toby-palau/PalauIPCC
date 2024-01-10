@@ -38,7 +38,7 @@ export const ChapterCard = ({quizId, chapter, progress, score}: {quizId: QuizIdT
                     </div> 
                 ) }
             </div>
-            <p className={`text-1xl text-white text-left`}>{chapter.chapterTitle}</p>
+            <p className={`text-1xl ${quizId === "uob" ? "text-black hover:text-black-dark" : "text-white hover:text-white-dark"} text-left`}>{chapter.chapterTitle}</p>
         </a>
     )
 }
