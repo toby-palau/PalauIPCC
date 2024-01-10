@@ -5,7 +5,7 @@ import { MetadataRoute } from 'next'
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = process.env.URL ?? "https://quiz.palauproject.com";
 	const resultArray: MetadataRoute.Sitemap = [];
-	for (const quizId of ["ipcc", "cop"]) {
+	for (const quizId of ["ipcc", "cop", "uob"]) {
 		const chapters = await listAllChapters(quizId as QuizIdType);
 		resultArray.push({
 			url: `${baseUrl}/${quizId}`,

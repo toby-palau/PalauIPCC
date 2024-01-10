@@ -34,6 +34,11 @@ const config: Config = {
 				"light": "#E57373",
 				"dark": "#D32F2F",
 			},
+			"uob-blue": {
+				"DEFAULT": "#0084ff",
+				"light": "#66aaff",
+				"dark": "#004585",
+			},
 		},
 		extend: {
 			keyframes: {

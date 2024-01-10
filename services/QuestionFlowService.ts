@@ -7,7 +7,8 @@ import path from 'path';
 
 const filePath = {
     ipcc: path.resolve("data", "ipcc-question-flow.json"),
-    cop: path.resolve("data", "cop-question-flow.json")
+    cop: path.resolve("data", "cop-question-flow.json"),
+    uob: path.resolve("data", "uob-question-flow.json"),
 }
 
 export const listAllChapters: (quizId: QuizIdType) => Promise<ChapterInfoType[]> = async (quizId) => {
