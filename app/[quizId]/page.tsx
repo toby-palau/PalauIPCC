@@ -41,7 +41,7 @@ const Page = async ({params: {quizId}}: {params: {quizId: QuizIdType}}) => {
 
     return (
         <AuthProvider quizId={quizId} userId={userId}>
-            <div className="bg-black min-h-screen md:p-16 p-0">
+            <div className={`${quizId === "uob" ? "bg-white" : "bg-black"} min-h-screen md:p-16 p-0`}>
                 <HighlightedChapter quizId={quizId} chapter={chapters[highlightedChapterIndex]} />
                 <ChapterList chapters={chapterList} withFilters={quizId === "ipcc"}/>
                 <Disclaimer quizId={quizId}/>

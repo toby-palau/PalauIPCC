@@ -1,6 +1,6 @@
 import { type } from "os";
 
-export type QuizIdType = "cop" | "ipcc";
+export type QuizIdType = "cop" | "ipcc" | "uob";
 
 export enum  PageTypes {
     title = "title",

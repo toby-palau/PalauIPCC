@@ -19,7 +19,7 @@ const { ulid } = require("ulidx");
 // }
 
 const regenerateIds = () => {
-    const jsonFilePath = path.resolve("data", "cop-question-flow.json");
+    const jsonFilePath = path.resolve("data", "uob-question-flow.json");
     const fileContents = fs.readFileSync(jsonFilePath, "utf8");
     const { chapters } = JSON.parse(fileContents);
     for (const chapter of chapters) {

@@ -6,15 +6,15 @@ import { useRouter } from "next/navigation";
 
 export const ChapterHeader = ({quizId}: {quizId: QuizIdType}) => {
     const router = useRouter();
-    const {chapterId, currentIndex, progress, navigate} = useQuestionFlow();
+    const {currentIndex, progress, navigate} = useQuestionFlow();
     const hide = typeof(currentIndex) !== "number" || currentIndex <= 0;
     
     return (
         <div id="header" className="fixed w-full flex flex-col items-start z-10">
             <div id="progress-bar" className="h-2 w-full bg-white opacity-80">
-                <div className="h-full bg-blue" style={{width: `${progress}%`}}/>
+                <div className={`h-full ${quizId === "uob" ? "bg-uob-blue" : "bg-blue"}`} style={{width: `${progress}%`}}/>
             </div>
-            <div className="flex flex-row w-full justify-between">
+            <div className="flex flex-row w-full justify-between items-center ">
                 <div 
                     id="back-button"
                     className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"
@@ -27,6 +27,17 @@ export const ChapterHeader = ({quizId}: {quizId: QuizIdType}) => {
                     />
                     <p className={`text-white md:text-base text-sm ${hide && "hidden"}`}>{"BACK"}</p>
                 </div>
+                {
+                    quizId === "uob" && (
+                        <div>
+                            <img
+                                src={`/images/misc/uob-logo.png`}
+                                alt="back"
+                                className={`h-12 p-2 pointer-events-none ${hide && "hidden"}`}
+                            />
+                        </div>
+                    )
+                }
                 <div 
                     id="home-button"
                     className="flex flex-col m-2 items-center cursor-pointer active:scale-95 active:opacity-80"

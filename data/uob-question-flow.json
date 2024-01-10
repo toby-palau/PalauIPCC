@@ -1,0 +1,463 @@
+{
+    "chapters": [
+        {
+            "cid": "CID_01HKTBDJZ7ANHGAJ85J9FTF7E6",
+            "tags": [
+                "all"
+            ],
+            "chapterTitle": "Understanding Sustainability",
+            "chapterDescription": "Welcome to our Sustainability Journey! In the next three chapters, we’ll uncover how sustainability shapes our world, especially in banking. Ready to explore?",
+            "chapterCoverImage": "ThailandIsland1.jpg",
+            "pages": [
+                {
+                    "pid": "PID_01HKTBDJZ8316VHPYP3FCKTSQQ",
+                    "pageType": "title",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "title": "Chapter I",
+                    "subtitle": "Understanding Sustainability"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ8F4QYFX3V87XXTY9R",
+                    "pageType": "narrator",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Hello Team! Ready for a quick tour of sustainability? Let’s explore why it’s essential for us and our future. Let's get started!"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ88NSCDC402RFZN1BH",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity3.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Sustainability is the harmony between people, planet, and prosperity. It’s about meeting our needs today without compromising the ability of future generations to meet theirs."
+                },
+                {
+                    "pid": "PID_01HKTBDJZ83XN9QKDRCC7ZF7P2",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity3.jpg",
+                    "avatarImage": "Elephant/Stoked.png",
+                    "avatarText": "In your daily role, you influence all three pillars. From the energy you save, to the community you support, and the economic choices you make."
+                },
+                {
+                    "pid": "PID_01HKTBDJZ8TMW1HZTDSN93C9DR",
+                    "pageType": "question",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "question": {
+                        "questionText": "Think fast! Which of these is NOT a pillar of sustainability??",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZ85MH6538EV93DWQX0"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZ8MBG3ER4A3CP7X9AH",
+                                "optionText": "Economy"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ8VA8KH7YHHB6WZAS7",
+                                "optionText": "Ecology"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ8QWEK8BNNCD6F40PK",
+                                "optionText": "Equity"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ85MH6538EV93DWQX0",
+                                "optionText": "Efficiency"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ8V13N0QF18KX241CA",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Right on point! Efficiency is important, but the true pillars are Economy, Ecology, and Equity. Balancing these is key",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ8TMW1HZTDSN93C9DR",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ93JX5SSGYZ7RAKTTG",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Close! Efficiency is important, but the true pillars are Economy, Ecology, and Equity. Balancing these is key",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ8TMW1HZTDSN93C9DR",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9HBKE3HJEMJGHZ98X",
+                    "pageType": "question",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "question": {
+                        "questionText": "Why is understanding sustainability – the balance of environmental care, social equity, and economic health – important for everyone, not just those in banking?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZ9DRQ0R986TBGW5711"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZ9DBJ1GREYAJ910V26",
+                                "optionText": "It ensures a healthier planet for future generations."
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9D54C893KVHJ28HN6",
+                                "optionText": "Sustainability leads to fairer societies and better living conditions for all"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9TC07THA91ZQPC3FV",
+                                "optionText": "It drives economic stability and growth in the long run"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9DRQ0R986TBGW5711",
+                                "optionText": "All of the above"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9VQ4WAP17P5ZZXBE7",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Exactly! The answer is 'All of the above.' Understanding sustainability is key for everyone because it means a healthier planet for our children, fairer societies with better living conditions, and economic stability for the future. It's about making the world better for all of us.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9HBKE3HJEMJGHZ98X",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9HXC5W3VT6X3PCQNN",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Wrong! The answer is 'All of the above.' Understanding sustainability is key for everyone because it means a healthier planet for our children, fairer societies with better living conditions, and economic stability for the future. It's about making the world better for all of us.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9HBKE3HJEMJGHZ98X",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ99H2AC13TP90YFZ3N",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "avatarText": "Awesome job! That’s a wrap on our quick sustainability scoop. Stick with these tips, and we’ll make our world a winner. Ready for the next one?"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9YSKC4WXJQ82SCKFQ",
+                    "pageType": "success",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "title": "Chapter I",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Elephant/Euphoric1.png"
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HKTBDJZ91XAEVYD84T5SBZWM",
+            "tags": [
+                "all"
+            ],
+            "chapterTitle": "Sustainability in Business and Banking",
+            "chapterDescription": "In Chapter II, we'll explore why sustainability is not just good for the planet, but also essential for business success, especially in banking.",
+            "chapterCoverImage": "ThailandCity2.jpg",
+            "pages": [
+                {
+                    "pid": "PID_01HKTBDJZ95A580A2JZXVHZXP1",
+                    "pageType": "title",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "title": "Chapter II",
+                    "subtitle": "Sustainability in Business and Banking"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9YBSRYNZ75VRV9TYJ",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "For businesses, embracing sustainability isn’t just about being green; it's about being smart. Sustainable practices reduce costs, open up new markets, and attract more customers who care about the planet."
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9FTZYGRH60FWH9ZV4",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "In the banking world, sustainability is a game-changer. It influences our investment decisions, risk management, and customer relations. Banks that adopt sustainable practices not only contribute to a healthier planet but also enjoy a competitive edge. They’re seen as forward-thinking and responsible"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9KRSAJJT6GYW7YHJJ",
+                    "pageType": "question",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "question": {
+                        "questionText": "Quiz time: Why is understanding and practicing sustainability crucial for us in the banking sector?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZ97HPGJNCCVKXH7DGA"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZ9QPJH3ZVY2J0M9JT2",
+                                "optionText": "It helps in complying with environmental regulations"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9S916E09JCNK12EX0",
+                                "optionText": "It enhances our reputation and client trust in sustainable finance"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9QCZKG4Q3S0VXPHZR",
+                                "optionText": "Sustainability leads to long-term financial stability and growth"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ97HPGJNCCVKXH7DGA",
+                                "optionText": "All of the above"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9PDF5ETAYHZD7G2VC",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Yes correct. The answer is all of the above: In banking, sustainability helps us meet regulations, boosts our reputation, and drives long-term growth. It's not just good for the planet; it's smart for our business too.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9KRSAJJT6GYW7YHJJ",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ92PAZFYQ2WAJPJZRD",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Almost. The answer is all of the above: In banking, sustainability helps us meet regulations, boosts our reputation, and drives long-term growth. It's not just good for the planet; it's smart for our business too.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9KRSAJJT6GYW7YHJJ",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ99TT8FZJ6F5FYRTXT",
+                    "pageType": "question",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "question": {
+                        "questionText": "Let's explore the depth of sustainability in banking. Rank these reasons in order of their importance for why balancing environmental, social, and economic factors is vital in our field",
+                        "questionType": "RO",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZ903B6SZC4D628D61K",
+                            "OID_01HKTBDJZ9KJBYKV3XHMVJZHCD",
+                            "OID_01HKTBDJZ9NG00HMXGMRKDM2J7",
+                            "OID_01HKTBDJZ9NMKHX8SNS73EGHRF"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZ903B6SZC4D628D61K",
+                                "optionText": "It guides us to make financially responsible decisions that also protect the environment and society"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9KJBYKV3XHMVJZHCD",
+                                "optionText": "It's mainly about following environmental laws and regulations"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9NG00HMXGMRKDM2J7",
+                                "optionText": "Sustainability is about investing only in green technologies"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9NMKHX8SNS73EGHRF",
+                                "optionText": "It's just a trend in the business world"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ97V1YPSYKS116R25C",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandCity2.jpg",
+                    "avatarImage": "Elephant/Cute.png",
+                    "avatarText": "Great effort! Here's the ideal ranking:\n\n1. Financial Responsibility - Integrates sustainability into banking, benefiting operations and society.\n2. Environmental Compliance - Important, but there's more to sustainability than just following laws.\n3. Green Tech Investment - Crucial, yet part of a broader range of sustainable actions.\n4. More Than a Trend - Sustainability is a long-term strategy, not just a passing business trend."
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9MZ0TGH4596JNWRW2",
+                    "pageType": "success",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "title": "Chapter II",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Elephant/Euphoric1.png"
+                }
+            ]
+        },
+        {
+            "cid": "CID_01HKTBDJZ981Z67NDDRJN3NM09",
+            "tags": [
+                "all"
+            ],
+            "chapterTitle": "Putting Sustainability into Practice in Banking",
+            "chapterDescription": "For chapter III, let's focus on applying sustainability in practice, particularly within the banking sector",
+            "chapterCoverImage": "Bamboo1.jpg",
+            "pages": [
+                {
+                    "pid": "PID_01HKTBDJZ9RENJ56SQFJ9K3PXD",
+                    "pageType": "title",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "title": "Chapter III",
+                    "subtitle": "Putting Sustainability into Practice in Banking"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9B6MQJFDD6B3SR2JQ",
+                    "pageType": "narrator",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Let’s start with green investments. Investing in renewable energy, sustainable agriculture, and green technologies is not just good for the Earth, it’s smart banking. These sectors are growing rapidly, offering exciting opportunities for us and our clients."
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9WG0W1ZJH75GAZSQG",
+                    "pageType": "narrator",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Imagine this scenario: Our bank has the opportunity to invest in a large solar energy project. What should we consider to ensure it aligns with our sustainability goals and business objectives?"
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9HVKM5HNSCJ04ZYYW",
+                    "pageType": "question",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "question": {
+                        "questionText": "Decision time: When investing in a solar project, what should our bank prioritize to meet both our sustainability goals and business needs?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZ9B1JR1N01K7NWGATJ"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZ9RYT85A1K4T4C4N2D",
+                                "optionText": "Financial return. - Is it a smart financial move?"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9245SK4NQERMPPDHY",
+                                "optionText": "Environmental benefit. - Will it reduce carbon emissions?"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZ9B1JR1N01K7NWGATJ",
+                                "optionText": "Alignment with values. - Does it match our sustainability commitment?"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ9FPESKKR8F805W3ZM",
+                    "pageType": "narrator",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Yes! Nice thinking! Each factor is important. Prioritizing our values often leads to decisions that are not only good for the planet but also financially beneficial in the long run.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9HVKM5HNSCJ04ZYYW",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ980F8C9EDP2G5CJHA",
+                    "pageType": "narrator",
+                    "backgroundImage": "Bamboo1.jpg",
+                    "avatarImage": "Elephant/VeryCute.png",
+                    "avatarText": "Sadly not, but nice thinking! Each factor is important. Prioritizing our values often leads to decisions that are not only good for the planet but also financially beneficial in the long run.",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ9HVKM5HNSCJ04ZYYW",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZ97G8FQYEQ4V8DWCBV",
+                    "pageType": "question",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "question": {
+                        "questionText": "How can we best promote our sustainable banking products to attract eco-conscious clients",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HKTBDJZA3FTZAXMF7FVJJ5JM"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HKTBDJZA0MMH5CFF30HVCY3D",
+                                "optionText": "Hosting informational webinars on green finance"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZAGNG85T8E8H94G7C0",
+                                "optionText": "Collaborating with environmentally-focused organizations"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZA5V801YK485V7JJMB",
+                                "optionText": "Offering incentives for choosing sustainable options"
+                            },
+                            {
+                                "oid": "OID_01HKTBDJZA3FTZAXMF7FVJJ5JM",
+                                "optionText": "All of the above"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZA1D5892RE0EYQZX6Z",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "avatarText": "Absolutely! By doing all of the above, we not only attract clients interested in sustainability but also actively contribute to a greener economy. It’s about making sustainability an attractive and viable choice for everyone",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ97G8FQYEQ4V8DWCBV",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZAM8RA0T31JDEGV6RD",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "avatarText": "Almost! By doing all of the above, we not only attract clients interested in sustainability but also actively contribute to a greener economy. It’s about making sustainability an attractive and viable choice for everyone",
+                    "displayLogic": {
+                        "pid": "PID_01HKTBDJZ97G8FQYEQ4V8DWCBV",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HKTBDJZAFDBV6T21A41QBH32",
+                    "pageType": "narrator",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "avatarImage": "Elephant/Euphoric1.png",
+                    "avatarText": "We've seen how our bank can make real changes for a sustainable future. Stay tuned for EP4, where we'll explore the global impact of sustainability in finance. Keep thinking green, and see you next time!"
+                },
+                {
+                    "pid": "PID_01HKTBDJZAWRB1F86CRZ51R6H0",
+                    "pageType": "success",
+                    "backgroundImage": "ThailandIsland.jpg",
+                    "title": "Chapter III",
+                    "subtitle": "Completed!",
+                    "avatarImage": "Elephant/Euphoric1.png"
+                }
+            ]
+        }
+    ]
+}

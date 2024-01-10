@@ -16,6 +16,13 @@ const DisclaimerContent = {
         p2: "multiple sources",
         p3: " about the 2023 COP28 Climate Change Conference",
         link: "https://docs.google.com/document/d/1xvsPmrxZI_JyYwFcLGUtgE5IkwrUACLsfsx3atTc5mo/edit?usp=sharing",
+    },
+    uob: {
+        logo: "/images/misc/uob-logo.png",
+        p1: "",
+        p2: "",
+        p3: "",
+        link: "https://www.uobgroup.com/uobgroup/default.page",
     }
 }
 

@@ -74,6 +74,7 @@ export const QuestionFlowProvider = ({ children, quizId, initialSession, nextCha
 	 * Handle keyboard navigation
 	 */
 	useEffect(() => {
+		console.log(currentIndex)
         const handleKeyPressEvent = (e: KeyboardEvent) => {
 			if (e.key === "ArrowRight") navigate(currentIndex, currentIndex, "forward", false);
 			if (e.key === "ArrowLeft") navigate(currentIndex, currentIndex, "backward", false);
