@@ -1,5 +1,3 @@
-"use server";
-
 import { QuizIdType } from "@root/@types/shared.types";
 import { BarChart } from "@root/components/Dashboard/BarChart";
 import { ChapterBreakdown } from "@root/components/Dashboard/ChapterBreakdown";
