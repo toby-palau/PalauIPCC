@@ -1,0 +1,3491 @@
+{
+	"chapters": [
+		{
+			"cid": "CID_01HQ641CNKF254WATJPJFWWP7Z",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter 1",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 1",
+			"chapterCoverImage": "background1.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNNZ98F5NZJM3AK469D",
+					"pageType": "title",
+					"backgroundImage": "background1.jpg",
+					"title": "ESRS Chapter 1",
+					"subtitle": "ESRS Chapter 1"
+				},
+				{
+					"pid": "PID_01HQ641CNN29QGET8PQA37NEMZ",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What is the primary goal of the European Sustainability Reporting Standards (ESRS)?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNNZE0FHNT85NFVVV4Z"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNNF6VQ5N44KFCQBDQG",
+								"optionText": "To enforce strict environmental regulations on companies"
+							},
+							{
+								"oid": "OID_01HQ641CNNCM2BSDDYWWX6H4N2",
+								"optionText": "To provide a framework for disclosing sustainable activities"
+							},
+							{
+								"oid": "OID_01HQ641CNNZE0FHNT85NFVVV4Z",
+								"optionText": "To specify the information that undertakings should report concerning sustainability matters"
+							},
+							{
+								"oid": "OID_01HQ641CNNCETFP9DBMG0CZS2C",
+								"optionText": "To replace financial reporting with sustainability reporting"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNNS6CPWNFKKKG09D50",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly right! The ESRS aims to specify the sustainability information that companies should disclose, enhancing transparency and accountability.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CNN29QGET8PQA37NEMZ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNPE5G53PG3JSBYK6CB",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite! The correct answer is C) To specify the information that undertakings should report concerning sustainability matters, aiming for improved sustainability disclosure.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CNN29QGET8PQA37NEMZ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNP74YZB45SZKQ4SAAK",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "Which statement best describes the scope of ESRS?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNPMGECECN8C5KTQSTZ"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNPDBD1NN7M3PHTMW69",
+								"optionText": "Limited to EU-based multinational corporations"
+							},
+							{
+								"oid": "OID_01HQ641CNP6399EPA3TRKX0ZEH",
+								"optionText": "Applicable globally to all sectors"
+							},
+							{
+								"oid": "OID_01HQ641CNP52G817NNA3FV408W",
+								"optionText": "Primarily focused on financial institutions"
+							},
+							{
+								"oid": "OID_01HQ641CNPMGECECN8C5KTQSTZ",
+								"optionText": "Targeted at undertakings reporting sustainability matters"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNP4NXB85T38JB6FWM3",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! ESRS is designed to guide undertakings in reporting on sustainability matters, regardless of their geographic location or sector.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_02",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNPEASWJ1CX81H9F9VH",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oops, that's not it. The ESRS is specifically targeted at undertakings reporting sustainability matters, making D) the right answer.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_02",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNPCVZY36D88ZG8JNM4",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "How does ESRS 1 contribute to sustainability reporting?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNPE2WVVPVD8MFGFYQ2"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNPGP0SCJ3QPKSS5F82",
+								"optionText": "By limiting the reporting requirements to environmental issues"
+							},
+							{
+								"oid": "OID_01HQ641CNP2XZ4SVT2K7QP26YW",
+								"optionText": "By providing a detailed financial reporting framework"
+							},
+							{
+								"oid": "OID_01HQ641CNPE2WVVPVD8MFGFYQ2",
+								"optionText": "By establishing general requirements for sustainability reporting"
+							},
+							{
+								"oid": "OID_01HQ641CNPVNAR2MX6C5PTYT4K",
+								"optionText": "By encouraging voluntary sustainability initiatives"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNP47PFVBR0W4YE7VXD",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! ESRS 1 lays down the general principles and requirements that shape the foundation for comprehensive sustainability reporting.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_03ESRS1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNPDNACG2NF1YA1SJJG",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Almost there, but not quite. ESRS 1's role is to establish general requirements for sustainability reporting, so C) is the correct answer.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_03ESRS1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNP9MB734HY70J9AA4Q",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "Which of the following is NOT a category of ESRS standards mentioned?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNQNS9AN051SJC582SF"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNPF38D8CWXHTJRM0K2",
+								"optionText": "Cross-cutting standards"
+							},
+							{
+								"oid": "OID_01HQ641CNPAH9Q42ZW44DNH6CV",
+								"optionText": "Sector-specific standards"
+							},
+							{
+								"oid": "OID_01HQ641CNQNS9AN051SJC582SF",
+								"optionText": "Financial instrument standards"
+							},
+							{
+								"oid": "OID_01HQ641CNQ4FEPSSHQ9GQTS032",
+								"optionText": "Product-specific standards"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQGC76NRX7RZYY2M54",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! While ESRS includes cross-cutting and sector-specific standards, financial instrument standards are not mentioned as a category.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_04ESRS2",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQ500GA6VE2DCDNRHY",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite right. The categories mentioned include cross-cutting and sector-specific standards, but not financial instrument standards, making C) the incorrect choice.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_04ESRS2",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQ04HE8328ZMS5X1W5",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "Rank the following ESRS standards based on their order of introduction in ESRS_1.csv, from first mentioned to last.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNQ7K0J1DD0C5ME7JFC",
+							"OID_01HQ641CNQQRN4CRA6BQGKW0XK",
+							"OID_01HQ641CNQVZM2N1ZRDM09PBMN"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNQQRN4CRA6BQGKW0XK",
+								"optionText": "General requirements for sustainability reporting"
+							},
+							{
+								"oid": "OID_01HQ641CNQVZM2N1ZRDM09PBMN",
+								"optionText": "Sector-specific standards"
+							},
+							{
+								"oid": "OID_01HQ641CNQ7K0J1DD0C5ME7JFC",
+								"optionText": "Cross-cutting standards"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQWT1GQ8CFAZSZCJ7X",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The document first introduces cross-cutting standards, followed by the general requirements for sustainability reporting, and finally, the sector-specific standards.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_05ESRS3",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQE11B2DBD8F7HAZK8",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Good try! The correct sequence starts with cross-cutting standards, then general requirements for sustainability reporting, and lastly, sector-specific standards.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_05ESRS3",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNQ181G72ENH74FTT95",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter 2",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 2",
+			"chapterCoverImage": "background2.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNQWAGW8THCM14J66FN",
+					"pageType": "title",
+					"backgroundImage": "background2.jpg",
+					"title": "ESRS Chapter 2",
+					"subtitle": "ESRS Chapter 2"
+				},
+				{
+					"pid": "PID_01HQ641CNQ8YQGQ9F0C9SE31Y5",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What is the primary purpose of the disclosures required by this ESRS?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNQ7BAKHV9KW3MAXBZE"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNQ7BAKHV9KW3MAXBZE",
+								"optionText": "To set out universal disclosure requirements on sustainability matters"
+							},
+							{
+								"oid": "OID_01HQ641CNQ2AHF3EM1A8KQESKY",
+								"optionText": "To define financial benchmarks for sustainability"
+							},
+							{
+								"oid": "OID_01HQ641CNQ6QTBQWQ2DP51TDXC",
+								"optionText": "To outline penalties for non-compliance with environmental regulations"
+							},
+							{
+								"oid": "OID_01HQ641CNQ5R9DJE5X82VWAAM7",
+								"optionText": "To provide guidelines for voluntary sustainability reporting"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQX5GDR23VRT8NQZT4",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! The ESRS aims to establish universal disclosure requirements on sustainability matters, ensuring organizations have a clear framework to follow.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_46",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQJWRVB7R28Y14CHEP",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! The main purpose is to establish universal disclosure requirements on sustainability matters according to the ESRS.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_46",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNQMPNEFHQGAJ9Y71P2",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "Under this Standard, what must organizations follow when preparing their disclosures?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNQ1C3KF8KMDVQCK7G9"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNQBGS0PJXXQXQD7WJN",
+								"optionText": "The latest environmental laws of their operating countries"
+							},
+							{
+								"oid": "OID_01HQ641CNQ1C3KF8KMDVQCK7G9",
+								"optionText": "The Disclosure Requirement Framework provided by the ESRS"
+							},
+							{
+								"oid": "OID_01HQ641CNRB76XHP483QD05H68",
+								"optionText": "International Financial Reporting Standards (IFRS) for sustainability"
+							},
+							{
+								"oid": "OID_01HQ641CNRATTBG3G4VX3E33PB",
+								"optionText": "The personal guidelines set by their board of directors"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRWZC6B1AN8RX8RQCJ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! Organizations are required to follow the Disclosure Requirement Framework provided by the ESRS when preparing their disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_49",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRF9Y0ZSW9CM4F696M",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite! The key requirement is following the Disclosure Requirement Framework provided by the ESRS.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_49",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRX7Z285HWQQZ8VPKM",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What is emphasized about the preparation of disclosures under this Standard?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNRAYTJ1D7RK73C2DT3"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNR2J4J6N5VEGKRPNMZ",
+								"optionText": "Flexibility in interpreting the guidelines"
+							},
+							{
+								"oid": "OID_01HQ641CNRH8FBX16172C1Z31A",
+								"optionText": "Strict adherence to quantitative metrics"
+							},
+							{
+								"oid": "OID_01HQ641CNRR4BK2RZ78PFF85XZ",
+								"optionText": "Creativity in presenting sustainability information"
+							},
+							{
+								"oid": "OID_01HQ641CNRAYTJ1D7RK73C2DT3",
+								"optionText": "Completeness, neutrality, and free from material error"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNR4NPZVA6YH3KZ3C1C",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "You nailed it! Disclosures must be complete, neutral, and free from material error to meet the ESRS standards effectively.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_52",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRVGEXEAA0K7JWW7BD",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Close, but not quite there. Remember, disclosures should be complete, neutral, and free from material error.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_52",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRDVFKA9WS0YSS44N3",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "Which of the following is NOT an objective of the universal disclosure requirements set by this ESRS?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNRX8GK261JHAFZJ5NV"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNRDJJ81B9WFT9XFS9V",
+								"optionText": "Enhancing transparency in sustainability matters"
+							},
+							{
+								"oid": "OID_01HQ641CNR1KA5HPJFA52QR5KC",
+								"optionText": "Standardizing the format of sustainability reports"
+							},
+							{
+								"oid": "OID_01HQ641CNRX8GK261JHAFZJ5NV",
+								"optionText": "Mandating specific environmental outcomes"
+							},
+							{
+								"oid": "OID_01HQ641CNR6A1YE741ABW9NGG8",
+								"optionText": "Providing a consistent framework for sustainability disclosure"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRT53MRX6VF9Y6D5CM",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! The ESRS sets out to enhance transparency and provide a consistent framework, not to mandate specific environmental outcomes.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_55",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRHQ5Y4APGBP5GXBSE",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Almost there! It's crucial to note that the ESRS does not mandate specific environmental outcomes but aims to standardize sustainability reporting.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_55",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNRVSAFC50EV8CX6AS8",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "Rank the following aspects based on their importance in the preparation of disclosures under this ESRS, from most important to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNR2NHGBAAMX4YGT0MT",
+							"OID_01HQ641CNR8S6E4M9TCAK4G2J6",
+							"OID_01HQ641CNR67T66SPJ3WQJJ7BX",
+							"OID_01HQ641CNR0Q1B0D6W5X0RT356"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNR8S6E4M9TCAK4G2J6",
+								"optionText": "Completeness"
+							},
+							{
+								"oid": "OID_01HQ641CNR67T66SPJ3WQJJ7BX",
+								"optionText": "Neutrality"
+							},
+							{
+								"oid": "OID_01HQ641CNR0Q1B0D6W5X0RT356",
+								"optionText": "Freedom from material error"
+							},
+							{
+								"oid": "OID_01HQ641CNR2NHGBAAMX4YGT0MT",
+								"optionText": "Adherence to Disclosure Requirement Framework"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSKNCY2Y3RQBG9B5DK",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! Adhering to the Disclosure Requirement Framework is paramount, setting the foundation for completeness, neutrality, and accuracy in disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_58",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSRZ2VECYEYX3GSS0T",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Nice attempt, but remember, adherence to the Disclosure Requirement Framework is the most critical aspect, followed by completeness, neutrality, and avoiding material errors.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_58",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNSZCWXZ6HFT4YD02EF",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter E1",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E1",
+			"chapterCoverImage": "background3.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNSMJ0Z8NS68G63F1CQ",
+					"pageType": "title",
+					"backgroundImage": "background3.jpg",
+					"title": "ESRS Chapter E1",
+					"subtitle": "ESRS Chapter E1"
+				},
+				{
+					"pid": "PID_01HQ641CNS57B0Q0QSX6RX9D47",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "According to the ESRS E1 Standard, what are companies required to disclose regarding climate change?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNSP5B962SCW3SG7HJD"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNSX7BWQHYT3NMK82C5",
+								"optionText": "The total amount of greenhouse gases emitted annually"
+							},
+							{
+								"oid": "OID_01HQ641CNSP5B962SCW3SG7HJD",
+								"optionText": "Disclosure Requirements related to climate change mitigation and adaptation"
+							},
+							{
+								"oid": "OID_01HQ641CNSTCS0FGY348CS8C1H",
+								"optionText": "The percentage of energy sourced from renewable resources"
+							},
+							{
+								"oid": "OID_01HQ641CNSD0YC588D2AWNPNAA",
+								"optionText": "Plans for tree planting initiatives"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSYSD40KMPR727P4X4",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! The ESRS E1 Standard specifies Disclosure Requirements for climate change mitigation and adaptation. Keep going!",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNS1WD93NW1AFR2MTWG",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! The ESRS E1 Standard specifies Disclosure Requirements for climate change mitigation and adaptation. Keep going!",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSKW1D7P14W5Y53M5A",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does the ESRS E1 Standard aim to provide stakeholders with?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNSMT4F2R54JDRH99TK"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNSJ1M6JXB4WDCE2R58",
+								"optionText": "A detailed list of all environmental fines paid in the last fiscal year"
+							},
+							{
+								"oid": "OID_01HQ641CNSFVC5C2D7FGX6SZX0",
+								"optionText": "Information on the company's use of recycled materials"
+							},
+							{
+								"oid": "OID_01HQ641CNSMT4F2R54JDRH99TK",
+								"optionText": "Relevant information on how the company addresses climate-related matters"
+							},
+							{
+								"oid": "OID_01HQ641CNSZ11YYWPKQ1GHKCZ9",
+								"optionText": "Annual water usage and conservation efforts"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSA91Q3B1CF8EADNEM",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! It's crucial to provide stakeholders with relevant information on climate-related matters. Nicely done!",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_04",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSWZZRA78YJYD4D39G",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Almost there! Remember, it's about providing stakeholders with relevant information on how the company addresses climate-related matters.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_04",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNSZDW8B3ASVHNTR8ZS",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "How does the ESRS E1 Standard define climate change mitigation?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNSPZ442VJ4208YEAQF"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNSPZ442VJ4208YEAQF",
+								"optionText": "Efforts to reduce or halt the emission of greenhouse gases"
+							},
+							{
+								"oid": "OID_01HQ641CNSHWC1J2KWPESFSB7J",
+								"optionText": "Initiatives to increase the company's carbon footprint"
+							},
+							{
+								"oid": "OID_01HQ641CNSW1BHQ12NJC4CW4HN",
+								"optionText": "Investments in fossil fuel energy sources"
+							},
+							{
+								"oid": "OID_01HQ641CNS0SZMQHF64YJE094T",
+								"optionText": "Lobbying for reduced environmental protection legislation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNT3EAYF9377WSF6WAW",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly right! Mitigation involves reducing or halting the emission of greenhouse gases. Keep up the good work!",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_07",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTXDS58M0FDAEH9ST5",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite! Remember, mitigation is about reducing or halting the emission of greenhouse gases.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_07",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTV7J9R325JXBPDCDC",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "The ESRS E1 Standard requires companies to disclose information related to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNTVCBY3ME9GBWX0YQD"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNT7R27BDB7AKV7990S",
+								"optionText": "The CEO's personal contributions to environmental causes"
+							},
+							{
+								"oid": "OID_01HQ641CNT08EBXHH73SWWGCQ5",
+								"optionText": "The impact of their operations on local biodiversity"
+							},
+							{
+								"oid": "OID_01HQ641CNTVCBY3ME9GBWX0YQD",
+								"optionText": "Climate change adaptation measures"
+							},
+							{
+								"oid": "OID_01HQ641CNTFTH7QCZD0HJRMS10",
+								"optionText": "The number of electric vehicles in their corporate fleet"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNT55K6D1NNR25P35QS",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Right on target! Disclosing climate change adaptation measures is essential under the ESRS E1 Standard.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_10",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTEE47VN9CXHWQD0ZH",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "So close, yet so far! The focus is on disclosing climate change adaptation measures.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_10",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTEG50ZD7KSHV75BV5",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "Rank the components of the ESRS E1 Standard in terms of their emphasis on climate-related disclosures, from most emphasized to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNTE47ZS9VXBQG84BD3",
+							"OID_01HQ641CNT189P5W64Y04719HM",
+							"OID_01HQ641CNT2NFVWKMACBZBTVNG",
+							"OID_01HQ641CNT0A2N11FT0T33R8BK"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNTE47ZS9VXBQG84BD3",
+								"optionText": "Mitigation of greenhouse gas emissions"
+							},
+							{
+								"oid": "OID_01HQ641CNT189P5W64Y04719HM",
+								"optionText": "Adaptation to climate change effects"
+							},
+							{
+								"oid": "OID_01HQ641CNT0A2N11FT0T33R8BK",
+								"optionText": "Stakeholder engagement in climate initiatives"
+							},
+							{
+								"oid": "OID_01HQ641CNT2NFVWKMACBZBTVNG",
+								"optionText": "Financial impact of climate change on operations"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTQJC5ZQ8KKXPG5WYA",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Perfect! You've accurately ranked the emphasis on climate-related disclosures in the ESRS E1 Standard. Great job!",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_13",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNT1DMD200830MQEYMK",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Almost had it! Remember, the ESRS E1 Standard prioritizes mitigation, adaptation, financial impacts, and then stakeholder engagement.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_13",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNTBSR2JE7RRQ7WQR2D",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter 1",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E2",
+			"chapterCoverImage": "background4.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNTFFADHGCA2PP2RF5Z",
+					"pageType": "title",
+					"backgroundImage": "background4.jpg",
+					"title": "ESRS Chapter E2",
+					"subtitle": "ESRS Chapter E2"
+				},
+				{
+					"pid": "PID_01HQ641CNT3ETC1NJK2Y7T2RSH",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "What does the ESRS E2 Standard primarily require companies to disclose?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNT6KKCRWB55MHEHGDV"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNT0NTDQZ89RD8WHF3F",
+								"optionText": "Financial contributions to environmental organizations"
+							},
+							{
+								"oid": "OID_01HQ641CNT6KKCRWB55MHEHGDV",
+								"optionText": "Disclosure Requirements concerning various types of pollution"
+							},
+							{
+								"oid": "OID_01HQ641CNT4QHYP8SENA77F1DR",
+								"optionText": "Employee sustainability training programs"
+							},
+							{
+								"oid": "OID_01HQ641CNTA4K2QQH3QXEWS7M7",
+								"optionText": "Inventory of all greenhouse gases emitted"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNTV18W65WPKDG6T95F",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! The ESRS E2 Standard specifies Disclosure Requirements for various types of pollution. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0101",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVWR5758GEAPYV9DW6",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! The ESRS E2 Standard specifies Disclosure Requirements for various types of pollution. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0101",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVDNFQBRYK5BJ9FZG3",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "What is defined as \"Pollution of air\" according to the ESRS E2 Standard?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNVM5CHYFEMPQTYXKY1"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNVHB356S3P4QFD60XG",
+								"optionText": "The total carbon footprint of the company"
+							},
+							{
+								"oid": "OID_01HQ641CNVM5CHYFEMPQTYXKY1",
+								"optionText": "The release of pollutants into the atmosphere by the company"
+							},
+							{
+								"oid": "OID_01HQ641CNVRSZ3SM04PEZ2Z964",
+								"optionText": "Noise pollution caused by company operations"
+							},
+							{
+								"oid": "OID_01HQ641CNV0MVWNJDPZ4YAK2RJ",
+								"optionText": "Visual pollution from company billboards"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVTSPJCR7PZAMSXVW8",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! 'Pollution of air' refers to the release of pollutants into the atmosphere by the company. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0201",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVSK7MT4907FXBE86V",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! 'Pollution of air' refers to the release of pollutants into the atmosphere by the company. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0201",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNV5VC3GNW3Z71XTXEG",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "How does the ESRS E2 Standard categorize \"Pollution of water\"?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNV2TNNV153HQB8Q6B2"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNVJJ5T498TPV45Z9BS",
+								"optionText": "Overuse of water resources for industrial processes"
+							},
+							{
+								"oid": "OID_01HQ641CNV2TNNV153HQB8Q6B2",
+								"optionText": "Contamination of freshwater sources through company activities"
+							},
+							{
+								"oid": "OID_01HQ641CNVG24AGBDTRC4A41J4",
+								"optionText": "Use of water in company cooling systems"
+							},
+							{
+								"oid": "OID_01HQ641CNVYC2P8TT41ADXM8E4",
+								"optionText": "Water consumption by employees at the workplace"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVV49PWEH5JTD4522A",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! \"Pollution of water\" refers to the contamination of freshwater sources through company activities. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0301",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNV5VFB45B706VTP9H8",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! \"Pollution of water\" refers to the contamination of freshwater sources through company activities. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0301",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVXSH5S6WD3HTBZVTE",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "According to ESRS E2, \"Pollution of soil\" is described as:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNV5FNDSYEGSSBHRNT3"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNVTEN94QJHAVD75BWX",
+								"optionText": "The degradation of soil quality due to company actions"
+							},
+							{
+								"oid": "OID_01HQ641CNV5FNDSYEGSSBHRNT3",
+								"optionText": "The use of pesticides and chemicals in corporate farming activities"
+							},
+							{
+								"oid": "OID_01HQ641CNVVCKNKWQ5NFCRHEFC",
+								"optionText": "Landscaping and gardening practices within company premises"
+							},
+							{
+								"oid": "OID_01HQ641CNVKJQYNSNASDBP04GX",
+								"optionText": "Construction activities disturbing the natural soil layers"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNVHHWBNECST6AVE3ZN",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! \"Pollution of soil\" refers to the degradation of soil quality due to company actions. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0401",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNV6T3NF5R368ER3Z6D",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oh, so close! \"Pollution of soil\" refers to the degradation of soil quality due to company actions. Keep going!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_0401",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWD4FP7K04876CAF6K",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "Rank the types of pollution covered by the ESRS E2 Standard based on the detail provided for each, from most to least detailed.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNW1Z90VV5BE5DVK1X6",
+							"OID_01HQ641CNWF96N10DARPPGEAT4",
+							"OID_01HQ641CNWVDZJTB2S6DXJNE5R",
+							"OID_01HQ641CNWHKXF52J7XFK864VX"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNW1Z90VV5BE5DVK1X6",
+								"optionText": "Pollution of air"
+							},
+							{
+								"oid": "OID_01HQ641CNWF96N10DARPPGEAT4",
+								"optionText": "Pollution of water"
+							},
+							{
+								"oid": "OID_01HQ641CNWVDZJTB2S6DXJNE5R",
+								"optionText": "Pollution of soil"
+							},
+							{
+								"oid": "OID_01HQ641CNWHKXF52J7XFK864VX",
+								"optionText": "Noise pollution"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWZB6J3ACAM4RK8VKY",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "You nailed it! Detail levels indeed vary, with air pollution being the most elaborated upon. Challenges always await, but understanding these nuances helps!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_04",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWCT04AQ3MQDJWCDH8",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Almost there! Remember, air pollution details are most extensive, followed by water, soil, and noise pollution. Such insights drive our actions!",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_04",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNW27Y8ZGW7XDXW73J3",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter E3",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E3",
+			"chapterCoverImage": "background5.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNWPCV169DYCDDZHTR8",
+					"pageType": "title",
+					"backgroundImage": "background5.jpg",
+					"title": "ESRS Chapter E3",
+					"subtitle": "ESRS Chapter E3"
+				},
+				{
+					"pid": "PID_01HQ641CNWFF09RZ3MW960QNWG",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "What is the primary goal of the ESRS E3 Standard as outlined in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNWMT46HZK7G1BE6T68"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNWMT46HZK7G1BE6T68",
+								"optionText": "To specify Disclosure Requirements related to water and marine resource management"
+							},
+							{
+								"oid": "OID_01HQ641CNWBC8GANCFMCF3C3C4",
+								"optionText": "To reduce carbon emissions to zero by 2050"
+							},
+							{
+								"oid": "OID_01HQ641CNWMP9TFP7RXWAMQCPD",
+								"optionText": "To increase renewable energy usage among reporting companies"
+							},
+							{
+								"oid": "OID_01HQ641CNW4HZJ7AMEQH2XPEJ1",
+								"optionText": "To disclose financial risks related to climate change"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWM85JDM8PZS4PGW24",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The primary goal of the ESRS E3 Standard is to outline specific disclosure requirements for companies regarding the management of water and marine resources.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_16",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNW3V8T8D9JKG543972",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite right. The ESRS E3 Standard specifically aims to specify Disclosure Requirements related to water and marine resource management, not the other options mentioned.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_16",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWX5YKECP7MN1EATFM",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "Which of the following is NOT a focus of the ESRS E3 Standard as mentioned in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNWY43P18MQCXKSN4GJ"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNW9TW9J2S9Q2C4XQGY",
+								"optionText": "Marine resources"
+							},
+							{
+								"oid": "OID_01HQ641CNWY43P18MQCXKSN4GJ",
+								"optionText": "Carbon footprint measurement"
+							},
+							{
+								"oid": "OID_01HQ641CNW7Y7S21F7WGK1N402",
+								"optionText": "Water management"
+							},
+							{
+								"oid": "OID_01HQ641CNWFCH95SR3A3XHKQG2",
+								"optionText": "Disclosure Requirements"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWEMPN4P2JHMTGXEJV",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! While the ESRS E3 Standard focuses on water and marine resources management, carbon footprint measurement is not directly mentioned as a focus within the Objective chapter.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_19",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWKP7QMQH59W6RW8Y5",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Actually, the correct answer is Carbon footprint measurement. The ESRS E3 Standard does not directly focus on carbon footprint measurement in its Objective chapter.",
+					"backgroundImage": "Turtle/Sad2.png",
+					"displayLogic": {
+						"pid": "PID_19",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNWQHJ0WWBY6QDAKH94",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter, the ESRS E3 Standard is aimed at all of the following EXCEPT:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNXTYM904SCAX5P3KRA"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNXVMC702NRA26GA003",
+								"optionText": "Specifying disclosure requirements"
+							},
+							{
+								"oid": "OID_01HQ641CNX2XD6BJWDB7CRRQ1P",
+								"optionText": "Addressing water scarcity"
+							},
+							{
+								"oid": "OID_01HQ641CNXZGBA2CSZADB75DPQ",
+								"optionText": "Managing marine resources"
+							},
+							{
+								"oid": "OID_01HQ641CNXTYM904SCAX5P3KRA",
+								"optionText": "Implementing renewable energy solutions"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNX2G3NYZYZZX2GZQJ9",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! The ESRS E3 Standard is primarily concerned with disclosure requirements, water management, and marine resources, not directly with implementing renewable energy solutions.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_22",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNXHA023S6N7MQR47ED",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Oops, the one aspect not directly aimed by the ESRS E3 Standard in the Objective chapter is implementing renewable energy solutions.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_22",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNXB0NX3S4QJ71PBE57",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "In the context of the ESRS E3 Standard, how does the Objective chapter describe the importance of managing marine resources?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNXACJ22GX4BQPBRA7W"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNXACJ22GX4BQPBRA7W",
+								"optionText": "As crucial for biodiversity conservation"
+							},
+							{
+								"oid": "OID_01HQ641CNXN66YNTG0D6MZTCHP",
+								"optionText": "Primarily in terms of economic value"
+							},
+							{
+								"oid": "OID_01HQ641CNXVAAWYPWVF2K6BPY7",
+								"optionText": "As an obligation under international law"
+							},
+							{
+								"oid": "OID_01HQ641CNXEFNFVPRHNE29277S",
+								"optionText": "In relation to its impact on climate change"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNXBAQSYR5EWF0DEDWX",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The Objective chapter emphasizes the management of marine resources as crucial for biodiversity conservation, highlighting its environmental significance.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_25",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNX85DXYHP52R1102W7",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the emphasis is on the importance of marine resources management for biodiversity conservation, rather than the other aspects mentioned.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_25",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNXDSEVNS4ZCAT2S1F7",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "Rank the following components based on their emphasis in the Objective chapter of the ESRS E3 Standard, from most emphasized to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNXQP2XA26JPVC4YYSM",
+							"OID_01HQ641CNXRQ2FF29CCTC4CA4Z",
+							"OID_01HQ641CNXTMNKRKD3QBYPQ1YT",
+							"OID_01HQ641CNXDRXWJT2WPVEY3TAF"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNXQP2XA26JPVC4YYSM",
+								"optionText": "Disclosure Requirements"
+							},
+							{
+								"oid": "OID_01HQ641CNXRQ2FF29CCTC4CA4Z",
+								"optionText": "Water Management"
+							},
+							{
+								"oid": "OID_01HQ641CNXTMNKRKD3QBYPQ1YT",
+								"optionText": "Marine Resources"
+							},
+							{
+								"oid": "OID_01HQ641CNXDRXWJT2WPVEY3TAF",
+								"optionText": "Biodiversity Conservation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNXFX11HFS8A1HHV5YX",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The Objective chapter primarily focuses on the disclosure requirements, followed by water management, marine resources, and lastly, the broader topic of biodiversity conservation.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_28",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNX5GPCGDDWKC48MWEC",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Nice try! The correct order starts with Disclosure Requirements, highlighting its central role, followed by Water Management, Marine Resources, and Biodiversity Conservation.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_28",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNXNX1BYP32YGYPYHDK",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter E4",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E4",
+			"chapterCoverImage": "background6.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNXPHF1R3BT9DZ097WZ",
+					"pageType": "title",
+					"backgroundImage": "background6.jpg",
+					"title": "ESRS Chapter E4",
+					"subtitle": "ESRS Chapter E4"
+				},
+				{
+					"pid": "PID_01HQ641CNX3ERKHT6DTZ8KX0BM",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What is the primary goal of the ESRS E4 Standard as described in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNXNN9HN5M016B4XKT8"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNXNN9HN5M016B4XKT8",
+								"optionText": "To specify Disclosure Requirements concerning biodiversity and ecosystem services"
+							},
+							{
+								"oid": "OID_01HQ641CNYJSPX77ZQG1NG9VS8",
+								"optionText": "To outline strategies for reducing greenhouse gas emissions"
+							},
+							{
+								"oid": "OID_01HQ641CNY2A9K605448PSHN49",
+								"optionText": "To encourage companies to disclose their financial investments in renewable energy"
+							},
+							{
+								"oid": "OID_01HQ641CNYZYW7C8YSBYS3N3AB",
+								"optionText": "To assess the impact of corporate actions on climate change mitigation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNY8K06GNJW9AEV08SY",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS E4 Standard's main goal, as stated in the Objective chapter, is to set out specific disclosure requirements for companies regarding biodiversity and ecosystem services.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_31",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNY1RR63A53AY3E75PN",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite. The primary goal of the ESRS E4 Standard, as outlined in the Objective chapter, is to specify Disclosure Requirements concerning biodiversity and ecosystem services.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_31",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNY20989JQW7YVG6QKA",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "Which of the following topics is NOT directly addressed in the Objective chapter of the ESRS E4 Standard?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNYZHF0ZM5TTAQXC2BX"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNY65EX3Y33PP8KE8QB",
+								"optionText": "Ecosystem restoration"
+							},
+							{
+								"oid": "OID_01HQ641CNYZHF0ZM5TTAQXC2BX",
+								"optionText": "Water conservation"
+							},
+							{
+								"oid": "OID_01HQ641CNYZEAJH0S70P3YJJH1",
+								"optionText": "Biodiversity"
+							},
+							{
+								"oid": "OID_01HQ641CNY20K204D5TV7G7HBZ",
+								"optionText": "Transition plans towards sustainable practices"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNYF11XJ5XSYQJMK96W",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! While the ESRS E4 Standard covers topics such as biodiversity, ecosystem restoration, and sustainable practices transition plans, water conservation is not directly addressed in the Objective chapter.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_34",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNYDFK07JTM7VDC71SF",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, water conservation is the topic not directly addressed in the Objective chapter of the ESRS E4 Standard.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_34",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNY008Y2E3T672HJ9YP",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter of the ESRS E4 Standard, the term \"biodiversity\" is used to refer to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNY465PF919A7Z6EQDT"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNY465PF919A7Z6EQDT",
+								"optionText": "The variety of living organisms in all ecosystems"
+							},
+							{
+								"oid": "OID_01HQ641CNYEPJMXYW3PW5ESZ6K",
+								"optionText": "The variety of renewable energy sources"
+							},
+							{
+								"oid": "OID_01HQ641CNYE77KNNGFE5Y25HC8",
+								"optionText": "The diversity of corporate sustainability strategies"
+							},
+							{
+								"oid": "OID_01HQ641CNYX8QZ77Z24B8X75TS",
+								"optionText": "The financial diversity within green investments"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNYYBB50KC4Y2WGKPDJ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! In the context of the ESRS E4 Standard, \"biodiversity\" refers to the variety of living organisms found across different ecosystems, highlighting the environmental focus of the standard.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_37",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNYAGNA98DVXJFD1YT5",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct answer is the variety of living organisms in all ecosystems, emphasizing the environmental scope of the ESRS E4 Standard's focus on biodiversity.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_37",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZNN5PVMBST1XR5YEW",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "The ESRS E4 Standard's Objective chapter emphasizes the importance of disclosures related to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNZBE18FHRJJAE6D3DB"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNZBE18FHRJJAE6D3DB",
+								"optionText": "Biodiversity and ecosystem services"
+							},
+							{
+								"oid": "OID_01HQ641CNZ7NMG731HCPSPVPAH",
+								"optionText": "Financial performance"
+							},
+							{
+								"oid": "OID_01HQ641CNZ29EQ29RNZHTQYSA1",
+								"optionText": "Employee diversity"
+							},
+							{
+								"oid": "OID_01HQ641CNZ5Y9HYNAKDVT9QH1C",
+								"optionText": "Corporate governance"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZG3SA4RJ85AY2GJ38",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The Objective chapter specifically stresses the need for companies to disclose information concerning biodiversity and ecosystem services, aligning with the standard's environmental objectives.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_40",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZMAP5NKRE18APFB6N",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the emphasis is placed on disclosures related to biodiversity and ecosystem services, as per the environmental focus of the ESRS E4 Standard.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_40",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZRKS8G08EA9QRQPQ4",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "Rank the following elements based on their emphasis in the Objective chapter of the ESRS E4 Standard, from most to least emphasized.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CNZK68AE1W8QC7Z210Q",
+							"OID_01HQ641CNZ5TCKWR3V9P62VDW4",
+							"OID_01HQ641CNZ15WN0549YRFR3SDM",
+							"OID_01HQ641CNZ2WSC37NTP18VZT8T"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNZK68AE1W8QC7Z210Q",
+								"optionText": "Disclosure Requirements"
+							},
+							{
+								"oid": "OID_01HQ641CNZ5TCKWR3V9P62VDW4",
+								"optionText": "Biodiversity"
+							},
+							{
+								"oid": "OID_01HQ641CNZ15WN0549YRFR3SDM",
+								"optionText": "Ecosystem Services"
+							},
+							{
+								"oid": "OID_01HQ641CNZ2WSC37NTP18VZT8T",
+								"optionText": "Transition Plans"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZGX4683Z4BFAM5XEP",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The Objective chapter prioritizes Disclosure Requirements, followed by a focus on Biodiversity, Ecosystem Services, and finally, the development of Transition Plans towards sustainable practices.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_43",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CNZZY4J0X6V18GK4PQG",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct order begins with Disclosure Requirements, highlighting the chapter's focus, then moves on to Biodiversity, Ecosystem Services, and lastly, Transition Plans.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_43",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CNZ9ZE9ZTJGAJKWR641",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter E5",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E5",
+			"chapterCoverImage": "background7.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CNZDKDFAS93A0YVN2VS",
+					"pageType": "title",
+					"backgroundImage": "background7.jpg",
+					"title": "ESRS Chapter E5",
+					"subtitle": "ESRS Chapter E5"
+				},
+				{
+					"pid": "PID_01HQ641CNZPQFTVVB1YEVE6D4B",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background7.jpg",
+					"question": {
+						"questionText": "What is the main objective of the ESRS E5 Standard as outlined in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CNZJXXN6X09MWGXC5G2"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CNZJXXN6X09MWGXC5G2",
+								"optionText": "To promote the transition to a circular economy"
+							},
+							{
+								"oid": "OID_01HQ641CNZS55PEDJ2331ASCS2",
+								"optionText": "To reduce greenhouse gas emissions across all operations"
+							},
+							{
+								"oid": "OID_01HQ641CNZJRR818M1FTRKM834",
+								"optionText": "To enhance corporate governance and ethical conduct"
+							},
+							{
+								"oid": "OID_01HQ641CP0535RAA1AQG9NN658",
+								"optionText": "To increase transparency in financial disclosures"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0D0PKR0YR6P5XEAPK",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS E5 Standard is primarily focused on specifying Disclosure Requirements that promote the transition to a circular economy, as stated in the Objective chapter.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_61",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0A0D7524HFEV0MSBS",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite right. The main objective of the ESRS E5 Standard, as detailed in the Objective chapter, is to promote the transition to a circular economy.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_61",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0VX9JT62BBJFBFM68",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background7.jpg",
+					"question": {
+						"questionText": "Which of the following is NOT a focus of the ESRS E5 Standard according to the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CP0C4Q42DNJ35JHBWYX"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP00JP4Q1QYY1WEMG7A",
+								"optionText": "Circular economy practices"
+							},
+							{
+								"oid": "OID_01HQ641CP0C4Q42DNJ35JHBWYX",
+								"optionText": "Water resource management"
+							},
+							{
+								"oid": "OID_01HQ641CP09D1CDVY69Z0BTCS6",
+								"optionText": "Sustainable resource use"
+							},
+							{
+								"oid": "OID_01HQ641CP0AVED7KTWYR50XWSB",
+								"optionText": "Product life-cycle analysis"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP09B7VRVNH8HCTM47K",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! While the ESRS E5 Standard focuses on circular economy practices, sustainable resource use, and product life-cycle analysis, water resource management is not directly addressed in the Objective chapter.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_64",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0YW32ZYMCMG8GF51M",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, water resource management is the topic not explicitly addressed within the Objective chapter of the ESRS E5 Standard.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_64",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP05XKEF2MQQRRDQQZG",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background7.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter, the term \"circular economy\" refers to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CP0S0R1G996R7463ZMH"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP0S0R1G996R7463ZMH",
+								"optionText": "An economic system aimed at minimizing waste and making the most of resources"
+							},
+							{
+								"oid": "OID_01HQ641CP0EN1JQ7EK6N40MSBQ",
+								"optionText": "A financial strategy that prioritizes renewable energy investments"
+							},
+							{
+								"oid": "OID_01HQ641CP048JJJZW01WXX2K5D",
+								"optionText": "A method of economic analysis that focuses on reducing carbon emissions"
+							},
+							{
+								"oid": "OID_01HQ641CP0JZ3YEKYCJ5VZQN9M",
+								"optionText": "A business model that emphasizes linear production and consumption processes"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0BGDPVXPZCF46MA62",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! The term \"circular economy,\" as used in the ESRS E5 Standard, refers to an economic system designed to minimize waste and maximize the utility of resources.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_67",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0J798FVZFDMY9CMMS",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct answer is an economic system aimed at minimizing waste and making the most of resources, which is the essence of a circular economy.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_67",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP05MY24J2E88T6J3WW",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background7.jpg",
+					"question": {
+						"questionText": "The Objective chapter of the ESRS E5 Standard emphasizes the importance of:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CP03MXH1Z6FF6537V1B"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP0T92VM6FK050AKPY3",
+								"optionText": "Reducing operational costs for businesses"
+							},
+							{
+								"oid": "OID_01HQ641CP03MXH1Z6FF6537V1B",
+								"optionText": "Transitioning from business as usual to sustainable practices"
+							},
+							{
+								"oid": "OID_01HQ641CP062WBGA96C32S9V8R",
+								"optionText": "Increasing shareholder value through environmental initiatives"
+							},
+							{
+								"oid": "OID_01HQ641CP0VCFB0JBNRD4EGC9X",
+								"optionText": "Competing in global markets through innovation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP08CNDDSTD8EVK7DG7",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The Objective chapter specifically stresses the need for companies to transition from traditional business models to more sustainable practices, emphasizing circular economy principles.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_70",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP070FEHPP32DK0RK82",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the emphasis is on the transition from traditional business practices to sustainable ones, in line with circular economy principles.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_70",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP0R1B4N2KC1XXMFAKA",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background7.jpg",
+					"question": {
+						"questionText": "Rank the following elements based on their emphasis in the Objective chapter of the ESRS E5 Standard, from most emphasized to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CP0B692BR9NZ4KP343W",
+							"OID_01HQ641CP0XTR80RCQV32ZHC1M",
+							"OID_01HQ641CP0G2ZK57M5NR6MD6ZP",
+							"OID_01HQ641CP0TT500DEAEY8WKWQM"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP0B692BR9NZ4KP343W",
+								"optionText": "Disclosure Requirements"
+							},
+							{
+								"oid": "OID_01HQ641CP0XTR80RCQV32ZHC1M",
+								"optionText": "Circular Economy"
+							},
+							{
+								"oid": "OID_01HQ641CP0G2ZK57M5NR6MD6ZP",
+								"optionText": "Sustainable Resource Use"
+							},
+							{
+								"oid": "OID_01HQ641CP0TT500DEAEY8WKWQM",
+								"optionText": "EU Legislative Framework"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1R00S05BK6WSYKVFH",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The Objective chapter places the greatest emphasis on Disclosure Requirements, followed by the principles of a Circular Economy, Sustainable Resource Use, and the relevance of the EU Legislative Framework.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_73",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1CAF1KQQQBB4JPS26",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct sequence starts with Disclosure Requirements, highlighting their critical role, followed by Circular Economy principles, Sustainable Resource Use, and the EU Legislative Framework.",
+					"backgroundImage": "background7.jpg",
+					"displayLogic": {
+						"pid": "PID_73",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CP1RDCXKVG6QB2VWT72",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter G1",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter G1",
+			"chapterCoverImage": "background8.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CP10DKYNEREBDSD46B9",
+					"pageType": "title",
+					"backgroundImage": "background8.jpg",
+					"title": "ESRS Chapter G1",
+					"subtitle": "ESRS Chapter G1"
+				},
+				{
+					"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "What is the main aim of the ESRS G1 Standard as defined in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CP1QWBG4VGTN7HZYR60"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP1QWBG4VGTN7HZYR60",
+								"optionText": "To specify disclosure requirements for corporate governance"
+							},
+							{
+								"oid": "OID_01HQ641CP1CMYDZVV8KVD5Y484",
+								"optionText": "To establish guidelines for environmental sustainability"
+							},
+							{
+								"oid": "OID_01HQ641CP1SD51RZDH1PF758BV",
+								"optionText": "To promote financial transparency and investor relations"
+							},
+							{
+								"oid": "OID_01HQ641CP16REHJQZTNSWYAEH6",
+								"optionText": "To outline ethical business conduct and social responsibility"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1J0NR15TEBSPF9FFG",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS G1 Standard primarily aims to specify disclosure requirements related to corporate governance, as outlined in the Objective chapter.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_76",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1881Z58F7QM5Z5PMM",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not exactly. The main aim of the ESRS G1 Standard, as described in the Objective chapter, is to specify disclosure requirements for corporate governance.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_76",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "Which of the following areas is NOT directly addressed by the ESRS G1 Standard according to the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAAPFY81RCMASKPHYF"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPARHJQZWY2B0WSYEKZ",
+								"optionText": "Board diversity and inclusion"
+							},
+							{
+								"oid": "OID_01HQ641CPAAPFY81RCMASKPHYF",
+								"optionText": "Environmental impact assessments"
+							},
+							{
+								"oid": "OID_01HQ641CPAMM834SRC74EQZ757",
+								"optionText": "Ethical business practices"
+							},
+							{
+								"oid": "OID_01HQ641CPAWCH9FK83BVX3CCA0",
+								"optionText": "Stakeholder engagement"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPAAD0653VEQGWJ533W",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! While the ESRS G1 Standard covers topics such as board diversity, ethical business practices, and stakeholder engagement, environmental impact assessments are not directly addressed in the Objective chapter.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_79",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPA9GZECVKX9EZ64GS5",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the topic not directly addressed within the Objective chapter of the ESRS G1 Standard is environmental impact assessments.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_79",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "In the Objective chapter, the ESRS G1 Standard focuses on the following matters, EXCEPT:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAE6K7K47FTTFW7CH6"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPAX75J21WTV43JF1F9",
+								"optionText": "Anti-corruption measures"
+							},
+							{
+								"oid": "OID_01HQ641CPAE6K7K47FTTFW7CH6",
+								"optionText": "Financial performance reporting"
+							},
+							{
+								"oid": "OID_01HQ641CPA67Q2EE9XQX111PY9",
+								"optionText": "Corporate governance practices"
+							},
+							{
+								"oid": "OID_01HQ641CPAHT77YXMX6APAV6J7",
+								"optionText": "Transparency in executive compensation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPADB7D0HGAEKN2TPYF",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! The ESRS G1 Standard, particularly in the Objective chapter, emphasizes corporate governance practices, anti-corruption measures, and transparency in executive compensation, but not financial performance reporting.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_82",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPA70Q2ZBXSY51Z2ST0",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct aspect not emphasized in the Objective chapter of the ESRS G1 Standard is financial performance reporting.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_82",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter, the ESRS G1 Standard is designed to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAQE029XD2B211HJ6S"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPAQE029XD2B211HJ6S",
+								"optionText": "Ensure businesses disclose key governance practices"
+							},
+							{
+								"oid": "OID_01HQ641CPBFYFDTHV7TKFFE6M1",
+								"optionText": "Enhance the competitive advantage of businesses"
+							},
+							{
+								"oid": "OID_01HQ641CPB5T8KZ1P2YCH77KN8",
+								"optionText": "Improve the efficiency of resource use in production"
+							},
+							{
+								"oid": "OID_01HQ641CPBFC278QRP5ZNWNZ14",
+								"optionText": "Encourage the adoption of renewable energy sources"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBRH9NWXF7RC0KDXDJ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS G1 Standard's primary design, as mentioned in the Objective chapter, is to ensure that businesses disclose their key governance practices, aligning with corporate governance transparency.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_85",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBN8KQ6KHPVH35Z8VE",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the ESRS G1 Standard's main design goal, as outlined in the Objective chapter, is to ensure disclosure of key governance practices.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_85",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "Rank the following focus areas based on their emphasis in the Objective chapter of the ESRS G1 Standard, from most to least focused on.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPBW2VMVGGJ09H6ESY1",
+							"OID_01HQ641CPBRRVXV74NX5X06V6B",
+							"OID_01HQ641CPB6AYVF1TXTM9YTGGM",
+							"OID_01HQ641CPB9P4TPK5VJ5RTMGC8"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPBW2VMVGGJ09H6ESY1",
+								"optionText": "Corporate Governance"
+							},
+							{
+								"oid": "OID_01HQ641CPBRRVXV74NX5X06V6B",
+								"optionText": "Ethical Business Practices"
+							},
+							{
+								"oid": "OID_01HQ641CPB6AYVF1TXTM9YTGGM",
+								"optionText": "Stakeholder Engagement"
+							},
+							{
+								"oid": "OID_01HQ641CPB9P4TPK5VJ5RTMGC8",
+								"optionText": "Board Diversity and Inclusion"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBMQG3HM1APXW9F0VS",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The Objective chapter prioritizes Corporate Governance, followed by Ethical Business Practices, Stakeholder Engagement, and lastly, Board Diversity and Inclusion, in terms of focus.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_88",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB7KMN9E6H043G0F6P",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct order begins with Corporate Governance, emphasizing its primary focus, followed by Ethical Business Practices, Stakeholder Engagement, and Board Diversity and Inclusion.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_88",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CPBEMARJS8N30TX4GAD",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter S1",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S1",
+			"chapterCoverImage": "background9.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CPB8A1DR4MRS9MVY2CX",
+					"pageType": "title",
+					"backgroundImage": "background9.jpg",
+					"title": "ESRS Chapter S1",
+					"subtitle": "ESRS Chapter S1"
+				},
+				{
+					"pid": "PID_01HQ641CPBGPBM30DBD9VC5XRP",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background9.jpg",
+					"question": {
+						"questionText": "What is the main goal of the ESRS S1 Standard as stated in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPBM94CCAKYS8ZK1DDP"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPBM94CCAKYS8ZK1DDP",
+								"optionText": "To specify disclosure requirements for social and employee matters"
+							},
+							{
+								"oid": "OID_01HQ641CPB79S6R8AEEAT6XXRP",
+								"optionText": "To enhance transparency in financial reporting"
+							},
+							{
+								"oid": "OID_01HQ641CPBKTKZ5A846WK65G7K",
+								"optionText": "To outline strategies for reducing environmental impact"
+							},
+							{
+								"oid": "OID_01HQ641CPBSJXVRTA7GCR5E5PZ",
+								"optionText": "To establish guidelines for ethical business conduct"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB08V6EA501YN67CRC",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The main goal of the ESRS S1 Standard, as described in the Objective chapter, is to specify disclosure requirements focusing on social and employee-related matters.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_91",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBP6PJY9X4Y4AC3R0Y",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not exactly. The ESRS S1 Standard's main goal, as highlighted in the Objective chapter, is to specify disclosure requirements for social and employee matters.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_91",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB8GKFGP3BTCMRW9P7",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background9.jpg",
+					"question": {
+						"questionText": "Which of the following is NOT directly addressed by the ESRS S1 Standard according to the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPBYSQK24DWTKAF53GP"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPBMTG0J3RXV5DSQAWJ",
+								"optionText": "Employee well-being"
+							},
+							{
+								"oid": "OID_01HQ641CPBYSQK24DWTKAF53GP",
+								"optionText": "Corporate governance"
+							},
+							{
+								"oid": "OID_01HQ641CPB5CT78JX4FWPBDMFX",
+								"optionText": "Supply chain management"
+							},
+							{
+								"oid": "OID_01HQ641CPBA1W82SSG9RJ5EWWH",
+								"optionText": "Diversity and inclusion"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBD0ETD1AADTN4QXS0",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! While the ESRS S1 Standard covers topics such as employee well-being, diversity and inclusion, and aspects of supply chain management, corporate governance is not directly addressed in the Objective chapter.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_94",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB14ZEQGXZHPATS1FQ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, corporate governance is the area not directly addressed within the Objective chapter of the ESRS S1 Standard.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_94",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCFTDSS1N5N6Z292F2",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background9.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter, the ESRS S1 Standard focuses on the following, EXCEPT:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPCPN7THV9T3BVDBEYB"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPC45883G9VHED18TSR",
+								"optionText": "Workforce engagement"
+							},
+							{
+								"oid": "OID_01HQ641CPCPN7THV9T3BVDBEYB",
+								"optionText": "Environmental sustainability measures"
+							},
+							{
+								"oid": "OID_01HQ641CPCDD7QHVB8PCQGG0N5",
+								"optionText": "Employee rights and benefits"
+							},
+							{
+								"oid": "OID_01HQ641CPCRX0HAW53VR0DZ618",
+								"optionText": "Workplace safety"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPC28R38QW01E85D55A",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "That's right! The ESRS S1 Standard, especially in the Objective chapter, emphasizes workforce engagement, employee rights and benefits, and workplace safety, but not environmental sustainability measures.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_97",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPC0PG617VZAJJ77QKA",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct answer is environmental sustainability measures, which is not a focus of the ESRS S1 Standard as outlined in the Objective chapter.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_97",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCY2FNJ3XTHV9Z5RMH",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background9.jpg",
+					"question": {
+						"questionText": "The Objective chapter of the ESRS S1 Standard is designed to ensure companies disclose information related to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPCR8VNFQ3FDNT552RM"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPCR8VNFQ3FDNT552RM",
+								"optionText": "Their social impact and employee relations"
+							},
+							{
+								"oid": "OID_01HQ641CPC4HQPA2VA2FF2F969",
+								"optionText": "Their financial performance and investment strategies"
+							},
+							{
+								"oid": "OID_01HQ641CPC5C0MQTJ85PPH11AY",
+								"optionText": "The biodiversity impact of their operations"
+							},
+							{
+								"oid": "OID_01HQ641CPCMKY0RKKVQEM00BNR",
+								"optionText": "Their carbon footprint and greenhouse gas emissions"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCNKB6A4CQ0GJ4AJC6",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS S1 Standard's design, as mentioned in the Objective chapter, is aimed at ensuring companies disclose information pertinent to their social impact and employee relations.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_100",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCYW864G23BX312314",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the ESRS S1 Standard is designed to ensure disclosures related to social impact and employee relations, as outlined in the Objective chapter.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_100",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCYMCGYBWA7ECM0GZ0",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background9.jpg",
+					"question": {
+						"questionText": "Rank the following aspects based on their emphasis in the Objective chapter of the ESRS S1 Standard, from most focused to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPC2N7CCCK8XZNJHPM5",
+							"OID_01HQ641CPCZRKG5N3Q0DQ7PJPW",
+							"OID_01HQ641CPC5GFK9Z9R3ZG0B56F",
+							"OID_01HQ641CPCGE3T00BPTRQHTY5R"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPC2N7CCCK8XZNJHPM5",
+								"optionText": "Social Impact"
+							},
+							{
+								"oid": "OID_01HQ641CPCZRKG5N3Q0DQ7PJPW",
+								"optionText": "Employee Relations"
+							},
+							{
+								"oid": "OID_01HQ641CPCGE3T00BPTRQHTY5R",
+								"optionText": "Workplace Safety"
+							},
+							{
+								"oid": "OID_01HQ641CPC5GFK9Z9R3ZG0B56F",
+								"optionText": "Diversity and Inclusion"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCKYQ11KYKC5Z2BD8V",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The Objective chapter places the greatest emphasis on Social Impact, followed closely by Employee Relations, then Diversity and Inclusion, and finally, Workplace Safety in terms of focus.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_103",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCQNB4HK991V2Q4Z04",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct sequence begins with Social Impact, highlighting its paramount importance, followed by Employee Relations, Diversity and Inclusion, and lastly, Workplace Safety.",
+					"backgroundImage": "background9.jpg",
+					"displayLogic": {
+						"pid": "PID_103",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CPCV0TBQ1EPJ83TPRYN",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter S2",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S2",
+			"chapterCoverImage": "background10.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CPCVJP2QW71N7233AM9",
+					"pageType": "title",
+					"backgroundImage": "background10.jpg",
+					"title": "ESRS Chapter S2",
+					"subtitle": "ESRS Chapter S2"
+				},
+				{
+					"pid": "PID_01HQ641CPCVDNXKHW1T0B8WCJ1",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background10.jpg",
+					"question": {
+						"questionText": "What is the purpose of the \"ESRS 2 General disclosures\" section in the context of sustainability reporting?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPCA8RF9DPTQJR9XXHR"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPCA8RF9DPTQJR9XXHR",
+								"optionText": "To provide a general framework for disclosing sustainability impacts"
+							},
+							{
+								"oid": "OID_01HQ641CPC9406SX9B3EP2DXPW",
+								"optionText": "To detail financial investment strategies"
+							},
+							{
+								"oid": "OID_01HQ641CPCPFX4D90H8JX1AKPM",
+								"optionText": "To outline the company's governance structure"
+							},
+							{
+								"oid": "OID_01HQ641CPC8V37KB6J78VHZBZZ",
+								"optionText": "To specify environmental impact metrics"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPCCNN9G3CX8G5PKWVV",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The \"ESRS 2 General disclosures\" section is designed to provide companies with a general framework for disclosing information related to their sustainability impacts, ensuring transparency and accountability.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_106",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPD5WTFHJCP6GZMH4SQ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite right! The main purpose of the \"ESRS 2 General disclosures\" is to offer a general framework for disclosing sustainability impacts, not specifically about financial strategies, governance structures, or environmental metrics.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_106",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDBSA5MAPZZBAKXCS6",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background10.jpg",
+					"question": {
+						"questionText": "Which of the following best describes the integration approach recommended for the disclosures in the \"ESRS 2 General disclosures\" section?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPDM1B85J3RFMJK7SQE"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPDVQXDXTD95XVF7P63",
+								"optionText": "Stand-alone reporting, separate from other disclosures"
+							},
+							{
+								"oid": "OID_01HQ641CPDY1DCQKT04BEA750Y",
+								"optionText": "Integration with financial reports only"
+							},
+							{
+								"oid": "OID_01HQ641CPDM1B85J3RFMJK7SQE",
+								"optionText": "Combining with disclosures from other relevant sustainability standards"
+							},
+							{
+								"oid": "OID_01HQ641CPDH87KK0SKENQN903F",
+								"optionText": "Online publication without referencing other reports"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDW4B786N4B9HKN72Q",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! The \"ESRS 2 General disclosures\" encourages companies to combine these disclosures with those from other relevant sustainability standards, promoting a holistic view of sustainability reporting.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_109",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDWP14TWTHYWMW91W7",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the recommended approach is to combine these disclosures with those from other relevant sustainability standards, not to keep them stand-alone or integrate them only with financial reports.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_109",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDK86G1Z9CRPDKGSVV",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background10.jpg",
+					"question": {
+						"questionText": "In the \"ESRS 2 General disclosures\", companies are advised to disclose information related to which of the following aspects?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPDJPAB45FP1265KFEA"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPDWVH21B51AV3PZHA2",
+								"optionText": "Executive compensation linked to sustainability performance"
+							},
+							{
+								"oid": "OID_01HQ641CPDTZ95Y2R542J2Z4KY",
+								"optionText": "Details of proprietary technology for waste management"
+							},
+							{
+								"oid": "OID_01HQ641CPDRTM8VE5B0XFGQ3BR",
+								"optionText": "Community engagement initiatives and their outcomes"
+							},
+							{
+								"oid": "OID_01HQ641CPDJPAB45FP1265KFEA",
+								"optionText": "Sustainability strategy and its alignment with business goals"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPD0HX3BM1KWJX350XC",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! Among the options, disclosing the sustainability strategy and its alignment with business goals is most relevant to the \"ESRS 2 General disclosures\", highlighting how sustainability is integrated into the overall business strategy.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_112",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDZNSCC5VGNPMQ7FP4",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The focus should be on disclosing the sustainability strategy and how it aligns with business goals, rather than exclusively on executive compensation, proprietary technology, or community engagement.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_112",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDJW86C2A19AAHDM5Y",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background10.jpg",
+					"question": {
+						"questionText": "How are companies expected to treat disclosures related to value chain workers in the \"ESRS 2 General disclosures\"?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPDS4D2TVYJJZYHSBWW"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPD70XPJPJMXJR9B0A8",
+								"optionText": "Focus exclusively on internal workers"
+							},
+							{
+								"oid": "OID_01HQ641CPDS4D2TVYJJZYHSBWW",
+								"optionText": "Include both internal and value chain workers"
+							},
+							{
+								"oid": "OID_01HQ641CPDJXAPDD02WX550KP3",
+								"optionText": "Report only on value chain workers located in the company's home country"
+							},
+							{
+								"oid": "OID_01HQ641CPD1PJGDEZ1KNKD3SM1",
+								"optionText": "Exclude any disclosures related to workers"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDDDYR27EWBD2PSADE",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! Companies are expected to include disclosures related to both internal and value chain workers, ensuring a comprehensive view of worker impact across the value chain.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_115",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDTXYEK8YSFG3QF05A",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the correct approach is to include information related to both internal and value chain workers, providing a full picture of worker impacts and engagements.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_115",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDGVPHY53Z89XARTFF",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background10.jpg",
+					"question": {
+						"questionText": "Rank the following aspects based on their importance in the \"ESRS 2 General disclosures\", from most to least emphasized.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPDTXHGHNH152VP9SNY",
+							"OID_01HQ641CPD67Y7DWNB2FT39WA3",
+							"OID_01HQ641CPDC79FPB9P9B3KNAB5",
+							"OID_01HQ641CPDEZ1TB7NCA5HRVC8P"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPD67Y7DWNB2FT39WA3",
+								"optionText": "Engagement with stakeholders"
+							},
+							{
+								"oid": "OID_01HQ641CPDEZ1TB7NCA5HRVC8P",
+								"optionText": "Financial performance related to sustainability initiatives"
+							},
+							{
+								"oid": "OID_01HQ641CPDC79FPB9P9B3KNAB5",
+								"optionText": "Transparency in sustainability reporting"
+							},
+							{
+								"oid": "OID_01HQ641CPDTXHGHNH152VP9SNY",
+								"optionText": "Alignment of sustainability strategy with business objectives"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDRMMZS5E8F92TVWGD",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The \"ESRS 2 General disclosures\" places the highest emphasis on the alignment of sustainability strategy with business objectives, followed by stakeholder engagement, transparency in reporting, and finally, financial performance related to sustainability initiatives.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_118",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPDEW5R08WWX0203WAJ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Close, but the correct order starts with the alignment of sustainability strategy with business objectives, emphasizing how essential it is for sustainability efforts to be integrated with the company's broader goals.",
+					"backgroundImage": "background10.jpg",
+					"displayLogic": {
+						"pid": "PID_118",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CPD1GVG34PM5WB1D0ZF",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter S3",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S3",
+			"chapterCoverImage": "background11.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CPDAKQ0R5HDERMFMSSS",
+					"pageType": "title",
+					"backgroundImage": "background11.jpg",
+					"title": "ESRS Chapter S3",
+					"subtitle": "ESRS Chapter S3"
+				},
+				{
+					"pid": "PID_01HQ641CPE6FDSK5S7GQWJR17M",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background11.jpg",
+					"question": {
+						"questionText": "What is the primary objective of the ESRS S3 standard as described in the \"Objective\" chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPEG685XKD4NXHQ4K6R"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPEGV9T4BH1D0162J6J",
+								"optionText": "To establish financial reporting guidelines"
+							},
+							{
+								"oid": "OID_01HQ641CPEPYR0F8VYQC698XHC",
+								"optionText": "To detail environmental protection measures"
+							},
+							{
+								"oid": "OID_01HQ641CPEG685XKD4NXHQ4K6R",
+								"optionText": "To specify disclosures on social and human rights impacts"
+							},
+							{
+								"oid": "OID_01HQ641CPEPZFGVR82M959NNJQ",
+								"optionText": "To outline operational efficiency improvements"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPE20J19AWJ6GZGF6VA",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS S3 standard aims to specify disclosure requirements that allow companies to report on their social and human rights impacts, ensuring accountability and transparency in these critical areas.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEY3GK3K94CZKGAP3S",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the primary objective of the ESRS S3 standard is to specify disclosures on social and human rights impacts, not financial reporting, environmental protection, or operational efficiency.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEAZJM6JMM8K4CBVZF",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background11.jpg",
+					"question": {
+						"questionText": "Which aspect does the \"Objective\" chapter of the ESRS S3 emphasize for companies regarding their impact?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPEZEJH9TZ7VSEWR7VS"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPE8AAN44G5TW6JJ9GA",
+								"optionText": "Reduction of greenhouse gas emissions"
+							},
+							{
+								"oid": "OID_01HQ641CPEZEJH9TZ7VSEWR7VS",
+								"optionText": "Engagement with local communities and stakeholders"
+							},
+							{
+								"oid": "OID_01HQ641CPE9XWWTK5MGTDYYG6B",
+								"optionText": "Investment in renewable energy resources"
+							},
+							{
+								"oid": "OID_01HQ641CPE1RN56SPQT6NCEE4G",
+								"optionText": "Development of new products and services"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEBT955WQCWP5MMWQK",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly right! The \"Objective\" chapter emphasizes the importance of companies engaging with local communities and stakeholders to understand and mitigate their social and human rights impacts.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q2",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPE3FH5NV9TK0XP6PEX",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The focus here is on engagement with local communities and stakeholders, as highlighted in the ESRS S3 standard, rather than on emissions, renewable energy, or product development.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q2",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEBJG072TQ7QSM1ZBP",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background11.jpg",
+					"question": {
+						"questionText": "According to the ESRS S3 \"Objective\" chapter, companies are required to explain what in relation to social and human rights matters?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPE1HDTFJZZP1H7J0GR"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPEPJAKYQ5082HXM0DG",
+								"optionText": "The financial cost of compliance"
+							},
+							{
+								"oid": "OID_01HQ641CPE1HDTFJZZP1H7J0GR",
+								"optionText": "The impact of their activities on these matters"
+							},
+							{
+								"oid": "OID_01HQ641CPEAZP909P61T62ZGPB",
+								"optionText": "The number of employees trained in human rights policies"
+							},
+							{
+								"oid": "OID_01HQ641CPEMM3C7KFFXKVX1CQQ",
+								"optionText": "The percentage of renewable energy used"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEASB1PWVXAEKD6EGT",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS S3 standard requires companies to explain the impact of their activities on social and human rights matters, aiming for a clear understanding and reporting of these impacts.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q3",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEAJ9C13GHVNK54TKE",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The key requirement here is to explain the impact of activities on social and human rights matters, not the financial cost of compliance, employee training specifics, or the use of renewable energy.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q3",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPE633BWAE064C7947V",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background11.jpg",
+					"question": {
+						"questionText": "How does the \"Objective\" chapter of the ESRS S3 standard guide companies in addressing their disclosures?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPEK90PA26ESGVYVG1D"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPEXTDXND7EFA7JRAVP",
+								"optionText": "By prioritizing financial over social disclosures"
+							},
+							{
+								"oid": "OID_01HQ641CPE55CN69PRJH8KE7W0",
+								"optionText": "Through a detailed analysis of market trends"
+							},
+							{
+								"oid": "OID_01HQ641CPEK90PA26ESGVYVG1D",
+								"optionText": "By integrating social considerations into their overall strategy"
+							},
+							{
+								"oid": "OID_01HQ641CPEMXZ2ZFE3M4388YDK",
+								"optionText": "Focusing solely on internal policies without external verification"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPE3D91DX19SVJKARH9",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! The \"Objective\" chapter encourages companies to integrate social and human rights considerations into their overall strategy, ensuring these aspects are central to their operational and reporting practices.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q4",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPE1S6RJYR4SKR5H50Q",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the emphasis is on integrating social considerations into the overall strategy, rather than prioritizing financial disclosures, analyzing market trends, or focusing solely on internal policies.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q4",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPEZYEZ6BVZ54P3YZZ2",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background11.jpg",
+					"question": {
+						"questionText": "Rank the following areas based on their coverage in the ESRS S3 \"Objective\" chapter, from most emphasized to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPEJG45NEJJFFG6HHD0",
+							"OID_01HQ641CPFB8T5APMPGZC8C7VZ",
+							"OID_01HQ641CPFX5Y3KJ36ZCXSG71M",
+							"OID_01HQ641CPFE8VE51TER3XYRPQT"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPEJG45NEJJFFG6HHD0",
+								"optionText": "Explanation of impact on social matters"
+							},
+							{
+								"oid": "OID_01HQ641CPFB8T5APMPGZC8C7VZ",
+								"optionText": "Engagement strategies with stakeholders"
+							},
+							{
+								"oid": "OID_01HQ641CPFX5Y3KJ36ZCXSG71M",
+								"optionText": "Disclosure of human rights practices"
+							},
+							{
+								"oid": "OID_01HQ641CPFE8VE51TER3XYRPQT",
+								"optionText": "Overview of compliance mechanisms"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPF6Z62N9V84HNYGCST",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! The \"Objective\" chapter places the highest emphasis on explaining the impact of company activities on social matters, followed by engagement strategies with stakeholders, disclosure of human rights practices, and finally, an overview of compliance mechanisms.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q5",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFXRX5KSFYTWSY5PKN",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Close, but the correct order starts with an explanation of the impact on social matters, indicating the importance of transparency and accountability in reporting these impacts.",
+					"backgroundImage": "background11.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS3Q5",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CPFPN7A0NKPPVAWBFFF",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Chapter S4",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S4",
+			"chapterCoverImage": "background12.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CPFF0J37CHXDNK191RP",
+					"pageType": "title",
+					"backgroundImage": "background12.jpg",
+					"title": "ESRS Chapter S4",
+					"subtitle": "ESRS Chapter S4"
+				},
+				{
+					"pid": "PID_01HQ641CPF2BV7NEXVSHXQEKMJ",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background12.jpg",
+					"question": {
+						"questionText": "What is the main aim of the ESRS S4 standard as outlined in the \"Objective\" chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPFSNMTWJGBBRMZWDDV"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPF8XW0JC2K4F82WHK0",
+								"optionText": "To establish guidelines for corporate financial reporting"
+							},
+							{
+								"oid": "OID_01HQ641CPFCW3JWNVW1BD0XKFK",
+								"optionText": "To specify disclosure requirements related to environmental impacts"
+							},
+							{
+								"oid": "OID_01HQ641CPFSNMTWJGBBRMZWDDV",
+								"optionText": "To provide a framework for reporting on social sustainability and ethics"
+							},
+							{
+								"oid": "OID_01HQ641CPFTMJ8W2T7Y1JD44A1",
+								"optionText": "To detail disclosures on the company's impact on economic development"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFMZKWMFTNGSKX1D0K",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Correct! The ESRS S4 standard aims to provide a framework for companies to report on social sustainability and ethics, emphasizing the importance of transparency in these areas.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPF8PZS839KPVF0KTH9",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Not quite! The ESRS S4 standard's main aim is to provide a framework for reporting on social sustainability and ethics, not solely on financial, environmental, or economic impacts.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFPNM15F24AZ6RQCCQ",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background12.jpg",
+					"question": {
+						"questionText": "Which of the following is a requirement under the ESRS S4 \"Objective\" for companies?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPF2N2MP9NKQMDFVQ2E"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPF1BNGG94V6EEDHZXW",
+								"optionText": "Reporting on executive compensation packages"
+							},
+							{
+								"oid": "OID_01HQ641CPFN44V8ZW62K4A3H1T",
+								"optionText": "Disclosing the impact of their operations on local economies"
+							},
+							{
+								"oid": "OID_01HQ641CPF2N2MP9NKQMDFVQ2E",
+								"optionText": "Describing their approach to managing social and ethical issues"
+							},
+							{
+								"oid": "OID_01HQ641CPFXPM94S070YGNW2C9",
+								"optionText": "Detailing their carbon footprint and reduction strategies"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFRCEAGRN5N9S48G0A",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly! Under the ESRS S4 standard, companies are required to describe their approach to managing social and ethical issues, ensuring accountability in these critical areas.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q2",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPF59KQNK885SSNZJZS",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct focus under the ESRS S4 standard is on describing the approach to managing social and ethical issues, rather than on compensation, local economic impacts, or environmental strategies.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q2",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFY82GWD4C2XSSNF82",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background12.jpg",
+					"question": {
+						"questionText": "How does the ESRS S4 \"Objective\" chapter guide companies in addressing ethical concerns?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPF9KT4QKEWVWQKKZ9M"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPFHGQFZYKYRM6JE8WG",
+								"optionText": "By prioritizing profit over ethical considerations"
+							},
+							{
+								"oid": "OID_01HQ641CPF9KT4QKEWVWQKKZ9M",
+								"optionText": "Through promoting transparency and stakeholder engagement"
+							},
+							{
+								"oid": "OID_01HQ641CPF2HJJDXE5S986X8EY",
+								"optionText": "By recommending the outsourcing of ethical dilemmas"
+							},
+							{
+								"oid": "OID_01HQ641CPFSE89BDRZXKYWYVZJ",
+								"optionText": "Through focusing exclusively on legal compliance"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFSS2P8EDK9A3ZQGNP",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Spot on! The ESRS S4 \"Objective\" chapter emphasizes promoting transparency and stakeholder engagement as key methods for addressing ethical concerns within companies.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q3",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFS7CFQYGVZVZPYMXQ",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "Actually, the ESRS S4 standard advocates for transparency and stakeholder engagement in addressing ethical concerns, rather than prioritizing profit, outsourcing dilemmas, or focusing solely on compliance.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q3",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPFJDHNA1RS82AV6HT8",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background12.jpg",
+					"question": {
+						"questionText": "In the context of the ESRS S4 \"Objective\", companies are encouraged to integrate their ethical disclosures with:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPGJ490X46XCTHEFGFM"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPFE9VSPPZTF4WKNP0N",
+								"optionText": "Internal audit reports only"
+							},
+							{
+								"oid": "OID_01HQ641CPG8K8DMQAGH6VFCKCQ",
+								"optionText": "Financial statements for investor insight"
+							},
+							{
+								"oid": "OID_01HQ641CPGJ490X46XCTHEFGFM",
+								"optionText": "Other relevant sustainability disclosures"
+							},
+							{
+								"oid": "OID_01HQ641CPGYST346ZV0JXBGM12",
+								"optionText": "Marketing and public relations materials"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPG63ZC47Q2GFE6FD21",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Exactly right! The ESRS S4 standard encourages companies to integrate their ethical disclosures with other relevant sustainability disclosures, enhancing the comprehensiveness of reporting.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q4",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPG9D4MTKZYS7B0BT0B",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The recommendation is to integrate ethical disclosures with other relevant sustainability disclosures, not just with audit reports, financial statements, or PR materials.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q4",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPGPBX61AC5XDYJPT4Q",
+					"pageType": "question",
+					"avatarImage": "Turtle/Neutral.png",
+					"backgroundImage": "background12.jpg",
+					"question": {
+						"questionText": "Rank the following steps based on their importance in the implementation of the \"Objective\" chapter in the ESRS S4, from most critical to least.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPG9EN6PP4M8GGTZRBT",
+							"OID_01HQ641CPGDCSVEJK4HSGZ5KB7",
+							"OID_01HQ641CPGND2R8M7JYB883291",
+							"OID_01HQ641CPG80K8SNDKVQ7FWFDX"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPG9EN6PP4M8GGTZRBT",
+								"optionText": "Identifying ethical issues in operations"
+							},
+							{
+								"oid": "OID_01HQ641CPGDCSVEJK4HSGZ5KB7",
+								"optionText": "Engaging with stakeholders on ethical practices"
+							},
+							{
+								"oid": "OID_01HQ641CPGND2R8M7JYB883291",
+								"optionText": "Remedying problems related to unethical practices"
+							},
+							{
+								"oid": "OID_01HQ641CPG80K8SNDKVQ7FWFDX",
+								"optionText": "Highlighting special issues relevant to the company's sector"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPGRT3P1BPEXMNA2PKC",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Happy1.png",
+					"avatarText": "Well done! Identifying ethical issues is the first critical step, followed by stakeholder engagement, remedying unethical practices, and finally highlighting sector-specific issues, aligning with the ESRS S4 standard's objectives.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q5",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPG6T9PR9F5KCT07ET7",
+					"pageType": "narrator",
+					"avatarImage": "Turtle/Sad2.png",
+					"avatarText": "The correct sequence begins with identifying ethical issues, as this foundational step informs subsequent actions like stakeholder engagement, remediation efforts, and addressing sector-specific concerns.",
+					"backgroundImage": "background12.jpg",
+					"displayLogic": {
+						"pid": "PID_01ESRSS4Q5",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				}
+			]
+		}
+	]
+}
