@@ -159,7 +159,7 @@
 					"avatarText": "Spot on! ESRS 1 lays down the general principles and requirements that shape the foundation for comprehensive sustainability reporting.",
 					"backgroundImage": "background1.jpg",
 					"displayLogic": {
-						"pid": "PID_03ESRS1",
+						"pid": "PID_01HQ641CNPCVZY36D88ZG8JNM4",
 						"type": "answeredCorrectly",
 						"correct": true
 					}
@@ -171,7 +171,7 @@
 					"avatarText": "Almost there, but not quite. ESRS 1's role is to establish general requirements for sustainability reporting, so C) is the correct answer.",
 					"backgroundImage": "background1.jpg",
 					"displayLogic": {
-						"pid": "PID_03ESRS1",
+						"pid": "PID_01HQ641CNPCVZY36D88ZG8JNM4",
 						"type": "answeredCorrectly",
 						"correct": false
 					}
