@@ -19,25 +19,27 @@ const { ulid } = require("ulidx");
 // }
 
 const regenerateIds = () => {
-    const jsonFilePath = path.resolve("data", "uob-question-flow.json");
-    const fileContents = fs.readFileSync(jsonFilePath, "utf8");
-    const { chapters } = JSON.parse(fileContents);
-    for (const chapter of chapters) {
-        chapter.cid = `CID_${ulid()}`;
-        for (const page of chapter.pages) {
-            page.pid = `PID_${ulid()}`;
-            if (page.pageType === "question" && page.question.options) {
-                const optionMapping: {[oldOid: string]: string} = {};
-                for (const option of page.question.options) {
-                    const newOid = `OID_${ulid()}`;
-                    optionMapping[option.oid] = newOid;
-                    option.oid = newOid;
-                }
-                page.question.correctAnswer = page.question.correctAnswer.map((o: string) => optionMapping[o]);
-            }
-        }
-    }
-    fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
-}
+	const jsonFilePath = path.resolve("data", "_test-question-flow.json");
+	const fileContents = fs.readFileSync(jsonFilePath, "utf8");
+	const { chapters } = JSON.parse(fileContents);
+	for (const chapter of chapters) {
+		chapter.cid = `CID_${ulid()}`;
+		for (const page of chapter.pages) {
+			page.pid = `PID_${ulid()}`;
+			if (page.pageType === "question" && page.question.options) {
+				const optionMapping: { [oldOid: string]: string } = {};
+				for (const option of page.question.options) {
+					const newOid = `OID_${ulid()}`;
+					optionMapping[option.oid] = newOid;
+					option.oid = newOid;
+				}
+				page.question.correctAnswer = page.question.correctAnswer.map(
+					(o: string) => optionMapping[o]
+				);
+			}
+		}
+	}
+	fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
+};
 
 regenerateIds();
