@@ -3,7 +3,7 @@
 		{
 			"cid": "CID_01HQ641CNKF254WATJPJFWWP7Z",
 			"tags": ["all", "current"],
-			"chapterTitle": "1 - General Requirements",
+			"chapterTitle": "ESRS 1 - General Requirements",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 1",
 			"chapterCoverImage": "background1.jpg",
 			"pages": [
@@ -297,7 +297,7 @@
 		{
 			"cid": "CID_01HQ641CNQ181G72ENH74FTT95",
 			"tags": ["all", "current"],
-			"chapterTitle": "2 - General Disclosures",
+			"chapterTitle": "ESRS 2 - General Disclosures",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 2",
 			"chapterCoverImage": "background2.jpg",
 			"pages": [
@@ -596,7 +596,7 @@
 		{
 			"cid": "CID_01HQ641CNSZCWXZ6HFT4YD02EF",
 			"tags": ["all", "current"],
-			"chapterTitle": "E1 - Climate Change",
+			"chapterTitle": "ESRS E1 - Climate Change",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E1",
 			"chapterCoverImage": "background3.jpg",
 			"pages": [
@@ -895,7 +895,7 @@
 		{
 			"cid": "CID_01HQ641CNTBSR2JE7RRQ7WQR2D",
 			"tags": ["all", "current"],
-			"chapterTitle": "E2 - Pollution",
+			"chapterTitle": "ESRS E2 - Pollution",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E2",
 			"chapterCoverImage": "background4.jpg",
 			"pages": [
@@ -1194,7 +1194,7 @@
 		{
 			"cid": "CID_01HQ641CNW27Y8ZGW7XDXW73J3",
 			"tags": ["all", "current"],
-			"chapterTitle": "E3 - Water and Marine Resources",
+			"chapterTitle": "ESRS E3 - Water and Marine Resources",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E3",
 			"chapterCoverImage": "background5.jpg",
 			"pages": [
@@ -1493,7 +1493,7 @@
 		{
 			"cid": "CID_01HQ641CNXNX1BYP32YGYPYHDK",
 			"tags": ["all", "current"],
-			"chapterTitle": "E4 - Biodiversity and Ecosystems",
+			"chapterTitle": "ESRS E4 - Biodiversity and Ecosystems",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E4",
 			"chapterCoverImage": "background6.jpg",
 			"pages": [
@@ -1792,7 +1792,7 @@
 		{
 			"cid": "CID_01HQ641CNZ9ZE9ZTJGAJKWR641",
 			"tags": ["all", "current"],
-			"chapterTitle": "E5 - Resource Use and Circular Economy",
+			"chapterTitle": "ESRS E5 - Resource Use and Circular Economy",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E5",
 			"chapterCoverImage": "background7.jpg",
 			"pages": [
@@ -2091,7 +2091,7 @@
 		{
 			"cid": "CID_01HQ641CPBEMARJS8N30TX4GAD",
 			"tags": ["all", "current"],
-			"chapterTitle": "S1 - Own Workforce",
+			"chapterTitle": "ESRS S1 - Own Workforce",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S1",
 			"chapterCoverImage": "background9.jpg",
 			"pages": [
@@ -2390,7 +2390,7 @@
 		{
 			"cid": "CID_01HQ641CPCV0TBQ1EPJ83TPRYN",
 			"tags": ["all", "current"],
-			"chapterTitle": "S2 - Workers in the Value Chain",
+			"chapterTitle": "ESRS S2 - Workers in the Value Chain",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S2",
 			"chapterCoverImage": "background10.jpg",
 			"pages": [
@@ -2689,7 +2689,7 @@
 		{
 			"cid": "CID_01HQ641CPD1GVG34PM5WB1D0ZF",
 			"tags": ["all", "current"],
-			"chapterTitle": "S3 - Affected Communities",
+			"chapterTitle": "ESRS S3 - Affected Communities",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S3",
 			"chapterCoverImage": "background11.jpg",
 			"pages": [
@@ -2988,7 +2988,7 @@
 		{
 			"cid": "CID_01HQ641CPFPN7A0NKPPVAWBFFF",
 			"tags": ["all", "current"],
-			"chapterTitle": "S4 - Consumers and End Users",
+			"chapterTitle": "ESRS S4 - Consumers and End Users",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S4",
 			"chapterCoverImage": "background12.jpg",
 			"pages": [
@@ -3287,7 +3287,7 @@
 		{
 			"cid": "CID_01HQ641CP1RDCXKVG6QB2VWT72",
 			"tags": ["all", "current"],
-			"chapterTitle": "G1 - Business Conduct",
+			"chapterTitle": "ESRS G1 - Business Conduct",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter G1",
 			"chapterCoverImage": "background8.jpg",
 			"pages": [
