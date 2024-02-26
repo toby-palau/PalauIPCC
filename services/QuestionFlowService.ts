@@ -17,7 +17,7 @@ const filePath = {
 	ipcc: path.resolve("data", "ipcc-question-flow.json"),
 	cop: path.resolve("data", "cop-question-flow.json"),
 	uob: path.resolve("data", "uob-question-flow.json"),
-	test: path.resolve("data", "_test-question-flow.json"),
+	esrs: path.resolve("data", "esrs-question-flow.json"),
 };
 
 export const listAllChapters: (
