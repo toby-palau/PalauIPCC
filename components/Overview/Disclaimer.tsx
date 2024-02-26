@@ -25,10 +25,10 @@ const DisclaimerContent = {
 		link: "https://www.uobgroup.com/uobgroup/default.page",
 	},
 	esrs: {
-		logo: "/images/misc/uob-logo.png",
-		p1: "The content for this experience was generated based on the",
+		logo: "/images/misc/esrs-logo.png",
+		p1: "The content for this experience was generated based on the ",
 		p2: "European Sustainability Reporting Standards",
-		p3: "Read more here",
+		p3: "",
 		link: "https://www.unepfi.org/impact/interoperability/european-sustainability-reporting-standards-esrs/",
 	},
 };

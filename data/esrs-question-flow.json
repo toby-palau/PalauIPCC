@@ -3,7 +3,7 @@
 		{
 			"cid": "CID_01HQ641CNKF254WATJPJFWWP7Z",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter 1",
+			"chapterTitle": "1 - General Requirements",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 1",
 			"chapterCoverImage": "background1.jpg",
 			"pages": [
@@ -12,7 +12,7 @@
 					"pageType": "title",
 					"backgroundImage": "background1.jpg",
 					"title": "ESRS Chapter 1",
-					"subtitle": "ESRS Chapter 1"
+					"subtitle": "General Requirements"
 				},
 				{
 					"pid": "PID_01HQ641CNN29QGET8PQA37NEMZ",
@@ -283,13 +283,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJBPZBV6ZD4Q7DSS0G24VMC",
+					"pageType": "success",
+					"backgroundImage": "background1.jpg",
+					"title": "1 - General Requirements",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNQ181G72ENH74FTT95",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter 2",
+			"chapterTitle": "2 - General Disclosures",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter 2",
 			"chapterCoverImage": "background2.jpg",
 			"pages": [
@@ -298,7 +306,7 @@
 					"pageType": "title",
 					"backgroundImage": "background2.jpg",
 					"title": "ESRS Chapter 2",
-					"subtitle": "ESRS Chapter 2"
+					"subtitle": "General Disclosures"
 				},
 				{
 					"pid": "PID_01HQ641CNQ8YQGQ9F0C9SE31Y5",
@@ -574,13 +582,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJBWY95PY0XEQVNR4ST9EQW",
+					"pageType": "success",
+					"backgroundImage": "background2.jpg",
+					"title": "2 - General Disclosures",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNSZCWXZ6HFT4YD02EF",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter E1",
+			"chapterTitle": "E1 - Climate Change",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E1",
 			"chapterCoverImage": "background3.jpg",
 			"pages": [
@@ -589,7 +605,7 @@
 					"pageType": "title",
 					"backgroundImage": "background3.jpg",
 					"title": "ESRS Chapter E1",
-					"subtitle": "ESRS Chapter E1"
+					"subtitle": "Climate Change"
 				},
 				{
 					"pid": "PID_01HQ641CNS57B0Q0QSX6RX9D47",
@@ -865,13 +881,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJBYEAMRWS03E8N8TP59RBW",
+					"pageType": "success",
+					"backgroundImage": "background3.jpg",
+					"title": "E1 - Climate Change",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNTBSR2JE7RRQ7WQR2D",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter 1",
+			"chapterTitle": "E2 - Pollution",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E2",
 			"chapterCoverImage": "background4.jpg",
 			"pages": [
@@ -880,7 +904,7 @@
 					"pageType": "title",
 					"backgroundImage": "background4.jpg",
 					"title": "ESRS Chapter E2",
-					"subtitle": "ESRS Chapter E2"
+					"subtitle": "Pollution"
 				},
 				{
 					"pid": "PID_01HQ641CNT3ETC1NJK2Y7T2RSH",
@@ -1156,13 +1180,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC0Q6W0KAKH33Z1QY09CDY",
+					"pageType": "success",
+					"backgroundImage": "background4.jpg",
+					"title": "E2 - Pollution",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNW27Y8ZGW7XDXW73J3",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter E3",
+			"chapterTitle": "E3 - Water and Marine Resources",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E3",
 			"chapterCoverImage": "background5.jpg",
 			"pages": [
@@ -1171,7 +1203,7 @@
 					"pageType": "title",
 					"backgroundImage": "background5.jpg",
 					"title": "ESRS Chapter E3",
-					"subtitle": "ESRS Chapter E3"
+					"subtitle": "Water and Marine Resources"
 				},
 				{
 					"pid": "PID_01HQ641CNWFF09RZ3MW960QNWG",
@@ -1447,13 +1479,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC1JJE2YVKSXXGPFYGJKZX",
+					"pageType": "success",
+					"backgroundImage": "background5.jpg",
+					"title": "E3 - Water and Marine Resources",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNXNX1BYP32YGYPYHDK",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter E4",
+			"chapterTitle": "E4 - Biodiversity and Ecosystems",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E4",
 			"chapterCoverImage": "background6.jpg",
 			"pages": [
@@ -1738,13 +1778,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC2K85CX8NDR4JXCWY1AWY",
+					"pageType": "success",
+					"backgroundImage": "background6.jpg",
+					"title": "E4 - Biodiversity and Ecosystems",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CNZ9ZE9ZTJGAJKWR641",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter E5",
+			"chapterTitle": "E5 - Resource Use and Circular Economy",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter E5",
 			"chapterCoverImage": "background7.jpg",
 			"pages": [
@@ -1753,7 +1801,7 @@
 					"pageType": "title",
 					"backgroundImage": "background7.jpg",
 					"title": "ESRS Chapter E5",
-					"subtitle": "ESRS Chapter E5"
+					"subtitle": "Resource Use and Circular Economy"
 				},
 				{
 					"pid": "PID_01HQ641CNZPQFTVVB1YEVE6D4B",
@@ -2029,304 +2077,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
-				}
-			]
-		},
-		{
-			"cid": "CID_01HQ641CP1RDCXKVG6QB2VWT72",
-			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter G1",
-			"chapterDescription": "A quick introduction quiz to the ESRS Chapter G1",
-			"chapterCoverImage": "background8.jpg",
-			"pages": [
-				{
-					"pid": "PID_01HQ641CP10DKYNEREBDSD46B9",
-					"pageType": "title",
-					"backgroundImage": "background8.jpg",
-					"title": "ESRS Chapter G1",
-					"subtitle": "ESRS Chapter G1"
 				},
 				{
-					"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
-					"pageType": "question",
-					"avatarImage": "ESRS/neutral3.png",
-					"backgroundImage": "background8.jpg",
-					"question": {
-						"questionText": "What is the main aim of the ESRS G1 Standard as defined in the Objective chapter?",
-						"questionType": "MCSA",
-						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CP1QWBG4VGTN7HZYR60"],
-						"options": [
-							{
-								"oid": "OID_01HQ641CP1QWBG4VGTN7HZYR60",
-								"optionText": "To specify disclosure requirements for corporate governance"
-							},
-							{
-								"oid": "OID_01HQ641CP1CMYDZVV8KVD5Y484",
-								"optionText": "To establish guidelines for environmental sustainability"
-							},
-							{
-								"oid": "OID_01HQ641CP1SD51RZDH1PF758BV",
-								"optionText": "To promote financial transparency and investor relations"
-							},
-							{
-								"oid": "OID_01HQ641CP16REHJQZTNSWYAEH6",
-								"optionText": "To outline ethical business conduct and social responsibility"
-							}
-						]
-					}
-				},
-				{
-					"pid": "PID_01HQ641CP1J0NR15TEBSPF9FFG",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/right2.png",
-					"avatarText": "Correct! The ESRS G1 Standard primarily aims to specify disclosure requirements related to corporate governance, as outlined in the Objective chapter.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
-						"type": "answeredCorrectly",
-						"correct": true
-					}
-				},
-				{
-					"pid": "PID_01HQ641CP1881Z58F7QM5Z5PMM",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/wrong4.png",
-					"avatarText": "Not exactly. The main aim of the ESRS G1 Standard, as described in the Objective chapter, is to specify disclosure requirements for corporate governance.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
-						"type": "answeredCorrectly",
-						"correct": false
-					}
-				},
-				{
-					"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
-					"pageType": "question",
-					"avatarImage": "ESRS/neutral3.png",
-					"backgroundImage": "background8.jpg",
-					"question": {
-						"questionText": "Which of the following areas is NOT directly addressed by the ESRS G1 Standard according to the Objective chapter?",
-						"questionType": "MCSA",
-						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CPAAPFY81RCMASKPHYF"],
-						"options": [
-							{
-								"oid": "OID_01HQ641CPARHJQZWY2B0WSYEKZ",
-								"optionText": "Board diversity and inclusion"
-							},
-							{
-								"oid": "OID_01HQ641CPAAPFY81RCMASKPHYF",
-								"optionText": "Environmental impact assessments"
-							},
-							{
-								"oid": "OID_01HQ641CPAMM834SRC74EQZ757",
-								"optionText": "Ethical business practices"
-							},
-							{
-								"oid": "OID_01HQ641CPAWCH9FK83BVX3CCA0",
-								"optionText": "Stakeholder engagement"
-							}
-						]
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPAAD0653VEQGWJ533W",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/right1.png",
-					"avatarText": "Correct! While the ESRS G1 Standard covers topics such as board diversity, ethical business practices, and stakeholder engagement, environmental impact assessments are not directly addressed in the Objective chapter.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
-						"type": "answeredCorrectly",
-						"correct": true
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPA9GZECVKX9EZ64GS5",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/wrong3.png",
-					"avatarText": "Actually, the topic not directly addressed within the Objective chapter of the ESRS G1 Standard is environmental impact assessments.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
-						"type": "answeredCorrectly",
-						"correct": false
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
-					"pageType": "question",
-					"avatarImage": "ESRS/neutral2.png",
-					"backgroundImage": "background8.jpg",
-					"question": {
-						"questionText": "In the Objective chapter, the ESRS G1 Standard focuses on the following matters, EXCEPT:",
-						"questionType": "MCSA",
-						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CPAE6K7K47FTTFW7CH6"],
-						"options": [
-							{
-								"oid": "OID_01HQ641CPAX75J21WTV43JF1F9",
-								"optionText": "Anti-corruption measures"
-							},
-							{
-								"oid": "OID_01HQ641CPAE6K7K47FTTFW7CH6",
-								"optionText": "Financial performance reporting"
-							},
-							{
-								"oid": "OID_01HQ641CPA67Q2EE9XQX111PY9",
-								"optionText": "Corporate governance practices"
-							},
-							{
-								"oid": "OID_01HQ641CPAHT77YXMX6APAV6J7",
-								"optionText": "Transparency in executive compensation"
-							}
-						]
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPADB7D0HGAEKN2TPYF",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/right1.png",
-					"avatarText": "That's right! The ESRS G1 Standard, particularly in the Objective chapter, emphasizes corporate governance practices, anti-corruption measures, and transparency in executive compensation, but not financial performance reporting.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
-						"type": "answeredCorrectly",
-						"correct": true
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPA70Q2ZBXSY51Z2ST0",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/wrong5.png",
-					"avatarText": "The correct aspect not emphasized in the Objective chapter of the ESRS G1 Standard is financial performance reporting.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
-						"type": "answeredCorrectly",
-						"correct": false
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
-					"pageType": "question",
-					"avatarImage": "ESRS/neutral4.png",
-					"backgroundImage": "background8.jpg",
-					"question": {
-						"questionText": "According to the Objective chapter, the ESRS G1 Standard is designed to:",
-						"questionType": "MCSA",
-						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CPAQE029XD2B211HJ6S"],
-						"options": [
-							{
-								"oid": "OID_01HQ641CPAQE029XD2B211HJ6S",
-								"optionText": "Ensure businesses disclose key governance practices"
-							},
-							{
-								"oid": "OID_01HQ641CPBFYFDTHV7TKFFE6M1",
-								"optionText": "Enhance the competitive advantage of businesses"
-							},
-							{
-								"oid": "OID_01HQ641CPB5T8KZ1P2YCH77KN8",
-								"optionText": "Improve the efficiency of resource use in production"
-							},
-							{
-								"oid": "OID_01HQ641CPBFC278QRP5ZNWNZ14",
-								"optionText": "Encourage the adoption of renewable energy sources"
-							}
-						]
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPBRH9NWXF7RC0KDXDJ",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/right5.png",
-					"avatarText": "Correct! The ESRS G1 Standard's primary design, as mentioned in the Objective chapter, is to ensure that businesses disclose their key governance practices, aligning with corporate governance transparency.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
-						"type": "answeredCorrectly",
-						"correct": true
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPBN8KQ6KHPVH35Z8VE",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/wrong3.png",
-					"avatarText": "Actually, the ESRS G1 Standard's main design goal, as outlined in the Objective chapter, is to ensure disclosure of key governance practices.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
-						"type": "answeredCorrectly",
-						"correct": false
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
-					"pageType": "question",
-					"avatarImage": "ESRS/neutral4.png",
-					"backgroundImage": "background8.jpg",
-					"question": {
-						"questionText": "Rank the following focus areas based on their emphasis in the Objective chapter of the ESRS G1 Standard, from most to least focused on.",
-						"questionType": "RO",
-						"skippable": false,
-						"correctAnswer": [
-							"OID_01HQ641CPBW2VMVGGJ09H6ESY1",
-							"OID_01HQ641CPBRRVXV74NX5X06V6B",
-							"OID_01HQ641CPB6AYVF1TXTM9YTGGM",
-							"OID_01HQ641CPB9P4TPK5VJ5RTMGC8"
-						],
-						"options": [
-							{
-								"oid": "OID_01HQ641CPBW2VMVGGJ09H6ESY1",
-								"optionText": "Corporate Governance"
-							},
-							{
-								"oid": "OID_01HQ641CPBRRVXV74NX5X06V6B",
-								"optionText": "Ethical Business Practices"
-							},
-							{
-								"oid": "OID_01HQ641CPB6AYVF1TXTM9YTGGM",
-								"optionText": "Stakeholder Engagement"
-							},
-							{
-								"oid": "OID_01HQ641CPB9P4TPK5VJ5RTMGC8",
-								"optionText": "Board Diversity and Inclusion"
-							}
-						]
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPBMQG3HM1APXW9F0VS",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/right3.png",
-					"avatarText": "Well done! The Objective chapter prioritizes Corporate Governance, followed by Ethical Business Practices, Stakeholder Engagement, and lastly, Board Diversity and Inclusion, in terms of focus.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
-						"type": "answeredCorrectly",
-						"correct": true
-					}
-				},
-				{
-					"pid": "PID_01HQ641CPB7KMN9E6H043G0F6P",
-					"pageType": "narrator",
-					"avatarImage": "ESRS/wrong5.png",
-					"avatarText": "The correct order begins with Corporate Governance, emphasizing its primary focus, followed by Ethical Business Practices, Stakeholder Engagement, and Board Diversity and Inclusion.",
-					"backgroundImage": "background8.jpg",
-					"displayLogic": {
-						"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
-						"type": "answeredCorrectly",
-						"correct": false
-					}
+					"pid": "PID_01HQJC44A5YR1RFE8J7X5X66ZB",
+					"pageType": "success",
+					"backgroundImage": "background7.jpg",
+					"title": "E5 - Resource Use and Circular Economy",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CPBEMARJS8N30TX4GAD",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter S1",
+			"chapterTitle": "S1 - Own Workforce",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S1",
 			"chapterCoverImage": "background9.jpg",
 			"pages": [
@@ -2335,7 +2100,7 @@
 					"pageType": "title",
 					"backgroundImage": "background9.jpg",
 					"title": "ESRS Chapter S1",
-					"subtitle": "ESRS Chapter S1"
+					"subtitle": "Own Workforce"
 				},
 				{
 					"pid": "PID_01HQ641CPBGPBM30DBD9VC5XRP",
@@ -2611,13 +2376,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC55YZ2CQB6VR9FVWMB4GX",
+					"pageType": "success",
+					"backgroundImage": "background9.jpg",
+					"title": "S1 - Own Workforce",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CPCV0TBQ1EPJ83TPRYN",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter S2",
+			"chapterTitle": "S2 - Workers in the Value Chain",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S2",
 			"chapterCoverImage": "background10.jpg",
 			"pages": [
@@ -2626,7 +2399,7 @@
 					"pageType": "title",
 					"backgroundImage": "background10.jpg",
 					"title": "ESRS Chapter S2",
-					"subtitle": "ESRS Chapter S2"
+					"subtitle": "Workers in the Value Chain"
 				},
 				{
 					"pid": "PID_01HQ641CPCVDNXKHW1T0B8WCJ1",
@@ -2902,13 +2675,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC6JP7EC24GQ7E2527ZGQT",
+					"pageType": "success",
+					"backgroundImage": "background10.jpg",
+					"title": "S2 - Workers in the Value Chain",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CPD1GVG34PM5WB1D0ZF",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter S3",
+			"chapterTitle": "S3 - Affected Communities",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S3",
 			"chapterCoverImage": "background11.jpg",
 			"pages": [
@@ -2917,7 +2698,7 @@
 					"pageType": "title",
 					"backgroundImage": "background11.jpg",
 					"title": "ESRS Chapter S3",
-					"subtitle": "ESRS Chapter S3"
+					"subtitle": "Affected Communities"
 				},
 				{
 					"pid": "PID_01HQ641CPE6FDSK5S7GQWJR17M",
@@ -3193,13 +2974,21 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC7CX12ZW30TT5F3955GS5",
+					"pageType": "success",
+					"backgroundImage": "background11.jpg",
+					"title": "S3 - Affected Communities",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
 			"cid": "CID_01HQ641CPFPN7A0NKPPVAWBFFF",
 			"tags": ["all", "current"],
-			"chapterTitle": "ESRS Chapter S4",
+			"chapterTitle": "S4 - Consumers and End Users",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S4",
 			"chapterCoverImage": "background12.jpg",
 			"pages": [
@@ -3208,7 +2997,7 @@
 					"pageType": "title",
 					"backgroundImage": "background12.jpg",
 					"title": "ESRS Chapter S4",
-					"subtitle": "ESRS Chapter S4"
+					"subtitle": "Consumers and End Users"
 				},
 				{
 					"pid": "PID_01HQ641CPF2BV7NEXVSHXQEKMJ",
@@ -3484,6 +3273,313 @@
 						"type": "answeredCorrectly",
 						"correct": false
 					}
+				},
+				{
+					"pid": "PID_01HQJC83WZ0YH88C0BARTNMNVV",
+					"pageType": "success",
+					"backgroundImage": "background12.jpg",
+					"title": "S4 - Consumers and End Users",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HQ641CP1RDCXKVG6QB2VWT72",
+			"tags": ["all", "current"],
+			"chapterTitle": "G1 - Business Conduct",
+			"chapterDescription": "A quick introduction quiz to the ESRS Chapter G1",
+			"chapterCoverImage": "background8.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HQ641CP10DKYNEREBDSD46B9",
+					"pageType": "title",
+					"backgroundImage": "background8.jpg",
+					"title": "ESRS Chapter G1",
+					"subtitle": "Business Conduct"
+				},
+				{
+					"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral3.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "What is the main aim of the ESRS G1 Standard as defined in the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CP1QWBG4VGTN7HZYR60"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CP1QWBG4VGTN7HZYR60",
+								"optionText": "To specify disclosure requirements for corporate governance"
+							},
+							{
+								"oid": "OID_01HQ641CP1CMYDZVV8KVD5Y484",
+								"optionText": "To establish guidelines for environmental sustainability"
+							},
+							{
+								"oid": "OID_01HQ641CP1SD51RZDH1PF758BV",
+								"optionText": "To promote financial transparency and investor relations"
+							},
+							{
+								"oid": "OID_01HQ641CP16REHJQZTNSWYAEH6",
+								"optionText": "To outline ethical business conduct and social responsibility"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1J0NR15TEBSPF9FFG",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right2.png",
+					"avatarText": "Correct! The ESRS G1 Standard primarily aims to specify disclosure requirements related to corporate governance, as outlined in the Objective chapter.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1881Z58F7QM5Z5PMM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong4.png",
+					"avatarText": "Not exactly. The main aim of the ESRS G1 Standard, as described in the Objective chapter, is to specify disclosure requirements for corporate governance.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CP1S6VFV4Q7G1VNE6VQ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral3.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "Which of the following areas is NOT directly addressed by the ESRS G1 Standard according to the Objective chapter?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAAPFY81RCMASKPHYF"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPARHJQZWY2B0WSYEKZ",
+								"optionText": "Board diversity and inclusion"
+							},
+							{
+								"oid": "OID_01HQ641CPAAPFY81RCMASKPHYF",
+								"optionText": "Environmental impact assessments"
+							},
+							{
+								"oid": "OID_01HQ641CPAMM834SRC74EQZ757",
+								"optionText": "Ethical business practices"
+							},
+							{
+								"oid": "OID_01HQ641CPAWCH9FK83BVX3CCA0",
+								"optionText": "Stakeholder engagement"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPAAD0653VEQGWJ533W",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! While the ESRS G1 Standard covers topics such as board diversity, ethical business practices, and stakeholder engagement, environmental impact assessments are not directly addressed in the Objective chapter.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPA9GZECVKX9EZ64GS5",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong3.png",
+					"avatarText": "Actually, the topic not directly addressed within the Objective chapter of the ESRS G1 Standard is environmental impact assessments.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CP1V0V8JN8Q3HGZSXQA",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral2.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "In the Objective chapter, the ESRS G1 Standard focuses on the following matters, EXCEPT:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAE6K7K47FTTFW7CH6"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPAX75J21WTV43JF1F9",
+								"optionText": "Anti-corruption measures"
+							},
+							{
+								"oid": "OID_01HQ641CPAE6K7K47FTTFW7CH6",
+								"optionText": "Financial performance reporting"
+							},
+							{
+								"oid": "OID_01HQ641CPA67Q2EE9XQX111PY9",
+								"optionText": "Corporate governance practices"
+							},
+							{
+								"oid": "OID_01HQ641CPAHT77YXMX6APAV6J7",
+								"optionText": "Transparency in executive compensation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPADB7D0HGAEKN2TPYF",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! The ESRS G1 Standard, particularly in the Objective chapter, emphasizes corporate governance practices, anti-corruption measures, and transparency in executive compensation, but not financial performance reporting.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPA70Q2ZBXSY51Z2ST0",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong5.png",
+					"avatarText": "The correct aspect not emphasized in the Objective chapter of the ESRS G1 Standard is financial performance reporting.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPANET6E7TKMT1CHJ5W",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral4.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "According to the Objective chapter, the ESRS G1 Standard is designed to:",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HQ641CPAQE029XD2B211HJ6S"],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPAQE029XD2B211HJ6S",
+								"optionText": "Ensure businesses disclose key governance practices"
+							},
+							{
+								"oid": "OID_01HQ641CPBFYFDTHV7TKFFE6M1",
+								"optionText": "Enhance the competitive advantage of businesses"
+							},
+							{
+								"oid": "OID_01HQ641CPB5T8KZ1P2YCH77KN8",
+								"optionText": "Improve the efficiency of resource use in production"
+							},
+							{
+								"oid": "OID_01HQ641CPBFC278QRP5ZNWNZ14",
+								"optionText": "Encourage the adoption of renewable energy sources"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBRH9NWXF7RC0KDXDJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right5.png",
+					"avatarText": "Correct! The ESRS G1 Standard's primary design, as mentioned in the Objective chapter, is to ensure that businesses disclose their key governance practices, aligning with corporate governance transparency.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBN8KQ6KHPVH35Z8VE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong3.png",
+					"avatarText": "Actually, the ESRS G1 Standard's main design goal, as outlined in the Objective chapter, is to ensure disclosure of key governance practices.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPAW04TT8XAHN99WSND",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral4.png",
+					"backgroundImage": "background8.jpg",
+					"question": {
+						"questionText": "Rank the following focus areas based on their emphasis in the Objective chapter of the ESRS G1 Standard, from most to least focused on.",
+						"questionType": "RO",
+						"skippable": false,
+						"correctAnswer": [
+							"OID_01HQ641CPBW2VMVGGJ09H6ESY1",
+							"OID_01HQ641CPBRRVXV74NX5X06V6B",
+							"OID_01HQ641CPB6AYVF1TXTM9YTGGM",
+							"OID_01HQ641CPB9P4TPK5VJ5RTMGC8"
+						],
+						"options": [
+							{
+								"oid": "OID_01HQ641CPBW2VMVGGJ09H6ESY1",
+								"optionText": "Corporate Governance"
+							},
+							{
+								"oid": "OID_01HQ641CPBRRVXV74NX5X06V6B",
+								"optionText": "Ethical Business Practices"
+							},
+							{
+								"oid": "OID_01HQ641CPB6AYVF1TXTM9YTGGM",
+								"optionText": "Stakeholder Engagement"
+							},
+							{
+								"oid": "OID_01HQ641CPB9P4TPK5VJ5RTMGC8",
+								"optionText": "Board Diversity and Inclusion"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPBMQG3HM1APXW9F0VS",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right3.png",
+					"avatarText": "Well done! The Objective chapter prioritizes Corporate Governance, followed by Ethical Business Practices, Stakeholder Engagement, and lastly, Board Diversity and Inclusion, in terms of focus.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HQ641CPB7KMN9E6H043G0F6P",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong5.png",
+					"avatarText": "The correct order begins with Corporate Governance, emphasizing its primary focus, followed by Ethical Business Practices, Stakeholder Engagement, and Board Diversity and Inclusion.",
+					"backgroundImage": "background8.jpg",
+					"displayLogic": {
+						"pid": "PID_01HQ641CPB1X54JFGGQHWGNDP2",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HQJC8R3K85S07ET3FF92C6S7",
+					"pageType": "success",
+					"backgroundImage": "background8.jpg",
+					"title": "G1 - Business Conduct",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		}
