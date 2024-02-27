@@ -1139,16 +1139,16 @@
 						],
 						"options": [
 							{
+								"oid": "OID_01HQ641CNWVDZJTB2S6DXJNE5R",
+								"optionText": "Pollution of soil"
+							},
+							{
 								"oid": "OID_01HQ641CNW1Z90VV5BE5DVK1X6",
 								"optionText": "Pollution of air"
 							},
 							{
 								"oid": "OID_01HQ641CNWF96N10DARPPGEAT4",
 								"optionText": "Pollution of water"
-							},
-							{
-								"oid": "OID_01HQ641CNWVDZJTB2S6DXJNE5R",
-								"optionText": "Pollution of soil"
 							},
 							{
 								"oid": "OID_01HQ641CNWHKXF52J7XFK864VX",
@@ -1438,20 +1438,20 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CNXQP2XA26JPVC4YYSM",
-								"optionText": "Disclosure Requirements"
+								"oid": "OID_01HQ641CNXDRXWJT2WPVEY3TAF",
+								"optionText": "Biodiversity Conservation"
 							},
 							{
 								"oid": "OID_01HQ641CNXRQ2FF29CCTC4CA4Z",
 								"optionText": "Water Management"
 							},
 							{
-								"oid": "OID_01HQ641CNXTMNKRKD3QBYPQ1YT",
-								"optionText": "Marine Resources"
+								"oid": "OID_01HQ641CNXQP2XA26JPVC4YYSM",
+								"optionText": "Disclosure Requirements"
 							},
 							{
-								"oid": "OID_01HQ641CNXDRXWJT2WPVEY3TAF",
-								"optionText": "Biodiversity Conservation"
+								"oid": "OID_01HQ641CNXTMNKRKD3QBYPQ1YT",
+								"optionText": "Marine Resources"
 							}
 						]
 					}
@@ -1737,20 +1737,20 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CNZK68AE1W8QC7Z210Q",
-								"optionText": "Disclosure Requirements"
+								"oid": "OID_01HQ641CNZ15WN0549YRFR3SDM",
+								"optionText": "Ecosystem Services"
 							},
 							{
 								"oid": "OID_01HQ641CNZ5TCKWR3V9P62VDW4",
 								"optionText": "Biodiversity"
 							},
 							{
-								"oid": "OID_01HQ641CNZ15WN0549YRFR3SDM",
-								"optionText": "Ecosystem Services"
-							},
-							{
 								"oid": "OID_01HQ641CNZ2WSC37NTP18VZT8T",
 								"optionText": "Transition Plans"
+							},
+							{
+								"oid": "OID_01HQ641CNZK68AE1W8QC7Z210Q",
+								"optionText": "Disclosure Requirements"
 							}
 						]
 					}
@@ -2036,20 +2036,20 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CP0B692BR9NZ4KP343W",
-								"optionText": "Disclosure Requirements"
-							},
-							{
-								"oid": "OID_01HQ641CP0XTR80RCQV32ZHC1M",
-								"optionText": "Circular Economy"
-							},
-							{
 								"oid": "OID_01HQ641CP0G2ZK57M5NR6MD6ZP",
 								"optionText": "Sustainable Resource Use"
 							},
 							{
+								"oid": "OID_01HQ641CP0B692BR9NZ4KP343W",
+								"optionText": "Disclosure Requirements"
+							},
+							{
 								"oid": "OID_01HQ641CP0TT500DEAEY8WKWQM",
 								"optionText": "EU Legislative Framework"
+							},
+							{
+								"oid": "OID_01HQ641CP0XTR80RCQV32ZHC1M",
+								"optionText": "Circular Economy"
 							}
 						]
 					}
@@ -2335,12 +2335,12 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CPC2N7CCCK8XZNJHPM5",
-								"optionText": "Social Impact"
-							},
-							{
 								"oid": "OID_01HQ641CPCZRKG5N3Q0DQ7PJPW",
 								"optionText": "Employee Relations"
+							},
+							{
+								"oid": "OID_01HQ641CPC2N7CCCK8XZNJHPM5",
+								"optionText": "Social Impact"
 							},
 							{
 								"oid": "OID_01HQ641CPCGE3T00BPTRQHTY5R",
@@ -2633,12 +2633,12 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CPD67Y7DWNB2FT39WA3",
-								"optionText": "Describe company policies on worker impact"
-							},
-							{
 								"oid": "OID_01HQ641CPDEZ1TB7NCA5HRVC8P",
 								"optionText": "Write down how the company talks to workers and their representatives"
+							},
+							{
+								"oid": "OID_01HQ641CPD67Y7DWNB2FT39WA3",
+								"optionText": "Describe company policies on worker impact"
 							},
 							{
 								"oid": "OID_01HQ641CPDC79FPB9P9B3KNAB5",
@@ -2932,16 +2932,16 @@
 								"optionText": "Explanation of impact on social matters"
 							},
 							{
+								"oid": "OID_01HQ641CPFE8VE51TER3XYRPQT",
+								"optionText": "Overview of compliance mechanisms"
+							},
+							{
 								"oid": "OID_01HQ641CPFB8T5APMPGZC8C7VZ",
 								"optionText": "Engagement strategies with stakeholders"
 							},
 							{
 								"oid": "OID_01HQ641CPFX5Y3KJ36ZCXSG71M",
 								"optionText": "Disclosure of human rights practices"
-							},
-							{
-								"oid": "OID_01HQ641CPFE8VE51TER3XYRPQT",
-								"optionText": "Overview of compliance mechanisms"
 							}
 						]
 					}
@@ -3227,16 +3227,16 @@
 						],
 						"options": [
 							{
+								"oid": "OID_01HQ641CPGND2R8M7JYB883291",
+								"optionText": "Remedying problems related to unethical practices"
+							},
+							{
 								"oid": "OID_01HQ641CPG9EN6PP4M8GGTZRBT",
 								"optionText": "Identifying ethical issues in operations"
 							},
 							{
 								"oid": "OID_01HQ641CPGDCSVEJK4HSGZ5KB7",
 								"optionText": "Engaging with stakeholders on ethical practices"
-							},
-							{
-								"oid": "OID_01HQ641CPGND2R8M7JYB883291",
-								"optionText": "Remedying problems related to unethical practices"
 							},
 							{
 								"oid": "OID_01HQ641CPG80K8SNDKVQ7FWFDX",
@@ -3526,20 +3526,20 @@
 						],
 						"options": [
 							{
-								"oid": "OID_01HQ641CPBW2VMVGGJ09H6ESY1",
-								"optionText": "Corporate Governance"
+								"oid": "OID_01HQ641CPB9P4TPK5VJ5RTMGC8",
+								"optionText": "Board Diversity and Inclusion"
 							},
 							{
-								"oid": "OID_01HQ641CPBRRVXV74NX5X06V6B",
-								"optionText": "Ethical Business Practices"
+								"oid": "OID_01HQ641CPBW2VMVGGJ09H6ESY1",
+								"optionText": "Corporate Governance"
 							},
 							{
 								"oid": "OID_01HQ641CPB6AYVF1TXTM9YTGGM",
 								"optionText": "Stakeholder Engagement"
 							},
 							{
-								"oid": "OID_01HQ641CPB9P4TPK5VJ5RTMGC8",
-								"optionText": "Board Diversity and Inclusion"
+								"oid": "OID_01HQ641CPBRRVXV74NX5X06V6B",
+								"optionText": "Ethical Business Practices"
 							}
 						]
 					}
