@@ -288,7 +288,7 @@
 					"pid": "PID_01HQJBPZBV6ZD4Q7DSS0G24VMC",
 					"pageType": "success",
 					"backgroundImage": "background1.jpg",
-					"title": "1 - General Requirements",
+					"title": "ESRS 1 - General Requirements",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -587,7 +587,7 @@
 					"pid": "PID_01HQJBWY95PY0XEQVNR4ST9EQW",
 					"pageType": "success",
 					"backgroundImage": "background2.jpg",
-					"title": "2 - General Disclosures",
+					"title": "ESRS 2 - General Disclosures",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -886,7 +886,7 @@
 					"pid": "PID_01HQJBYEAMRWS03E8N8TP59RBW",
 					"pageType": "success",
 					"backgroundImage": "background3.jpg",
-					"title": "E1 - Climate Change",
+					"title": "ESRS E1 - Climate Change",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -1185,7 +1185,7 @@
 					"pid": "PID_01HQJC0Q6W0KAKH33Z1QY09CDY",
 					"pageType": "success",
 					"backgroundImage": "background4.jpg",
-					"title": "E2 - Pollution",
+					"title": "ESRS E2 - Pollution",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -1484,7 +1484,7 @@
 					"pid": "PID_01HQJC1JJE2YVKSXXGPFYGJKZX",
 					"pageType": "success",
 					"backgroundImage": "background5.jpg",
-					"title": "E3 - Water and Marine Resources",
+					"title": "ESRS E3 - Water and Marine Resources",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -1783,7 +1783,7 @@
 					"pid": "PID_01HQJC2K85CX8NDR4JXCWY1AWY",
 					"pageType": "success",
 					"backgroundImage": "background6.jpg",
-					"title": "E4 - Biodiversity and Ecosystems",
+					"title": "ESRS E4 - Biodiversity and Ecosystems",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -2082,7 +2082,7 @@
 					"pid": "PID_01HQJC44A5YR1RFE8J7X5X66ZB",
 					"pageType": "success",
 					"backgroundImage": "background7.jpg",
-					"title": "E5 - Resource Use and Circular Economy",
+					"title": "ESRS E5 - Resource Use and Circular Economy",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -2381,14 +2381,14 @@
 					"pid": "PID_01HQJC55YZ2CQB6VR9FVWMB4GX",
 					"pageType": "success",
 					"backgroundImage": "background9.jpg",
-					"title": "S1 - Own Workforce",
+					"title": "ESRS S1 - Own Workforce",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
 			]
 		},
 		{
-			"cid": "CID_01HQ641CPCV0TBQ1EPJ83TPRYN",
+			"cid": "CID_01HQMVXFS4X5V7C5F3KAG3J5BV",
 			"tags": ["all", "current"],
 			"chapterTitle": "ESRS S2 - Workers in the Value Chain",
 			"chapterDescription": "A quick introduction quiz to the ESRS Chapter S2",
@@ -2407,26 +2407,26 @@
 					"avatarImage": "ESRS/neutral4.png",
 					"backgroundImage": "background10.jpg",
 					"question": {
-						"questionText": "What is the purpose of the \"ESRS 2 General disclosures\" section in the context of sustainability reporting?",
+						"questionText": "What is the primary goal of the ESRS S2 standard as outlined in the \"Objective\" chapter?",
 						"questionType": "MCSA",
 						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CPCA8RF9DPTQJR9XXHR"],
+						"correctAnswer": ["OID_01HQ641CPC9406SX9B3EP2DXPW"],
 						"options": [
 							{
 								"oid": "OID_01HQ641CPCA8RF9DPTQJR9XXHR",
-								"optionText": "To provide a general framework for disclosing sustainability impacts"
+								"optionText": "To define financial benchmarks for companies"
 							},
 							{
 								"oid": "OID_01HQ641CPC9406SX9B3EP2DXPW",
-								"optionText": "To detail financial investment strategies"
+								"optionText": "To specify disclosure requirements regarding worker impact and social sustainability"
 							},
 							{
 								"oid": "OID_01HQ641CPCPFX4D90H8JX1AKPM",
-								"optionText": "To outline the company's governance structure"
+								"optionText": "To provide guidelines for environmental impact assessment"
 							},
 							{
 								"oid": "OID_01HQ641CPC8V37KB6J78VHZBZZ",
-								"optionText": "To specify environmental impact metrics"
+								"optionText": "To establish a new framework for corporate governance"
 							}
 						]
 					}
@@ -2435,7 +2435,7 @@
 					"pid": "PID_01HQ641CPCCNN9G3CX8G5PKWVV",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/right3.png",
-					"avatarText": "Correct! The \"ESRS 2 General disclosures\" section is designed to provide companies with a general framework for disclosing information related to their sustainability impacts, ensuring transparency and accountability.",
+					"avatarText": "Correct! The primary goal of the ESRS S2 standard is to specify disclosure requirements that help companies report on their impact on workers and their contribution to social sustainability.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPCVDNXKHW1T0B8WCJ1",
@@ -2447,7 +2447,7 @@
 					"pid": "PID_01HQ641CPD5WTFHJCP6GZMH4SQ",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/wrong1.png",
-					"avatarText": "Not quite right! The main purpose of the \"ESRS 2 General disclosures\" is to offer a general framework for disclosing sustainability impacts, not specifically about financial strategies, governance structures, or environmental metrics.",
+					"avatarText": "Not quite! The ESRS S2 standard is specifically designed to address worker impact and social sustainability, not financial benchmarks, environmental assessments, or corporate governance frameworks.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPCVDNXKHW1T0B8WCJ1",
@@ -2461,26 +2461,26 @@
 					"avatarImage": "ESRS/neutral2.png",
 					"backgroundImage": "background10.jpg",
 					"question": {
-						"questionText": "Which of the following best describes the integration approach recommended for the disclosures in the \"ESRS 2 General disclosures\" section?",
+						"questionText": "Which of the following is NOT a requirement of the ESRS S2 standard?",
 						"questionType": "MCSA",
 						"skippable": false,
 						"correctAnswer": ["OID_01HQ641CPDM1B85J3RFMJK7SQE"],
 						"options": [
 							{
 								"oid": "OID_01HQ641CPDVQXDXTD95XVF7P63",
-								"optionText": "Stand-alone reporting, separate from other disclosures"
+								"optionText": "Describing company policies on worker impact"
 							},
 							{
 								"oid": "OID_01HQ641CPDY1DCQKT04BEA750Y",
-								"optionText": "Integration with financial reports only"
+								"optionText": "Writing down how the company communicates with workers and their representatives"
 							},
 							{
 								"oid": "OID_01HQ641CPDM1B85J3RFMJK7SQE",
-								"optionText": "Combining with disclosures from other relevant sustainability standards"
+								"optionText": "Reporting the company's yearly financial performance"
 							},
 							{
 								"oid": "OID_01HQ641CPDH87KK0SKENQN903F",
-								"optionText": "Online publication without referencing other reports"
+								"optionText": "Explaining processes to remedy adverse impacts on workers"
 							}
 						]
 					}
@@ -2489,7 +2489,7 @@
 					"pid": "PID_01HQ641CPDW4B786N4B9HKN72Q",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/right2.png",
-					"avatarText": "Exactly! The \"ESRS 2 General disclosures\" encourages companies to combine these disclosures with those from other relevant sustainability standards, promoting a holistic view of sustainability reporting.",
+					"avatarText": "Exactly! The ESRS S2 standard focuses on social sustainability and worker impact disclosures, not directly on financial performance reporting.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDBSA5MAPZZBAKXCS6",
@@ -2501,7 +2501,7 @@
 					"pid": "PID_01HQ641CPDWP14TWTHYWMW91W7",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/wrong3.png",
-					"avatarText": "Actually, the recommended approach is to combine these disclosures with those from other relevant sustainability standards, not to keep them stand-alone or integrate them only with financial reports.",
+					"avatarText": "Oops! The correct answer is that reporting the company's yearly financial performance is not a requirement of the ESRS S2 standard, which focuses on social sustainability aspects.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDBSA5MAPZZBAKXCS6",
@@ -2515,26 +2515,26 @@
 					"avatarImage": "ESRS/neutral1.png",
 					"backgroundImage": "background10.jpg",
 					"question": {
-						"questionText": "In the \"ESRS 2 General disclosures\", companies are advised to disclose information related to which of the following aspects?",
+						"questionText": "What does the ESRS S2 standard require companies to explain regarding their impact on workers?",
 						"questionType": "MCSA",
 						"skippable": false,
-						"correctAnswer": ["OID_01HQ641CPDJPAB45FP1265KFEA"],
+						"correctAnswer": ["OID_01HQ641CPDTZ95Y2R542J2Z4KY"],
 						"options": [
 							{
 								"oid": "OID_01HQ641CPDWVH21B51AV3PZHA2",
-								"optionText": "Executive compensation linked to sustainability performance"
+								"optionText": "The total number of employees by region"
 							},
 							{
 								"oid": "OID_01HQ641CPDTZ95Y2R542J2Z4KY",
-								"optionText": "Details of proprietary technology for waste management"
+								"optionText": "The processes for engaging with workers and their representatives"
 							},
 							{
 								"oid": "OID_01HQ641CPDRTM8VE5B0XFGQ3BR",
-								"optionText": "Community engagement initiatives and their outcomes"
+								"optionText": "The CEO's vision for future company growth"
 							},
 							{
 								"oid": "OID_01HQ641CPDJPAB45FP1265KFEA",
-								"optionText": "Sustainability strategy and its alignment with business goals"
+								"optionText": "The dividend payout policy for shareholders"
 							}
 						]
 					}
@@ -2543,7 +2543,7 @@
 					"pid": "PID_01HQ641CPD0HX3BM1KWJX350XC",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/right5.png",
-					"avatarText": "Correct! Among the options, disclosing the sustainability strategy and its alignment with business goals is most relevant to the \"ESRS 2 General disclosures\", highlighting how sustainability is integrated into the overall business strategy.",
+					"avatarText": "Correct! The ESRS S2 standard requires companies to describe how they engage with workers and their representatives, emphasizing transparency and stakeholder engagement in social sustainability practices.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDK86G1Z9CRPDKGSVV",
@@ -2555,7 +2555,7 @@
 					"pid": "PID_01HQ641CPDZNSCC5VGNPMQ7FP4",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/wrong1.png",
-					"avatarText": "The focus should be on disclosing the sustainability strategy and how it aligns with business goals, rather than exclusively on executive compensation, proprietary technology, or community engagement.",
+					"avatarText": "Not exactly! The correct focus of the ESRS S2 standard is on the processes for engaging with workers and their representatives, not on employee counts, CEO visions, or dividend policies.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDK86G1Z9CRPDKGSVV",
@@ -2569,26 +2569,26 @@
 					"avatarImage": "ESRS/neutral1.png",
 					"backgroundImage": "background10.jpg",
 					"question": {
-						"questionText": "How are companies expected to treat disclosures related to value chain workers in the \"ESRS 2 General disclosures\"?",
+						"questionText": "Under the ESRS S2 standard, how are companies encouraged to integrate their disclosures?",
 						"questionType": "MCSA",
 						"skippable": false,
 						"correctAnswer": ["OID_01HQ641CPDS4D2TVYJJZYHSBWW"],
 						"options": [
 							{
 								"oid": "OID_01HQ641CPD70XPJPJMXJR9B0A8",
-								"optionText": "Focus exclusively on internal workers"
+								"optionText": "By focusing solely on financial data"
 							},
 							{
 								"oid": "OID_01HQ641CPDS4D2TVYJJZYHSBWW",
-								"optionText": "Include both internal and value chain workers"
+								"optionText": "By combining disclosures with those from other relevant standards"
 							},
 							{
 								"oid": "OID_01HQ641CPDJXAPDD02WX550KP3",
-								"optionText": "Report only on value chain workers located in the company's home country"
+								"optionText": "By limiting information to internal use only"
 							},
 							{
 								"oid": "OID_01HQ641CPD1PJGDEZ1KNKD3SM1",
-								"optionText": "Exclude any disclosures related to workers"
+								"optionText": "By publishing anonymous case studies"
 							}
 						]
 					}
@@ -2597,7 +2597,7 @@
 					"pid": "PID_01HQ641CPDDDYR27EWBD2PSADE",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/right1.png",
-					"avatarText": "Spot on! Companies are expected to include disclosures related to both internal and value chain workers, ensuring a comprehensive view of worker impact across the value chain.",
+					"avatarText": "Exactly right! Companies are encouraged to integrate their ESRS S2 disclosures with those from other relevant standards, ensuring a comprehensive approach to reporting social sustainability and worker impact.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDJW86C2A19AAHDM5Y",
@@ -2609,7 +2609,7 @@
 					"pid": "PID_01HQ641CPDTXYEK8YSFG3QF05A",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/wrong5.png",
-					"avatarText": "Actually, the correct approach is to include information related to both internal and value chain workers, providing a full picture of worker impacts and engagements.",
+					"avatarText": "Actually, companies are advised to combine their ESRS S2 disclosures with those from other relevant standards, not to focus solely on financial data, limit information to internal use, or publish anonymous case studies.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDJW86C2A19AAHDM5Y",
@@ -2623,31 +2623,26 @@
 					"avatarImage": "ESRS/neutral2.png",
 					"backgroundImage": "background10.jpg",
 					"question": {
-						"questionText": "Rank the following aspects based on their importance in the \"ESRS 2 General disclosures\", from most to least emphasized.",
+						"questionText": "Rank the following implementation steps for the \"Objective\" chapter of the ESRS S2 standard based on their sequence in the guidance.",
 						"questionType": "RO",
 						"skippable": false,
 						"correctAnswer": [
-							"OID_01HQ641CPDTXHGHNH152VP9SNY",
 							"OID_01HQ641CPD67Y7DWNB2FT39WA3",
-							"OID_01HQ641CPDC79FPB9P9B3KNAB5",
-							"OID_01HQ641CPDEZ1TB7NCA5HRVC8P"
+							"OID_01HQ641CPDEZ1TB7NCA5HRVC8P",
+							"OID_01HQ641CPDC79FPB9P9B3KNAB5"
 						],
 						"options": [
 							{
 								"oid": "OID_01HQ641CPD67Y7DWNB2FT39WA3",
-								"optionText": "Engagement with stakeholders"
+								"optionText": "Describe company policies on worker impact"
 							},
 							{
 								"oid": "OID_01HQ641CPDEZ1TB7NCA5HRVC8P",
-								"optionText": "Financial performance related to sustainability initiatives"
+								"optionText": "Write down how the company talks to workers and their representatives"
 							},
 							{
 								"oid": "OID_01HQ641CPDC79FPB9P9B3KNAB5",
-								"optionText": "Transparency in sustainability reporting"
-							},
-							{
-								"oid": "OID_01HQ641CPDTXHGHNH152VP9SNY",
-								"optionText": "Alignment of sustainability strategy with business objectives"
+								"optionText": "Explain how the company helps fix problems that affect workers"
 							}
 						]
 					}
@@ -2656,7 +2651,7 @@
 					"pid": "PID_01HQ641CPDRMMZS5E8F92TVWGD",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/right4.png",
-					"avatarText": "Well done! The \"ESRS 2 General disclosures\" places the highest emphasis on the alignment of sustainability strategy with business objectives, followed by stakeholder engagement, transparency in reporting, and finally, financial performance related to sustainability initiatives.",
+					"avatarText": "Well done! The sequence starts with describing company policies on worker impact, followed by detailing engagement processes with workers and their representatives, and finally explaining remediation processes for adverse impacts.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDGVPHY53Z89XARTFF",
@@ -2668,7 +2663,7 @@
 					"pid": "PID_01HQ641CPDEW5R08WWX0203WAJ",
 					"pageType": "narrator",
 					"avatarImage": "ESRS/wrong5.png",
-					"avatarText": "Close, but the correct order starts with the alignment of sustainability strategy with business objectives, emphasizing how essential it is for sustainability efforts to be integrated with the company's broader goals.",
+					"avatarText": "Nice try! The correct sequence begins with outlining company policies on worker impact, then moves on to engagement processes with workers, and concludes with remediation efforts for adverse impacts.",
 					"backgroundImage": "background10.jpg",
 					"displayLogic": {
 						"pid": "PID_01HQ641CPDGVPHY53Z89XARTFF",
@@ -2680,7 +2675,7 @@
 					"pid": "PID_01HQJC6JP7EC24GQ7E2527ZGQT",
 					"pageType": "success",
 					"backgroundImage": "background10.jpg",
-					"title": "S2 - Workers in the Value Chain",
+					"title": "ESRS S2 - Workers in the Value Chain",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -2979,7 +2974,7 @@
 					"pid": "PID_01HQJC7CX12ZW30TT5F3955GS5",
 					"pageType": "success",
 					"backgroundImage": "background11.jpg",
-					"title": "S3 - Affected Communities",
+					"title": "ESRS S3 - Affected Communities",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -3278,7 +3273,7 @@
 					"pid": "PID_01HQJC83WZ0YH88C0BARTNMNVV",
 					"pageType": "success",
 					"backgroundImage": "background12.jpg",
-					"title": "S4 - Consumers and End Users",
+					"title": "ESRS S4 - Consumers and End Users",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
@@ -3577,7 +3572,7 @@
 					"pid": "PID_01HQJC8R3K85S07ET3FF92C6S7",
 					"pageType": "success",
 					"backgroundImage": "background8.jpg",
-					"title": "G1 - Business Conduct",
+					"title": "ESRS G1 - Business Conduct",
 					"subtitle": "Completed!",
 					"avatarImage": "ESRS/right2.png"
 				}
