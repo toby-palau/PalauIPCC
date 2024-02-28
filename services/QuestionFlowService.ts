@@ -18,6 +18,7 @@ const filePath = {
 	cop: path.resolve("data", "cop-question-flow.json"),
 	uob: path.resolve("data", "uob-question-flow.json"),
 	esrs: path.resolve("data", "esrs-question-flow.json"),
+	"esrs-m1": path.resolve("data", "esrs-m1-question-flow.json"),
 };
 
 export const listAllChapters: (

@@ -1,0 +1,206 @@
+{
+    "chapters": [
+        {
+            "cid": "CID_01HQPWRQPMNA8VV1S6K3Y0CRSJ",
+            "tags": [
+                "all",
+                "current"
+            ],
+            "chapterTitle": "Planet Protectors Course Chapter 1",
+            "chapterDescription": "A brief introduction to the Planet Protectors Course",
+            "chapterCoverImage": "background1.jpg",
+            "pages": [
+                {
+                    "pid": "PID_01HQPWRQPQP3SK767WN3WSTFS2",
+                    "pageType": "title",
+                    "backgroundImage": "background1.jpg",
+                    "title": "Planet Protectors Course Chapter 1",
+                    "subtitle": "Onboarding"
+                },
+                {
+                    "pid": "PID_01HQPWRQPQ5C9F4DJVB8ACNG3Z",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral1.png",
+                    "avatarText": "Hey there, so up until this moment you have heard a lot of buzz around CSRD and ESRS, the structure of them, on the other hand you have heard about sustainability reporting process. But here you are still probably questioning where to start with this giant beast of ESRS reporting to make sure you are compliant. Well, we’ve got you covered, let’s look at your roadmap depending on your reporting readiness level\n\nChoose your reporting level:\n\t1) You or your company are new to sustainability reporting. You’ve never published a sustainability report, or you have gone through a sustainability reporting process but not in line with any standards.\n\t2) You or your company already published a sustainability report in line with known reporting frameworks (GRI, SASB, TCFD, etc…)"
+                },
+                {
+                    "pid": "PID_01HQPWRQPQ46MR4AJEG91273KK",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral2.png",
+                    "avatarText": "So you are just starting out on your sustainability reporting journey, and probably feeling overwhelmed. Unfortunately, you are faced with an even harder task than those who have done the reporting before, ESRS reporting will not tolerate a test run like other reporting frameworks and there is no space for mistakes. So let’s get it right together from the beginning."
+                },
+                {
+                    "pid": "PID_01HQPWRQPQE7NQ3NYJ0A800CCX",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral3.png",
+                    "avatarText": "Step 1 – Understanding regulatory framework\n\nThe first and most important step in your roadmap is to understand the CSRD Regulatory Framework. But not in the way you think, reading a huge number of PDF pages is not very helpful, given that you are probably going to fall asleep after just a few minutes into it. There is a better way…\n\nWe suggest you start exploring ESRS standards with our ESRS Navigator tool. It’s a one-stop shop for all ESRS standards broken down by disclosure requirements, and the regulatory language is simplified into simple implementation steps. \n\nSo the first thing we suggest you to do is browse through ESRS Navigator and spend more time reading “General Requirements”, “General Disclosures”, “E1”, “S1."
+                },
+                {
+                    "pid": "PID_01HQPWRQPRQCD4ST2D3735JNPX",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral4.png",
+                    "avatarText": "Step 2 – Assessing current sustainability position.\n\nThe next step in your journey would be to understand where your organization stands in terms of sustainability. I know you may be thinking “there is nothing currently exists, and no actions have been previously done”, but let me assure you that you might be mistaken. Here is where to look…\n\nYou see, sustainability is a broad concept, so usually people do not realize that something actually falls under sustainability. Ask around your HR department about any initiatives, policies, or projects around employees that touch on the topics of health & Safety, well-being, education, diversity, and inclusion.\n\nCheck with Clients / Compliance department whether your company has received any questionnaires or requests from your clients around ESG topics. Verify how your company engages with the community you’re impacting, and any projects and initiatives around this area. Try to think broadly and talk to as many different stakeholders as possible to get the full picture."
+                },
+                {
+                    "pid": "PID_01HQPWRQPR4MFZXQ958PDNG763",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral2.png",
+                    "avatarText": "Step 3 – Understand who your stakeholders are.\n\nThe hard truth about stakeholders that nobody talks about is that most of the time 90% of your stakeholders have no clue or genuine interest in sustainability. This issue results in a trap where the materiality of sustainability topics is being judged by people without knowledge and experience which may jeopardize your ESG strategy.\n\nYet, identifying and mapping your stakeholders is still an important step because these people impact your company directly or indirectly, so you better know who are they and how to engage with them.\n\nHere we are not talking about clients or employees, but let’s also not forget about communities, suppliers, investors, government, competitors, etc…"
+                },
+                {
+                    "pid": "PID_01HQPWRQPRWPAZRFWVRBFCH1CF",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral3.png",
+                    "avatarText": "Step 4 – Conduct a double materiality assessment.\n\nNow this step is probably the most important in the whole reporting process. Materiality = Important. The task is to identify the most important topics to your organization based on 2 dimensions: impact materiality and financial materiality.\n\nWhat you need to know is that the ESRS double materiality assessment is more demanding than other frameworks, which is why we dedicated a large chapter that will practically teach you how to conduct double materiality assessment, because let’s be honest, all courses out there on materiality assessment won’t get you compliant."
+                },
+                {
+                    "pid": "PID_01HQPWRQPRK70SVHPM3P5HWMCB",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral1.png",
+                    "avatarText": "Step 5 – Data collection and management\n\nFirst things first, identify what data you need to collect. Now you know that ESRS has more than 1000 data points, but it doesn’t mean that you have to report them all. We’ll show in later chapters how to identify relevant disclosure requirements and data points based on your materiality assessment results.\n\nWell, now you’ve identified a final list of data points, so what do you do next? You identify or assign the ownership (department/team) to this data based on your best guess. \n\nWe must warn you, collecting ESG data will feel like going down a rabbit hole. Talk to people in these departments, find the right owner, and leverage management if necessary, but get people committed to providing necessary data.\n\nAnd last best practice advice, if your data collection turns out to be very manual, time-consuming and error-prone at early stages, prioritize establishing proper reporting processes and automation so next year will be less painful."
+                },
+                {
+                    "pid": "PID_01HQPWRQPSJC5ZGA4SGGHZ8J02",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral3.png",
+                    "avatarText": "Step 6 – Building Internal Capacity\n\nSo you are more or less set with all the necessary information and are about to start drafting the report. If your first idea was to come to the marketing department for help, let us tell you why it is a bad idea.\n\nSee, in order to make sure that your report is compliant with the regulatory framework, you’d better build out an internal capacity team that will be trained on ESRS guidelines and won’t take steps right or left from what is demanded in the requirements, as would marketing do.\n\nThere is nothing wrong with adding a copywriter or marketer to this group as long as expectations are clearly defined. Another best practice is adding a lawyer or compliance person to the group so that you’ll be confident in interpreting the requirements."
+                },
+                {
+                    "pid": "PID_01HQPWRQPSZYZB3KY2QJDH7V5Y",
+                    "pageType": "narrator",
+                    "backgroundImage": "background1.jpg",
+                    "avatarImage": "ESRS/neutral4.png",
+                    "avatarText": "Step 7 – Drafting and Compiling Report\n\nStart drafting your report, ensuring that your team has defined how the report will be structured, and what will be the narrative descriptions, data tables, case studies, strategy examples, and policies related to material topics.\n\nSpecific requirements on how to disclose sustainability information are covered in General Requirements and General Disclosures. You will learn about it in detail in the following chapters."
+                },
+                {
+                    "pid": "PID_01HQPWRQPS3M6ECSWA70Q86HA8",
+                    "pageType": "question",
+                    "avatarImage": "ESRS/neutral1.png",
+                    "backgroundImage": "background1.jpg",
+                    "question": {
+                        "questionText": "What is the primary mission of \"Planet Protectors\" as described in the onboarding chapter?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HQPWRQPTA2B4ZAQS4H0KG4BR"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HQPWRQPS7QFMX61S6S1RE88V",
+                                "optionText": "To increase corporate profits through sustainable practices"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPTA2B4ZAQS4H0KG4BR",
+                                "optionText": "To tackle climate challenges following the IPCC's guidance"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPTSAQN00QTWB7NBM4G",
+                                "optionText": "To provide a platform for social networking on climate issues"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPTH7WW72FCPT2N55YF",
+                                "optionText": "To compete in virtual climate change-related games"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPTKGB8GYJZ55VCKBCS",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/right1.png",
+                    "avatarText": "Correct! \"Planet Protectors\" aims to tackle climate challenges by following the IPCC's guidance, leading in clean energy solutions, and inspiring sustainable change.",
+                    "backgroundImage": "background1.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HQPWRQPS3M6ECSWA70Q86HA8",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPVX3G4K30EVRTMCGJ5",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/wrong1.png",
+                    "avatarText": "Incorrect. The main focus of \"Planet Protectors\" is to address climate challenges as per the IPCC's guidance, not the other options mentioned.",
+                    "backgroundImage": "background1.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HQPWRQPS3M6ECSWA70Q86HA8",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPVHNCCK267Q0B8S1GG",
+                    "pageType": "question",
+                    "avatarImage": "ESRS/neutral4.png",
+                    "backgroundImage": "background1.jpg",
+                    "question": {
+                        "questionText": "Which of the following is NOT mentioned as a part of the mission in \"Planet Protectors\"?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HQPWRQPW76N3SC9SY0P1C5HM"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HQPWRQPW73QZ4XD288ZJC56X",
+                                "optionText": "Adopting clean energy solutions"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPW15BFK0Q9JT3T0Z05",
+                                "optionText": "Advocating for climate policies"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPW76N3SC9SY0P1C5HM",
+                                "optionText": "Maximizing financial investments"
+                            },
+                            {
+                                "oid": "OID_01HQPWRQPWB21KMGBR9JN7EX87",
+                                "optionText": "Inspiring change for a sustainable future"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPXNMVE3TS2PCSMGK7X",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/right2.png",
+                    "avatarText": "You're right! Maximizing financial investments is not mentioned as part of the mission in \"Planet Protectors\". The focus is on sustainability and climate action.",
+                    "backgroundImage": "background1.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HQPWRQPVHNCCK267Q0B8S1GG",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPX21ZZ47A14K72VRG6",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/wrong2.png",
+                    "avatarText": "Actually, maximizing financial investments is not a part of the mission described in \"Planet Protectors\". The emphasis is on environmental sustainability.",
+                    "backgroundImage": "background1.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HQPWRQPVHNCCK267Q0B8S1GG",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HQPWRQPXCXVJZJMW0G4Q4P4A",
+                    "pageType": "success",
+                    "backgroundImage": "background1.jpg",
+                    "title": "ESRS 1 - General Requirements",
+                    "subtitle": "Completed!",
+                    "avatarImage": "ESRS/right2.png"
+                }
+            ]
+        }
+    ]
+}
