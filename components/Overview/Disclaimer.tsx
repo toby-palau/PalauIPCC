@@ -31,13 +31,13 @@ const DisclaimerContent = {
 		p3: "",
 		link: "https://www.unepfi.org/impact/interoperability/european-sustainability-reporting-standards-esrs/",
 	},
-	esrscourse: {
+	"esrs-m1": {
 		logo: "/images/misc/esrs-logo.png",
 		p1: "The content for this experience was generated based on the ",
 		p2: "European Sustainability Reporting Standards",
 		p3: "",
 		link: "https://www.unepfi.org/impact/interoperability/european-sustainability-reporting-standards-esrs/",
-	}
+	},
 };
 
 export const Disclaimer = ({ quizId }: { quizId: QuizIdType }) => {
