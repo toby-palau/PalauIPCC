@@ -1,6 +1,7 @@
 "use client";
 
 import { digitalStrip } from "@root/styles/fonts";
+import { useEffect } from "react";
 
 type NarratorProps = {
 	avatarImage: string;
@@ -9,12 +10,22 @@ type NarratorProps = {
 };
 
 export const Narrator = ({ avatarImage, avatarText, small }: NarratorProps) => {
+	useEffect(() => {
+		const scrollable = document.querySelector("#narrator-text");
+		if (scrollable) scrollable.scrollTop = 0;
+	}, [avatarText]);
+
 	return (
 		<div className="fixed md:p-10 md:pt-24 p-3 pt-20 pointer-events-none z-20 flex flex-col justify-end h-full">
 			{avatarText && (
-				<div className="pointer-events-auto md:w-96 md:max-w-96 w-64 mb-4 p-4 relative border-2 border-black rounded bg-white overflow-y-scroll">
+				<div
+					id="narrator-text"
+					className={`pointer-events-auto ${
+						avatarText.length > 300 ? "md:max-w-4xl" : "md:max-w-md"
+					} mb-4 p-4 relative border-2 border-black rounded bg-white overflow-y-scroll`}
+				>
 					<p
-						className={`${digitalStrip.className} md:text-base text-sm text-black`}
+						className={`${digitalStrip.className} md:text-base text-sm text-black whitespace-pre-wrap`}
 					>
 						{avatarText}
 					</p>
