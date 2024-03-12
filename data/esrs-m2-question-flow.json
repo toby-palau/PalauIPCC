@@ -1,0 +1,178 @@
+{
+    "chapters": [
+        {
+            "cid": "CID_01HRNST8R37A6S78NZDQFTHZM3",
+            "tags": [
+                "all",
+                "current"
+            ],
+            "chapterTitle": "Planet Protectors Course Chapter 2",
+            "chapterDescription": "An introduction to assessment and sustainability roadmap building",
+            "chapterCoverImage": "background1.jpg",
+            "pages": [
+                {
+                    "pid": "PID_01HRNST8R35ZXVC2H6CQ6CVXY2",
+                    "pageType": "title",
+                    "backgroundImage": "background2.jpg",
+                    "title": "Planet Protectors Course Chapter 2",
+                    "subtitle": "Block 2"
+                },
+                {
+                    "pid": "PID_01HRNST8R4VF06DRZYCQEX5RBN",
+                    "pageType": "narrator",
+                    "backgroundImage": "background2.jpg",
+                    "avatarImage": "ESRS/neutral1.png",
+                    "avatarText": "You've done significant work preparing sustainability reports using an existing framework. However, I'd like you to answer honestly: Does your sustainability report accurately reflect robust sustainability practices? Do the stakeholders involved in the materiality assessment understand sustainability, or is the concept new to them? Was your report authored by someone knowledgeable in sustainability, or did the marketing department craft it to enhance the sustainability narrative?\n\nLearning a new skill often means having to forget old habits and starting from scratch, which can be challenging. In this section, we'll guide you through assessing your previous sustainability reports and enhancing them to align with ESRS standards and robust sustainability practices."
+                },
+                {
+                    "pid": "PID_01HRNST8R4A2B4GPMV7JFVBR9D",
+                    "pageType": "narrator",
+                    "backgroundImage": "background2.jpg",
+                    "avatarImage": "ESRS/neutral3.png",
+                    "avatarText": "It might surprise you that we recommend this as the initial step in your journey, but there's a high likelihood—90%—that your previous materiality assessment doesn't meet the ESRS requirements.\n\nThe discrepancy may stem from stakeholders you interviewed being largely unaware of sustainability issues, potentially leading to poor judgment on the subject.\n\nAnother reason might be your method of assessing impact superficially, focusing solely on one aspect of materiality (financial or societal/environmental impact) or basing the materiality assessment on just one criterion—the topic's importance to stakeholders. Both approaches are flawed. Later in the course, we'll demonstrate how to perform a double materiality assessment in accordance with ESRS, avoiding subjectivity.\n\nFinally, don't overlook mapping your materiality assessment results to ESRS disclosure standards and data points. For practical guidance on this, refer to the materiality assessment chapter."
+                },
+                {
+                    "pid": "PID_01HRNST8R4R9QEAZQ9BDJVH5RV",
+                    "pageType": "narrator",
+                    "backgroundImage": "background2.jpg",
+                    "avatarImage": "ESRS/neutral4.png",
+                    "avatarText": "Now that you're familiar with your company's materiality topics and focus areas, it's time to conduct a gap analysis comparing your past reports to ESRS standards. You've already done considerable work, and parts of it can be adapted to ensure compliance with a new approach.\n\nHow do you conduct a practical gap assessment? Start by using a tool like Excel to sort disclosure requirements and data points according to your materiality topics. This will help you pinpoint areas that align well and those that need significant enhancement.\n\nHow can you tell if your previous disclosures align well? Simply, review the disclosure requirement texts, highlighting sections that clearly define the scope and the required information. A more detailed method will be covered in the next Module.\n\nAdditionally, leverage interoperability tables for your gap analysis, particularly if your past reports followed GRI standards. However, it's crucial to review your GRI disclosures to ensure they're comprehensive and meet ESRS criteria."
+                },
+                {
+                    "pid": "PID_01HRNST8R4PMNRNDQB58VNVY22",
+                    "pageType": "narrator",
+                    "backgroundImage": "background2.jpg",
+                    "avatarImage": "ESRS/neutral3.png",
+                    "avatarText": "The key to this process is educating stakeholders involved in the reporting process about the new approach and alignment with ESRS standards. Many professionals underestimate the complexity of ESRS reporting and settle for mediocre information.\n\nAdditionally, gathering data for this process may seem daunting to many, but it's essential to challenge the status quo. Instead of settling for the minimum data required, strive to collect as much data as possible and refine it afterward.\n\nDevelop a roadmap that covers all gaps in your reporting. This should outline ownership, management approaches, actions, goals, targets, and, most importantly, your organization's vision."
+                },
+                {
+                    "pid": "PID_01HRNST8R5K71BGCQTFPT7FNV9",
+                    "pageType": "narrator",
+                    "backgroundImage": "background2.jpg",
+                    "avatarImage": "ESRS/neutral2.png",
+                    "avatarText": "Have you done your best but still struggle to collect quality data, or is there insufficient information to disclose a specific material topic? The solution is simpler than it appears.\n\nBe transparent about areas needing improvement, provide a roadmap, share learning outcomes, or anything that demonstrates your commitment to progress. For more on how to disclose these missing pieces, see the upcoming sections."
+                },
+                {
+                    "pid": "PID_01HRNST8R5554MTF9W99F2QNTR",
+                    "pageType": "question",
+                    "avatarImage": "ESRS/neutral1.png",
+                    "backgroundImage": "background2.jpg",
+                    "question": {
+                        "questionText": "What approach does the course later show to conduct materiality assessment in line with ESRS?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HRNST8R6EDGEHA6CDRV623BA"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HRNST8R5JK3CRRVBZ6SVV46F",
+                                "optionText": "Single materiality assessment"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R6KJFXWKXZGXC1DY6V",
+                                "optionText": "Subjective materiality assessment"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R6EDGEHA6CDRV623BA",
+                                "optionText": "Double materiality assessment"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R685EV8XA8P31Z4Y66",
+                                "optionText": "Indirect materiality assessment"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R7W4VJQ4KGRA6HS5NA",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/right3.png",
+                    "avatarText": "Correct! The course will demonstrate how to perform a double materiality assessment in accordance with ESRS.",
+                    "backgroundImage": "background2.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HEMMDBKZJCHFE90GZR98F7VS",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R7AKG7V5EM4Z3FQ58E",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/wrong3.png",
+                    "avatarText": "Almost there! The correct approach is a double materiality assessment, aligning with ESRS standards.",
+                    "backgroundImage": "background2.jpg",
+                    "displayLogic": {
+                        "pid": "PID_01HEMMDBKZJCHFE90GZR98F7VS",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R7MPSCMQ7MVGD2ZJ9E",
+                    "pageType": "question",
+                    "avatarImage": "ESRS/neutral4.png",
+                    "backgroundImage": "background2.jpg",
+                    "question": {
+                        "questionText": "What should not be forgotten in the last step of the materiality assessment process?",
+                        "questionType": "MCSA",
+                        "skippable": false,
+                        "correctAnswer": [
+                            "OID_01HRNST8R81M6S2PXQXWA68ED7"
+                        ],
+                        "options": [
+                            {
+                                "oid": "OID_01HRNST8R75XVG739PCQER1VKF",
+                                "optionText": "Ignoring ESRS disclosure requirements"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R81M6S2PXQXWA68ED7",
+                                "optionText": "Mapping results to ESRS disclosure requirements"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R8E6FAAC957FYHQPBD",
+                                "optionText": "Only focusing on financial materiality"
+                            },
+                            {
+                                "oid": "OID_01HRNST8R8DFW70312RTDWY6Y6",
+                                "optionText": "Skipping the materiality assessment chapter"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R8FJMKM9SKKJTJGWGV",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/right3.png",
+                    "avatarText": "Spot on! It's crucial not to forget mapping your materiality assessment results to ESRS disclosure requirements.",
+                    "backgroundImage": "background2.jpg",
+                    "displayLogic": {
+                        "pid": "PID_02HEMMDBKZJCHFE90GZR98F7VT",
+                        "type": "answeredCorrectly",
+                        "correct": true
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R9BTR0C5J8D1P22563",
+                    "pageType": "narrator",
+                    "avatarImage": "ESRS/wrong3.png",
+                    "avatarText": "Not exactly! You should not forget to map your materiality assessment results to ESRS disclosure requirements.",
+                    "backgroundImage": "background2.jpg",
+                    "displayLogic": {
+                        "pid": "PID_02HEMMDBKZJCHFE90GZR98F7VT",
+                        "type": "answeredCorrectly",
+                        "correct": false
+                    }
+                },
+                {
+                    "pid": "PID_01HRNST8R9V16M6ASGGHM7BE22",
+                    "pageType": "success",
+                    "backgroundImage": "background2.jpg",
+                    "title": "Planet Protectors Course Chapter 2",
+                    "subtitle": "Completed!",
+                    "avatarImage": "ESRS/right4.png"
+                }
+            ]
+        }
+    ]
+}
