@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export type QuizIdType = "cop" | "ipcc" | "uob" | "esrs" | "esrs-m1";
 
 export enum PageTypes {
