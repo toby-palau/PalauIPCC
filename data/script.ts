@@ -42,4 +42,50 @@ const regenerateIds = () => {
 	fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
 };
 
-regenerateIds();
+const fillInDisplayLogicIds = () => {
+	const jsonFilePath = path.resolve("data", "uob-question-flow.json");
+	const fileContents = fs.readFileSync(jsonFilePath, "utf8");
+	const { chapters } = JSON.parse(fileContents);
+	for (const chapter of chapters) {
+		let i = 0;
+		for (const page of chapter.pages) {
+			console.log({ pageId: page.pid, pageType: page.pageType });
+			if (page.pageType === "question") {
+				if (
+					chapter.pages[i + 1]?.pageType !== "narrator" ||
+					chapter.pages[i + 2]?.pageType !== "narrator"
+				) {
+					console.log("Expected narrator pages after question");
+					continue;
+				}
+
+				if (
+					!chapter.pages[i + 1]?.displayLogic ||
+					!chapter.pages[i + 2]?.displayLogic
+				) {
+					console.log(
+						"Expected narrator pages to not have display logic"
+					);
+					continue;
+				}
+				chapter.pages[i + 1].displayLogic = {
+					pid: page.pid,
+					type: "answeredCorrectly",
+					correct: true,
+				};
+				chapter.pages[i + 2].displayLogic = {
+					pid: page.pid,
+					type: "answeredCorrectly",
+					correct: false,
+				};
+				console.log(`Updated display logic for question ${page.pid}`);
+			}
+			i++;
+		}
+	}
+	fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
+};
+
+fillInDisplayLogicIds();
+
+// regenerateIds();
