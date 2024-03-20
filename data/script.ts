@@ -98,7 +98,7 @@ if (option == "-h") {
 	console.log("Regenerating IDs");
 	regenerateIds();
 	console.log("Regenerated IDs");
-} else if (option == "-r") {
+} else if (option == "-f") {
 	console.log("filling in diplay logic PIDs");
 	fillInDisplayLogicIds();
 	console.log("filled in diplay logic PIDs");
