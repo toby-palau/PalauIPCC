@@ -2,6 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const { ulid } = require("ulidx");
 
+let option = process.argv.slice(2)[0];
+let filename = process.argv.slice(2)[1];
+
+
 // const generateLookupFile = () => {
 //     const jsonFilePath = path.resolve("data", "ipcc-question-flow.json");
 //     const fileContents = fs.readFileSync(jsonFilePath, "utf8");
@@ -19,7 +23,7 @@ const { ulid } = require("ulidx");
 // }
 
 const regenerateIds = () => {
-	const jsonFilePath = path.resolve("data", "esrscourse-question-flow.json");
+	const jsonFilePath = path.resolve("data", filename);
 	const fileContents = fs.readFileSync(jsonFilePath, "utf8");
 	const { chapters } = JSON.parse(fileContents);
 	for (const chapter of chapters) {
@@ -43,7 +47,7 @@ const regenerateIds = () => {
 };
 
 const fillInDisplayLogicIds = () => {
-	const jsonFilePath = path.resolve("data", "uob-question-flow.json");
+	const jsonFilePath = path.resolve("data", filename);
 	const fileContents = fs.readFileSync(jsonFilePath, "utf8");
 	const { chapters } = JSON.parse(fileContents);
 	for (const chapter of chapters) {
@@ -86,6 +90,25 @@ const fillInDisplayLogicIds = () => {
 	fs.writeFileSync(jsonFilePath, JSON.stringify({ chapters }, null, 4));
 };
 
-fillInDisplayLogicIds();
-
-// regenerateIds();
+if (option == "-h") {
+	console.log("-r for regenerate IDs");
+	console.log("-f for filling in diplay logic PIDs");
+	console.log("-b for both");
+} else if (option == "-r") {
+	console.log("Regenerating IDs");
+	regenerateIds();
+	console.log("Regenerated IDs");
+} else if (option == "-r") {
+	console.log("filling in diplay logic PIDs");
+	fillInDisplayLogicIds();
+	console.log("filled in diplay logic PIDs");
+} else if (option == "-b") {
+	console.log("Regenerating IDs");
+	regenerateIds();
+	console.log("Regenerated IDs");
+	console.log("filling in diplay logic PIDs");
+	fillInDisplayLogicIds();
+	console.log("filled in diplay logic PIDs");
+} else {
+	console.log("option not found");
+}
