@@ -19,8 +19,8 @@ const filePath = {
 	uob: path.resolve("data", "uob-question-flow.json"),
 	esrs: path.resolve("data", "esrs-question-flow.json"),
 	"esrs-m1": path.resolve("data", "esrs-m1-question-flow.json"),
-	"esrs-m2": path.resolve("data", "esrs-m2-question-flow.json"),
-	"acronyms": path.resolve("data", "acronym-question-flow.json")
+	// "esrs-m2": path.resolve("data", "esrs-m2-question-flow.json"),
+	acronyms: path.resolve("data", "acronym-question-flow.json"),
 };
 
 export const listAllChapters: (
