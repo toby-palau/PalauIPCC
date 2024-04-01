@@ -36,4 +36,5 @@ next-env.d.ts
 
 sitemap*.xml
 
+# VS Code
 .vscode

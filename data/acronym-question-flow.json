@@ -1,0 +1,4148 @@
+{
+	"chapters": [
+		{
+			"cid": "CID_01HSE2ZSWZ0NA0A8N7SSNE3EFQ",
+			"tags": ["all"],
+			"chapterTitle": "Governance and Compliance",
+			"chapterDescription": "Explore the most important acronyms in sustainable governance and compliance",
+			"chapterCoverImage": "background1.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZSX46Y51WCDD0VH4VZQK",
+					"pageType": "title",
+					"backgroundImage": "background1.jpg",
+					"title": "Governance and Compliance",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZSX4P21XATHKQD6R1A0F",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"AR\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSX4550TZK653WMMDK07"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSX4550TZK653WMMDK07",
+								"optionText": "Application Requirements"
+							},
+							{
+								"oid": "OID_01HSE2ZSX5983MGF5RN3PYW0AA",
+								"optionText": "Annual Report"
+							},
+							{
+								"oid": "OID_01HSE2ZSX5HTK77X1TBK3JWEZJ",
+								"optionText": "Acquisition Ratios"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX6MBT8TFW93584E21B",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly right! AR stands for Application Requirements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX4P21XATHKQD6R1A0F",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX6WK0B6HQSJPH1GD50",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Not quite. AR actually stands for Application Requirements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX4P21XATHKQD6R1A0F",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX6VSXTMNVRK45CCXN6",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"BC\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSX75N956YY0GSPQM711"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSX6YYM2R3008ZMBNTJM",
+								"optionText": "Business Continuity"
+							},
+							{
+								"oid": "OID_01HSE2ZSX75N956YY0GSPQM711",
+								"optionText": "Basis for Conclusions"
+							},
+							{
+								"oid": "OID_01HSE2ZSX74WZ6RWFDRSMF8A9H",
+								"optionText": "Banking Consortium"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX7YGBM89KX4S6YZT4G",
+					"pageType": "narrator",
+					"avatarImage": "right2.png",
+					"avatarText": "That's correct! BC stands for Basis for Conclusions.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX6VSXTMNVRK45CCXN6",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX834VR794NPF965188",
+					"pageType": "narrator",
+					"avatarImage": "wrong2.png",
+					"avatarText": "Oops, the right answer is BC stands for Basis for Conclusions.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX6VSXTMNVRK45CCXN6",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSX88X90A0KM4E26AR22",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"CRR\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSX85VVAPTW1MMC1SEMY"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSX85VVAPTW1MMC1SEMY",
+								"optionText": "Capital Requirements Regulation"
+							},
+							{
+								"oid": "OID_01HSE2ZSX95WEAG2B45WMQTH7W",
+								"optionText": "Corporate Risk Reduction"
+							},
+							{
+								"oid": "OID_01HSE2ZSX944EBHWP8XWP3603H",
+								"optionText": "Customer Relationship Rating"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXA6MPFF2818JSRVTER",
+					"pageType": "narrator",
+					"avatarImage": "right3.png",
+					"avatarText": "Well done! CRR stands for Capital Requirements Regulation.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX88X90A0KM4E26AR22",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXA06YNAAMB00QVTJ52",
+					"pageType": "narrator",
+					"avatarImage": "wrong3.png",
+					"avatarText": "Nice try, but CRR actually stands for Capital Requirements Regulation.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSX88X90A0KM4E26AR22",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXACRAYXJ9A6G80B0S1",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"CSRD\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXBTF0W66DBDMAX3SQQ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXBTF0W66DBDMAX3SQQ",
+								"optionText": "Corporate Sustainability Reporting Directive"
+							},
+							{
+								"oid": "OID_01HSE2ZSXBTHZ562D3WW4KATYB",
+								"optionText": "Corporate Social Responsibility Development"
+							},
+							{
+								"oid": "OID_01HSE2ZSXBQBA93CM2933TZWC4",
+								"optionText": "Community Sustainable Resource Distribution"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXC1K96ZDYK6QG2EFHR",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Good job! CSRD stands for Corporate Sustainability Reporting Directive.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXACRAYXJ9A6G80B0S1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXCG1VP5RD5HSVF6HQH",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Almost there, but CSRD stands for Corporate Sustainability Reporting Directive.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXACRAYXJ9A6G80B0S1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXC076AVK3ZDANCKF9X",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DC-A\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXDW03WTM30VB87XD73"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXDW03WTM30VB87XD73",
+								"optionText": "Disclosure Content - Actions and resources in relation to material sustainability matters"
+							},
+							{
+								"oid": "OID_01HSE2ZSXD1ZCPDN3HSFY6P9A7",
+								"optionText": "Data Collection - Analysis"
+							},
+							{
+								"oid": "OID_01HSE2ZSXDFDE1F4PNMFF8HYR2",
+								"optionText": "Decision Criteria - Allocation"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXEXZQ2708GMV9MNSKP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! DC-A stands for Disclosure Content - Actions and resources in relation to material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXC076AVK3ZDANCKF9X",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXECGH0QEC6F8DT57YE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Not quite right. DC-A stands for Disclosure Content - Actions and resources in relation to material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXC076AVK3ZDANCKF9X",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXFJZRT1CMV1CHTZHWM",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DC-M\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXGJGJFABD4N0HGXK06"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXF8NRDK57CY6GVB5P8",
+								"optionText": "Decision Criteria - Management"
+							},
+							{
+								"oid": "OID_01HSE2ZSXGD23FMQZDC6DDVVS1",
+								"optionText": "Data Compilation - Metrics"
+							},
+							{
+								"oid": "OID_01HSE2ZSXGJGJFABD4N0HGXK06",
+								"optionText": "Disclosure Content - Metrics in relation to material sustainability matters"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXH2ND59ABQQ4R1GX6F",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! DC-M stands for Disclosure Content - Metrics in relation to material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXFJZRT1CMV1CHTZHWM",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXHWVQRF0QKW6HF64WE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Almost! The correct answer is DC-M stands for Disclosure Content - Metrics in relation to material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXFJZRT1CMV1CHTZHWM",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXJ8RC6H3PMHK04TR76",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DC-P\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXJV1YM6X6N6PW0S69J"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXJV1YM6X6N6PW0S69J",
+								"optionText": "Disclosure Content - Policies adopted to manage material sustainability matters"
+							},
+							{
+								"oid": "OID_01HSE2ZSXK11Q3YJSBNZK99RHX",
+								"optionText": "Data Control - Privacy"
+							},
+							{
+								"oid": "OID_01HSE2ZSXMPPAW5T7X97CF043D",
+								"optionText": "Development Criteria - Procedures"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXMT1H7HSVKMEPQ5WGS",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! DC-P stands for Disclosure Content - Policies adopted to manage material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXJ8RC6H3PMHK04TR76",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXNYAXJHJ3WN8D8DCZD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Not quite right. DC-P actually stands for Disclosure Content - Policies adopted to manage material sustainability matters.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXJ8RC6H3PMHK04TR76",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXP95WTTG90YFKQEC9Q",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DC-T\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXQ8X94F81WJ05QCB38"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXPVNEJT8H772JMM7QD",
+								"optionText": "Data Compilation - Types"
+							},
+							{
+								"oid": "OID_01HSE2ZSXQ8X94F81WJ05QCB38",
+								"optionText": "Disclosure Content - Targets - Tracking effectiveness of policies and actions through targets"
+							},
+							{
+								"oid": "OID_01HSE2ZSXQK2ZV3XFEDWRP42T8",
+								"optionText": "Decision Criteria - Timing"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXQMQ0KEYN0FGZGAZ0Q",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "You got it! DC-T stands for Disclosure Content - Targets - Tracking effectiveness of policies and actions through targets.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXP95WTTG90YFKQEC9Q",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXQYR2D8JMMWWPK6P0F",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Good effort, but DC-T actually stands for Disclosure Content - Targets - Tracking effectiveness of policies and actions through targets.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXP95WTTG90YFKQEC9Q",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXRQ77P2G59K7SXC23N",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DR BP-1\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXSPCD9Y9PCET4BPQVG"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXRTDX2R4Q94DVND69H",
+								"optionText": "Disclosure Requirement - Best Practices 1"
+							},
+							{
+								"oid": "OID_01HSE2ZSXSPCD9Y9PCET4BPQVG",
+								"optionText": "Disclosure Requirement - General basis for preparation of the sustainability statements"
+							},
+							{
+								"oid": "OID_01HSE2ZSXSV406WQ41WKNZ615C",
+								"optionText": "Data Reporting - Basis Points 1"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXTRM8EBAMMQXYGZ505",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! DR BP-1 stands for Disclosure Requirement - General basis for preparation of the sustainability statements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXRQ77P2G59K7SXC23N",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXTMD44WKS2WXX3MDJD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Nice try, but DR BP-1 actually stands for Disclosure Requirement - General basis for preparation of the sustainability statements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXRQ77P2G59K7SXC23N",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXVYC8P8YGB37WZFVZG",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement BP-2\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXWZJ4S25G4Z3TJKBCM"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXVXQEQKM8J916EN7GQ",
+								"optionText": "Disclosure Requirement - Business Planning 2"
+							},
+							{
+								"oid": "OID_01HSE2ZSXWZJ4S25G4Z3TJKBCM",
+								"optionText": "Disclosure Requirement - Disclosures in relation to specific circumstances"
+							},
+							{
+								"oid": "OID_01HSE2ZSXW1ZFN2ETSNEB3NPY6",
+								"optionText": "Data Requirement - Business Processes 2"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXXKJ66WZ9NYNBHSQCM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! Disclosure Requirement BP-2 stands for Disclosure Requirement - Disclosures in relation to specific circumstances.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXVYC8P8YGB37WZFVZG",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXXC9AH4YGHQF55R6W9",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Close, but the correct answer is Disclosure Requirement BP-2 stands for Disclosure Requirement - Disclosures in relation to specific circumstances.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXVYC8P8YGB37WZFVZG",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSXYF8KK58KWNFNEZHCG",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement GOV-1\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSXY28HEWRZ0YERG44NH"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSXYFDFD92EPKW869D30",
+								"optionText": "Disclosure Requirement - Governance 1"
+							},
+							{
+								"oid": "OID_01HSE2ZSXY28HEWRZ0YERG44NH",
+								"optionText": "Disclosure Requirement - The role of the administrative, management and supervisory bodies"
+							},
+							{
+								"oid": "OID_01HSE2ZSXZWTQ6P2VCWFBPEVA5",
+								"optionText": "Data Reporting - Government 1"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY0NN01NNNBGBN2WEQZ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! Disclosure Requirement GOV-1 stands for the role of the administrative, management and supervisory bodies.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXYF8KK58KWNFNEZHCG",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY09FMC67T0ZEJCP4NC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Not quite. Disclosure Requirement GOV-1 actually refers to the role of the administrative, management and supervisory bodies.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSXYF8KK58KWNFNEZHCG",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY12S4GKC685XXBCT5B",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement GOV-2\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSY2KY72SMDJQ61PANXE"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSY2Y43ZXEM9FC0S22E8",
+								"optionText": "Governance structure and executive compensation"
+							},
+							{
+								"oid": "OID_01HSE2ZSY2KY72SMDJQ61PANXE",
+								"optionText": "Information provided to and sustainability matters addressed by the undertaking’s administrative, management and supervisory bodies"
+							},
+							{
+								"oid": "OID_01HSE2ZSY3PPH2MXHZXNM6VCTZ",
+								"optionText": "Ethical standards and compliance mechanisms"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY4ST93ZQNKGC3GN77F",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! Disclosure Requirement GOV-2 is about the information provided to and sustainability matters addressed by the undertaking’s administrative, management and supervisory bodies.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY12S4GKC685XXBCT5B",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY43MBA022XKKWRAPFY",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Actually, Disclosure Requirement GOV-2 refers to the information provided to and sustainability matters addressed by the undertaking’s administrative, management and supervisory bodies.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY12S4GKC685XXBCT5B",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY5V70K3QTGEHP87MDV",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement GOV-3\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSY51MFHGJMZ2TDA902R"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSY51MFHGJMZ2TDA902R",
+								"optionText": "Integration of sustainability-related performance in incentive schemes"
+							},
+							{
+								"oid": "OID_01HSE2ZSY6FCHQ22Z4BSFD3EXD",
+								"optionText": "Conflict of interest policies"
+							},
+							{
+								"oid": "OID_01HSE2ZSY7Z9FSWZ1EZN1B6KFQ",
+								"optionText": "Transparency in reporting and auditing"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY75VT8BB8PJD6TZ4B2",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly right! Disclosure Requirement GOV-3 involves the integration of sustainability-related performance in incentive schemes.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY5V70K3QTGEHP87MDV",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY8867E6K1WY76XJ8ZP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Not quite. Disclosure Requirement GOV-3 is about the integration of sustainability-related performance in incentive schemes.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY5V70K3QTGEHP87MDV",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSY9KJZVTVPQMJD5Q9EN",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement GOV-4\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSY9KG3P7E6569RTC69N"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSY9KG3P7E6569RTC69N",
+								"optionText": "Statement on sustainability due diligence"
+							},
+							{
+								"oid": "OID_01HSE2ZSYA89PVVQP0NCDPZ106",
+								"optionText": "Guidelines for ethical behavior"
+							},
+							{
+								"oid": "OID_01HSE2ZSYAN0ZMR64Q0CN0JK25",
+								"optionText": "Procedures for internal sustainability audits"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYB6ZZZYY4Y9Y02MG7M",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That’s correct! Disclosure Requirement GOV-4 is a statement on sustainability due diligence.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY9KJZVTVPQMJD5Q9EN",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYCFK39S5JYNTJTB3RR",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The right answer is A, referring to a statement on sustainability due diligence.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSY9KJZVTVPQMJD5Q9EN",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYCX1KBMGESKE9M0M6Q",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement GOV-5\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYDGSS663G04D86XKXY"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYDGSS663G04D86XKXY",
+								"optionText": "Risk management and internal controls over sustainability reporting"
+							},
+							{
+								"oid": "OID_01HSE2ZSYEK0Z3J3RW47HZSRDP",
+								"optionText": "Sustainability task force formation and responsibilities"
+							},
+							{
+								"oid": "OID_01HSE2ZSYES9935V7J38SNV99H",
+								"optionText": "Public engagement and stakeholder communication"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYF7ZM0G508E4FMT60F",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Well done! Disclosure Requirement GOV-5 focuses on risk management and internal controls over sustainability reporting.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYCX1KBMGESKE9M0M6Q",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYGTT0Q2H7DEH1BD1EE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Actually, Disclosure Requirement GOV-5 is concerned with risk management and internal controls over sustainability reporting.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYCX1KBMGESKE9M0M6Q",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYG8E9HP76XCENCGFSY",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement SBM-1\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYHK0A1JTJZM31D7346"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYHK0A1JTJZM31D7346",
+								"optionText": "Market position, strategy, business model(s) and value chain"
+							},
+							{
+								"oid": "OID_01HSE2ZSYJAN6ZF3Z830HHPKPN",
+								"optionText": "Product and service innovation for sustainability"
+							},
+							{
+								"oid": "OID_01HSE2ZSYJH75A3NJEYCK0Z5FJ",
+								"optionText": "Employee and community engagement strategies"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYJ54ZSQBQH3C24VDGS",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! Disclosure Requirement SBM-1 addresses the market position, strategy, business model(s), and value chain.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYG8E9HP76XCENCGFSY",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYJ9VF9XTV9Q5YJ8Z8X",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The correct answer is A, which covers the market position, strategy, business model(s), and value chain.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYG8E9HP76XCENCGFSY",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYKK2EQPFBV6P830C51",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement SBM-2\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYKNENXXJGJ026E12QB"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYKNENXXJGJ026E12QB",
+								"optionText": "Interests and views of stakeholders"
+							},
+							{
+								"oid": "OID_01HSE2ZSYM6VVRY5N2Q7XKS4YP",
+								"optionText": "Corporate governance and leadership accountability"
+							},
+							{
+								"oid": "OID_01HSE2ZSYMH9FAAC9BM4TTHBVV",
+								"optionText": "Sustainability vision and goals"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYNGGNPFD2SABET0S6A",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! Disclosure Requirement SBM-2 focuses on the interests and views of stakeholders.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYKK2EQPFBV6P830C51",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYNCAHCPAVCQSWS58KC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Actually, Disclosure Requirement SBM-2 is all about the interests and views of stakeholders.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYKK2EQPFBV6P830C51",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYNMPAW2GQVRYA2Y50Z",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirement SBM-3\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYPS3BKG5GRQJP3DQ8P"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYPS3BKG5GRQJP3DQ8P",
+								"optionText": "Material impacts, risks and opportunities and their interaction with strategy and business model(s)"
+							},
+							{
+								"oid": "OID_01HSE2ZSYQE0KRPRCSVXAEXT5Y",
+								"optionText": "Energy management and carbon footprint reduction"
+							},
+							{
+								"oid": "OID_01HSE2ZSYQNJFE57XK217C9BTF",
+								"optionText": "Supply chain sustainability and responsible sourcing"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYQP12GG1BP82MXM1DE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! Disclosure Requirement SBM-3 deals with material impacts, risks and opportunities and their interaction with strategy and business model(s).",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYNMPAW2GQVRYA2Y50Z",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYRGQJ92YZ3N4PBARNN",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The right answer is A, relating to material impacts, risks and opportunities and their interaction with strategy and business model(s).",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYNMPAW2GQVRYA2Y50Z",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYR5K2ZBJY5XNJWXZSJ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirements IRO 1\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYSHFEPH8NP765T1FK7"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYSRY3SCY9V5EZ0HB88",
+								"optionText": "Financial reporting standards and regulations"
+							},
+							{
+								"oid": "OID_01HSE2ZSYSHFEPH8NP765T1FK7",
+								"optionText": "Description of the processes to identify and assess material impacts, risks, and opportunities"
+							},
+							{
+								"oid": "OID_01HSE2ZSYTA3GXJSPXK6R4D680",
+								"optionText": "Corporate governance and ethical conduct policies"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYTV1MQGBZV6T9Z7B14",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly right! Disclosure Requirements IRO 1 pertains to the description of the processes to identify and assess material impacts, risks, and opportunities.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYR5K2ZBJY5XNJWXZSJ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYVAD4MPVQ1W7GAMPNK",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Not quite. Disclosure Requirements IRO 1 actually refers to the description of the processes to identify and assess material impacts, risks, and opportunities.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYR5K2ZBJY5XNJWXZSJ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYVCVW7XV3VFPTA89DM",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"Disclosure Requirements IRO 2\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSYWY81KR4GTVDWY0VKM"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSYWY81KR4GTVDWY0VKM",
+								"optionText": "Disclosure Requirements in ESRS covered by the undertaking’s sustainability statements"
+							},
+							{
+								"oid": "OID_01HSE2ZSYX6C5PZTE6F7X9FBKY",
+								"optionText": "Implementation of sustainable business models and practices"
+							},
+							{
+								"oid": "OID_01HSE2ZSYX2N4J0G7DF1CHAAMW",
+								"optionText": "Accountability and transparency in environmental reporting"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYYX5HGQMKY5V7G7BP3",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! Disclosure Requirements IRO 2 involves the Disclosure Requirements in ESRS covered by the undertaking’s sustainability statements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYVCVW7XV3VFPTA89DM",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYZBXTPSKWZH43E7175",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The correct answer is A, which is about the Disclosure Requirements in ESRS covered by the undertaking’s sustainability statements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYVCVW7XV3VFPTA89DM",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSYZ5RY0H79DM4YT3WN0",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"DR\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZ1R2R6GX3GB8C0V1K4"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZ077W9YT99AZQ9AS4K",
+								"optionText": "Dynamic Resourcing"
+							},
+							{
+								"oid": "OID_01HSE2ZSZ1R2R6GX3GB8C0V1K4",
+								"optionText": "Disclosure Requirements"
+							},
+							{
+								"oid": "OID_01HSE2ZSZ26EP41J2VXCX0955B",
+								"optionText": "Departmental Review"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ24Z5FMWKF8RDWR3SM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Well done! DR stands for Disclosure Requirements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYZ5RY0H79DM4YT3WN0",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ3N7HS9X2MCFW4F7HF",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Actually, DR stands for Disclosure Requirements.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSYZ5RY0H79DM4YT3WN0",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ3JY3PTZNCRQWMWSCW",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"GAAP\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZ5DCPPJW8PHDAD17KM"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZ459RWYS0MJ7PQ2Z62",
+								"optionText": "General Auditing and Assurance Practices"
+							},
+							{
+								"oid": "OID_01HSE2ZSZ5DCPPJW8PHDAD17KM",
+								"optionText": "Generally Accepted Accounting Principles"
+							},
+							{
+								"oid": "OID_01HSE2ZSZ6A50JH03P680WGNMJ",
+								"optionText": "Global Alliance of Application Professionals"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ695Y77TAJKT28EM7D",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's correct! GAAP stands for Generally Accepted Accounting Principles.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZ3JY3PTZNCRQWMWSCW",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ7X3AAVV9NSPDVY5YJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Nice try, but GAAP actually stands for Generally Accepted Accounting Principles.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZ3JY3PTZNCRQWMWSCW",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZ8C6ZCF4Y5AZ7F4F24",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"IFRS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZ8DY1RXKV9Q15SJQ18"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZ8DY1RXKV9Q15SJQ18",
+								"optionText": "International Financial Reporting Standards"
+							},
+							{
+								"oid": "OID_01HSE2ZSZ9TH351QCDKVC8JNQN",
+								"optionText": "Innovative Framework for Regulatory Supervision"
+							},
+							{
+								"oid": "OID_01HSE2ZSZAMX1EJVJKF2JQXMXB",
+								"optionText": "Integrated Forecast and Resource System"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZAV58NV5MAAV59RBWN",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! IFRS stands for International Financial Reporting Standards.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZ8C6ZCF4Y5AZ7F4F24",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZB6NFQM65C81RHDSCC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Actually, IFRS stands for International Financial Reporting Standards.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZ8C6ZCF4Y5AZ7F4F24",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZCYSWKQDJ6CP32T53P",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"MDR\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZC25E66Z8JEFC7X542"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZC25E66Z8JEFC7X542",
+								"optionText": "Mandatory Disclosure Requirement"
+							},
+							{
+								"oid": "OID_01HSE2ZSZDV48J5P95WJ4RNF1Y",
+								"optionText": "Multidisciplinary Research"
+							},
+							{
+								"oid": "OID_01HSE2ZSZDXB967Z1BY1XMB4W7",
+								"optionText": "Management Decision Routing"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZEPPNGC3RGKJZ39PBR",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! MDR stands for Mandatory Disclosure Requirement.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZCYSWKQDJ6CP32T53P",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZF0SRG6CQ6PE78JVF6",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The right answer is MDR stands for Mandatory Disclosure Requirement.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZCYSWKQDJ6CP32T53P",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZGXZVFSZNMVWRA6QQW",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"OECD\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZGDY061A2ZBJ8ZN316"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZGDY061A2ZBJ8ZN316",
+								"optionText": "Organisation for Economic Co-operation and Development"
+							},
+							{
+								"oid": "OID_01HSE2ZSZHAWKS1MH3E1S4MD22",
+								"optionText": "Office for European Community Development"
+							},
+							{
+								"oid": "OID_01HSE2ZSZHVQ9447BN529A2BH4",
+								"optionText": "Operational Efficiency and Cost Dynamics"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZJSPK9S5PDH6FFY6Q1",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That’s right! OECD stands for Organisation for Economic Co-operation and Development.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZGXZVFSZNMVWRA6QQW",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZJQMG5BBSQ9HDMTEC0",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "The correct answer is OECD stands for Organisation for Economic Co-operation and Development.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZGXZVFSZNMVWRA6QQW",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZJF0FPS3H8M81RZ0F9",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background1.jpg",
+					"question": {
+						"questionText": "What does \"SFDR\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZKXBV9E18M6S6S4VBC"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZKXBV9E18M6S6S4VBC",
+								"optionText": "Sustainable Finance Disclosure Regulation"
+							},
+							{
+								"oid": "OID_01HSE2ZSZMJ6S18P8TET4X1FFG",
+								"optionText": "Strategic Framework for Disaster Recovery"
+							},
+							{
+								"oid": "OID_01HSE2ZSZMYRC1V2P0MSP3DT6Z",
+								"optionText": "Systemic Financial Distress Ratio"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZN4XY3RC3DNCETWZMK",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Excellent! SFDR stands for Sustainable Finance Disclosure Regulation.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZJF0FPS3H8M81RZ0F9",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZPJF57EG1G2C6W9AA7",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Not quite right. SFDR actually stands for Sustainable Finance Disclosure Regulation.",
+					"backgroundImage": "background1.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZJF0FPS3H8M81RZ0F9",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZP9CDJ0W2DT5EJRHZ2",
+					"pageType": "success",
+					"backgroundImage": "background1.jpg",
+					"title": "Governance and Compliance",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HSE2ZSZQ11RKSFG1WB17M6WW",
+			"tags": ["all"],
+			"chapterTitle": "Environmental Impact and Climate Change",
+			"chapterDescription": "Explore the most important acronyms in the area of environmental impact and climate change",
+			"chapterCoverImage": "background2.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZSZRW7DHC6CZB802DPCZ",
+					"pageType": "title",
+					"backgroundImage": "background2.jpg",
+					"title": "Environmental Impact and Climate Change",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZSZRFMJAZP2HKMN0D1B6",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"AWS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZSDAAVKANK7C58QPW9"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZSDAAVKANK7C58QPW9",
+								"optionText": "Alliance for Water Stewardship"
+							},
+							{
+								"oid": "OID_01HSE2ZSZT8DXRZFFXDHYQM5AT",
+								"optionText": "Advanced Wireless Services"
+							},
+							{
+								"oid": "OID_01HSE2ZSZVPC1D5D48VDXNNPM7",
+								"optionText": "Automated Web Services"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZVB0Z461GDD64J6Z45",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! AWS stands for Alliance for Water Stewardship.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZRFMJAZP2HKMN0D1B6",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZWR70PX0JKFTPMG07P",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, AWS refers to the Alliance for Water Stewardship.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZRFMJAZP2HKMN0D1B6",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZWJ4EVGDVTFHJVNR9G",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"BAT\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZWHQSAMQVWZ8254SJC"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZWHQSAMQVWZ8254SJC",
+								"optionText": "Best Available Technique"
+							},
+							{
+								"oid": "OID_01HSE2ZSZX8JQBJN9K50933NAC",
+								"optionText": "Business Analysis Tools"
+							},
+							{
+								"oid": "OID_01HSE2ZSZXHBS2R3QP9KYD151E",
+								"optionText": "Broadband Access Technology"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZX8KSK5JQG24RSZ85X",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! BAT stands for Best Available Technique.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZWJ4EVGDVTFHJVNR9G",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZYGFV1M2QJN2C1R75Q",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is BAT stands for Best Available Technique.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZWJ4EVGDVTFHJVNR9G",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZSZYZP10GMXAPZM4BFJA",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"BECCS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZSZY097R4YDKAKHEQQHZ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZSZY097R4YDKAKHEQQHZ",
+								"optionText": "Bioenergy with Carbon Capture and Storage"
+							},
+							{
+								"oid": "OID_01HSE2ZSZZSW87DXKET3VDJPQB",
+								"optionText": "Biomass Energy Conversion and Conservation System"
+							},
+							{
+								"oid": "OID_01HSE2ZSZZ4WT2K8PJQP5PVQER",
+								"optionText": "Bio-electric Charge Conservation Strategy"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT00BSARAAPEFEX8JBZ9",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! BECCS stands for Bioenergy with Carbon Capture and Storage.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZYZP10GMXAPZM4BFJA",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT00AWY0AW6RB2WXV3AQ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "BECCS actually means Bioenergy with Carbon Capture and Storage.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZSZYZP10GMXAPZM4BFJA",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT00QR81ASSN3GVVBNZB",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"BREFs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT01B7NYYQZFY6SWD144"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT01XQC8T2Q9EVWEQZ8V",
+								"optionText": "Best Rate Efficiency Factors"
+							},
+							{
+								"oid": "OID_01HSE2ZT01B7NYYQZFY6SWD144",
+								"optionText": "Best Available Techniques Reference Documents"
+							},
+							{
+								"oid": "OID_01HSE2ZT02H90NM4EEMD50K6YM",
+								"optionText": "Business Regulatory Enforcement Framework"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0273B9GD6FQ3JBD9EM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! BREFs stands for Best Available Techniques Reference Documents.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT00QR81ASSN3GVVBNZB",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT02N32VHHRKQE2X076P",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is BREFs stands for Best Available Techniques Reference Documents.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT00QR81ASSN3GVVBNZB",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0204AFQ8K7PCT7ASWV",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"CCS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT03JKSKTXCNJFR8X22T"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT03JKSKTXCNJFR8X22T",
+								"optionText": "Carbon Capture and Storage"
+							},
+							{
+								"oid": "OID_01HSE2ZT04BJXECMWHY44H7QHS",
+								"optionText": "Central Control System"
+							},
+							{
+								"oid": "OID_01HSE2ZT048APQ0X28MQ282EJQ",
+								"optionText": "Comprehensive Climate Strategy"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT04QCYMEHP78ABE4XZ8",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's correct! CCS stands for Carbon Capture and Storage.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0204AFQ8K7PCT7ASWV",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT05Y6KJV2QE3660FSEC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "CCS actually stands for Carbon Capture and Storage.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0204AFQ8K7PCT7ASWV",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT051AMVDZPPCKCGYQF8",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"EIA\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT05WM4KA1GZMEZYBPNQ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT05WM4KA1GZMEZYBPNQ",
+								"optionText": "Environmental Impact Assessment"
+							},
+							{
+								"oid": "OID_01HSE2ZT060BJDJX54BRCG5G24",
+								"optionText": "Energy Investment Agreement"
+							},
+							{
+								"oid": "OID_01HSE2ZT06B2G4MRBWTT19Z4MS",
+								"optionText": "Electronic Interface Architecture"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT07G8YAA1AQMPPFC3BE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! EIA stands for Environmental Impact Assessment.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT051AMVDZPPCKCGYQF8",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT079Z7FP63NBW8XV5EC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "EIA refers to Environmental Impact Assessment.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT051AMVDZPPCKCGYQF8",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT082WHNERX6QGCM0E99",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"ENCORE\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0928Z8X8HZPSME4GWE"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT08GZ3R6M73XRMMZB3Z",
+								"optionText": "Engaging Networks for Conservation and Renewable Energy"
+							},
+							{
+								"oid": "OID_01HSE2ZT0928Z8X8HZPSME4GWE",
+								"optionText": "Exploring Natural Capital Opportunities, Risks, and Exposure"
+							},
+							{
+								"oid": "OID_01HSE2ZT0AGXHCGCVG0QYZYEEW",
+								"optionText": "Enhanced Network COmmunication and Routing Efficiency"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0BXE78W4SQTN9X4S4E",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ENCORE stands for Exploring Natural Capital Opportunities, Risks, and Exposure.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT082WHNERX6QGCM0E99",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0BE2J9K5CDTBQ0ZG01",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ENCORE actually means Exploring Natural Capital Opportunities, Risks, and Exposure.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT082WHNERX6QGCM0E99",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0C9AQAKBQ5AA6FTVRQ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"EPC\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0CHJDK5QQC7STCKEJG"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0CHJDK5QQC7STCKEJG",
+								"optionText": "Energy Performance Certificate"
+							},
+							{
+								"oid": "OID_01HSE2ZT0D8D3VFPPMVHQVV8V3",
+								"optionText": "Electronic Product Code"
+							},
+							{
+								"oid": "OID_01HSE2ZT0D9QB4T15B088HTDYZ",
+								"optionText": "Engineering, Procurement, and Construction"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0FV5CM2T98Y40HP8A6",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! EPC stands for Energy Performance Certificate.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0C9AQAKBQ5AA6FTVRQ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0F6ETC5K1FKJ9J8J4N",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is EPC stands for Energy Performance Certificate.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0C9AQAKBQ5AA6FTVRQ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0FWZ6685P678N06QY1",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"EU ETS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0GD96K8BEWZY789BCV"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0F2SZRCPBX5N9FGHR2",
+								"optionText": "European Union Economic Trade Scheme"
+							},
+							{
+								"oid": "OID_01HSE2ZT0GD96K8BEWZY789BCV",
+								"optionText": "European Union Emissions Trading System"
+							},
+							{
+								"oid": "OID_01HSE2ZT0HVY36AVJ449SAPRW7",
+								"optionText": "European Unified Education and Training Services"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0JRPWYGG09YBN9PHTJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's correct! EU ETS stands for European Union Emissions Trading System.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0FWZ6685P678N06QY1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0JY5B2E7Q7C45KSMMK",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "EU ETS refers to the European Union Emissions Trading System.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0FWZ6685P678N06QY1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0KN8A8G287VN5EAYXF",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"GWP\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0MNS3CEPB7NGS3W8RE"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0MNS3CEPB7NGS3W8RE",
+								"optionText": "Global Warming Potential"
+							},
+							{
+								"oid": "OID_01HSE2ZT0MSJZRVAQTP349TS61",
+								"optionText": "Gross World Product"
+							},
+							{
+								"oid": "OID_01HSE2ZT0NF31H2KFVX8VRXM02",
+								"optionText": "General Work Plan"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0P8E7DNWZXPTSZJN90",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly right! GWP stands for Global Warming Potential.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0KN8A8G287VN5EAYXF",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0PD8728NH40TA573RB",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "GWP actually means Global Warming Potential.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0KN8A8G287VN5EAYXF",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0Q8THE9AH1STWHZBVV",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"IED\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0R8DDNSF8F9ZAFRAV5"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0RXCGDNH6VSSPE4RAM",
+								"optionText": "Integrated Environmental Design"
+							},
+							{
+								"oid": "OID_01HSE2ZT0R8DDNSF8F9ZAFRAV5",
+								"optionText": "Industrial Emissions Directive"
+							},
+							{
+								"oid": "OID_01HSE2ZT0S9025ZA13Y87NRYF7",
+								"optionText": "Immediate Explosive Device"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0T53VMX4G3JE3RWFS8",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! IED stands for Industrial Emissions Directive.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0Q8THE9AH1STWHZBVV",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0T1S91HCQJ6BGBBHMF",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is IED stands for Industrial Emissions Directive.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0Q8THE9AH1STWHZBVV",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0VKYD5FQEHPWFDM5YZ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"IPCC\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0WD6ARXX79YKR60TPA"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0V2XXXS813M2WN2FWW",
+								"optionText": "International Panel on Climate Change"
+							},
+							{
+								"oid": "OID_01HSE2ZT0WD6ARXX79YKR60TPA",
+								"optionText": "Intergovernmental Panel on Climate Change"
+							},
+							{
+								"oid": "OID_01HSE2ZT0WCCGY9GXPWRSBDGWA",
+								"optionText": "Institute for Public and Corporate Communications"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0X58BN4RHMANT999NJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That’s right! IPCC stands for Intergovernmental Panel on Climate Change.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0VKYD5FQEHPWFDM5YZ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0XBTPB4PSZ45PWKNCM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "IPCC actually refers to the Intergovernmental Panel on Climate Change.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0VKYD5FQEHPWFDM5YZ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0XPMFDA92EWXA9QBW5",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"ODS\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT0YSPB065AS7ASSR2QV"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT0YFT35N0BWDBRVZPEN",
+								"optionText": "Operational Delivery Systems"
+							},
+							{
+								"oid": "OID_01HSE2ZT0YSPB065AS7ASSR2QV",
+								"optionText": "Ozone-depleting Substances"
+							},
+							{
+								"oid": "OID_01HSE2ZT0Y58STYFXVZXXAN6X8",
+								"optionText": "Organizational Development Services"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0ZFHGJB929RDNX3QTD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! ODS stands for Ozone-depleting Substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0XPMFDA92EWXA9QBW5",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT0ZM5YKTK6QHJBC6PEG",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ODS refers to Ozone-depleting Substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT0XPMFDA92EWXA9QBW5",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT10XS2XZ63ZXKBEAK9S",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"PM\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1031MAY0F1BZZCZYMT"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1031MAY0F1BZZCZYMT",
+								"optionText": "Particulate Matter"
+							},
+							{
+								"oid": "OID_01HSE2ZT11M1B8AYKKZSYAPYK6",
+								"optionText": "Project Management"
+							},
+							{
+								"oid": "OID_01HSE2ZT11EWP8J8RAWFDPJN6F",
+								"optionText": "Performance Measurement"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT11ZBFWNBP4D69M7Y2S",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! PM stands for Particulate Matter.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT10XS2XZ63ZXKBEAK9S",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT12HX205886789MJGZN",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is PM stands for Particulate Matter.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT10XS2XZ63ZXKBEAK9S",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT12KS4T0H4Q1A75W61D",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"POPs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT12A6VRDNXME30GXKPE"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT12031Y3YRV4C5CJ1KB",
+								"optionText": "Points of Presence"
+							},
+							{
+								"oid": "OID_01HSE2ZT12A6VRDNXME30GXKPE",
+								"optionText": "Persistent Organic Pollutants"
+							},
+							{
+								"oid": "OID_01HSE2ZT137DCVKRGHH3K2BEB3",
+								"optionText": "Power Optimization Protocols"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT13VEWAFNT86XG29W49",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! POPs stands for Persistent Organic Pollutants.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT12KS4T0H4Q1A75W61D",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT145J0264PC3MV8QC8X",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "POPs actually means Persistent Organic Pollutants.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT12KS4T0H4Q1A75W61D",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT14GGQVEBEY0BMWC21A",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"PBTs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT146XF3TT28AANRFBSW"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT146XF3TT28AANRFBSW",
+								"optionText": "Persistent, Bioaccumulative, and Toxic substances"
+							},
+							{
+								"oid": "OID_01HSE2ZT14KBX2XFS9MEGBWMQR",
+								"optionText": "Performance-Based Training"
+							},
+							{
+								"oid": "OID_01HSE2ZT15HE5N86EPCDRNYNSY",
+								"optionText": "Precision Bearing Technology"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT16K6Z9K5ANF9Y3ZDMN",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! PBTs stands for Persistent, Bioaccumulative, and Toxic substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT14GGQVEBEY0BMWC21A",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT16GGMA6D1DXX9XAKNW",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "PBTs refers to Persistent, Bioaccumulative, and Toxic substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT14GGQVEBEY0BMWC21A",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT17FQJM23S1YXVHB5WE",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"PMTs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT18TT9SH1DPKT2ZSXGN"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT188M5CQT74M7PNMRFW",
+								"optionText": "Payment Methods and Technologies"
+							},
+							{
+								"oid": "OID_01HSE2ZT18TT9SH1DPKT2ZSXGN",
+								"optionText": "Persistent, Mobile and Toxic Substances"
+							},
+							{
+								"oid": "OID_01HSE2ZT19SZP03RBDTFTBFEDX",
+								"optionText": "Precision Measurement Tools"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1AX17P9RYJFBXCRHMK",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! PMTs stands for Persistent, Mobile and Toxic Substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT17FQJM23S1YXVHB5WE",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1ACZSHS1ZPJ6S2XQXV",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "PMTs actually means Persistent, Mobile and Toxic Substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT17FQJM23S1YXVHB5WE",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1BGZY448Z2FW3MAY1W",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"SVHCs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1CMW7WJCRQABKFR995"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1CFGZHZZS1C0YZHQ3A",
+								"optionText": "Specialized Vehicle Health Checks"
+							},
+							{
+								"oid": "OID_01HSE2ZT1CMW7WJCRQABKFR995",
+								"optionText": "Substances of Very High Concern"
+							},
+							{
+								"oid": "OID_01HSE2ZT1DERW3733FGHZP6MZY",
+								"optionText": "Sustainable Value and Health Consortium"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1DBDV33KRS7WMNCH10",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! SVHCs stands for Substances of Very High Concern.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1BGZY448Z2FW3MAY1W",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1ERAXA7S1NZKC5S1TH",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "SVHCs actually refers to Substances of Very High Concern.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1BGZY448Z2FW3MAY1W",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1E3601HFDE72JJ9K98",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"TCFD\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1FREMCAH69NXYXNW18"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1FREMCAH69NXYXNW18",
+								"optionText": "Task Force on Climate-Related Financial Disclosures"
+							},
+							{
+								"oid": "OID_01HSE2ZT1FPC6TYBXF3GFSP70X",
+								"optionText": "Tactical Forces Deployment Committee"
+							},
+							{
+								"oid": "OID_01HSE2ZT1GYNDE5SC95YHS1HVZ",
+								"optionText": "Technical Committee for Future Development"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1GPRQQJGMR8G6ZTDRV",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! TCFD stands for Task Force on Climate-Related Financial Disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1E3601HFDE72JJ9K98",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1H62939K55T5TP2HQW",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "TCFD actually means Task Force on Climate-Related Financial Disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1E3601HFDE72JJ9K98",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1HV6SBBSHW03CQCCDW",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"TNFD\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1HY5F546MKTZSTZCYW"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1HY5F546MKTZSTZCYW",
+								"optionText": "Taskforce on Nature-related Financial Disclosures"
+							},
+							{
+								"oid": "OID_01HSE2ZT1JHT7JA3QR86JQN4N4",
+								"optionText": "Technical Network for Fiscal Development"
+							},
+							{
+								"oid": "OID_01HSE2ZT1J75EJCGA9BM06231G",
+								"optionText": "Transitional Node for Future Dynamics"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1KR9Z0A4SB62F2PVGZ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's correct! TNFD stands for Taskforce on Nature-related Financial Disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1HV6SBBSHW03CQCCDW",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1KRY51NVHF5Q5GPH17",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "TNFD actually refers to Taskforce on Nature-related Financial Disclosures.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1HV6SBBSHW03CQCCDW",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1MPGT75K238RH04DMQ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"vPvBs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1MJYRCB5BJKRTS66AA"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1MJYRCB5BJKRTS66AA",
+								"optionText": "Very persistent and very bioaccumulative substances"
+							},
+							{
+								"oid": "OID_01HSE2ZT1M59XHN5ZHJRJ5VGAE",
+								"optionText": "Variable Performance Value Benchmarks"
+							},
+							{
+								"oid": "OID_01HSE2ZT1N0QNEST7WTE7BED4P",
+								"optionText": "Visionary Projects via Blockchain"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1NAHY5JV7BE4NP0RB9",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! vPvBs stands for Very persistent and very bioaccumulative substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1MPGT75K238RH04DMQ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1PWD930HHVMCZYD26P",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is vPvBs stands for Very persistent and very bioaccumulative substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1MPGT75K238RH04DMQ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1PYZZX53W27W9FQ2E3",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background2.jpg",
+					"question": {
+						"questionText": "What does \"vPvMs\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1Q115RAF9BVBDVG1C2"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1Q115RAF9BVBDVG1C2",
+								"optionText": "Very Persistent, Very Mobile substances"
+							},
+							{
+								"oid": "OID_01HSE2ZT1Q8YBBMEQZV2SMH8QE",
+								"optionText": "Virtual Project Management Systems"
+							},
+							{
+								"oid": "OID_01HSE2ZT1QZZMZ57E1QGZ2V5SZ",
+								"optionText": "Value, Productivity, and Velocity Measures"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1RYJY4220HRDTN1M2N",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That’s right! vPvMs stands for Very Persistent, Very Mobile substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1PYZZX53W27W9FQ2E3",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1RA77NRFYVNVHQR72Z",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "vPvMs actually means Very Persistent, Very Mobile substances.",
+					"backgroundImage": "background2.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1PYZZX53W27W9FQ2E3",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1SG11JEBX7KX9TTQZ5",
+					"pageType": "success",
+					"backgroundImage": "background2.jpg",
+					"title": "Environmental Impact and Climate Change",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HSE2ZT1SVTD08P19JWF4291G",
+			"tags": ["all"],
+			"chapterTitle": "Social Responsibility and Human Rights",
+			"chapterDescription": "Explore the most important acronyms in the area of social responsibility and human rights",
+			"chapterCoverImage": "background3.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZT1TGZ276YY8MVWED9E5",
+					"pageType": "title",
+					"backgroundImage": "background3.jpg",
+					"title": "Social Responsibility and Human Rights",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZT1T7K6D5CHVHVXX9FRH",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does \"DNSH\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1VN05256PTKEYYMVCA"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1TW8SJN361S95T6CWR",
+								"optionText": "Digital Network Service Host"
+							},
+							{
+								"oid": "OID_01HSE2ZT1VN05256PTKEYYMVCA",
+								"optionText": "Do No Significant Harm"
+							},
+							{
+								"oid": "OID_01HSE2ZT1V53N6P19C1WMGVV28",
+								"optionText": "Department of National Safety and Health"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1W20YD0B4PAMXQJXE4",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! DNSH stands for Do No Significant Harm.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1T7K6D5CHVHVXX9FRH",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1WJ41HZP3BP6NQPW5W",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, DNSH refers to Do No Significant Harm.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1T7K6D5CHVHVXX9FRH",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1WP8YHQC3BXGZ8BSTA",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does \"EWC\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT1XBNE36932GFFAPD70"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1XB5R8D0MY44CJFWX1",
+								"optionText": "European Welfare Committee"
+							},
+							{
+								"oid": "OID_01HSE2ZT1XBNE36932GFFAPD70",
+								"optionText": "European Works Council"
+							},
+							{
+								"oid": "OID_01HSE2ZT1Y35R1T5ER07FRKWAV",
+								"optionText": "Electronic World Commerce"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1Y60BE1G9WFFWM28D0",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! EWC stands for European Works Council.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1WP8YHQC3BXGZ8BSTA",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1YWTDQG7RYJ72EJKRP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is EWC stands for European Works Council.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1WP8YHQC3BXGZ8BSTA",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT1ZKFJ9FTMCY1B27YC9",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does \"FPIC\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT20Y056WY4X5VJDXB6S"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT1ZR4T9XRQ2QTWHB5NX",
+								"optionText": "Final Product Integrity Check"
+							},
+							{
+								"oid": "OID_01HSE2ZT20Y056WY4X5VJDXB6S",
+								"optionText": "Free, Prior, and Informed Consent"
+							},
+							{
+								"oid": "OID_01HSE2ZT2099CSQY8Y030YN63M",
+								"optionText": "Financial Planning and Investment Committee"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT20YC5ABM69GFR1SRVH",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! FPIC stands for Free, Prior, and Informed Consent.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1ZKFJ9FTMCY1B27YC9",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT21JJFPA9KGF2Z97F6R",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "FPIC actually means Free, Prior, and Informed Consent.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT1ZKFJ9FTMCY1B27YC9",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT21A8F4T46VEB1HCTMJ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does \"ILO\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT22HYDD3DTT4E8J28KF"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT22HYDD3DTT4E8J28KF",
+								"optionText": "International Labour Organisation"
+							},
+							{
+								"oid": "OID_01HSE2ZT23Q82HPT9YM5PYKZHP",
+								"optionText": "Integrated Logistics Operations"
+							},
+							{
+								"oid": "OID_01HSE2ZT234XX32ZNX7N2SR881",
+								"optionText": "Institute for Legal Outreach"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT24B3CJVFY11W5B9ZSW",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ILO stands for International Labour Organisation.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT21A8F4T46VEB1HCTMJ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT248HSDGGJFNPZP48WJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is ILO stands for International Labour Organisation.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT21A8F4T46VEB1HCTMJ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT25N8YX2G1WXE6TX6AK",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background3.jpg",
+					"question": {
+						"questionText": "What does \"IPBES\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT25NEXHMN5KRMW92851"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT25EZQC6QBF1P5R6Y92",
+								"optionText": "International Policy Board for Environmental Standards"
+							},
+							{
+								"oid": "OID_01HSE2ZT25NEXHMN5KRMW92851",
+								"optionText": "Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services"
+							},
+							{
+								"oid": "OID_01HSE2ZT2676A1M6R2XY9Z735F",
+								"optionText": "Institute for Public and Business Economic Strategies"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT26WK4RGATKJPPAE1RM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! IPBES stands for Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT25N8YX2G1WXE6TX6AK",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT270VY6YPZSMECJS0V6",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "IPBES actually refers to the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services.",
+					"backgroundImage": "background3.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT25N8YX2G1WXE6TX6AK",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT27106532S25NN96EGW",
+					"pageType": "success",
+					"backgroundImage": "background3.jpg",
+					"title": "Social Responsibility and Human Rights",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HSE2ZT28XTX861KDVB3GT7QQ",
+			"tags": ["all"],
+			"chapterTitle": "Biodiversity and Ecosystems",
+			"chapterDescription": "Explore the most important acronyms in the area of biodiversity and ecosystems",
+			"chapterCoverImage": "background4.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZT281VXJ58VXKCRGSWJK",
+					"pageType": "title",
+					"backgroundImage": "background4.jpg",
+					"title": "Biodiversity and Ecosystems",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZT293ZB6PF2QJEJC2HHT",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "What does \"CBD\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2AECG2AQZC5N4KJ5EB"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT29HD3F2HW974SPB693",
+								"optionText": "Central Business District"
+							},
+							{
+								"oid": "OID_01HSE2ZT2AECG2AQZC5N4KJ5EB",
+								"optionText": "Convention for Biological Diversity"
+							},
+							{
+								"oid": "OID_01HSE2ZT2BHBSAAK9E6B809524",
+								"optionText": "Compound Binary Data"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2BNFRMZTRYF5J6554M",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! CBD stands for Convention for Biological Diversity.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT293ZB6PF2QJEJC2HHT",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2BA9G79DY9KSPRD739",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, CBD refers to the Convention for Biological Diversity.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT293ZB6PF2QJEJC2HHT",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2CFTCGR2BJNQR2Z72G",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "What does \"IBAT\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2CZKS4XRG69P0AW1NF"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2CZKS4XRG69P0AW1NF",
+								"optionText": "Integrated Biodiversity Assessment Tool"
+							},
+							{
+								"oid": "OID_01HSE2ZT2DP7N7C2QXYKHHG8EZ",
+								"optionText": "International Business Analytics Technology"
+							},
+							{
+								"oid": "OID_01HSE2ZT2DET2XMKM5CVWTVTX6",
+								"optionText": "Institute of Business Administration and Training"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2D9WS1R625GZP4P648",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! IBAT stands for Integrated Biodiversity Assessment Tool.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2CFTCGR2BJNQR2Z72G",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2ERG3HXSNNNBBKMN2T",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is IBAT stands for Integrated Biodiversity Assessment Tool.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2CFTCGR2BJNQR2Z72G",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2EMGHS5RDYDA4BXECS",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background4.jpg",
+					"question": {
+						"questionText": "What does \"WDPA\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2FB7G38GZBSXYYJCJ6"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2FB7G38GZBSXYYJCJ6",
+								"optionText": "World Database of Protected Areas"
+							},
+							{
+								"oid": "OID_01HSE2ZT2F2REGBV32AW5DNQTH",
+								"optionText": "Wireless Data Protection Agency"
+							},
+							{
+								"oid": "OID_01HSE2ZT2G7A8XTXR9EFPMM19G",
+								"optionText": "Web Development and Programming Association"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2GPC1Z79W64FBF9MKD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! WDPA stands for World Database of Protected Areas.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2EMGHS5RDYDA4BXECS",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2GT20HXNHXR6413X9P",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "WDPA actually means World Database of Protected Areas.",
+					"backgroundImage": "background4.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2EMGHS5RDYDA4BXECS",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2HW5N40XG4YZA35EYE",
+					"pageType": "success",
+					"backgroundImage": "background4.jpg",
+					"title": "Biodiversity and Ecosystems",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HSE2ZT2H1DFJEYN4WWP6ZWST",
+			"tags": ["all"],
+			"chapterTitle": "Financial and Operational Metrics",
+			"chapterDescription": "Explore the most important acronyms in the area of financial and operational metrics",
+			"chapterCoverImage": "background5.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZT2HD2E4S8Z46RJNQ823",
+					"pageType": "title",
+					"backgroundImage": "background5.jpg",
+					"title": "Financial and Operational Metrics",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZT2JQ65H4W9KZ46P0SXJ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "What does \"CapEx\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2KCZV8E81T5P1YJFKQ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2JQEFX5RA9173114JQ",
+								"optionText": "Capital Expansion"
+							},
+							{
+								"oid": "OID_01HSE2ZT2KFFCAEM6XZEYX5W60",
+								"optionText": "Capacity Exchange"
+							},
+							{
+								"oid": "OID_01HSE2ZT2KCZV8E81T5P1YJFKQ",
+								"optionText": "Capital Expenditure"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2MWQT4MT7Q9P9QHHFQ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! CapEx stands for Capital Expenditure.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2JQ65H4W9KZ46P0SXJ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2MKM20NMGEH1KXQ4X1",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is CapEx stands for Capital Expenditure.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2JQ65H4W9KZ46P0SXJ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2MG9AFRBRJSQTM52KS",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background5.jpg",
+					"question": {
+						"questionText": "What does \"OpEx\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2NFFWF3E54P1Q1DKRK"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2N1CGRA4BXKDCB8E0Z",
+								"optionText": "Operational Excellence"
+							},
+							{
+								"oid": "OID_01HSE2ZT2NFFWF3E54P1Q1DKRK",
+								"optionText": "Operating Expenditure"
+							},
+							{
+								"oid": "OID_01HSE2ZT2PZX9GJ6S6B7RSEXEE",
+								"optionText": "Optional Exchange"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2PP5G6VKASKWXKQCVM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! OpEx stands for Operating Expenditure.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2MG9AFRBRJSQTM52KS",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2PP9WCACG06P95NFGM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "OpEx actually refers to Operating Expenditure.",
+					"backgroundImage": "background5.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2MG9AFRBRJSQTM52KS",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2QRFK5565F730JY00Q",
+					"pageType": "success",
+					"backgroundImage": "background5.jpg",
+					"title": "Financial and Operational Metrics",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		},
+		{
+			"cid": "CID_01HSE2ZT2Q0H71FSXD8391M48A",
+			"tags": ["all"],
+			"chapterTitle": "Sustainability Reporting and Standards",
+			"chapterDescription": "Explore the most important acronyms in the area of sustainable reporting and standards",
+			"chapterCoverImage": "background6.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HSE2ZT2QSPSR5X6VZ4RSS59K",
+					"pageType": "title",
+					"backgroundImage": "background6.jpg",
+					"title": "Sustainability Reporting and Standards",
+					"subtitle": "Essential acronyms"
+				},
+				{
+					"pid": "PID_01HSE2ZT2RNP0Q5DVFEVB8CWSR",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"CDP\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2RXW7JDJP8A0R6D5KJ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2RXW7JDJP8A0R6D5KJ",
+								"optionText": "Carbon Disclosure Project"
+							},
+							{
+								"oid": "OID_01HSE2ZT2S6DR74H8D3N6QGNPK",
+								"optionText": "Corporate Development Program"
+							},
+							{
+								"oid": "OID_01HSE2ZT2SB76YQR9WSCFVESAH",
+								"optionText": "Climate Data Provision"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2ST6BC20C0N8DSN8PM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! CDP stands for Carbon Disclosure Project.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2RNP0Q5DVFEVB8CWSR",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2T838AE6DAZJD7BXCX",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, CDP refers to the Carbon Disclosure Project.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2RNP0Q5DVFEVB8CWSR",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2TCEJ2P35WYYCJKFWG",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"CDSB\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2V55S6R0M64N0BE5PT"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2V55S6R0M64N0BE5PT",
+								"optionText": "Climate Disclosure Standards Board"
+							},
+							{
+								"oid": "OID_01HSE2ZT2V81NGBABTTRCPNX35",
+								"optionText": "Corporate Data Security Bureau"
+							},
+							{
+								"oid": "OID_01HSE2ZT2V3NGZE47G78HVCF5Y",
+								"optionText": "Conservation and Development of Sustainable Bioresources"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2WN6EB1A8TG0772QPY",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! CDSB stands for Climate Disclosure Standards Board.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2TCEJ2P35WYYCJKFWG",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2WBY3SB079H8QYC10R",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is CDSB stands for Climate Disclosure Standards Board.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2TCEJ2P35WYYCJKFWG",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2X622V1CJX8DMMP8XD",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What is \"ESRS 1\" known for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2X548MRKQ6GV27DMJK"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2X548MRKQ6GV27DMJK",
+								"optionText": "European Sustainability Reporting Standard 1 General requirements"
+							},
+							{
+								"oid": "OID_01HSE2ZT2XACX6ARY740XPJ5HW",
+								"optionText": "European Social Responsibility Strategy 1"
+							},
+							{
+								"oid": "OID_01HSE2ZT2Y2A0J6XJS2F5HTZ2A",
+								"optionText": "Environmental Safety and Risk Survey 1"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2YB6XRVGG4A64QX0F6",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ESRS 1 pertains to European Sustainability Reporting Standard 1 General requirements.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2X622V1CJX8DMMP8XD",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2Z9QBDBKGYD6JJKMH7",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, ESRS 1 is the European Sustainability Reporting Standard 1 General requirements.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2X622V1CJX8DMMP8XD",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT2ZV82GN9BXQ9VANKB0",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What is the focus of \"ESRS 2\"?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT2ZKM8D86EX98S0T8ZR"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT2ZKM8D86EX98S0T8ZR",
+								"optionText": "European Sustainability Reporting Standard 2 General disclosures"
+							},
+							{
+								"oid": "OID_01HSE2ZT30FSY7ZPDHC7PF3H93",
+								"optionText": "Energy Saving and Resource Strategy 2"
+							},
+							{
+								"oid": "OID_01HSE2ZT30Y8K6WB2CRVP6PQB1",
+								"optionText": "Environmental Science Research Symposium 2"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT31EVRJMP8TF9M0FHMP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! ESRS 2 is about European Sustainability Reporting Standard 2 General disclosures.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2ZV82GN9BXQ9VANKB0",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT31F5YZFPN3ZZ87FY6K",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ESRS 2 actually focuses on European Sustainability Reporting Standard 2 General disclosures.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT2ZV82GN9BXQ9VANKB0",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT329K8AFZVNQPW7TETE",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS E1\" cover?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT32MQ2T4C1AGH4CKQ5R"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT32MQ2T4C1AGH4CKQ5R",
+								"optionText": "European Sustainability Reporting Standard E1 Climate change"
+							},
+							{
+								"oid": "OID_01HSE2ZT32XP2RSDB5H9FF3QGK",
+								"optionText": "European Strategy for Renewable Energy 1"
+							},
+							{
+								"oid": "OID_01HSE2ZT33FDGPPVVMHDZVXV13",
+								"optionText": "Environmental Safety and Response Standard E1"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT33TR1NY15WV9DSM24A",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's correct! ESRS E1 covers European Sustainability Reporting Standard E1 Climate change.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT329K8AFZVNQPW7TETE",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT345T9YN2N7HT2V3JTC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ESRS E1 specifically pertains to European Sustainability Reporting Standard E1 Climate change.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT329K8AFZVNQPW7TETE",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT341BM0VJHS4XDVTM9E",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What is \"ESRS E2\" related to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT34HHVRQXXBF04TKQK3"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT34HHVRQXXBF04TKQK3",
+								"optionText": "European Sustainability Reporting Standard E2 Pollution"
+							},
+							{
+								"oid": "OID_01HSE2ZT351ST4RW4PNWSV51Q9",
+								"optionText": "European Standard for Ecosystem Protection 2"
+							},
+							{
+								"oid": "OID_01HSE2ZT36VBH3W54YJ5AZ9WY4",
+								"optionText": "Energy Systems and Resources Standard E2"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT36JEN9JCW08HXDG8RS",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! ESRS E2 is related to European Sustainability Reporting Standard E2 Pollution.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT341BM0VJHS4XDVTM9E",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3617BNXVMMBFKP3WPC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ESRS E2 actually relates to European Sustainability Reporting Standard E2 Pollution.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT341BM0VJHS4XDVTM9E",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT37FSHWG6TDRD8NSHKA",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS E3\" focus on?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT37MA78CR7TMRDC1JBZ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT37MA78CR7TMRDC1JBZ",
+								"optionText": "European Sustainability Reporting Standard E3 Water and marine resources"
+							},
+							{
+								"oid": "OID_01HSE2ZT37E96CVX9H7WPDZ22T",
+								"optionText": "Energy Saving and Recycling Strategy E3"
+							},
+							{
+								"oid": "OID_01HSE2ZT38AM63KC3SYSQ3M57R",
+								"optionText": "Environmental Science Research Sector E3"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT38CMX7APXMX7VWQFWT",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ESRS E3 focuses on European Sustainability Reporting Standard E3 Water and marine resources.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT37FSHWG6TDRD8NSHKA",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT39AJ26KCQTAY4KMKJD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ESRS E3 is specifically about European Sustainability Reporting Standard E3 Water and marine resources.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT37FSHWG6TDRD8NSHKA",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT39PA2775J09SDMC471",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What is \"ESRS E4\" known for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT39BJS6E57VGFES6Q1W"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT39BJS6E57VGFES6Q1W",
+								"optionText": "European Sustainability Reporting Standard E4 Biodiversity and ecosystems"
+							},
+							{
+								"oid": "OID_01HSE2ZT3A1XRWKVQ13BZXC2KH",
+								"optionText": "Energy Systems and Regulation E4"
+							},
+							{
+								"oid": "OID_01HSE2ZT3A5H52ZW2J77CJKNT2",
+								"optionText": "Environmental Safety and Regulation Standard E4"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3BQ664HRXK93XAB405",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! ESRS E4 is known for European Sustainability Reporting Standard E4 Biodiversity and ecosystems.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT39PA2775J09SDMC471",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3BH1VY57ME65GX40GE",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The focus of ESRS E4 is European Sustainability Reporting Standard E4 Biodiversity and ecosystems.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT39PA2775J09SDMC471",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3B9MRHF0SWE7YN1X1X",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS E5\" cover?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3C18NJS0FHKCNH5FK3"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3C18NJS0FHKCNH5FK3",
+								"optionText": "European Sustainability Reporting Standard E5 Resource use and circular economy"
+							},
+							{
+								"oid": "OID_01HSE2ZT3DBG0NBQJ9MSJQS3SA",
+								"optionText": "Environmental Safety Regulation E5"
+							},
+							{
+								"oid": "OID_01HSE2ZT3D3S7S9WZSRCTFDNYA",
+								"optionText": "Energy Systems Review E5"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3E0HZEMBW7EJDYRVAY",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ESRS E5 covers European Sustainability Reporting Standard E5 Resource use and circular economy.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3B9MRHF0SWE7YN1X1X",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3EXKEYK92ARV0D7HCJ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ESRS E5 actually pertains to European Sustainability Reporting Standard E5 Resource use and circular economy.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3B9MRHF0SWE7YN1X1X",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3ETX30199WWS3BJW4T",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS G1\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3FE3EJDH2CPR65PWFE"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3F8NSHF6XHEW5C83KM",
+								"optionText": "European Sustainability Reporting Standard G1 Governance structure"
+							},
+							{
+								"oid": "OID_01HSE2ZT3FE3EJDH2CPR65PWFE",
+								"optionText": "European Sustainability Reporting Standard G1 Business conduct"
+							},
+							{
+								"oid": "OID_01HSE2ZT3FGESSKNDFJFWFSY0B",
+								"optionText": "European Sustainability Reporting Standard G1 Global partnerships"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3FZ6K3DTNDBS1DZ2MN",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ESRS G1 pertains to European Sustainability Reporting Standard G1 Business conduct.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3ETX30199WWS3BJW4T",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3GVK42YA1M1QB8XP3B",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, ESRS G1 refers to European Sustainability Reporting Standard G1 Business conduct.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3ETX30199WWS3BJW4T",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3G4SBASM6SHF7CQV46",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS S1\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3GP9Z88GBHATJ11VWK"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3GYWE9Z6RPVDG1ZPEJ",
+								"optionText": "European Sustainability Reporting Standard S1 Supplier sustainability"
+							},
+							{
+								"oid": "OID_01HSE2ZT3GP9Z88GBHATJ11VWK",
+								"optionText": "European Sustainability Reporting Standard S1 Own workforce"
+							},
+							{
+								"oid": "OID_01HSE2ZT3HMMY7GM3CT69V86SJ",
+								"optionText": "European Sustainability Reporting Standard S1 Safety measures"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3H9FB0G31XGGJFXYVZ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! ESRS S1 focuses on the own workforce as part of the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3G4SBASM6SHF7CQV46",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3H3JYCABQW7KX87PGW",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is ESRS S1, which focuses on the own workforce under the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3G4SBASM6SHF7CQV46",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3J5DSJ2W468ZMWP5H1",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS S2\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3JPPEJ0B6EF06BZ3XC"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3JPPEJ0B6EF06BZ3XC",
+								"optionText": "European Sustainability Reporting Standard S2 Workers in the value chain"
+							},
+							{
+								"oid": "OID_01HSE2ZT3JRG6N23DW0VZRY3D5",
+								"optionText": "European Sustainability Reporting Standard S2 Social impact"
+							},
+							{
+								"oid": "OID_01HSE2ZT3JFABMPV9GG9FDFH2S",
+								"optionText": "European Sustainability Reporting Standard S2 Sustainability strategies"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3KRT1WP5SZRCZS0GRM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! ESRS S2 is about workers in the value chain, according to the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3J5DSJ2W468ZMWP5H1",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3K9PMHWH3YVVD4GSJD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is ESRS S2, which pertains to workers in the value chain as defined in the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3J5DSJ2W468ZMWP5H1",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3K5P71EP115Q3T43F5",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS S3\" refer to?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3MZKKJFJCJN5XHE7BP"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3KN3ADWBFZWH0ZPN8N",
+								"optionText": "European Sustainability Reporting Standard S3 Social engagement"
+							},
+							{
+								"oid": "OID_01HSE2ZT3K92Y17RN851HRXTAW",
+								"optionText": "European Sustainability Reporting Standard S3 Supply chain management"
+							},
+							{
+								"oid": "OID_01HSE2ZT3MZKKJFJCJN5XHE7BP",
+								"optionText": "European Sustainability Reporting Standard S3 Affected communities"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3MA8WP2Q5S821H7DCT",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ESRS S3 addresses affected communities within the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3K5P71EP115Q3T43F5",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3MZJ6NTMAWWQQVNR16",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, ESRS S3 is focused on affected communities, as outlined in the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3K5P71EP115Q3T43F5",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3MRXMSMG6VVYEWF06Y",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ESRS S4\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3N8KMCYN1VDMNPF862"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3NDW9B6DX6X6Y4T0F4",
+								"optionText": "European Sustainability Reporting Standard S4 Corporate social responsibility"
+							},
+							{
+								"oid": "OID_01HSE2ZT3N8KMCYN1VDMNPF862",
+								"optionText": "European Sustainability Reporting Standard S4 Consumers & end-users"
+							},
+							{
+								"oid": "OID_01HSE2ZT3NPC9R6KK6SSEAQ0AE",
+								"optionText": "European Sustainability Reporting Standard S4 Climate action"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3NSX53KWF00BDZQ75V",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! ESRS S4 is dedicated to consumers & end-users in the context of the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3MRXMSMG6VVYEWF06Y",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3P9A9PPRTC937D03TY",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is ESRS S4, which is focused on consumers & end-users as part of the European Sustainability Reporting Standards.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3MRXMSMG6VVYEWF06Y",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3P1BFSCTF93WPDX355",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ISEAL\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3PY77PHQ5S1HFR5E5A"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3PGTMFS3F9X5E1YCNZ",
+								"optionText": "International Society for Environmental and Agricultural Legislation"
+							},
+							{
+								"oid": "OID_01HSE2ZT3PY77PHQ5S1HFR5E5A",
+								"optionText": "International Social and Environmental Accreditation and Labeling"
+							},
+							{
+								"oid": "OID_01HSE2ZT3PR15CR7V2V10FXKX5",
+								"optionText": "International Standards for Ecological and Atmospheric Levels"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3QN5T77AHY51BN0HV6",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ISEAL refers to the International Social and Environmental Accreditation and Labeling.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3P1BFSCTF93WPDX355",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3QVAA5SZ0M3CFQR8SA",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, ISEAL stands for International Social and Environmental Accreditation and Labeling.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3P1BFSCTF93WPDX355",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3QPG69PAYVGF49DTK4",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ISO\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3RY7G8CHSYDG72CKFD"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3QB6M5GK3AYZB2YM9Y",
+								"optionText": "International Standards Organization"
+							},
+							{
+								"oid": "OID_01HSE2ZT3RY7G8CHSYDG72CKFD",
+								"optionText": "International Organization for Standardization"
+							},
+							{
+								"oid": "OID_01HSE2ZT3RN8ENAX5KAQ65Q1K8",
+								"optionText": "Integrated Systems Operations"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3RP8DCVY2A5RPKFFW4",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! ISO stands for International Organization for Standardization.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3QPG69PAYVGF49DTK4",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3SZP0GRM1SXTRYCR0Z",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "ISO actually means International Organization for Standardization.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3QPG69PAYVGF49DTK4",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3SPHB3RZ32N105P0RQ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"ISSB\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3S8QTX4AKHSRK4K4BQ"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3S8QTX4AKHSRK4K4BQ",
+								"optionText": "International Sustainability Standards Board"
+							},
+							{
+								"oid": "OID_01HSE2ZT3SNTF0VNYQ7QQS9HZB",
+								"optionText": "Integrated Social Services Bureau"
+							},
+							{
+								"oid": "OID_01HSE2ZT3TF6D2824TDD53Z4DB",
+								"optionText": "International System for Safer Buildings"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3T81GRSAWS1A9E0EH8",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! ISSB stands for International Sustainability Standards Board.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3SPHB3RZ32N105P0RQ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3VJEM8R66ZA7EHEJRP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is ISSB, which refers to the International Sustainability Standards Board.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3SPHB3RZ32N105P0RQ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3VAJR4FP8T3A84K7SR",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"LEAP\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3VNG546AN76T0B7C8S"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3VNG546AN76T0B7C8S",
+								"optionText": "Locate Evaluate Assess Prepare"
+							},
+							{
+								"oid": "OID_01HSE2ZT3WPQDYV4DT4B7BMHS2",
+								"optionText": "Leadership Excellence Achievement Program"
+							},
+							{
+								"oid": "OID_01HSE2ZT3W833FVV993CWC16K3",
+								"optionText": "Legislative Environmental Action Plan"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3WDBDQWPS696JEC7YT",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! LEAP stands for Locate Evaluate Assess Prepare.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3VAJR4FP8T3A84K7SR",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3WS4DDFQPCF7X7Y8B2",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "Actually, LEAP refers to Locate Evaluate Assess Prepare.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3VAJR4FP8T3A84K7SR",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3X60GYGB11N4K6ACW0",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"REACH\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3XR29SS6HT3W0VAPCX"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3XR29SS6HT3W0VAPCX",
+								"optionText": "Registration, Evaluation, Authorisation and Restriction of Chemicals"
+							},
+							{
+								"oid": "OID_01HSE2ZT3XGAACCFAZZPQW4VWP",
+								"optionText": "Renewable Energy and Conservation Health"
+							},
+							{
+								"oid": "OID_01HSE2ZT3XPZAX55ZZ3H0G63ZQ",
+								"optionText": "Research and Education in Advanced Community Health"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3YK89RFX8WC0XDA7TM",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! REACH stands for Registration, Evaluation, Authorisation and Restriction of Chemicals.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3X60GYGB11N4K6ACW0",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3Y4X9ZKKD6V2HS3JQT",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The right answer is REACH, which means Registration, Evaluation, Authorisation and Restriction of Chemicals.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3X60GYGB11N4K6ACW0",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3YM2JRCABMYEEF8VP5",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"SBTi\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT3YVKNTZFKR8FXQ434X"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT3YVKNTZFKR8FXQ434X",
+								"optionText": "Science Based Targets Initiative"
+							},
+							{
+								"oid": "OID_01HSE2ZT3Z16YDJNCT0RMJ3Z04",
+								"optionText": "Sustainable Business and Technology Integration"
+							},
+							{
+								"oid": "OID_01HSE2ZT3ZWCH9S90034NMDCEQ",
+								"optionText": "Social Business Transformation Institute"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3ZQRBPS9AKF56MNYST",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "That's right! SBTi stands for Science Based Targets Initiative.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3YM2JRCABMYEEF8VP5",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT3Z4Z473MZPA7PT8EG5",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "SBTi actually refers to the Science Based Targets Initiative.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT3YM2JRCABMYEEF8VP5",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT40PCXS7WG0N2NF3K2A",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"SDPI\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT40RYERWTQS1V3Z9N20"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT40RYERWTQS1V3Z9N20",
+								"optionText": "Sustainable Development Performance Indicator"
+							},
+							{
+								"oid": "OID_01HSE2ZT400DY8XYGZSKS6M2VB",
+								"optionText": "Social Development Policy Institute"
+							},
+							{
+								"oid": "OID_01HSE2ZT40A612ANSXZ048EY17",
+								"optionText": "Systemic Data Processing Interface"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT41SZYZZ44DJSFF0SZF",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Correct! SDPI stands for Sustainable Development Performance Indicator.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT40PCXS7WG0N2NF3K2A",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT41H24T889DXW1ZCCAQ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "The correct answer is SDPI, which means Sustainable Development Performance Indicator.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT40PCXS7WG0N2NF3K2A",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT41JJ3DP67SVAV5EGZZ",
+					"pageType": "question",
+					"avatarImage": "ESRS/neutral1.png",
+					"backgroundImage": "background6.jpg",
+					"question": {
+						"questionText": "What does \"WRI\" stand for?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HSE2ZT42N3KYJTEZR49WJ5ZW"],
+						"options": [
+							{
+								"oid": "OID_01HSE2ZT41EBEG5BCPWTT0CY96",
+								"optionText": "Water Resources Institute"
+							},
+							{
+								"oid": "OID_01HSE2ZT42N3KYJTEZR49WJ5ZW",
+								"optionText": "World Resources Institute"
+							},
+							{
+								"oid": "OID_01HSE2ZT427M0V2M2P6SM987NF",
+								"optionText": "Wildlife Research International"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT42K6ZNQEDDY8J323Z4",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/right1.png",
+					"avatarText": "Exactly! WRI stands for World Resources Institute.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT41JJ3DP67SVAV5EGZZ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT42XQ642D563ZMM3DQ2",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/wrong1.png",
+					"avatarText": "WRI actually means World Resources Institute.",
+					"backgroundImage": "background6.jpg",
+					"displayLogic": {
+						"pid": "PID_01HSE2ZT41JJ3DP67SVAV5EGZZ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HSE2ZT42M4P6GBWAGEJ860SP",
+					"pageType": "success",
+					"backgroundImage": "background6.jpg",
+					"title": "Sustainability Reporting and Standards",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/right2.png"
+				}
+			]
+		}
+	]
+}
