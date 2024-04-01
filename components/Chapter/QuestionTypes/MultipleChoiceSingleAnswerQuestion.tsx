@@ -12,7 +12,7 @@ export const MultipleChoiceSingleAnswerQuestion = (props: {
 	const selectedIds = props.question.userAnswer ?? [];
 	const options = useMemo(
 		() => props.question.options.toSorted(() => Math.random() - 0.5),
-		[props.question.options]
+		[]
 	);
 
 	return (
