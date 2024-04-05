@@ -1,5 +1,5 @@
 1. upload new json file
-2. run script on json file `ts-node ./data/script.ts` (update display logic manually)
+2. run script on json file `ts-node ./data/script.ts -b level-quiz-question-flow.json`
 3. ./services/QuestionFlowService.ts - add new question flow file
 4. ./@types/shared.types.ts - add new quizId to QuizIdType
 5. ./components/Overview/Disclaimer.tsx - add disclaimer for new quizId
