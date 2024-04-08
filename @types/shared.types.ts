@@ -1,4 +1,4 @@
-export type QuizIdType = "cop" | "ipcc" | "uob" | "esrs" | "esrs-m1" | "acronyms";
+export type QuizIdType = "cop" | "ipcc" | "uob" | "esrs" | "esrs-m1" | "acronyms" | "level";
 
 export enum PageTypes {
 	title = "title",
