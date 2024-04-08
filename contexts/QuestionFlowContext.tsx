@@ -95,11 +95,7 @@ export const QuestionFlowProvider = ({
 		const successIndex = initialSession.pages.findLastIndex(
 			(p) => p.pageType === PageTypes.success
 		);
-		console.log("test 0", {
-			lastQuestionIndex,
-			lastCompletedIndex,
-			successIndex,
-		});
+
 		if (lastCompletedIndex < 0) setCurrentIndex(0);
 		else if (lastCompletedIndex < lastQuestionIndex)
 			setCurrentIndex(lastCompletedIndex + 1);
@@ -109,7 +105,6 @@ export const QuestionFlowProvider = ({
 	}, []);
 
 	useEffect(() => {
-		console.log("test 1");
 		if (!triggerTimeoutToNextQuestion) return;
 		setTimeout(
 			() => navigate(currentIndex, currentIndex, "forward", false),
@@ -119,7 +114,6 @@ export const QuestionFlowProvider = ({
 	}, [triggerTimeoutToNextQuestion]);
 
 	useEffect(() => {
-		console.log("test 2", { currentIndex });
 		if (!userSession) return;
 		setCurrentPage(userSession.pages[currentIndex]);
 		setProgress((currentIndex / userSession.pages.length) * 100);
@@ -129,8 +123,6 @@ export const QuestionFlowProvider = ({
 	 * Handle keyboard navigation
 	 */
 	useEffect(() => {
-		console.log("test 3", {});
-		console.log(currentIndex);
 		const handleKeyPressEvent = (e: KeyboardEvent) => {
 			if (e.key === "ArrowRight")
 				navigate(currentIndex, currentIndex, "forward", false);
