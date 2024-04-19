@@ -22,6 +22,7 @@ const filePath = {
 	// "esrs-m2": path.resolve("data", "esrs-m2-question-flow.json"),
 	acronyms: path.resolve("data", "acronym-question-flow.json"),
 	level: path.resolve("data", "level-quiz-question-flow.json"),
+	case: path.resolve("data", "case-study-question-flow.json"),
 };
 
 export const listAllChapters: (
