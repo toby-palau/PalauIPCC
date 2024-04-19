@@ -8,33 +8,33 @@
             ],
             "chapterTitle": "WORKFORCE ESRS/CSRD CASE STUDY WITH AI",
             "chapterDescription": "An AI-generated case study of a business' implementation of ESRS",
-            "chapterCoverImage": "Background image AI vibe.jpg",
+            "chapterCoverImage": "Background image AI vibe.png",
             "pages": [
                 {
                     "pid": "PID_01HVV9QX0SBG0ZQ7JA3S1P543R",
                     "pageType": "title",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "title": "WORKFORCE ESRS/CSRD CASE STUDY WITH AI",
                     "subtitle": "An AI-generated case study of a business' implementation of ESRS"
                 },
                 {
                     "pid": "PID_01HVV9QX0T3WD9P0MN6Y1B3SCX",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Happy robot.png",
                     "avatarText": "Hi there! I'm an AI created to show you examples of sustainability reports that follow the ESRS guidelines."
                 },
                 {
                     "pid": "PID_01HVV9QX0TK0EHNJS2HFH8E2JS",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Happy robot.png",
                     "avatarText": "Let's spend the next two minutes exploring this together. After, please share with the Palau team how you think I did!"
                 },
                 {
                     "pid": "PID_01HVV9QX0VXAA67BKYZPYESWM9",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Very happy robot.png",
                     "avatarText": "The ESRS requires companies to report on various practices including how they address and remediate workforce concerns. Disclosure requirements outlined in the ESRS guide organizations to communicate their internal processes for managing issues such as ethical misconduct or non-compliance with laws and regulations."
                 },
@@ -42,7 +42,7 @@
                     "pid": "PID_01HVV9QX0WSWMGAEECYNHN84P7",
                     "pageType": "question",
                     "avatarImage": "ESRS/Very happy robot.png",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "question": {
                         "questionText": "Given the ESRS S1 Disclosure Requirements 30 & 32, what information might a company include in its statement to demonstrate compliance with the standard's guidelines on workforce concern remediation and reporting?",
                         "questionType": "MCSA",
@@ -71,7 +71,7 @@
                     "pageType": "narrator",
                     "avatarImage": "ESRS/Very happy robot.png",
                     "avatarText": "Spot on! The statement from EcoFiber Inc. clearly meets the ESRS guidelines by describing formal mechanisms and processes for workforce concern remediation and reporting, including a compliance oversight.",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "displayLogic": {
                         "pid": "PID_01HVV9QX0WSWMGAEECYNHN84P7",
                         "type": "answeredCorrectly",
@@ -83,7 +83,7 @@
                     "pageType": "narrator",
                     "avatarImage": "ESRS/Sad robot.png",
                     "avatarText": "Not quite! While options B and C involve communication channels, they lack the structured, formal reporting and adjudicative processes outlined in option A, which are essential for compliance with ESRS guidelines.",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "displayLogic": {
                         "pid": "PID_01HVV9QX0WSWMGAEECYNHN84P7",
                         "type": "answeredCorrectly",
@@ -93,7 +93,7 @@
                 {
                     "pid": "PID_01HVV9QX10JRG8BTDKBNN9PNVA",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Very happy robot.png",
                     "avatarText": "Adhering to the ESRS framework, companies like TOTI Group are obligated to disclose specific channels and processes through which workforce concerns are addressed. This includes providing accessible means for employees to report any ethical issues or instances of non-compliance with the law, and detailing the subsequent steps taken to resolve these issues."
                 },
@@ -101,7 +101,7 @@
                     "pid": "PID_01HVV9QX10XCRGRDQ12ZZ75JQ3",
                     "pageType": "question",
                     "avatarImage": "ESRS/Very happy robot.png",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "question": {
                         "questionText": "Reflecting Application requirements (AR 27, AR 28, AR 29, AR 30) of ESRS S1, which of the following excerpts could be from a sustainability statement showing compliance with ESRS workforce reporting requirements?",
                         "questionType": "MCSA",
@@ -134,7 +134,7 @@
                     "pageType": "narrator",
                     "avatarImage": "ESRS/Happy robot.png",
                     "avatarText": "Spot on! This answer correctly outlines an ESRS-compliant process involving confidential reporting, thorough investigations, and a structured oversight mechanism, demonstrating a deep understanding of the reporting standards necessary for sustainability compliance.",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "displayLogic": {
                         "pid": "PID_01HVV9QX10XCRGRDQ12ZZ75JQ3",
                         "type": "answeredCorrectly",
@@ -146,7 +146,7 @@
                     "pageType": "narrator",
                     "avatarImage": "ESRS/Sad robot.png",
                     "avatarText": "Unfortunately, that's not the best choice. While these practices may contribute to a healthy dialogue within the company, they don’t align specifically with the ESRS’s requirements for a confidential, structured, and continuously accessible reporting mechanism.",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "displayLogic": {
                         "pid": "PID_01HVV9QX10XCRGRDQ12ZZ75JQ3",
                         "type": "answeredCorrectly",
@@ -156,17 +156,25 @@
                 {
                     "pid": "PID_01HVV9QX161F5J7CJQ4Q3XSHYD",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Mad robot.png",
                     "avatarText": "Just a reminder: I'm an AI, and these scenarios are imaginary, created based on the data I was trained with."
                 },
                 {
                     "pid": "PID_01HVV9QX16DYDAK2E2GW0P89FF",
                     "pageType": "narrator",
-                    "backgroundImage": "Background image AI vibe.jpg",
+                    "backgroundImage": "Background image AI vibe.png",
                     "avatarImage": "ESRS/Happy robot.png",
                     "avatarText": "If you feel there's room for improvement or if you have any suggestions, please reach out to any member of the Palau project team on LinkedIn!"
-                }
+                },
+                {
+					"pid": "PID_01HQJC8R3K85S07ET3FF92C6S7",
+					"pageType": "success",
+					"backgroundImage": "Background image AI vibe.png",
+					"title": "WORKFORCE ESRS/CSRD CASE STUDY WITH AI",
+					"subtitle": "Completed!",
+					"avatarImage": "ESRS/Very happy robot.png"
+				}
             ]
         }
     ]
