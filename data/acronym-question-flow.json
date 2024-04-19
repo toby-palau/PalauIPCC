@@ -1273,7 +1273,7 @@
 						"questionText": "What does \"SFDR\" stand for?",
 						"questionType": "MCSA",
 						"skippable": false,
-						"correctAnswer": ["OID_01HSE2ZSZMYRC1V2P0MSP3DT6Z"],
+						"correctAnswer": ["OID_01HSE2ZSZKXBV9E18M6S6S4VBC"],
 						"options": [
 							{
 								"oid": "OID_01HSE2ZSZKXBV9E18M6S6S4VBC",

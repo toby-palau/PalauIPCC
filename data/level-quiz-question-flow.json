@@ -1,401 +1,386 @@
 {
-    "chapters": [
-        {
-            "cid": "CID_01HTYZGM39TVK8Y1GD5WN7D3NB",
-            "tags": [
-                "all",
-                "current"
-            ],
-            "chapterTitle": "ESRS Practice Quiz",
-            "chapterDescription": "A brief test to determine your current knowledge of ESRS and sustainability reporting",
-            "chapterCoverImage": "Background image.jpg",
-            "pages": [
-                {
-                    "pid": "PID_01HTYZGM3DFMP82HHFWT3CKSD1",
-                    "pageType": "title",
-                    "backgroundImage": "Background image.jpg",
-                    "title": "ESRS Practice Quiz",
-                    "subtitle": "A brief test"
-                },
-                {
-                    "pid": "PID_01HTYZGM3DF9JTS6GV94S9FETM",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/jogging (1).png",
-                    "avatarText": "Welcome to our challenge zone, where your knowledge of  ESRS & sustainability reporting will be put to the test."
-                },
-                {
-                    "pid": "PID_01HTYZGM3D77SBQH8X651YDXG9",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/the champ.png",
-                    "avatarText": "I'm here to guide you through six thought-provoking scenarios, each presenting a unique challenge in the world of ESRS."
-                },
-                {
-                    "pid": "PID_01HTYZGM3E2G0AH5701PJXPECB",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/fist bump.png",
-                    "avatarText": "Your results will show you how much you know and if you could benefit from our ESRS course\n\nAre you just starting, already a pro, or somewhere in between? Let's find out!"
-                },
-                {
-                    "pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "As the Director of Sustainability Integration, your task is to elevate the company's approach to ESRS compliance. What strategic principle should guide the incorporation of ESRS into the company's sustainability reporting to ensure maximum strategic and operational synergy?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3FHF318ZZGAN8T0T38"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3E4XE6DRPVX98X7G5P",
-                                "optionText": "Tailor the sustainability reporting to mirror the most successful aspects of industry leaders, adapting best practices within the ESRS framework."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3FHF318ZZGAN8T0T38",
-                                "optionText": "Utilize the ESRS framework to holistically integrate sustainability reporting with corporate strategic goals, enhancing stakeholder communication and business value."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3F9C0M0QBE944NF4ZF",
-                                "optionText": "Prioritize alignment with the ESRS framework to refine current sustainability practices, optimizing internal processes for better resource management."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3FQWEK0210S85SW3ED",
-                                "optionText": "Deploy the ESRS as a benchmarking tool to gauge sustainability performance against sector-specific standards, driving continuous improvement."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3G77WKTDZZKJM94B00",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/okay.png",
-                    "avatarText": "Well done! This choice aligns sustainability with the company's strategic aims, boosting business value and stakeholder relations. It transcends mere compliance, weaving sustainability into the company’s core strategy for a meaningful impact.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3GTWS0Y1SZWSPSDHSG",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/red flag.png",
-                    "avatarText": "These options, while insightful, don't fully leverage the potential of integrating sustainability with strategic objectives. A) lacks customization for unique company needs; C) overlooks the broader strategic picture for stakeholder engagement; D) focuses on benchmarking over strategic integration. A holistic approach, as in B, ensures sustainability efforts enhance both compliance and strategic business value.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "As the sustainability lead at FutureGreen, a renewable energy company, you're addressing the dual aspects of sustainability: its impact on both the environment and the company's finances. One identified issue is the environmental and financial implications of raw material sourcing. In aligning with the ESRS framework's double materiality principle, how should this issue be reported?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3HCX5ZVS84CWTEJBJQ"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3H9QV0GV6WGS0XRWFS",
-                                "optionText": "Outline financial risks related to sourcing, including potential cost increases and supply chain vulnerabilities."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3HCX5ZVS84CWTEJBJQ",
-                                "optionText": "Integrate analysis of both financial risks and environmental considerations, showing strategic responses and impact mitigation."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3J941612EME5KYSPQR",
-                                "optionText": "Describe environmental considerations of sourcing, such as habitat disruption and resource depletion."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3JTN39ZYSJ40E9B5CG",
-                                "optionText": "Assess raw material sourcing primarily through its contribution to operational efficiency and long-term sustainability goals."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3JMYN1JYF57YT9EB9R",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/yes.png",
-                    "avatarText": "Correct! This nuanced approach aligns with the double materiality concept by thoroughly examining how raw material sourcing impacts FutureGreen both environmentally and financially. It goes beyond surface-level analysis to reveal the strategic adjustments and mitigation efforts undertaken, offering a comprehensive view as advocated by the ESRS framework.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3K0KNDFW2NFW50TS3J",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/red flag.png",
-                    "avatarText": "While each option touches on critical aspects of sustainability reporting, they don’t fully embrace the double materiality principle, which seeks a combined view of financial and environmental impacts. Focusing on one aspect over the other, or evaluating sourcing mainly for operational efficiency, does not provide the holistic insight required by the ESRS.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "How do Application Requirements (AR) contribute to CSRD reporting compared to Disclosure Requirements (DR)?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3MK9Z3WQ0AY4BCFCYA"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3M6XBNQW1B2GFXXJFA",
-                                "optionText": "ARs specify the environmental goals a company must set, while DRs do not."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3MK9Z3WQ0AY4BCFCYA",
-                                "optionText": "ARs provide the framework for presenting the disclosed information, ensuring consistency and structure."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3NFN824VYAPPGZDC5B",
-                                "optionText": "ARs and DRs both dictate the financial benchmarks for sustainability efforts."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3NBK8J4A442S41E55T",
-                                "optionText": "Unlike DRs, ARs determine the corporate governance policies related to sustainability."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3N2K1VBCQF39769XKT",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/yes.png",
-                    "avatarText": "Correct! ARs provide the framework for presenting the disclosed information, ensuring consistency and structure.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3PBMCVFQCAK722THWQ",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/cactus.png",
-                    "avatarText": "Incorrect! ARs provide the framework for presenting the disclosed information, ensuring consistency and structure.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "Considering the intricate requirements for CSRD reporting, why is the precise implementation of tagging crucial for ensuring the efficacy and interoperability of sustainability reports?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3RZQPCPNE6B7R3Q73B"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3Q4QAM52RA58JX118C",
-                                "optionText": "Because it allows for the personalization of reports, tailoring them to reflect the unique branding of each company."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3RZQPCPNE6B7R3Q73B",
-                                "optionText": "Precise tagging enables the digital parsing and analysis of reports, ensuring data can be accurately compared and scrutinized across different reporting entities within the EU."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3RT02HP84R6HK7RYRX",
-                                "optionText": "It facilitates a smoother audit process by organizing report content into easily navigable sections for auditors."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3SA3G4SPVM06P73MC4",
-                                "optionText": "Tagging serves to embellish report presentation, making statistical data more engaging and visually appealing to stakeholders."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3S68X5TV4P141035HC",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/yes.png",
-                    "avatarText": "Spot on! The key to precise tagging lies in its capacity to convert sustainability reports into formats that are not just readable but analyzable by digital systems. This process underpins the CSRD's objective of enhancing report transparency, accessibility, and comparability across Europe, making it fundamental for stakeholders to evaluate and benchmark sustainability performance effectively.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3TZVDC8PBGK6RJ7J3Q",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/ouch.png",
-                    "avatarText": "While personalization, audit facilitation, and visual enhancement are valuable aspects of reporting, they don't capture the essence of why precise tagging is indispensable in CSRD reporting. The core purpose of tagging is to digitize and standardize sustainability information for analytical purposes across the EU, rather than just improving aesthetics or simplifying manual reviews. Accurate tagging is about making data interoperable and actionable on a large scale.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "You are a sustainability analyst at GreenTech Inc. preparing the CSRD report. E2-1 requires a detailed discussion on pollution-related policies. The challenge is to accurately reflect the company's initiatives while aligning with the ESRS standards and EU Action Plan. How should GreenTech Inc. report its pollution-related policies for ESRS compliance?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3VN0SRV21E4BCEFPH6"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3V2KTM9YGM9EDRGRRV",
-                                "optionText": "Create a standalone section that fully explores the policies related to pollution, concentrating specifically on the company's initiatives."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3VN0SRV21E4BCEFPH6",
-                                "optionText": "Combine detailed descriptions of policies, actions, and targets with direct references to EU Action Plan goals, using E2-1 application requirements for data specificity."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3W579YVN0WKD35BN8F",
-                                "optionText": "Weave the policies into the sustainability strategy narrative, illustrating how they contribute to GreenTech Inc.’s overall goals."
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3W9EFEBNG1BYV2PJQX",
-                                "optionText": "Present a summary of pollution policies, ensuring that it aligns with the general direction and intent of E2-1 requirements."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3W4TYWP2VD2H298KSK",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/yes.png",
-                    "avatarText": "Exactly what's needed! GreenTech Inc.'s report now strikes the right balance between detailed policy description and strategic EU alignment. The inclusion of direct references and the precise application of E2-1 ARs elevate the report to meet CSRD's high standards of specificity and relevancy.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3XQC2FQC3XZEZH2QD8",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/unimpressed gorilla (1).png",
-                    "avatarText": "Each of these options, while they contribute to the narrative, lacks the full integration and precision expected by the CSRD. A focused section on policies, an integrated narrative, or a summarized overview must be complemented by explicit linkage to EU directives and a detailed use of E2-1 ARs to meet the nuanced demands of stakeholder and regulatory scrutiny.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
-                    "pageType": "question",
-                    "avatarImage": "ESRS/question mark (1).png",
-                    "backgroundImage": "Background image.jpg",
-                    "question": {
-                        "questionText": "In sustainability reporting, what types of capital should a company focus on if it's assessing the long-term risks of deforestation in its supply chain?",
-                        "questionType": "MCSA",
-                        "skippable": false,
-                        "correctAnswer": [
-                            "OID_01HTYZGM3XV0H24Y0YQESZCRKQ"
-                        ],
-                        "options": [
-                            {
-                                "oid": "OID_01HTYZGM3X159B8F6NMCVKHEK1",
-                                "optionText": "Financial and Human Capital"
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3XV0H24Y0YQESZCRKQ",
-                                "optionText": "Natural and Social and Relationship Capital"
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3YHFA8D5Q7WM3BFYK4",
-                                "optionText": "Manufactured and Intellectual Capital"
-                            },
-                            {
-                                "oid": "OID_01HTYZGM3Y3359G5W79EVW0D8T",
-                                "optionText": "Human and Natural Capital"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3YJS98JTXMTAMR41TD",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/yes.png",
-                    "avatarText": "Correct! Deforestation primarily impacts Natural Capital through the loss of forests, which are a renewable resource. Social and Relationship Capital is also affected due to potential community and stakeholder reactions to environmental harm.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
-                        "type": "answeredCorrectly",
-                        "correct": true
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3ZGKD8YPX8C7BR3PVP",
-                    "pageType": "narrator",
-                    "avatarImage": "ESRS/unimpressed gorilla (1).png",
-                    "avatarText": "Deforestation primarily impacts Natural Capital through the loss of forests, which are a renewable resource. Social and Relationship Capital is also affected due to potential community and stakeholder reactions to environmental harm.",
-                    "backgroundImage": "Background image.jpg",
-                    "displayLogic": {
-                        "pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
-                        "type": "answeredCorrectly",
-                        "correct": false
-                    }
-                },
-                {
-                    "pid": "PID_01HTYZGM3ZMXFSB2H19YAARCND",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/grin smile.png",
-                    "avatarText": "Your quiz score shows your spot in ESRS. Scored 4 stars or below? Great chance to grow and learn more. Our course will really help you get better and understand ESRS deeply."
-                },
-                {
-                    "pid": "PID_01HTYZGM3ZWDNPK64E67870GWA",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/Super happy.png",
-                    "avatarText": "If you hit 5 stars, wow, you're at the top! Please, let's work together to make ESRS  better for everyone"
-                },
-                {
-                    "pid": "PID_01HTYZGM409F7H0WH74V9DXW11",
-                    "pageType": "narrator",
-                    "backgroundImage": "Background image.jpg",
-                    "avatarImage": "ESRS/smiling.png",
-                    "avatarText": "Whether learning more or helping out, we're excited to connect with you!"
-                }
-            ]
-        }
-    ]
+	"chapters": [
+		{
+			"cid": "CID_01HTYZGM39TVK8Y1GD5WN7D3NB",
+			"tags": ["all", "current"],
+			"chapterTitle": "ESRS Practice Quiz",
+			"chapterDescription": "A brief test to determine your current knowledge of ESRS and sustainability reporting",
+			"chapterCoverImage": "dublin.jpg",
+			"pages": [
+				{
+					"pid": "PID_01HTYZGM3DFMP82HHFWT3CKSD1",
+					"pageType": "title",
+					"backgroundImage": "dublin.jpg",
+					"title": "ESRS Practice Quiz",
+					"subtitle": "A brief test"
+				},
+				{
+					"pid": "PID_01HTYZGM3DF9JTS6GV94S9FETM",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/jogging (1).png",
+					"avatarText": "Welcome to our challenge zone, where your knowledge of  ESRS & sustainability reporting will be put to the test."
+				},
+				{
+					"pid": "PID_01HTYZGM3D77SBQH8X651YDXG9",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/the champ.png",
+					"avatarText": "I'm here to guide you through six thought-provoking scenarios, each presenting a unique challenge in the world of ESRS."
+				},
+				{
+					"pid": "PID_01HTYZGM3E2G0AH5701PJXPECB",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/fist bump.png",
+					"avatarText": "Your results will show you how much you know and if you could benefit from our ESRS course\n\nAre you just starting, already a pro, or somewhere in between? Let's find out!"
+				},
+				{
+					"pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "As the Director of Sustainability Integration, your task is to elevate the company's approach to ESRS compliance. What strategic principle should guide the incorporation of ESRS into the company's sustainability reporting to ensure maximum strategic and operational synergy?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3FHF318ZZGAN8T0T38"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3E4XE6DRPVX98X7G5P",
+								"optionText": "Tailor the sustainability reporting to mirror the most successful aspects of industry leaders, adapting best practices within the ESRS framework."
+							},
+							{
+								"oid": "OID_01HTYZGM3FHF318ZZGAN8T0T38",
+								"optionText": "Utilize the ESRS framework to holistically integrate sustainability reporting with corporate strategic goals, enhancing stakeholder communication and business value."
+							},
+							{
+								"oid": "OID_01HTYZGM3F9C0M0QBE944NF4ZF",
+								"optionText": "Prioritize alignment with the ESRS framework to refine current sustainability practices, optimizing internal processes for better resource management."
+							},
+							{
+								"oid": "OID_01HTYZGM3FQWEK0210S85SW3ED",
+								"optionText": "Deploy the ESRS as a benchmarking tool to gauge sustainability performance against sector-specific standards, driving continuous improvement."
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3G77WKTDZZKJM94B00",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/okay.png",
+					"avatarText": "Well done! This choice aligns sustainability with the company's strategic aims, boosting business value and stakeholder relations. It transcends mere compliance, weaving sustainability into the company’s core strategy for a meaningful impact.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3GTWS0Y1SZWSPSDHSG",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/red flag.png",
+					"avatarText": "These options, while insightful, don't fully leverage the potential of integrating sustainability with strategic objectives. A) lacks customization for unique company needs; C) overlooks the broader strategic picture for stakeholder engagement; D) focuses on benchmarking over strategic integration. A holistic approach, as in B, ensures sustainability efforts enhance both compliance and strategic business value.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3E6EBG89GHCH9PZRJC",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "As the sustainability lead at FutureGreen, a renewable energy company, you're addressing the dual aspects of sustainability: its impact on both the environment and the company's finances. One identified issue is the environmental and financial implications of raw material sourcing. In aligning with the ESRS framework's double materiality principle, how should this issue be reported?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3HCX5ZVS84CWTEJBJQ"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3H9QV0GV6WGS0XRWFS",
+								"optionText": "Outline financial risks related to sourcing, including potential cost increases and supply chain vulnerabilities."
+							},
+							{
+								"oid": "OID_01HTYZGM3HCX5ZVS84CWTEJBJQ",
+								"optionText": "Integrate analysis of both financial risks and environmental considerations, showing strategic responses and impact mitigation."
+							},
+							{
+								"oid": "OID_01HTYZGM3J941612EME5KYSPQR",
+								"optionText": "Describe environmental considerations of sourcing, such as habitat disruption and resource depletion."
+							},
+							{
+								"oid": "OID_01HTYZGM3JTN39ZYSJ40E9B5CG",
+								"optionText": "Assess raw material sourcing primarily through its contribution to operational efficiency and long-term sustainability goals."
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3JMYN1JYF57YT9EB9R",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/yes.png",
+					"avatarText": "Correct! This nuanced approach aligns with the double materiality concept by thoroughly examining how raw material sourcing impacts FutureGreen both environmentally and financially. It goes beyond surface-level analysis to reveal the strategic adjustments and mitigation efforts undertaken, offering a comprehensive view as advocated by the ESRS framework.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3K0KNDFW2NFW50TS3J",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/red flag.png",
+					"avatarText": "While each option touches on critical aspects of sustainability reporting, they don’t fully embrace the double materiality principle, which seeks a combined view of financial and environmental impacts. Focusing on one aspect over the other, or evaluating sourcing mainly for operational efficiency, does not provide the holistic insight required by the ESRS.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3GERRYTKVJAYW22MVE",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "How do Application Requirements (AR) contribute to CSRD reporting compared to Disclosure Requirements (DR)?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3MK9Z3WQ0AY4BCFCYA"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3M6XBNQW1B2GFXXJFA",
+								"optionText": "ARs specify the environmental goals a company must set, while DRs do not."
+							},
+							{
+								"oid": "OID_01HTYZGM3MK9Z3WQ0AY4BCFCYA",
+								"optionText": "ARs provide the framework for presenting the disclosed information, ensuring consistency and structure."
+							},
+							{
+								"oid": "OID_01HTYZGM3NFN824VYAPPGZDC5B",
+								"optionText": "ARs and DRs both dictate the financial benchmarks for sustainability efforts."
+							},
+							{
+								"oid": "OID_01HTYZGM3NBK8J4A442S41E55T",
+								"optionText": "Unlike DRs, ARs determine the corporate governance policies related to sustainability."
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3N2K1VBCQF39769XKT",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/yes.png",
+					"avatarText": "Correct! ARs provide the framework for presenting the disclosed information, ensuring consistency and structure.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3PBMCVFQCAK722THWQ",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/cactus.png",
+					"avatarText": "Incorrect! ARs provide the framework for presenting the disclosed information, ensuring consistency and structure.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3MX1EK1ZMHYJN8K09E",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "Considering the intricate requirements for CSRD reporting, why is the precise implementation of tagging crucial for ensuring the efficacy and interoperability of sustainability reports?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3RZQPCPNE6B7R3Q73B"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3Q4QAM52RA58JX118C",
+								"optionText": "Because it allows for the personalization of reports, tailoring them to reflect the unique branding of each company."
+							},
+							{
+								"oid": "OID_01HTYZGM3RZQPCPNE6B7R3Q73B",
+								"optionText": "Precise tagging enables the digital parsing and analysis of reports, ensuring data can be accurately compared and scrutinized across different reporting entities within the EU."
+							},
+							{
+								"oid": "OID_01HTYZGM3RT02HP84R6HK7RYRX",
+								"optionText": "It facilitates a smoother audit process by organizing report content into easily navigable sections for auditors."
+							},
+							{
+								"oid": "OID_01HTYZGM3SA3G4SPVM06P73MC4",
+								"optionText": "Tagging serves to embellish report presentation, making statistical data more engaging and visually appealing to stakeholders."
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3S68X5TV4P141035HC",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/yes.png",
+					"avatarText": "Spot on! The key to precise tagging lies in its capacity to convert sustainability reports into formats that are not just readable but analyzable by digital systems. This process underpins the CSRD's objective of enhancing report transparency, accessibility, and comparability across Europe, making it fundamental for stakeholders to evaluate and benchmark sustainability performance effectively.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3TZVDC8PBGK6RJ7J3Q",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/ouch.png",
+					"avatarText": "While personalization, audit facilitation, and visual enhancement are valuable aspects of reporting, they don't capture the essence of why precise tagging is indispensable in CSRD reporting. The core purpose of tagging is to digitize and standardize sustainability information for analytical purposes across the EU, rather than just improving aesthetics or simplifying manual reviews. Accurate tagging is about making data interoperable and actionable on a large scale.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3PYS6R4PT11CR6X1EQ",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "You are a sustainability analyst at GreenTech Inc. preparing the CSRD report. E2-1 requires a detailed discussion on pollution-related policies. The challenge is to accurately reflect the company's initiatives while aligning with the ESRS standards and EU Action Plan. How should GreenTech Inc. report its pollution-related policies for ESRS compliance?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3VN0SRV21E4BCEFPH6"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3V2KTM9YGM9EDRGRRV",
+								"optionText": "Create a standalone section that fully explores the policies related to pollution, concentrating specifically on the company's initiatives."
+							},
+							{
+								"oid": "OID_01HTYZGM3VN0SRV21E4BCEFPH6",
+								"optionText": "Combine detailed descriptions of policies, actions, and targets with direct references to EU Action Plan goals, using E2-1 application requirements for data specificity."
+							},
+							{
+								"oid": "OID_01HTYZGM3W579YVN0WKD35BN8F",
+								"optionText": "Weave the policies into the sustainability strategy narrative, illustrating how they contribute to GreenTech Inc.’s overall goals."
+							},
+							{
+								"oid": "OID_01HTYZGM3W9EFEBNG1BYV2PJQX",
+								"optionText": "Present a summary of pollution policies, ensuring that it aligns with the general direction and intent of E2-1 requirements."
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3W4TYWP2VD2H298KSK",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/yes.png",
+					"avatarText": "Exactly what's needed! GreenTech Inc.'s report now strikes the right balance between detailed policy description and strategic EU alignment. The inclusion of direct references and the precise application of E2-1 ARs elevate the report to meet CSRD's high standards of specificity and relevancy.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3XQC2FQC3XZEZH2QD8",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/unimpressed gorilla (1).png",
+					"avatarText": "Each of these options, while they contribute to the narrative, lacks the full integration and precision expected by the CSRD. A focused section on policies, an integrated narrative, or a summarized overview must be complemented by explicit linkage to EU directives and a detailed use of E2-1 ARs to meet the nuanced demands of stakeholder and regulatory scrutiny.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3TTWYKPDSX9B6SRXG4",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
+					"pageType": "question",
+					"avatarImage": "ESRS/question mark (1).png",
+					"backgroundImage": "dublin.jpg",
+					"question": {
+						"questionText": "In sustainability reporting, what types of capital should a company focus on if it's assessing the long-term risks of deforestation in its supply chain?",
+						"questionType": "MCSA",
+						"skippable": false,
+						"correctAnswer": ["OID_01HTYZGM3XV0H24Y0YQESZCRKQ"],
+						"options": [
+							{
+								"oid": "OID_01HTYZGM3X159B8F6NMCVKHEK1",
+								"optionText": "Financial and Human Capital"
+							},
+							{
+								"oid": "OID_01HTYZGM3XV0H24Y0YQESZCRKQ",
+								"optionText": "Natural and Social and Relationship Capital"
+							},
+							{
+								"oid": "OID_01HTYZGM3YHFA8D5Q7WM3BFYK4",
+								"optionText": "Manufactured and Intellectual Capital"
+							},
+							{
+								"oid": "OID_01HTYZGM3Y3359G5W79EVW0D8T",
+								"optionText": "Human and Natural Capital"
+							}
+						]
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3YJS98JTXMTAMR41TD",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/yes.png",
+					"avatarText": "Correct! Deforestation primarily impacts Natural Capital through the loss of forests, which are a renewable resource. Social and Relationship Capital is also affected due to potential community and stakeholder reactions to environmental harm.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
+						"type": "answeredCorrectly",
+						"correct": true
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3ZGKD8YPX8C7BR3PVP",
+					"pageType": "narrator",
+					"avatarImage": "ESRS/unimpressed gorilla (1).png",
+					"avatarText": "Deforestation primarily impacts Natural Capital through the loss of forests, which are a renewable resource. Social and Relationship Capital is also affected due to potential community and stakeholder reactions to environmental harm.",
+					"backgroundImage": "dublin.jpg",
+					"displayLogic": {
+						"pid": "PID_01HTYZGM3XFP45DDWCFS1D6KFE",
+						"type": "answeredCorrectly",
+						"correct": false
+					}
+				},
+				{
+					"pid": "PID_01HTYZGM3ZMXFSB2H19YAARCND",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/grin smile.png",
+					"avatarText": "Your quiz score shows your spot in ESRS. Scored 4 stars or below? Great chance to grow and learn more. Our course will really help you get better and understand ESRS deeply."
+				},
+				{
+					"pid": "PID_01HTYZGM3ZWDNPK64E67870GWA",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/Super happy.png",
+					"avatarText": "If you hit 5 stars, wow, you're at the top! Please, let's work together to make ESRS  better for everyone"
+				},
+				{
+					"pid": "PID_01HTYZGM409F7H0WH74V9DXW11",
+					"pageType": "narrator",
+					"backgroundImage": "dublin.jpg",
+					"avatarImage": "ESRS/smiling.png",
+					"avatarText": "Whether learning more or helping out, we're excited to connect with you!"
+				}
+			]
+		}
+	]
 }
